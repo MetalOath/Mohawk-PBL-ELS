@@ -9,7 +9,7 @@ public class Conduction : MonoBehaviour
     public float voltage, current, resistance;
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision Enter!");
+        //Debug.Log("Collision Enter!");
         CheckCollisionChange(collision);
 
     }
@@ -19,7 +19,7 @@ public class Conduction : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
-        Debug.Log("Collision Exit!");
+        //Debug.Log("Collision Exit!");
         if (collision.gameObject.tag == "Power_Source")
         {
 
@@ -37,26 +37,6 @@ public class Conduction : MonoBehaviour
 
         }
         CheckCollisionChange(collision);
-
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        CheckTriggerChange(other);
-
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        CheckTriggerChange(other);
-
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        CheckTriggerChange(other);
-
-    }
-    private void CurrentCalculator()
-    {
-
     }
     private void CheckCollisionChange(Collision collision)
     {
@@ -90,8 +70,22 @@ public class Conduction : MonoBehaviour
             {
                 positivePassThrough = true;
             }
-
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        CheckTriggerChange(other);
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        CheckTriggerChange(other);
+
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        CheckTriggerChange(other);
+
     }
     private void CheckTriggerChange(Collider other)
     {
@@ -125,7 +119,10 @@ public class Conduction : MonoBehaviour
             {
                 positivePassThrough = true;
             }
-
         }
+    }
+    private void CurrentCalculator()
+    {
+
     }
 }
