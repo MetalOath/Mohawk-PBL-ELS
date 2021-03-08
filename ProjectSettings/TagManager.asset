@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Resistor
+  - LED_Light
+  - Wire
+  - Power_Source_Positive
+  - Power_Source_Negative
   layers:
   - Default
   - TransparentFX
