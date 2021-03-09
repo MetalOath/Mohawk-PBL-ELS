@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Conduction : MonoBehaviour
 {
-    [SerializeField]
-    private bool positivePassThrough = false, negativePassThrough = false;
+    public bool positivePassThrough = false, negativePassThrough = false;
     public float voltage, current, resistance;
     private void OnCollisionEnter(Collision collision)
     {
@@ -44,9 +43,17 @@ public class Conduction : MonoBehaviour
         {
             positivePassThrough = true;
         }
+        else
+        {
+            //positivePassThrough = false;
+        }
         if (collision.gameObject.tag == "Power_Source_Negative")
         {
             negativePassThrough = true;
+        }
+        else
+        {
+            //negativePassThrough = false;
         }
         if (collision.gameObject.tag == "Resistor")
         {
@@ -66,9 +73,17 @@ public class Conduction : MonoBehaviour
             {
                 negativePassThrough = true;
             }
+            else
+            {
+                //negativePassThrough = false;
+            }
             if (collision.gameObject.GetComponent<Conduction>().positivePassThrough == true)
             {
                 positivePassThrough = true;
+            }
+            else
+            {
+                //positivePassThrough = false;
             }
         }
     }
@@ -93,9 +108,17 @@ public class Conduction : MonoBehaviour
         {
             positivePassThrough = true;
         }
+        else
+        {
+            //positivePassThrough = false;
+        }
         if (other.gameObject.tag == "Power_Source_Negative")
         {
             negativePassThrough = true;
+        }
+        else
+        {
+            //negativePassThrough = false;
         }
         if (other.gameObject.tag == "Resistor")
         {
@@ -115,9 +138,17 @@ public class Conduction : MonoBehaviour
             {
                 negativePassThrough = true;
             }
+            else
+            {
+                //negativePassThrough = false;
+            }
             if (other.gameObject.GetComponent<Conduction>().positivePassThrough == true)
             {
                 positivePassThrough = true;
+            }
+            else
+            {
+                //positivePassThrough = false;
             }
         }
     }
