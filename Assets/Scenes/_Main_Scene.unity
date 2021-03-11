@@ -637,7 +637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 70200174}
   m_Layer: 0
-  m_Name: GameObjects
+  m_Name: Game Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -650,13 +650,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70200173}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 49012282}
   - {fileID: 866077149}
-  m_Father: {fileID: 1065935754}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &94564446
@@ -1089,9 +1089,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!135 &191240590
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1323,7 +1326,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257276406
 GameObject:
@@ -2908,13 +2911,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552304264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 677912966}
   - {fileID: 257276407}
-  m_Father: {fileID: 1065935754}
+  m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &570222518
@@ -3119,11 +3122,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584400384}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1065935754}
+  m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &584400386
@@ -3142,7 +3145,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 866077150}
-        m_MethodName: CheckConnection
+        m_MethodName: PlayPauseSimulation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4563,40 +4566,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062830208}
   m_CullTransparentMesh: 0
---- !u!1 &1065935753
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1065935754}
-  m_Layer: 0
-  m_Name: Global Scaler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1065935754
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1065935753}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1604889782}
-  - {fileID: 70200174}
-  - {fileID: 552304265}
-  - {fileID: 584400385}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1082693357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,9 +4867,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!1 &1129532053
 GameObject:
   m_ObjectHideFlags: 0
@@ -6133,9 +6105,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!135 &1297092070
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7300,7 +7275,7 @@ Transform:
   - {fileID: 1129532054}
   - {fileID: 645185395}
   - {fileID: 634089315}
-  m_Father: {fileID: 1065935754}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1702017889
@@ -8459,9 +8434,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!135 &2022656116
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8645,7 +8623,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &2032865108
+--- !u!114 &2032865108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032865104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590f0108c853383429b12ff358656837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedLoop: 0
+--- !u!114 &2032865109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032865105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590f0108c853383429b12ff358656837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedLoop: 0
+--- !u!135 &2032865114
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8658,7 +8662,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.21161094
   m_Center: {x: 0.4701061, y: 1.234446, z: 0.0054065157}
---- !u!54 &2032865109
+--- !u!54 &2032865115
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8724,9 +8728,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!135 &2037937911
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9743,7 +9750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1273699104244202808
 Transform:
   m_ObjectHideFlags: 0
@@ -10812,9 +10819,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!23 &4040983848296734667
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11401,9 +11411,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229344888826103
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11563,9 +11576,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229344944013523
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11677,9 +11693,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229344948919351
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11819,9 +11838,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229344995020259
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11947,9 +11969,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345087669059
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12061,9 +12086,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345089444363
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12255,9 +12283,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345160710273
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12344,9 +12375,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345172643757
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12472,9 +12506,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345217924625
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12587,9 +12624,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345220148275
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12715,9 +12755,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345237378955
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12843,9 +12886,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345245748275
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12957,9 +13003,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345246871527
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13099,9 +13148,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345296640879
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13213,9 +13265,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345333606231
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13368,9 +13423,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345348480717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13469,9 +13527,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345366521351
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13671,9 +13732,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345399264767
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13752,9 +13816,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345413341841
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13867,9 +13934,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345420030435
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14047,9 +14117,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345430245757
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14109,9 +14182,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345533203719
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14237,9 +14313,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345542562843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14365,9 +14444,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345598531827
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14493,9 +14575,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345608718283
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14718,9 +14803,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345616212965
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14807,9 +14895,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345627084413
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14922,9 +15013,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345631618847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15050,9 +15144,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345635662519
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15191,9 +15288,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345666561045
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15358,9 +15458,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345672673433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15434,9 +15537,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345677784159
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15575,9 +15681,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345833068405
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15708,9 +15817,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229345919577895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15970,9 +16082,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346001627903
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16051,9 +16166,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346139507725
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16152,9 +16270,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346142859075
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16307,9 +16428,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346148374005
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16435,9 +16559,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346162505433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16563,9 +16690,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346163964389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16678,9 +16808,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346181427179
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16866,9 +16999,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346189360127
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16947,9 +17083,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346228111469
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17197,9 +17336,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346253720925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17298,9 +17440,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346286800515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17592,9 +17737,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346361700353
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17712,9 +17860,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346371788605
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17788,9 +17939,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346458910331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17929,9 +18083,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346498325529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18044,9 +18201,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346507957051
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18224,9 +18384,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346579395125
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18300,9 +18463,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346606828011
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18480,9 +18646,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346623623481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18556,9 +18725,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346629876303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18670,9 +18842,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346647021959
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18864,9 +19039,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346665933777
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18953,9 +19131,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346690383653
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19081,9 +19262,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346704488985
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19182,9 +19366,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346765913547
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19324,9 +19511,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346796167995
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19438,9 +19628,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346821011415
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19566,9 +19759,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346851396639
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19694,9 +19890,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229346927865043
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19822,9 +20021,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
+  closedLoop: 0
   voltage: 0
   current: 0
   resistance: 0
+  positiveNumberInSeries: 0
+  negativeNumberInSeries: 0
 --- !u!54 &5990229347007456087
 Rigidbody:
   m_ObjectHideFlags: 0
