@@ -1089,7 +1089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -1815,6 +1815,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340856416}
   m_CullTransparentMesh: 0
+--- !u!1 &380484964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275145280488073646}
+  m_Layer: 0
+  m_Name: Led_Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &384518339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,7 +1849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &384518340
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2321,6 +2337,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421602415}
   m_CullTransparentMesh: 0
+--- !u!1 &443508098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 443508099}
+  - component: {fileID: 443508101}
+  - component: {fileID: 443508100}
+  m_Layer: 0
+  m_Name: Led_bulb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &443508099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443508098}
+  m_LocalRotation: {x: -0.5079914, y: -0.48104456, z: 0.42598101, w: 0.5736559}
+  m_LocalPosition: {x: 0.010099047, y: 0.017770804, z: -0.000100944664}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 275145280488073646}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &443508100
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443508098}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31c2a2074b78d36478589b0ddb7d16d8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &443508101
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443508098}
+  m_Mesh: {fileID: 2840891076546816431, guid: 880feac68da2d3f4c9b8a422903d15fb, type: 3}
 --- !u!1 &455477977
 GameObject:
   m_ObjectHideFlags: 0
@@ -4121,13 +4216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d647a66c5b22f42b9dc005d94a646b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breadboard: {fileID: 5990229346241940932}
-  multimeter: {fileID: 1273699104244202807}
-  multimeterScreen: {fileID: 1923773814}
-  resistor: {fileID: 1519945269}
-  battery: {fileID: 12575725}
-  led: {fileID: 1735429054}
-  ledLight: {fileID: 1269457567}
+  simulationActiveState: 0
 --- !u!1 &895027481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,7 +4956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -6105,7 +6194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -7830,7 +7919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1930378977
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8434,7 +8523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -8635,7 +8724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590f0108c853383429b12ff358656837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedLoop: 0
 --- !u!114 &2032865109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8648,7 +8736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590f0108c853383429b12ff358656837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedLoop: 0
 --- !u!135 &2032865114
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8728,7 +8815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -9308,12 +9395,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &275145280488073646 stripped
+--- !u!4 &275145280488073646
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3307277925065141020}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380484964}
+  m_LocalRotation: {x: -0, y: -0.6087617, z: -0, w: 0.7933531}
+  m_LocalPosition: {x: 0.00014, y: 0.027919991, z: -0.000000009733142}
+  m_LocalScale: {x: 0.12798153, y: 0.12798153, z: 0.12798153}
+  m_Children:
+  - {fileID: 4033883119232417459}
+  - {fileID: 443508099}
+  m_Father: {fileID: 537205086}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -75, z: 0}
 --- !u!23 &322540296249064200
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10283,80 +10380,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6170457941850100464}
   m_Mesh: {fileID: 3209554841506446676, guid: b0a28fb0ee7c01b488444878952b97e4, type: 3}
---- !u!1001 &3307277925065141020
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 537205086}
-    m_Modifications:
-    - target: {fileID: 1882210606949684652, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_TagString
-      value: LED_Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 2702050101535315976, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_Name
-      value: Led_Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.00014
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.027919991
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.000000009733142
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7933531
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.6087617
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -75
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329370604416680626, guid: 2c575f09ec12c434c92e516833a8af2f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2c575f09ec12c434c92e516833a8af2f, type: 3}
 --- !u!23 &3351574433175969588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10756,12 +10779,28 @@ Transform:
   m_Father: {fileID: 2782931479828380930}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4033883119232417456 stripped
+--- !u!1 &4033883119232417456
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1882210606949684652, guid: 2c575f09ec12c434c92e516833a8af2f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3307277925065141020}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4033883119232417459}
+  - component: {fileID: 4033883119232417463}
+  - component: {fileID: 4033883119232417460}
+  - component: {fileID: 4033883119232417461}
+  - component: {fileID: 4033883119232417457}
+  - component: {fileID: 4033883119232417458}
+  - component: {fileID: 4033883119232417462}
+  m_Layer: 0
+  m_Name: Led wire
+  m_TagString: LED_Light
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!64 &4033883119232417457
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10789,6 +10828,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ledLight: {fileID: 1269457567}
+--- !u!4 &4033883119232417459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033883119232417456}
+  m_LocalRotation: {x: -0.5079914, y: -0.48104456, z: 0.42598101, w: 0.5736559}
+  m_LocalPosition: {x: 0.010099047, y: 0.017770804, z: -0.000100944664}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 275145280488073646}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &4033883119232417460
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033883119232417456}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9821c12236a883149be828513307c316, type: 2}
+  - {fileID: 2100000, guid: bc9d4f225f245de40a339661dde6aa76, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!54 &4033883119232417461
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10819,12 +10912,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
+--- !u!33 &4033883119232417463
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033883119232417456}
+  m_Mesh: {fileID: 8308099948199780036, guid: 880feac68da2d3f4c9b8a422903d15fb, type: 3}
 --- !u!23 &4040983848296734667
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11411,7 +11512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -11576,7 +11677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -11693,7 +11794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -11838,7 +11939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -11969,7 +12070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -12086,7 +12187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -12283,7 +12384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -12375,7 +12476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -12506,7 +12607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -12624,7 +12725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -12755,7 +12856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -12886,7 +12987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -13003,7 +13104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -13148,7 +13249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -13265,7 +13366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -13423,7 +13524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -13527,7 +13628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -13732,7 +13833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -13816,7 +13917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -13934,7 +14035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -14117,7 +14218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -14182,7 +14283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -14313,7 +14414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -14444,7 +14545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -14575,7 +14676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -14803,7 +14904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -14895,7 +14996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -15013,7 +15114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -15144,7 +15245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -15288,7 +15389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -15458,7 +15559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -15537,7 +15638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -15681,7 +15782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -15817,7 +15918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -16082,7 +16183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -16166,7 +16267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -16270,7 +16371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -16428,7 +16529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -16559,7 +16660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -16690,7 +16791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -16808,7 +16909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -16999,7 +17100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -17083,7 +17184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -17162,7 +17263,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5990229346241940933}
   - component: {fileID: 5990229346241940934}
-  - component: {fileID: 5990229346241940935}
   m_Layer: 0
   m_Name: Breadboard
   m_TagString: Untagged
@@ -17198,82 +17298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8d1b213c2bbe34aae251af2735b1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5990229346241940935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5990229346241940932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050476c034020af41a95ec53d5d931dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerRailLeftPositive: 0
-  powerRailLeftNegative: 0
-  powerRailRightPositive: 0
-  powerRailRightNegative: 0
-  A01: 0
-  A02: 0
-  A03: 0
-  A04: 0
-  A05: 0
-  A06: 0
-  A07: 0
-  A08: 0
-  A09: 0
-  A10: 0
-  A11: 0
-  A12: 0
-  A13: 0
-  A14: 0
-  A15: 0
-  A16: 0
-  A17: 0
-  A18: 0
-  A19: 0
-  A20: 0
-  A21: 0
-  A22: 0
-  A23: 0
-  A24: 0
-  A25: 0
-  A26: 0
-  A27: 0
-  A28: 0
-  A29: 0
-  A30: 0
-  F01: 0
-  F02: 0
-  F03: 0
-  F04: 0
-  F05: 0
-  F06: 0
-  F07: 0
-  F08: 0
-  F09: 0
-  F10: 0
-  F11: 0
-  F12: 0
-  F13: 0
-  F14: 0
-  F15: 0
-  F16: 0
-  F17: 0
-  F18: 0
-  F19: 0
-  F20: 0
-  F21: 0
-  F22: 0
-  F23: 0
-  F24: 0
-  F25: 0
-  F26: 0
-  F27: 0
-  F28: 0
-  F29: 0
-  F30: 0
 --- !u!4 &5990229346253720920
 Transform:
   m_ObjectHideFlags: 0
@@ -17336,7 +17360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -17440,7 +17464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -17737,7 +17761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -17860,7 +17884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -17939,7 +17963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -18083,7 +18107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -18201,7 +18225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -18384,7 +18408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -18463,7 +18487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -18646,7 +18670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -18725,7 +18749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -18842,7 +18866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -19039,7 +19063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -19131,7 +19155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -19262,7 +19286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -19366,7 +19390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -19511,7 +19535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -19628,7 +19652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -19759,7 +19783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -19890,7 +19914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0
@@ -20021,7 +20045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positivePassThrough: 0
   negativePassThrough: 0
-  closedLoop: 0
+  simulationActiveState: 0
   voltage: 0
   current: 0
   resistance: 0

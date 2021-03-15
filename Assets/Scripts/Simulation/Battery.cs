@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Battery : MonoBehaviour
 {
-    public bool closedLoop = false;
+    //public bool closedLoop = false;
     /*private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Conduction>())
@@ -18,7 +18,7 @@ public class Battery : MonoBehaviour
                 closedLoop = false;
             }
         }
-    }*/
+    }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.GetComponent<Conduction>())
@@ -32,5 +32,5 @@ public class Battery : MonoBehaviour
         {
             closedLoop = false;
         }
-    }
+    }*/
 }

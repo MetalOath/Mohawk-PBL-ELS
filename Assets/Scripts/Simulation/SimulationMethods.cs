@@ -5,33 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SimulationMethods : MonoBehaviour
 {
-    public GameObject breadboard, multimeter, multimeterScreen, resistor, battery, led, ledLight;
+    public bool simulationActiveState = false;
     public void PlayPauseSimulation()
     {
-        /*if (breadboard.activeInHierarchy && resistor.activeInHierarchy && led.activeInHierarchy && battery.activeInHierarchy)
-        {
-            ledLight.SetActive(true);
-        }
-        else
-        {
-            ledLight.SetActive(false);
-        }
-
-        if (breadboard.activeInHierarchy && battery.activeInHierarchy)
-        {
-            multimeterScreen.SetActive(true);
-        }
-        else
-        {
-            multimeterScreen.SetActive(false);
-        }*/
+        SimulationToggle();
     }
     public void ResetSimulation()
     {
         SceneManager.LoadScene("_Main_Scene");
     }
-    public void ConductCurrent()
+    private void SimulationToggle()
     {
-
+        simulationActiveState = !simulationActiveState;
     }
 }
