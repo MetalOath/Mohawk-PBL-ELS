@@ -14,6 +14,10 @@ public class SimulationMethods : MonoBehaviour
     {
         SceneManager.LoadScene("_Main_Scene");
     }
+    public void SimulationStop()
+    {
+        simulationActiveState = false;
+    }
     private void SimulationToggle()
     {
         simulationActiveState = !simulationActiveState;
