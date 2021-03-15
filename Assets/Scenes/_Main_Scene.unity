@@ -4660,7 +4660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centre: {fileID: 866077149}
-  ScrollSpeed: 10
+  ScrollSpeed: -2
   OrbitSpeed: 2
   smoothness: 0.1
   minDistance: 1
@@ -4681,7 +4681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centre: {fileID: 866077149}
-  ScrollSpeed: 10
+  ScrollSpeed: -2
   OrbitSpeed: 2
   smoothness: 0.1
   minDistance: 1
