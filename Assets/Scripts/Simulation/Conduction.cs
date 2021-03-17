@@ -10,7 +10,7 @@ public class Conduction : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        simulationActiveState = GameObject.Find("Workspace").GetComponent<SimulationMethods>().simulationActiveState;
+        simulationActiveState = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>().simulationActiveState;
         if (simulationActiveState == true)
         {
             ClosedLoopRoutine(other);
@@ -32,7 +32,7 @@ public class Conduction : MonoBehaviour
             negativePassThrough = true;
             negativeNumberInSeries += 1;
         }
-        if (other.gameObject.tag == "Resistor")
+        /*if (other.gameObject.tag == "Resistor")
         {
 
         }
@@ -43,7 +43,7 @@ public class Conduction : MonoBehaviour
         if (other.gameObject.tag == "Wire")
         {
 
-        }
+        }*/
         if (other.gameObject.GetComponent<Conduction>())
         {
             //Negative Check

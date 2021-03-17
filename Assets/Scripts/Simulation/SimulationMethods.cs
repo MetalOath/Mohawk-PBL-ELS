@@ -6,20 +6,16 @@ using UnityEngine.SceneManagement;
 public class SimulationMethods : MonoBehaviour
 {
     public bool simulationActiveState = false;
-    public void PlayPauseSimulation()
+    public void SimulationPlay()
     {
-        SimulationToggle();
-    }
-    public void ResetSimulation()
-    {
-        SceneManager.LoadScene("_Main_Scene");
+        simulationActiveState = true;
     }
     public void SimulationStop()
     {
         simulationActiveState = false;
     }
-    private void SimulationToggle()
+    public void SimulationReset()
     {
-        simulationActiveState = !simulationActiveState;
+        SceneManager.LoadScene("_Main_Scene");
     }
 }
