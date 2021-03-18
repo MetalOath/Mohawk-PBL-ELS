@@ -4,123 +4,35 @@ using UnityEngine;
 
 public class Conduction : MonoBehaviour
 {
-    public bool positivePassThrough = false, negativePassThrough = false;
+    public bool positivePassThrough = false, negativePassThrough = false, simulationActiveState = false;
     public float voltage, current, resistance;
-    private void OnCollisionEnter(Collision collision)
-    {
-        //Debug.Log("Collision Enter!");
-        CheckCollisionChange(collision);
+    public int positiveNumberInSeries, negativeNumberInSeries;
 
-    }
-    private void OnCollisionStay(Collision collision)
-    {
-        CheckCollisionChange(collision);
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        //Debug.Log("Collision Exit!");
-        if (collision.gameObject.tag == "Power_Source")
-        {
-
-        }
-        if (collision.gameObject.tag == "Resistor")
-        {
-
-        }
-        if (collision.gameObject.tag == "LED_Light")
-        {
-
-        }
-        if (collision.gameObject.tag == "Wire")
-        {
-
-        }
-        CheckCollisionChange(collision);
-    }
-    private void CheckCollisionChange(Collision collision)
-    {
-        if (collision.gameObject.tag == "Power_Source_Positive")
-        {
-            positivePassThrough = true;
-        }
-        else
-        {
-            //positivePassThrough = false;
-        }
-        if (collision.gameObject.tag == "Power_Source_Negative")
-        {
-            negativePassThrough = true;
-        }
-        else
-        {
-            //negativePassThrough = false;
-        }
-        if (collision.gameObject.tag == "Resistor")
-        {
-
-        }
-        if (collision.gameObject.tag == "LED_Light")
-        {
-
-        }
-        if (collision.gameObject.tag == "Wire")
-        {
-
-        }
-        if (collision.gameObject.GetComponent<Conduction>())
-        {
-            if (collision.gameObject.GetComponent<Conduction>().negativePassThrough == true)
-            {
-                negativePassThrough = true;
-            }
-            else
-            {
-                //negativePassThrough = false;
-            }
-            if (collision.gameObject.GetComponent<Conduction>().positivePassThrough == true)
-            {
-                positivePassThrough = true;
-            }
-            else
-            {
-                //positivePassThrough = false;
-            }
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        CheckTriggerChange(other);
-
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        CheckTriggerChange(other);
-
-    }
     private void OnTriggerStay(Collider other)
     {
-        CheckTriggerChange(other);
-
+        simulationActiveState = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>().simulationActiveState;
+        if (simulationActiveState == true)
+        {
+            ClosedLoopRoutine(other);
+        }
+        else if (simulationActiveState == false)
+        {
+            OpenLoopRoutine();
+        }
     }
-    private void CheckTriggerChange(Collider other)
+    private void ClosedLoopRoutine(Collider other)
     {
-        if (other.gameObject.tag == "Power_Source_Positive")
+        if (other.gameObject.tag == "Power_Source_Positive" && positiveNumberInSeries == 0)
         {
             positivePassThrough = true;
+            positiveNumberInSeries += 1;
         }
-        else
-        {
-            //positivePassThrough = false;
-        }
-        if (other.gameObject.tag == "Power_Source_Negative")
+        if (other.gameObject.tag == "Power_Source_Negative" && negativeNumberInSeries == 0)
         {
             negativePassThrough = true;
+            negativeNumberInSeries += 1;
         }
-        else
-        {
-            //negativePassThrough = false;
-        }
-        if (other.gameObject.tag == "Resistor")
+        /*if (other.gameObject.tag == "Resistor")
         {
 
         }
@@ -131,26 +43,35 @@ public class Conduction : MonoBehaviour
         if (other.gameObject.tag == "Wire")
         {
 
-        }
+        }*/
         if (other.gameObject.GetComponent<Conduction>())
         {
-            if (other.gameObject.GetComponent<Conduction>().negativePassThrough == true)
+            //Negative Check
+            if (other.gameObject.GetComponent<Conduction>().negativePassThrough == true && negativePassThrough == false)
             {
                 negativePassThrough = true;
+                if (negativeNumberInSeries == 0 && other.gameObject.GetComponent<Conduction>().negativeNumberInSeries != 0)
+                {
+                    negativeNumberInSeries = other.gameObject.GetComponent<Conduction>().negativeNumberInSeries + 1;
+                }
             }
-            else
-            {
-                //negativePassThrough = false;
-            }
-            if (other.gameObject.GetComponent<Conduction>().positivePassThrough == true)
+            //Positive Check
+            if (other.gameObject.GetComponent<Conduction>().positivePassThrough == true && positivePassThrough == false)
             {
                 positivePassThrough = true;
-            }
-            else
-            {
-                //positivePassThrough = false;
+                if (positiveNumberInSeries == 0 && other.gameObject.GetComponent<Conduction>().positiveNumberInSeries != 0)
+                {
+                    positiveNumberInSeries = other.gameObject.GetComponent<Conduction>().positiveNumberInSeries + 1;
+                }
             }
         }
+    }
+    private void OpenLoopRoutine()
+    {
+        negativeNumberInSeries = 0;
+        negativePassThrough = false;
+        positiveNumberInSeries = 0;
+        positivePassThrough = false;
     }
     private void CurrentCalculator()
     {
