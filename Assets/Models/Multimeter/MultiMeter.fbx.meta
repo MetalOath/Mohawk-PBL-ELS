@@ -1,24 +1,34 @@
 fileFormatVersion: 2
-guid: 19396701a57f2924e81eac810ca669bf
+guid: d7fad5de9b6b3b74d9e8040e4dc99a7a
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 19301
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 01 - Default
-    second: {fileID: 2100000, guid: 00d59736570fd9f43ae2541ec0ff609b, type: 2}
+      name: Material #14
+    second: {fileID: 2100000, guid: 2c030b96a85d121429d08219a9f634a3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Cover
-    second: {fileID: 2100000, guid: eceb9db2256ef6444990944c35dd0001, type: 2}
+      name: Material #27
+    second: {fileID: 2100000, guid: 1c0602fdd668b134aa3a35fb59b90e2e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mat win
-    second: {fileID: 2100000, guid: e4a7be5401f2a07478753a574caa7606, type: 2}
+      name: Material #28
+    second: {fileID: 2100000, guid: eed9af2d7e3e31143ad5a9261c0d0620, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #42
+    second: {fileID: 2100000, guid: 7ae12aa9412c7724ab8ba5a529e87b65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 971b68ebb8726ca48a2447f02a45dd00, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -35,7 +45,7 @@ ModelImporter:
       name: standart metal
     second: {fileID: 2100000, guid: cf52dfe60ad029341b079396fd928b06, type: 2}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -79,7 +89,6 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -89,9 +98,6 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 1
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -125,7 +131,6 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
