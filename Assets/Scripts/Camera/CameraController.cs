@@ -38,15 +38,13 @@ public class CameraController : MonoBehaviour
 
                 //OR with Tag
 
-                //if (raycastHit.collider.CompareTag("ExampleTag"))
-                //{
-                //    Debug.Log("Example Clicked");
-                //}
-
-                mainCamera.GetComponent<OrbitCameraMobile>().Centre = gameObject.transform;
-                mainCamera.GetComponent<OrbitCameraMobile>().GetObjectInSight();
-                editModeButton.SetActive(false);
-                zoomOutButton.SetActive(true);
+                if (raycastHit.collider.CompareTag("Interactive"))
+                {
+                    mainCamera.GetComponent<OrbitCameraMobile>().Centre = raycastHit.collider.transform;
+                    mainCamera.GetComponent<OrbitCameraMobile>().GetObjectInSight();
+                    editModeButton.SetActive(false);
+                    zoomOutButton.SetActive(true);
+                }
             }
         }
     }
