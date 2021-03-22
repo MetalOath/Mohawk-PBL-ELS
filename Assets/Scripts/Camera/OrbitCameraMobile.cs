@@ -39,14 +39,16 @@ public class OrbitCameraMobile : OrbitCamera
                     break;
 
                 // If the delta vectors are similar enough then is it a group pan otherwise it is a scale movement
-                if (GroupedFingers())
+                /*if (GroupedFingers())
                 {
                     PerformPan(Input.GetTouch(0).deltaPosition.x * 0.01f, Input.GetTouch(0).deltaPosition.y * 0.02f);
                 }
                 else
                 {
                     PerformZoom(FingerToFingerDelta() * 0.002f);
-                }
+                }*/
+                //Only do zoom
+                PerformZoom(FingerToFingerDelta() * 0.002f);
                 break;
             case 3:
                 if (!receives3FingerInput)

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ChangeCameraFocus : MonoBehaviour
 {
+    private GameObject mainCamera;
+    private void Start()
+    {
+        mainCamera = GameObject.Find("Main Camera");
+    }
     void Update()
     {
         if ((Input.touchCount > 0) && (Input.GetTouch(0).phase == TouchPhase.Began))
@@ -12,7 +17,7 @@ public class ChangeCameraFocus : MonoBehaviour
             RaycastHit raycastHit;
             if (Physics.Raycast(raycast, out raycastHit))
             {
-                Debug.Log("Something Hit");
+                //Debug.Log("Something Hit");
                 //if (raycastHit.collider.name == "Soccer")
                 //{
                 //    Debug.Log("Soccer Ball clicked");
@@ -24,6 +29,8 @@ public class ChangeCameraFocus : MonoBehaviour
                 //{
                 //    Debug.Log("Soccer Ball clicked");
                 //}
+
+                mainCamera.GetComponent<OrbitCameraMobile>().Centre = gameObject.transform;
             }
         }
     }
