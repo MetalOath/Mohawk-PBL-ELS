@@ -47,11 +47,28 @@ public class CameraController : MonoBehaviour
                 }
             }
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray raycast = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit raycastHit;
+            if (Physics.Raycast(raycast, out raycastHit))
+            {
+                if (raycastHit.collider.CompareTag("Interactive"))
+                {
+                    mainCamera.GetComponent<OrbitCameraDesktop>().Centre = raycastHit.collider.transform;
+                    mainCamera.GetComponent<OrbitCameraDesktop>().GetObjectInSight();
+                    editModeButton.SetActive(false);
+                    zoomOutButton.SetActive(true);
+                }
+            }
+        }
     }
     public void ZoomToWorkspace()
     {
         mainCamera.GetComponent<OrbitCameraMobile>().Centre = workspace.transform;
         mainCamera.GetComponent<OrbitCameraMobile>().GetObjectInSight();
+        mainCamera.GetComponent<OrbitCameraDesktop>().Centre = workspace.transform;
+        mainCamera.GetComponent<OrbitCameraDesktop>().GetObjectInSight();
         editModeButton.SetActive(true);
         zoomOutButton.SetActive(false);
     }
