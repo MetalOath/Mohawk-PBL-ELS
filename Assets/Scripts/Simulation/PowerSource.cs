@@ -2,43 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/*
+* Typical 9 volt battery has 1 amps
+*/
 public class PowerSource : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int powerSourceCurrent = 1;
+    public int getPowerSourceCurrent()
     {
-        power = false;
-        powerSourceVoltage = 0;
-
-        Debug.Log("==Start Method==");
+        return powerSourceCurrent;
     }
 
-    private bool power { get; set; }
-
-    public int powerSourceVoltage { get; set; }
-
-    public GameObject Battery { get; set; }
-
-    /*
-    * 
-    */
-    public void powerToggle()
+    [SerializeField] private int powerSourceVoltage = 9;
+    public int getPowerSourceVoltage()
     {
-        if (power == true)
-        {
-            power = false;
-        }
-        else
-        {
-            power = true;
-        }
+        return powerSourceVoltage;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log("==Update== " + Battery.name);
-    }
-
 }

@@ -2,35 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Typical 9 volt battery has 1 amps
+*/
 public class Battery : MonoBehaviour
 {
-    //public bool closedLoop = false;
-    /*private void OnTriggerEnter(Collider other)
+
+    [SerializeField] private float powerSourceCurrent = 1;
+    public float getPowerSourceCurrent()
     {
-        if (other.gameObject.GetComponent<Conduction>())
-        {
-            if (other.gameObject.GetComponent<Conduction>().positivePassThrough && other.gameObject.GetComponent<Conduction>().negativePassThrough)
-            {
-                closedLoop = true;
-            }
-            else
-            {
-                closedLoop = false;
-            }
-        }
+        return powerSourceCurrent;
     }
-    private void OnTriggerStay(Collider other)
+
+    [SerializeField] private float powerSourceVoltage = 9;
+    public float getPowerSourceVoltage()
     {
-        if (other.gameObject.GetComponent<Conduction>())
-        {
-            if (other.gameObject.GetComponent<Conduction>().positivePassThrough && other.gameObject.GetComponent<Conduction>().negativePassThrough)
-            {
-                closedLoop = true;
-            }
-        }
-        else
-        {
-            closedLoop = false;
-        }
-    }*/
+        return powerSourceVoltage;
+    }
 }

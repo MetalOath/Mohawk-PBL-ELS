@@ -32,19 +32,24 @@ public class Conduction : MonoBehaviour
     }
 
     /*
-    *
-    *
+    * The circuit is connnected. Initialize the variables.
     */
     private void ClosedLoopRoutine(Collider other)
     {
         // instance of GameObject that is being collided with 
         GameObject otherObject = other.gameObject;
 
+        // Red wire must touch positive side of power source
         if (otherObject.tag == "Power_Source_Positive" && positiveNumberInSeries == 0)
         {
             positivePassThrough = true;
             positiveNumberInSeries += 1;
+
+            current = otherObject.GetComponent<Battery>().getPowerSourceCurrent();
+            voltage = otherObject.GetComponent<Battery>().getPowerSourceVoltage();
+
         }
+        // Black wire must touch negative side of power source
         if (otherObject.tag == "Power_Source_Negative" && negativeNumberInSeries == 0)
         {
             negativePassThrough = true;
@@ -104,15 +109,31 @@ public class Conduction : MonoBehaviour
         }
     }
 
+    /*
+    * The circuit is disconnected. Reset all variables.
+    */
     private void OpenLoopRoutine()
     {
         negativeNumberInSeries = 0;
         negativePassThrough = false;
         positiveNumberInSeries = 0;
         positivePassThrough = false;
+        voltage = 0;
+        current = 0;
     }
 
+    /*
+    * Gets altered by resistor 
+    */
     private void CurrentCalculator()
+    {
+
+    }
+
+    /*
+    * Don't we need this method, this get altered by capacitor?
+    */
+    private void VoltageCalculator()
     {
 
     }
