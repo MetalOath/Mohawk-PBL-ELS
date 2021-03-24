@@ -47,7 +47,7 @@ public class CameraController : MonoBehaviour
                 }
             }
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonUp(0))
         {
             Ray raycast = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastHit;
