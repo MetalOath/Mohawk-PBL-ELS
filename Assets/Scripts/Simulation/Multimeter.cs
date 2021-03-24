@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Multimeter : MonoBehaviour
 {
-    private float redVolt, redAmp, blackVolt, blackAmp;
+    private float redVolt, redAmp, blackVolt, blackAmp, displayedVoltage, displayedAmp;
      
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,7 @@ public class Multimeter : MonoBehaviour
     public void calcAmpBetweenTwoPoints(){
         
     }
+
     public void calcVoltBetweenTwoPoints(){
         
     }

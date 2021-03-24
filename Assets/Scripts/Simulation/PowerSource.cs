@@ -7,7 +7,7 @@ using UnityEngine;
 */
 public class PowerSource : MonoBehaviour
 {
-    public int powerSourceCurrent = 1;
+    [SerializeField] private int powerSourceCurrent = 1;
     public int getPowerSourceCurrent()
     {
         return powerSourceCurrent;

@@ -45,8 +45,8 @@ public class Conduction : MonoBehaviour
             positivePassThrough = true;
             positiveNumberInSeries += 1;
 
-            current = otherObject.GetComponent<Battery>().getPowerSourceCurrent();
-            voltage = otherObject.GetComponent<Battery>().getPowerSourceVoltage();
+            current = otherObject.GetComponent<PowerSource>().getPowerSourceCurrent();
+            voltage = otherObject.GetComponent<PowerSource>().getPowerSourceVoltage();
 
         }
         // Black wire must touch negative side of power source
