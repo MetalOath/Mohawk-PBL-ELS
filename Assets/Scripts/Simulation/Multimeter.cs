@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Multimeter : MonoBehaviour
 {
@@ -9,13 +10,13 @@ public class Multimeter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        displayValues();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        displayValues();
     }
 
     public void calcAmpBetweenTwoPoints(){
@@ -24,5 +25,9 @@ public class Multimeter : MonoBehaviour
 
     public void calcVoltBetweenTwoPoints(){
         
+    }
+
+    public void displayValues(){
+        GameObject.Find("TMP Object").GetComponent<TextMeshProUGUI>().text = "text: " + displayedAmp;
     }
 }
