@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class OrbitCameraDesktop : OrbitCamera
 {
-    public bool allowMiddleMouse;
-    public bool allowLeftMouse;
-    public bool allowRightMouse;
-    public bool allowScroll;
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
     private void OnEnable()
@@ -16,9 +12,20 @@ public class OrbitCameraDesktop : OrbitCamera
     }
 #endif
 
+    public bool allowMiddleMouse;
+    public bool allowLeftMouse;
+    public bool allowRightMouse;
+    public bool allowScroll;
+
+    private float touchTime;
 
     public override void UserInput()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            touchTime = Time.time;
+        }
+
         if (allowLeftMouse && Input.GetMouseButton(0))
         {
             PerformRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
@@ -37,6 +44,27 @@ public class OrbitCameraDesktop : OrbitCamera
         if (allowScroll && Input.GetAxis("Mouse ScrollWheel") != 0)
         {
             PerformZoom(Input.GetAxis("Mouse ScrollWheel"));
+        }
+
+        if (currentGameMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
+        {
+            ViewModeZoomToComponentDesktop();
+        }
+    }
+
+    private void ViewModeZoomToComponentDesktop()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            Ray raycast = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit raycastHit;
+            if (Physics.Raycast(raycast, out raycastHit))
+            {
+                if (raycastHit.collider.CompareTag("Interactive"))
+                {
+                    ViewModeZoomToComponent(raycastHit.collider.transform);
+                }
+            }
         }
     }
 }
