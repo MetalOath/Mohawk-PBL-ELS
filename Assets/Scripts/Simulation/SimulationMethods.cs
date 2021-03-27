@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SimulationMethods : MonoBehaviour
 {
     public bool simulationActiveState = false;
-    public string currentGameMode = "ViewMode";
+    public string currentSimulationMode = "ViewMode";
     public void SimulationPlay()
     {
         simulationActiveState = true;
@@ -19,19 +19,16 @@ public class SimulationMethods : MonoBehaviour
     {
         SceneManager.LoadScene("_Main_Scene");
     }
-    public void GetCurrentGameMode()
+    public void ActivateViewMode()
     {
-        if (GameObject.Find("ViewMode Canvas").activeInHierarchy)
-        {
-            currentGameMode = "ViewMode";
-        }
-        if (GameObject.Find("EditMode Canvas").activeInHierarchy)
-        {
-            currentGameMode = "EditMode";
-        }
-        if (GameObject.Find("ConnectMode Canvas").activeInHierarchy)
-        {
-            currentGameMode = "ConnectMode";
-        }
+        currentSimulationMode = "ViewMode";
+    }
+    public void ActivateEditMode()
+    {
+        currentSimulationMode = "EditMode";
+    }
+    public void ActivateConnectMode()
+    {
+        currentSimulationMode = "ConnectMode";
     }
 }
