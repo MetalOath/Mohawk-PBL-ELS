@@ -10,6 +10,7 @@ TagManager:
   - Power_Source_Positive
   - Power_Source_Negative
   - Interactive
+  - UI_Canvas
   layers:
   - Default
   - TransparentFX
