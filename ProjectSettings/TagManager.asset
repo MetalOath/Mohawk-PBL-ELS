@@ -9,6 +9,7 @@ TagManager:
   - Wire
   - Power_Source_Positive
   - Power_Source_Negative
+  - Interactive
   layers:
   - Default
   - TransparentFX
