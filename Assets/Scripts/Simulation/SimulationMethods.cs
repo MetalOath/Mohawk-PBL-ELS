@@ -31,4 +31,8 @@ public class SimulationMethods : MonoBehaviour
     {
         currentSimulationMode = "ConnectMode";
     }
+    public void QuitSimulation()
+    {
+        Application.Quit();
+    }
 }
