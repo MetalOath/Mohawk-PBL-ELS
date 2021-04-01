@@ -45,7 +45,6 @@ public class Multimeter : MonoBehaviour
                 redAmp = otherObjectConduction.current;
             }
         }
-        
     }
     public void displayValues(){
         calcAmpBetweenTwoPoints();

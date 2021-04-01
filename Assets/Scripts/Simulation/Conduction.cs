@@ -20,6 +20,8 @@ public class Conduction : MonoBehaviour
      */
     private void OnTriggerStay(Collider other)
     {
+        // TO DO: We used the battery cables for the multimeter and its now seeing the simulation 
+        // as an Open loop and will not pass the values for the multimeter to read. 
         simulationActiveState = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>().simulationActiveState;
         if (simulationActiveState == true)
         {
@@ -82,6 +84,7 @@ public class Conduction : MonoBehaviour
 
         //}
 
+        Debug.Log("closed loop");
         // instance of conduction property of "other" object
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
         if (otherObjectConduction)
@@ -100,7 +103,7 @@ public class Conduction : MonoBehaviour
                 Debug.Log(positiveNumberInSeries + ": " + current);
                 Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.voltage);
                 Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.current);
-            // }
+            //}
             //Negative Check
             if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false)
             {
@@ -120,6 +123,7 @@ public class Conduction : MonoBehaviour
                     positiveNumberInSeries = otherObjectConduction.positiveNumberInSeries + 1;
                 }
             }
+
         }
     }
 
@@ -128,6 +132,7 @@ public class Conduction : MonoBehaviour
     */
     private void OpenLoopRoutine()
     {
+        Debug.Log("open loop");
         negativeNumberInSeries = 0;
         negativePassThrough = false;
         positiveNumberInSeries = 0;
