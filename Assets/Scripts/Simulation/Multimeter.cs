@@ -20,15 +20,37 @@ public class Multimeter : MonoBehaviour
     }
 
     public void calcAmpBetweenTwoPoints(){
-        
+        displayedAmp = redAmp + blackAmp;  
     }
 
     public void calcVoltBetweenTwoPoints(){
+        displayedVoltage = redVolt + blackVolt; 
+    }
+        
+    // TO DO LATER: 
+        // if the circuit is open, either the black or red wire values should be 0.
+     private void OnTriggerStay(Collider other)
+    {
+        // instance of GameObject that is being collided with 
+        GameObject otherObject = other.gameObject;
+        Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
+        if (otherObjectConduction)
+        {
+            if(otherObject.tag == "multiBlackCable") {
+                blackVolt = otherObjectConduction.voltage;
+                blackAmp = otherObjectConduction.current;
+            }
+            if(otherObject.tag =="multiRedCable"){
+                redVolt = otherObjectConduction.voltage;
+                redAmp = otherObjectConduction.current;
+            }
+        }
         
     }
-
     public void displayValues(){
-        
+        calcAmpBetweenTwoPoints();
+        calcVoltBetweenTwoPoints();
         GameObject.FindWithTag("TextTMP").GetComponent<TextMeshProUGUI>().text = "Amp: " + displayedAmp + "\n Voltage: " + displayedVoltage;
+
     }
 }

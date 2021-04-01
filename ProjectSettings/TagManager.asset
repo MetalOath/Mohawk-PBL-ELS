@@ -10,6 +10,8 @@ TagManager:
   - 9VBatteryPositive
   - 9VBatteryNegative
   - TextTMP
+  - multiBlackCable
+  - multiRedCable
   layers:
   - Default
   - TransparentFX
