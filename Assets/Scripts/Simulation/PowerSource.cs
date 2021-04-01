@@ -6,15 +6,31 @@ using UnityEngine;
 * Typical 9 volt battery has 1 amps
 */
 public class PowerSource : MonoBehaviour
-{
-    [SerializeField] private int powerSourceCurrent = 1;
-    public int getPowerSourceCurrent()
+{    
+    [SerializeField] private float powerSourceCurrent;
+    [SerializeField] private float powerSourceVoltage;
+    void Start(){
+        PowerSource ps = gameObject.GetComponent<PowerSource>();
+        string gt = ps.tag;
+        Debug.Log(gt);
+        if(gt == "9VBatteryPositive" || gt == "9VBatteryNegative")
+        {
+        powerSourceCurrent = 1f;
+        powerSourceVoltage = 9f;
+        }
+        else if(gt == "PotatoBattery"){
+            // do something
+        }else if(gt == "DCPowerSupplyPositive" || gt == "DCPowerSupplyNegative"){
+            // do something
+        }
+    }
+    public float getPowerSourceCurrent()
     {
         return powerSourceCurrent;
     }
 
-    [SerializeField] private int powerSourceVoltage = 9;
-    public int getPowerSourceVoltage()
+   
+    public float getPowerSourceVoltage()
     {
         return powerSourceVoltage;
     }

@@ -11,7 +11,7 @@ public class Multimeter : MonoBehaviour
     void Start()
     {
         displayValues();
-    }
+    } 
 
     // Update is called once per frame
     void Update()
@@ -28,6 +28,7 @@ public class Multimeter : MonoBehaviour
     }
 
     public void displayValues(){
-        GameObject.Find("TMP Object").GetComponent<TextMeshProUGUI>().text = "text: " + displayedAmp;
+        
+        GameObject.FindWithTag("TextTMP").GetComponent<TextMeshProUGUI>().text = "Amp: " + displayedAmp + "\n Voltage: " + displayedVoltage;
     }
 }

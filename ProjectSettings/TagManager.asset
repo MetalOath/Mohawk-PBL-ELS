@@ -7,8 +7,9 @@ TagManager:
   - Resistor
   - LED_Light
   - Wire
-  - Power_Source_Positive
-  - Power_Source_Negative
+  - 9VBatteryPositive
+  - 9VBatteryNegative
+  - TextTMP
   layers:
   - Default
   - TransparentFX

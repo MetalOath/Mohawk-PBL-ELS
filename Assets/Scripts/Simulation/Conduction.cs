@@ -86,7 +86,16 @@ public class Conduction : MonoBehaviour
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
         if (otherObjectConduction)
         {
-
+            if(positiveNumberInSeries < otherObjectConduction.positiveNumberInSeries){
+                if(voltage != 0 && otherObjectConduction.voltage == 0)
+                {
+                    otherObjectConduction.voltage = voltage;
+                }
+                if(current != 0 && otherObjectConduction.current == 0)
+                {
+                    otherObjectConduction.current = current;
+                }
+            }
             //Negative Check
             if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false)
             {
@@ -121,7 +130,6 @@ public class Conduction : MonoBehaviour
         voltage = 0;
         current = 0;
     }
-
     /*
     * Gets altered by resistor 
     */
