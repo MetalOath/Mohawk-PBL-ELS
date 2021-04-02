@@ -99,10 +99,10 @@ public class Conduction : MonoBehaviour
                 {
                     otherObjectConduction.current = current;
                 }
-                Debug.Log("Voltage: " + positiveNumberInSeries + ": " + voltage);
-                Debug.Log("Current: " + positiveNumberInSeries + ": " + current);
-                Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.voltage);
-                Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.current);
+                // Debug.Log("Voltage: " + positiveNumberInSeries + ": " + voltage);
+                // Debug.Log("Current: " + positiveNumberInSeries + ": " + current);
+                // Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.voltage);
+                // Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.current);
             //}
             bool multimeterCheck = otherObject.tag == "multiBlackCable" || otherObject.tag == "multiRedCable";
             //Negative Check

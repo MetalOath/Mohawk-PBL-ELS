@@ -25,6 +25,7 @@ public class Multimeter : MonoBehaviour
 
     public void calcVoltBetweenTwoPoints(){
         displayedVoltage = redVolt + blackVolt; 
+        
     }
         
     // TO DO LATER: 
@@ -34,6 +35,7 @@ public class Multimeter : MonoBehaviour
         // instance of GameObject that is being collided with 
         GameObject otherObject = other.gameObject;
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
+
         if (otherObjectConduction)
         {
             if(otherObject.tag == "multiBlackCable") {
@@ -41,12 +43,15 @@ public class Multimeter : MonoBehaviour
                 blackAmp = otherObjectConduction.current;
             }
             if(otherObject.tag =="multiRedCable"){
+                Debug.Log("Reached red cable if statement");
                 redVolt = otherObjectConduction.voltage;
                 redAmp = otherObjectConduction.current;
             }
         }
     }
     public void displayValues(){
+        // Debug.Log("BLACKVOLT DISPLAY: " + blackVolt + "BLACKAMP DISPLAY :  " + blackAmp);
+        // Debug.Log("redVolt DISPLAY: " + redVolt + "REDAMP DISPLAY: " + redAmp);
         calcAmpBetweenTwoPoints();
         calcVoltBetweenTwoPoints();
         GameObject.FindWithTag("TextTMP").GetComponent<TextMeshProUGUI>().text = "Amp: " + displayedAmp + "\n Voltage: " + displayedVoltage;
