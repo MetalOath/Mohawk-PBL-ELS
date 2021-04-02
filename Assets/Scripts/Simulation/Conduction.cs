@@ -42,7 +42,7 @@ public class Conduction : MonoBehaviour
         GameObject otherObject = other.gameObject;
 
         // Red wire must touch positive side of power source
-        if (otherObject.tag == "Power_Source_Positive" && positiveNumberInSeries == 0)
+        if (otherObject.tag == "9VBatteryPositive" && positiveNumberInSeries == 0)
         {
             positivePassThrough = true;
             positiveNumberInSeries += 1;
@@ -52,7 +52,7 @@ public class Conduction : MonoBehaviour
 
         }
         // Black wire must touch negative side of power source
-        if (otherObject.tag == "Power_Source_Negative" && negativeNumberInSeries == 0)
+        if (otherObject.tag == "9VBatteryNegative" && negativeNumberInSeries == 0)
         {
             negativePassThrough = true;
             negativeNumberInSeries += 1;
@@ -84,7 +84,7 @@ public class Conduction : MonoBehaviour
 
         //}
 
-        Debug.Log("closed loop");
+        //Debug.Log("closed loop");
         // instance of conduction property of "other" object
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
         if (otherObjectConduction)
@@ -99,13 +99,14 @@ public class Conduction : MonoBehaviour
                 {
                     otherObjectConduction.current = current;
                 }
-                Debug.Log(positiveNumberInSeries + ": " + voltage);
-                Debug.Log(positiveNumberInSeries + ": " + current);
+                Debug.Log("Voltage: " + positiveNumberInSeries + ": " + voltage);
+                Debug.Log("Current: " + positiveNumberInSeries + ": " + current);
                 Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.voltage);
                 Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.current);
             //}
+            bool multimeterCheck = otherObject.tag == "multiBlackCable" || otherObject.tag == "multiRedCable";
             //Negative Check
-            if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false)
+            if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false && !multimeterCheck)
             {
                 negativePassThrough = true;
                 if (negativeNumberInSeries == 0 && otherObjectConduction.negativeNumberInSeries != 0)
@@ -115,7 +116,7 @@ public class Conduction : MonoBehaviour
             }
 
             //Positive Check
-            if (otherObjectConduction.positivePassThrough == true && positivePassThrough == false)
+            if (otherObjectConduction.positivePassThrough == true && positivePassThrough == false && !multimeterCheck)
             {
                 positivePassThrough = true;
                 if (positiveNumberInSeries == 0 && otherObjectConduction.positiveNumberInSeries != 0)
@@ -132,7 +133,7 @@ public class Conduction : MonoBehaviour
     */
     private void OpenLoopRoutine()
     {
-        Debug.Log("open loop");
+        //Debug.Log("open loop");
         negativeNumberInSeries = 0;
         negativePassThrough = false;
         positiveNumberInSeries = 0;
