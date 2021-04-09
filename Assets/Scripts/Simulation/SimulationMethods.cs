@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
-public class SimulationMethods : MonoBehaviour
+public class SimulationMethods : Simulation
 {
-    public bool simulationActiveState = false;
-    public string currentSimulationMode = "ViewMode";
     public void SimulationPlay()
     {
         simulationActiveState = true;
@@ -22,14 +21,18 @@ public class SimulationMethods : MonoBehaviour
     public void ActivateViewMode()
     {
         currentSimulationMode = "ViewMode";
+        GameObject.Find("Mode Text (TMP)").GetComponent<TextMeshProUGUI>().text = "View Mode";
     }
     public void ActivateEditMode()
     {
         currentSimulationMode = "EditMode";
+        GameObject.Find("Mode Text (TMP)").GetComponent<TextMeshProUGUI>().text = "Edit Mode";
     }
     public void ActivateConnectMode()
     {
         currentSimulationMode = "ConnectMode";
+        GameObject.Find("Mode Text (TMP)").GetComponent<TextMeshProUGUI>().text = "Connect Mode";
+        //DeactivateNonConnectorColliders();
     }
     public void QuitSimulation()
     {

@@ -30,6 +30,16 @@ public class OrbitCameraEventMethods : OrbitCamera
                 {
                     ViewModeZoomToComponentMobile();
                 }
+
+                if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
+                {
+
+                }
+
+                if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
+                {
+
+                }
             }
 
             switch (Input.touchCount)
@@ -95,6 +105,16 @@ public class OrbitCameraEventMethods : OrbitCamera
             if (currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
             {
                 ViewModeZoomToComponentDesktop();
+            }
+
+            if (currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
+            {
+
+            }
+
+            if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
+            {
+                simulation.WireSpawnPhaseInitiator();
             }
         }
     }
