@@ -5,11 +5,12 @@ using TMPro;
 
 public class Multimeter : MonoBehaviour
 {
-    private float redVolt, redAmp, blackVolt, blackAmp, displayedVoltage, displayedAmp;
+    [SerializeField] private float redVolt, redAmp, blackVolt, blackAmp, displayedVoltage, displayedAmp;
      
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("REACHED MULTIMETER SCRIPT");
         displayValues();
     } 
 
@@ -32,6 +33,7 @@ public class Multimeter : MonoBehaviour
         // if the circuit is open, either the black or red wire values should be 0.
      private void OnTriggerStay(Collider other)
     {
+        Debug.Log("REACHED TRIGGER ON STAY");
         // instance of GameObject that is being collided with 
         GameObject otherObject = other.gameObject;
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
@@ -50,8 +52,8 @@ public class Multimeter : MonoBehaviour
         }
     }
     public void displayValues(){
-        // Debug.Log("BLACKVOLT DISPLAY: " + blackVolt + "BLACKAMP DISPLAY :  " + blackAmp);
-        // Debug.Log("redVolt DISPLAY: " + redVolt + "REDAMP DISPLAY: " + redAmp);
+        // Debug.Log("BLACKVOLT DISPLAY: " + blackVolt + " BLACKAMP DISPLAY :  " + blackAmp);
+        // Debug.Log("redVolt DISPLAY: " + redVolt + " REDAMP DISPLAY: " + redAmp);
         calcAmpBetweenTwoPoints();
         calcVoltBetweenTwoPoints();
         GameObject.FindWithTag("TextTMP").GetComponent<TextMeshProUGUI>().text = "Amp: " + displayedAmp + "\n Voltage: " + displayedVoltage;

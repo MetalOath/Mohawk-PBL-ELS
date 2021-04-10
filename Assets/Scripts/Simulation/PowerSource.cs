@@ -28,8 +28,7 @@ public class PowerSource : MonoBehaviour
     {
         return powerSourceCurrent;
     }
-
-   
+    
     public float getPowerSourceVoltage()
     {
         return powerSourceVoltage;
