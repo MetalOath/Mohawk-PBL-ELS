@@ -9,6 +9,7 @@ public class SimulationEventPublisher : MonoBehaviour
     public UnityEvent playSimulation;
     public UnityEvent stopSimulation;
     public UnityEvent resetSimulation;
+    public UnityEvent quitSimulation;
 
     public void PlaySimulation()
     {
@@ -23,5 +24,9 @@ public class SimulationEventPublisher : MonoBehaviour
     public void ResetSimulation()
     {
         resetSimulation?.Invoke();
+    }
+    public void QuitSimulation()
+    {
+        quitSimulation?.Invoke();
     }
 }
