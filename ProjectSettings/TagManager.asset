@@ -7,6 +7,11 @@ TagManager:
   - Resistor
   - LED_Light
   - Wire
+  - 9VBatteryPositive
+  - 9VBatteryNegative
+  - TextTMP
+  - multiBlackCable
+  - multiRedCable
   - Power_Source_Positive
   - Power_Source_Negative
   - Interactive

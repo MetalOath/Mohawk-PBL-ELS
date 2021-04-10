@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class SimulationEventPublisher : MonoBehaviour
 {
+
     public UnityEvent playSimulation;
     public UnityEvent stopSimulation;
     public UnityEvent resetSimulation;
@@ -14,10 +15,12 @@ public class SimulationEventPublisher : MonoBehaviour
     {
         playSimulation?.Invoke();
     }
+
     public void StopSimulation()
     {
         stopSimulation?.Invoke();
     }
+
     public void ResetSimulation()
     {
         resetSimulation?.Invoke();
