@@ -13,13 +13,11 @@ public abstract class Simulation : MonoBehaviour
     private float wirePrefabLength;
     private float wireSegmentLength;
     private float wireLength;
+    private float distanceBetweenPoints;
     private int numberOfSegments;
 
     public bool simulationActiveState = false;
     public string currentSimulationMode;
-
-    public List<GameObject> nonConnectorObjects = new List<GameObject>();
-    public GameObject[] allGameObjects;
 
     public void Start()
     {
@@ -27,9 +25,7 @@ public abstract class Simulation : MonoBehaviour
         wirePrefabLength = wirePrefabMeasurementInstance.GetComponent<Collider>().bounds.size.y;
         Destroy(wirePrefabMeasurementInstance);
 
-        wireContainer = new GameObject("Wire Container");
-
-        wireSegmentLength = wirePrefabLength - (wirePrefabLength / 5f);
+        wireSegmentLength = wirePrefabLength * 0.8f;
     }
     public void WireSpawnPhaseInitiator()
     {
@@ -55,67 +51,61 @@ public abstract class Simulation : MonoBehaviour
                 break;
             }
         }
-        //if (Physics.Raycast(raycast, out raycastHit))
-        //{
-        //    if (raycastHit.collider.CompareTag("Connection_Points"))
-        //    {
-        //        if (inWireSpawnPhase == false)
-        //        {
-        //            connectionPointOne = raycastHit.transform;
-        //            inWireSpawnPhase = true;
-        //        }
-        //        else if (inWireSpawnPhase == true && raycastHit.transform != connectionPointOne)
-        //        {
-        //            connectionPointTwo = raycastHit.transform;
-        //            SpawnWire(connectionPointOne, connectionPointTwo);
-        //            inWireSpawnPhase = false;
-        //        }
-        //    }
-        //}
     }
 
     private void SpawnWire(Transform pointOne, Transform pointTwo)
     {
-        wireLength = Vector3.Magnitude(pointTwo.position - pointOne.position); // use pi*d/2
+        distanceBetweenPoints = Vector3.Magnitude(pointTwo.position - pointOne.position);
+        wireLength = Mathf.PI * distanceBetweenPoints / 2f; // use pi*d/2
         numberOfSegments = (int)(wireLength/wireSegmentLength) + 1;
 
-        float angleDifferenceZ = Vector3.Angle(pointOne.forward, pointTwo.forward);
-        float angleDifferenceY = Vector3.Angle(pointOne.up, pointTwo.up);
-
+        wireContainer = new GameObject("Wire Container");
         GameObject wireContainerInstance = Instantiate(wireContainer, pointOne.position + (pointTwo.position - pointOne.position)/2, Quaternion.identity);
+        Destroy(wireContainer);
+
+        GameObject previousSegment = null;
+        Quaternion pointTwoInvertedRotation = new Quaternion(pointTwo.rotation.x, pointTwo.rotation.y, pointTwo.rotation.z + 180f, pointTwo.rotation.w);
+        //Quaternion pointTwoInvertedRotation = Quaternion.Inverse(pointTwo.rotation);
+
+        GameObject wirePathFinder = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        wirePathFinder.transform.position = pointOne.position + new Vector3(0, -wireLength, 0) + (pointTwo.position - pointOne.position)/2f;
+        wirePathFinder.transform.localScale = wirePathFinder.transform.localScale * Mathf.Abs(Vector3.Magnitude(pointTwo.position - pointOne.position));
 
         for (int i = 0; i <= numberOfSegments; i++)
         {
-            Vector3 createPos = pointOne.position + (pointTwo.position - pointOne.position) / numberOfSegments * i;
-            //Quaternion createRot = Quaternion.LerpUnclamped(pointOne.rotation, Quaternion.Inverse(pointTwo.rotation), (float)i/numberOfSegments);
-            GameObject currentSegment = Instantiate(wirePrefab, createPos, Quaternion.identity);
-            float rotX = pointOne.rotation.x * (1 - (float)i / numberOfSegments) + (angleDifferenceY + 90) * ((float)i / numberOfSegments),
-                rotY = pointOne.rotation.y * (1 - (float)i / numberOfSegments) + (angleDifferenceZ) * ((float)i / numberOfSegments),
-                rotZ = pointOne.rotation.z * (1 - (float)i / numberOfSegments) + (angleDifferenceY + 90) * ((float)i / numberOfSegments);
-            currentSegment.transform.Rotate(-pointTwo.up * ((float)i / numberOfSegments));
+            //Vector3 createPos = new Vector3(pointOne.position.x, pointOne.position.y+(i*wireSegmentLength), pointOne.position.z);
+
+            Vector3 createPosition = pointOne.position + new Vector3(0, (distanceBetweenPoints / 2f) - (distanceBetweenPoints / 2f) * Mathf.Abs((numberOfSegments / 2f - i) / (numberOfSegments / 2f)), 0) + (pointTwo.position - pointOne.position) / numberOfSegments * i;
+            //Vector3 createPosition = pointOne.position + new Vector3(0, , 0) + (pointTwo.position - pointOne.position) / numberOfSegments * i;
+            Quaternion createRotation = Quaternion.FromToRotation(Vector3.up, pointTwo.position - pointOne.position);
+            GameObject currentSegment = Instantiate(wirePrefab, createPosition, createRotation);
+            //currentSegment.transform.rotation = Quaternion.FromToRotation(currentSegment.transform.up, (pointOne.position + (pointTwo.position - pointOne.position) / 2f));
 
             currentSegment.transform.parent = wireContainerInstance.transform;
+            
+            if (i == 0)
+            {
+                currentSegment.GetComponent<Rigidbody>().isKinematic = true;
+                previousSegment = currentSegment;
+                currentSegment.transform.position = pointOne.position;
+                currentSegment.transform.rotation = pointOne.rotation;
+            }
+
+            if (i != 0)
+            {
+                currentSegment.GetComponent<ConfigurableJoint>().connectedBody = previousSegment.GetComponent<Rigidbody>();
+                previousSegment = currentSegment;
+            }
+
+            if (i == numberOfSegments)
+            {
+                currentSegment.GetComponent<Rigidbody>().isKinematic = true;
+                currentSegment.transform.position = pointTwo.position;
+                currentSegment.transform.rotation = pointTwoInvertedRotation;
+            }
         }
+        
+        //spherePathFinder.transform.position = pointOne.position + new Vector3(0, -wireLength*0.15f, 0) + (pointTwo.position - pointOne.position) / 2f;
+        //Destroy(spherePathFinder);
     }
-
-    //public void DeactivateNonConnectorColliders()
-    //{
-    //    allGameObjects = Resources.FindObjectsOfTypeAll<GameObject>();
-    //    foreach (GameObject nonConnector in allGameObjects)
-    //    {
-    //        if (!nonConnector.CompareTag("Connection_Points") && !nonConnector.CompareTag("Wire") && nonConnector.GetComponent<Collider>())
-    //        {
-    //            nonConnectorObjects.Add(nonConnector);
-    //            nonConnector.GetComponent<Collider>().enabled = false;
-    //        }
-    //    }
-    //}
-
-    //public void ActivateNonConnectorColliders()
-    //{
-    //    foreach (GameObject nonConnector in nonConnectorObjects)
-    //    {
-    //        nonConnector.GetComponent<Collider>().enabled = true;
-    //    }
-    //}
 }

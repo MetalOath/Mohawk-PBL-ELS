@@ -32,7 +32,6 @@ public class SimulationMethods : Simulation
     {
         currentSimulationMode = "ConnectMode";
         GameObject.Find("Mode Text (TMP)").GetComponent<TextMeshProUGUI>().text = "Connect Mode";
-        //DeactivateNonConnectorColliders();
     }
     public void QuitSimulation()
     {
