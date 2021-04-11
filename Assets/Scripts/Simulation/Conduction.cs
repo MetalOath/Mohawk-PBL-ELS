@@ -66,28 +66,29 @@ public class Conduction : MonoBehaviour
             resistance = otherObject.GetComponent<Resistor>().getResistorOhms();
             CurrentCalculator();
         }
-        // if (otherObject.tag == "LedWire")
-        // {
+        // if(otherObject.tag == "LedWire"){
         // }
 
         // instance of conduction property of "other" object
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
         if (otherObjectConduction)
         {
-
+            // To Do: Check for the this conduction script to be less than the other conduction script in the series.
+            // To Do: positivenumberinseries is increasing alot.
             // if(positiveNumberInSeries < otherObjectConduction.positiveNumberInSeries){
-            if (voltage != 0 && otherObjectConduction.voltage == 0)
-            {
-                otherObjectConduction.voltage = voltage;
-            }
-            if (current != 0 && otherObjectConduction.current == 0)
-            {
-                otherObjectConduction.current = current;
-            }
-            if (resistance != 0 && otherObjectConduction.resistance == 0)
-            {
-                otherObjectConduction.resistance = resistance;
-            }
+                if(voltage != 0 && otherObjectConduction.voltage == 0)
+                {
+                    otherObjectConduction.voltage = voltage;
+                }
+                if(current != 0 && otherObjectConduction.current == 0)
+                {
+                    otherObjectConduction.current = current;
+                }
+                if(resistance != 0 && otherObjectConduction.resistance == 0)
+                {
+                    otherObjectConduction.resistance = resistance;
+                }
+            //}
             bool multimeterCheck = otherObject.tag == "multiBlackCable" || otherObject.tag == "multiRedCable";
             //Negative Check
             if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false && !multimeterCheck)
@@ -129,7 +130,8 @@ public class Conduction : MonoBehaviour
     * Gets altered by resistor 
     */
     private void CurrentCalculator()
-    {
+    {       
+        // To Do: Current isn't being seen by the multimeter.
         current = voltage / resistance;
     }
 }
