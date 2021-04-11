@@ -6,6 +6,7 @@ public class Conduction : MonoBehaviour
 {
     public bool positivePassThrough = false, negativePassThrough = false, simulationActiveState = false;
     public float voltage, current, resistance;
+    public int numberOfLoads;
     /*
     * To know when a parallel circuit is created. 
     * This will show where in the circuit it was split 
@@ -57,6 +58,19 @@ public class Conduction : MonoBehaviour
             negativePassThrough = true;
             negativeNumberInSeries += 1;
         }
+        // Red wire must touch positive side of power source
+        if (otherObject.tag == "ResistorBody")
+        {
+            positivePassThrough = true;
+            positiveNumberInSeries += 1;
+
+            resistance = otherObject.GetComponent<Resistor>().getResistorOhms();
+            numberOfLoads++;
+
+        }
+        if(otherObject.tag == "LedWire"){
+             numberOfLoads++;
+        }
 
         //switch (otherObject.tag)
         //{
@@ -99,6 +113,10 @@ public class Conduction : MonoBehaviour
                 {
                     otherObjectConduction.current = current;
                 }
+                if(resistance != 0 && otherObjectConduction.resistance == 0)
+                {
+                    otherObjectConduction.resistance = resistance;
+                }
                 // Debug.Log("Voltage: " + positiveNumberInSeries + ": " + voltage);
                 // Debug.Log("Current: " + positiveNumberInSeries + ": " + current);
                 // Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.voltage);
@@ -140,13 +158,16 @@ public class Conduction : MonoBehaviour
         positivePassThrough = false;
         voltage = 0;
         current = 0;
+        resistance = 0;
     }
     /*
     * Gets altered by resistor 
     */
     private void CurrentCalculator()
     {
-
+        if(numberOfLoads >= 2){
+            //calculate new current.
+        }
     }
 
     /*
@@ -154,6 +175,8 @@ public class Conduction : MonoBehaviour
     */
     private void VoltageCalculator()
     {
-
+        if(numberOfLoads >= 2){
+            //calculate new voltage.
+        }
     }
 }
