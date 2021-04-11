@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class SimulationMethods : MonoBehaviour
 {
     public bool simulationActiveState = false;
+
     /*
     * When the user clicks on the Play button, play the simulation
     */
-    public string currentSimulationMode = "ViewMode;
     public void SimulationPlay()
     {
         simulationActiveState = true;
@@ -29,21 +29,5 @@ public class SimulationMethods : MonoBehaviour
     public void SimulationReset()
     {
         SceneManager.LoadScene("_Main_Scene");
-    }
-    public void ActivateViewMode()
-    {
-        currentSimulationMode = "ViewMode";
-    }
-    public void ActivateEditMode()
-    {
-        currentSimulationMode = "EditMode";
-    }
-    public void ActivateConnectMode()
-    {
-        currentSimulationMode = "ConnectMode";
-    }
-    public void QuitSimulation()
-    {
-        Application.Quit();
     }
 }

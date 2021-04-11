@@ -31,9 +31,6 @@ public abstract class OrbitCamera : MonoBehaviour
     public float SetMinDistance { set { minDistance = value; } }
     public float SetMaxDistance { set { maxDistance = value; } }
     public float SetIntendedDistance { set { intendedDistance = Mathf.Clamp(value, minDistance, maxDistance); } }
-
-    public string currentSimulationMode;
-    public GameObject workspace;
     #endregion
 
 
@@ -50,9 +47,6 @@ public abstract class OrbitCamera : MonoBehaviour
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
         SetIntendedDistance = (transform.position - GetCentre).magnitude;
-        workspace = GameObject.Find("Workspace");
-        currentSimulationMode = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>().currentSimulationMode;
-        ZoomToWorkspace();
     }
 
 
@@ -173,17 +167,5 @@ public abstract class OrbitCamera : MonoBehaviour
         // Ensures the real object centre is looked at
         offset = bound.center - centre.position;
     }
-
-    public void ViewModeZoomToComponent(Transform HitTarget)
-    {
-        Centre = HitTarget;
-        GetObjectInSight();
-        GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>().ViewModeZoomedCamera();
-    }
-    public void ZoomToWorkspace()
-    {
-        Centre = workspace.transform;
-        GetObjectInSight();
-    }
-
+    
 }
