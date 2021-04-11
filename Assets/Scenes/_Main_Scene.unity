@@ -715,7 +715,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!135 &191240590
@@ -925,7 +924,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!135 &251552316
@@ -3044,7 +3042,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!1 &634089314
@@ -4712,7 +4709,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!1 &1129532053
@@ -6024,7 +6020,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!64 &1297092070
@@ -6774,7 +6769,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!1001 &1580312010
@@ -7666,7 +7660,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!23 &1986209466
@@ -7738,27 +7731,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2002553418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002553415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cceedc9153986f48b7f56f80bb2a227, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positivePassThrough: 0
-  negativePassThrough: 0
-  simulationActiveState: 0
-  voltage: 0
-  current: 0
-  resistance: 0
-  numberOfLoads: 0
-  positiveNumberInSeries: 0
-  negativeNumberInSeries: 0
 --- !u!64 &2002553419
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7811,7 +7783,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!1 &2014029347
@@ -8077,7 +8048,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!64 &2022656116
@@ -8193,7 +8163,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!23 &2026621527
@@ -8297,7 +8266,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!135 &2037937911
@@ -8964,7 +8932,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!33 &4033883119232417463
@@ -9028,7 +8995,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229344888826103
@@ -9194,7 +9160,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229344944013523
@@ -9312,7 +9277,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229344948919351
@@ -9458,7 +9422,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229344995020259
@@ -9590,7 +9553,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345087669059
@@ -9708,7 +9670,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345089444363
@@ -9906,7 +9867,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345160710273
@@ -9999,7 +9959,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345172643757
@@ -10131,7 +10090,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345217924625
@@ -10250,7 +10208,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345220148275
@@ -10382,7 +10339,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345237378955
@@ -10514,7 +10470,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345245748275
@@ -10632,7 +10587,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345246871527
@@ -10778,7 +10732,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345296640879
@@ -10896,7 +10849,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345333606231
@@ -11055,7 +11007,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345348480717
@@ -11160,7 +11111,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345366521351
@@ -11366,7 +11316,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345399264767
@@ -11451,7 +11400,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345413341841
@@ -11570,7 +11518,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345420030435
@@ -11754,7 +11701,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345430245757
@@ -11820,7 +11766,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345533203719
@@ -11952,7 +11897,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345542562843
@@ -12084,7 +12028,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345598531827
@@ -12216,7 +12159,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345608718283
@@ -12445,7 +12387,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345616212965
@@ -12538,7 +12479,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345627084413
@@ -12657,7 +12597,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345631618847
@@ -12789,7 +12728,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345635662519
@@ -12934,7 +12872,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345666561045
@@ -13105,7 +13042,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345672673433
@@ -13185,7 +13121,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345677784159
@@ -13330,7 +13265,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345833068405
@@ -13467,7 +13401,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229345919577895
@@ -13733,7 +13666,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346001627903
@@ -13818,7 +13750,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346139507725
@@ -13923,7 +13854,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346142859075
@@ -14082,7 +14012,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346148374005
@@ -14214,7 +14143,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346162505433
@@ -14346,7 +14274,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346163964389
@@ -14465,7 +14392,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346181427179
@@ -14657,7 +14583,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346189360127
@@ -14742,7 +14667,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346228111469
@@ -14919,7 +14843,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346253720925
@@ -15024,7 +14947,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346286800515
@@ -15322,7 +15244,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346361700353
@@ -15446,7 +15367,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346371788605
@@ -15526,7 +15446,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346458910331
@@ -15671,7 +15590,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346498325529
@@ -15790,7 +15708,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346507957051
@@ -15974,7 +15891,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346579395125
@@ -16054,7 +15970,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346606828011
@@ -16238,7 +16153,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346623623481
@@ -16318,7 +16232,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346629876303
@@ -16436,7 +16349,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346647021959
@@ -16634,7 +16546,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346665933777
@@ -16727,7 +16638,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346690383653
@@ -16859,7 +16769,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346704488985
@@ -16964,7 +16873,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346765913547
@@ -17110,7 +17018,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346796167995
@@ -17228,7 +17135,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346821011415
@@ -17360,7 +17266,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346851396639
@@ -17492,7 +17397,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229346927865043
@@ -17624,7 +17528,6 @@ MonoBehaviour:
   voltage: 0
   current: 0
   resistance: 0
-  numberOfLoads: 0
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!54 &5990229347007456087

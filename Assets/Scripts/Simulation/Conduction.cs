@@ -6,7 +6,6 @@ public class Conduction : MonoBehaviour
 {
     public bool positivePassThrough = false, negativePassThrough = false, simulationActiveState = false;
     public float voltage, current, resistance;
-    public int numberOfLoads;
     /*
     * To know when a parallel circuit is created. 
     * This will show where in the circuit it was split 
@@ -65,11 +64,9 @@ public class Conduction : MonoBehaviour
             positiveNumberInSeries += 1;
 
             resistance = otherObject.GetComponent<Resistor>().getResistorOhms();
-            numberOfLoads++;
-
+            CurrentCalculator();
         }
         if(otherObject.tag == "LedWire"){
-             numberOfLoads++;
         }
 
         //switch (otherObject.tag)
@@ -164,19 +161,7 @@ public class Conduction : MonoBehaviour
     * Gets altered by resistor 
     */
     private void CurrentCalculator()
-    {
-        if(numberOfLoads >= 2){
-            //calculate new current.
-        }
-    }
-
-    /*
-    * Don't we need this method, this get altered by capacitor?
-    */
-    private void VoltageCalculator()
-    {
-        if(numberOfLoads >= 2){
-            //calculate new voltage.
-        }
+    {       
+        current = voltage / resistance;   
     }
 }
