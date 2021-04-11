@@ -66,7 +66,8 @@ public class Conduction : MonoBehaviour
             resistance = otherObject.GetComponent<Resistor>().getResistorOhms();
             CurrentCalculator();
         }
-        if(otherObject.tag == "LedWire"){
+        if (otherObject.tag == "LedWire")
+        {
         }
 
         //switch (otherObject.tag)
@@ -95,30 +96,24 @@ public class Conduction : MonoBehaviour
 
         //}
 
-        //Debug.Log("closed loop");
         // instance of conduction property of "other" object
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
         if (otherObjectConduction)
         {
-   
+
             // if(positiveNumberInSeries < otherObjectConduction.positiveNumberInSeries){
-                if(voltage != 0 && otherObjectConduction.voltage == 0)
-                {
-                    otherObjectConduction.voltage = voltage;
-                }
-                if(current != 0 && otherObjectConduction.current == 0)
-                {
-                    otherObjectConduction.current = current;
-                }
-                if(resistance != 0 && otherObjectConduction.resistance == 0)
-                {
-                    otherObjectConduction.resistance = resistance;
-                }
-                // Debug.Log("Voltage: " + positiveNumberInSeries + ": " + voltage);
-                // Debug.Log("Current: " + positiveNumberInSeries + ": " + current);
-                // Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.voltage);
-                // Debug.Log(positiveNumberInSeries + ": " + otherObjectConduction.current);
-            //}
+            if (voltage != 0 && otherObjectConduction.voltage == 0)
+            {
+                otherObjectConduction.voltage = voltage;
+            }
+            if (current != 0 && otherObjectConduction.current == 0)
+            {
+                otherObjectConduction.current = current;
+            }
+            if (resistance != 0 && otherObjectConduction.resistance == 0)
+            {
+                otherObjectConduction.resistance = resistance;
+            }
             bool multimeterCheck = otherObject.tag == "multiBlackCable" || otherObject.tag == "multiRedCable";
             //Negative Check
             if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false && !multimeterCheck)
@@ -148,7 +143,6 @@ public class Conduction : MonoBehaviour
     */
     private void OpenLoopRoutine()
     {
-        //Debug.Log("open loop");
         negativeNumberInSeries = 0;
         negativePassThrough = false;
         positiveNumberInSeries = 0;
@@ -161,7 +155,7 @@ public class Conduction : MonoBehaviour
     * Gets altered by resistor 
     */
     private void CurrentCalculator()
-    {       
-        current = voltage / resistance;   
+    {
+        current = voltage / resistance;
     }
 }
