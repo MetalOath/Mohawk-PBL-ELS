@@ -2178,8 +2178,10 @@ MonoBehaviour:
   inWireSpawnPhase: 0
   connectionPointOne: {fileID: 0}
   connectionPointTwo: {fileID: 0}
-  wirePrefab: {fileID: 0}
-  wireSegmentPrefab: {fileID: 0}
+  wirePrefab: {fileID: 1758985709902295144, guid: c2ab50a619580ff4e9d0174bfb0bb119,
+    type: 3}
+  wireSegmentPrefab: {fileID: 8666573704662837703, guid: a9fc666ccc364b64197632d58bd21b91,
+    type: 3}
   simulationActiveState: 0
   currentSimulationMode: 
 --- !u!1 &634089314
@@ -4335,11 +4337,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180036478}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.235, y: -0.1305, z: -0.0544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
-  m_Children:
-  - {fileID: 1596546358}
+  m_Children: []
   m_Father: {fileID: 866077149}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5492,57 +5493,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1580312010}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1596546357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1596546358}
-  - component: {fileID: 1596546359}
-  m_Layer: 0
-  m_Name: Wire
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1596546358
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596546357}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1180036479}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1596546359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596546357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cceedc9153986f48b7f56f80bb2a227, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positivePassThrough: 0
-  negativePassThrough: 0
-  simulationActiveState: 0
-  voltage: 0
-  current: 0
-  resistance: 0
-  positiveNumberInSeries: 0
-  negativeNumberInSeries: 0
 --- !u!1 &1604889781
 GameObject:
   m_ObjectHideFlags: 0
