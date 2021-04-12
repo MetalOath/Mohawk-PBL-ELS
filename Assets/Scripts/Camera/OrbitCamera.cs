@@ -34,6 +34,8 @@ public abstract class OrbitCamera : MonoBehaviour
 
     public string currentSimulationMode;
     public GameObject workspace;
+
+    public SimulationMethods simulation;
     #endregion
 
 
@@ -47,11 +49,14 @@ public abstract class OrbitCamera : MonoBehaviour
 
     public void Start()
     {
+        simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
+
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
         SetIntendedDistance = (transform.position - GetCentre).magnitude;
         workspace = GameObject.Find("Workspace");
-        currentSimulationMode = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>().currentSimulationMode;
+        simulation.ActivateViewMode();
+        currentSimulationMode = simulation.currentSimulationMode;
         ZoomToWorkspace();
     }
 

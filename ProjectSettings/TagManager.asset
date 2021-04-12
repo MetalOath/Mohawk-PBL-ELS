@@ -19,6 +19,8 @@ TagManager:
   - ResistorBand4
   - LedWire
   - Interactive
+  - UI_Canvas
+  - Connection_Points
   layers:
   - Default
   - TransparentFX
