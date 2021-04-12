@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 2885162827728516002}
   - component: {fileID: 6640326170275722823}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1731,7 +1731,7 @@ GameObject:
   - component: {fileID: 7348359967861168957}
   - component: {fileID: 6985668960870464089}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2142,7 +2142,7 @@ GameObject:
   - component: {fileID: 6464886611044725449}
   - component: {fileID: 6176647529660364963}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2236,7 +2236,7 @@ GameObject:
   - component: {fileID: 4793479269725512988}
   - component: {fileID: 6531255151627914324}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2330,7 +2330,7 @@ GameObject:
   - component: {fileID: 7018913846106810361}
   - component: {fileID: 5647790454338158321}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2988,7 +2988,7 @@ GameObject:
   - component: {fileID: 4849112079671856955}
   - component: {fileID: 1692910367181379590}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3363,7 +3363,7 @@ GameObject:
   - component: {fileID: 7348516639460488621}
   - component: {fileID: 6938154345736133961}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3550,7 +3550,7 @@ GameObject:
   - component: {fileID: 3037450787372345377}
   - component: {fileID: 1496359216895836440}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4274,7 +4274,7 @@ GameObject:
   - component: {fileID: 8157649628015299290}
   - component: {fileID: 4091714284439046836}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5021,7 +5021,7 @@ GameObject:
   - component: {fileID: 2598181167372175498}
   - component: {fileID: 1485302442734095353}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5395,7 +5395,7 @@ GameObject:
   - component: {fileID: 2632835419930722818}
   - component: {fileID: 1209145759151340511}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5861,7 +5861,7 @@ GameObject:
   - component: {fileID: 5953724173042851265}
   - component: {fileID: 2541384988675868627}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5955,7 +5955,7 @@ GameObject:
   - component: {fileID: 1691139762672569967}
   - component: {fileID: 388154652849049459}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6143,7 +6143,7 @@ GameObject:
   - component: {fileID: 8222271136530677751}
   - component: {fileID: 2299978189470547493}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6237,7 +6237,7 @@ GameObject:
   - component: {fileID: 150170963227384266}
   - component: {fileID: 5315332731185024279}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6425,7 +6425,7 @@ GameObject:
   - component: {fileID: 6458003169876903983}
   - component: {fileID: 928026147867027053}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6612,7 +6612,7 @@ GameObject:
   - component: {fileID: 3951501766883765681}
   - component: {fileID: 425677979701856872}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6706,7 +6706,7 @@ GameObject:
   - component: {fileID: 2327226827586741334}
   - component: {fileID: 8555242415037712162}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6894,7 +6894,7 @@ GameObject:
   - component: {fileID: 4981254509956263841}
   - component: {fileID: 8394822532512398272}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7268,7 +7268,7 @@ GameObject:
   - component: {fileID: 2665250887347484012}
   - component: {fileID: 6453518691131124583}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7362,7 +7362,7 @@ GameObject:
   - component: {fileID: 3962780652956886967}
   - component: {fileID: 1695345621273156641}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7958,7 +7958,7 @@ GameObject:
   - component: {fileID: 6769013722889343456}
   - component: {fileID: 4635945104551989782}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8145,7 +8145,7 @@ GameObject:
   - component: {fileID: 6582808991227300059}
   - component: {fileID: 8262919574168644397}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8332,7 +8332,7 @@ GameObject:
   - component: {fileID: 7451526210558785944}
   - component: {fileID: 7792808770611924684}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8613,7 +8613,7 @@ GameObject:
   - component: {fileID: 3042906561557595269}
   - component: {fileID: 6105423514138673511}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8801,7 +8801,7 @@ GameObject:
   - component: {fileID: 5583202986762402322}
   - component: {fileID: 8374733297062670803}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9176,7 +9176,7 @@ GameObject:
   - component: {fileID: 6092930140622053877}
   - component: {fileID: 4891859872382899598}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9364,7 +9364,7 @@ GameObject:
   - component: {fileID: 3290684559318679583}
   - component: {fileID: 2901659372536563889}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9832,7 +9832,7 @@ GameObject:
   - component: {fileID: 3828877036927372891}
   - component: {fileID: 8125921311433655593}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10335,7 +10335,7 @@ GameObject:
   - component: {fileID: 6650612361128988403}
   - component: {fileID: 4273166489099847193}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10615,7 +10615,7 @@ GameObject:
   - component: {fileID: 7704440807577043300}
   - component: {fileID: 6104670521789258617}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11904,7 +11904,7 @@ GameObject:
   - component: {fileID: 523330701453441513}
   - component: {fileID: 8522929053219832160}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12371,7 +12371,7 @@ GameObject:
   - component: {fileID: 11672104107419882}
   - component: {fileID: 633404881791855917}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12653,7 +12653,7 @@ GameObject:
   - component: {fileID: 262737583843730369}
   - component: {fileID: 8805699804738924310}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13027,7 +13027,7 @@ GameObject:
   - component: {fileID: 8713351002169792317}
   - component: {fileID: 2074277849925940080}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13497,7 +13497,7 @@ GameObject:
   - component: {fileID: 6363692406927307263}
   - component: {fileID: 2192883186106191772}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13591,7 +13591,7 @@ GameObject:
   - component: {fileID: 8153430008056862085}
   - component: {fileID: 2095727681848526551}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13813,7 +13813,7 @@ GameObject:
   - component: {fileID: 3393027562052986147}
   - component: {fileID: 1293105380469408467}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13907,7 +13907,7 @@ GameObject:
   - component: {fileID: 4816589712326114278}
   - component: {fileID: 341826936245616400}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14914,7 +14914,7 @@ GameObject:
   - component: {fileID: 235112287403058971}
   - component: {fileID: 6886249429124031476}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15102,7 +15102,7 @@ GameObject:
   - component: {fileID: 4136634925621902358}
   - component: {fileID: 8508719378053375716}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15663,7 +15663,7 @@ GameObject:
   - component: {fileID: 2548662094679177666}
   - component: {fileID: 5027378879448440627}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16037,7 +16037,7 @@ GameObject:
   - component: {fileID: 5004703464194572227}
   - component: {fileID: 335308174870030658}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16598,7 +16598,7 @@ GameObject:
   - component: {fileID: 5677921202243365045}
   - component: {fileID: 8118302478698342115}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16972,7 +16972,7 @@ GameObject:
   - component: {fileID: 7932552869564208853}
   - component: {fileID: 4285456010539439290}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17253,7 +17253,7 @@ GameObject:
   - component: {fileID: 3161894910834175768}
   - component: {fileID: 7362410096984639876}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17628,7 +17628,7 @@ GameObject:
   - component: {fileID: 8290819554219980529}
   - component: {fileID: 7295513778350020551}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18002,7 +18002,7 @@ GameObject:
   - component: {fileID: 2286508863348257103}
   - component: {fileID: 9097901278697318431}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18260,7 +18260,7 @@ GameObject:
   - component: {fileID: 5563177743975583028}
   - component: {fileID: 2408430987717462545}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18354,7 +18354,7 @@ GameObject:
   - component: {fileID: 8607690362131073162}
   - component: {fileID: 2685633980176703480}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18448,7 +18448,7 @@ GameObject:
   - component: {fileID: 429045097927067672}
   - component: {fileID: 6210841918489204373}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18542,7 +18542,7 @@ GameObject:
   - component: {fileID: 4752713280873358765}
   - component: {fileID: 1949202960350978020}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18636,7 +18636,7 @@ GameObject:
   - component: {fileID: 6762570664179977126}
   - component: {fileID: 3685863928776502836}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19011,7 +19011,7 @@ GameObject:
   - component: {fileID: 3725387412113502729}
   - component: {fileID: 6791564293390335915}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19291,7 +19291,7 @@ GameObject:
   - component: {fileID: 7176776143587559117}
   - component: {fileID: 1893188943514366878}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19701,7 +19701,7 @@ GameObject:
   - component: {fileID: 3838722455538348665}
   - component: {fileID: 2919360080982480784}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19928,7 +19928,7 @@ GameObject:
   - component: {fileID: 2086598338082928937}
   - component: {fileID: 5280724243415248862}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20395,7 +20395,7 @@ GameObject:
   - component: {fileID: 770611421430905998}
   - component: {fileID: 180589848521773733}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20489,7 +20489,7 @@ GameObject:
   - component: {fileID: 3976922053721539192}
   - component: {fileID: 4216744605277814753}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21086,7 +21086,7 @@ GameObject:
   - component: {fileID: 8817580017889430673}
   - component: {fileID: 3658962927207474762}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21215,7 +21215,7 @@ GameObject:
   - component: {fileID: 7040163156680537756}
   - component: {fileID: 879632977621330591}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21537,7 +21537,7 @@ GameObject:
   - component: {fileID: 1113546563443799955}
   - component: {fileID: 885337643330077805}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21724,7 +21724,7 @@ GameObject:
   - component: {fileID: 3235849219025180624}
   - component: {fileID: 1707006843561995847}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21912,7 +21912,7 @@ GameObject:
   - component: {fileID: 5324315405034200507}
   - component: {fileID: 3659616771614805427}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22099,7 +22099,7 @@ GameObject:
   - component: {fileID: 4412166399336067631}
   - component: {fileID: 5692995854773717587}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30912,7 +30912,7 @@ GameObject:
   - component: {fileID: 6535027344745446995}
   - component: {fileID: 6750092608661637014}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31287,7 +31287,7 @@ GameObject:
   - component: {fileID: 8645352043521984036}
   - component: {fileID: 3086418166017424021}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31568,7 +31568,7 @@ GameObject:
   - component: {fileID: 1255219724065115894}
   - component: {fileID: 7405309556683309337}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31662,7 +31662,7 @@ GameObject:
   - component: {fileID: 5614617476962473956}
   - component: {fileID: 8767853195074293304}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31850,7 +31850,7 @@ GameObject:
   - component: {fileID: 4532399597202157985}
   - component: {fileID: 4850595956944220695}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31944,7 +31944,7 @@ GameObject:
   - component: {fileID: 4106424193208581237}
   - component: {fileID: 1658495949583138533}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32319,7 +32319,7 @@ GameObject:
   - component: {fileID: 2069562002596935926}
   - component: {fileID: 3567589159518159089}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32413,7 +32413,7 @@ GameObject:
   - component: {fileID: 7682050701676376890}
   - component: {fileID: 2394572890403323745}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32600,7 +32600,7 @@ GameObject:
   - component: {fileID: 596523989474229175}
   - component: {fileID: 177805339216628350}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32694,7 +32694,7 @@ GameObject:
   - component: {fileID: 3650857043243208643}
   - component: {fileID: 3813540038473632384}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32975,7 +32975,7 @@ GameObject:
   - component: {fileID: 7128609106098409742}
   - component: {fileID: 6395390580522096353}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33573,7 +33573,7 @@ GameObject:
   - component: {fileID: 1076781240596263219}
   - component: {fileID: 7206963999896989449}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33667,7 +33667,7 @@ GameObject:
   - component: {fileID: 2400718356494851403}
   - component: {fileID: 2705459250967746171}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33855,7 +33855,7 @@ GameObject:
   - component: {fileID: 3223995980768400809}
   - component: {fileID: 5313993462501783235}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33984,7 +33984,7 @@ GameObject:
   - component: {fileID: 1983872622495736676}
   - component: {fileID: 4167207070307670154}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34078,7 +34078,7 @@ GameObject:
   - component: {fileID: 6377695138412561298}
   - component: {fileID: 8062931357482590622}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34172,7 +34172,7 @@ GameObject:
   - component: {fileID: 3728099367862674642}
   - component: {fileID: 7205021687201476781}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34266,7 +34266,7 @@ GameObject:
   - component: {fileID: 6363125806231339783}
   - component: {fileID: 7461143058505884125}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34360,7 +34360,7 @@ GameObject:
   - component: {fileID: 5444101880183404132}
   - component: {fileID: 4005862128762066466}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34454,7 +34454,7 @@ GameObject:
   - component: {fileID: 933916446134277736}
   - component: {fileID: 4370505880383168144}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34676,7 +34676,7 @@ GameObject:
   - component: {fileID: 2565138961071478760}
   - component: {fileID: 432925633033232350}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35085,7 +35085,7 @@ GameObject:
   - component: {fileID: 9080222802128008251}
   - component: {fileID: 2010016037862233901}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35835,7 +35835,7 @@ GameObject:
   - component: {fileID: 7299165904485214965}
   - component: {fileID: 676873494191662561}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36023,7 +36023,7 @@ GameObject:
   - component: {fileID: 6125517695182404058}
   - component: {fileID: 8728178093058231794}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36398,7 +36398,7 @@ GameObject:
   - component: {fileID: 2313316426639779550}
   - component: {fileID: 8818264116295999507}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36678,7 +36678,7 @@ GameObject:
   - component: {fileID: 2339471397549966592}
   - component: {fileID: 7884225233644535886}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36772,7 +36772,7 @@ GameObject:
   - component: {fileID: 5887125494889278876}
   - component: {fileID: 6465441448962118225}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36866,7 +36866,7 @@ GameObject:
   - component: {fileID: 6511922606770251281}
   - component: {fileID: 4653353507924453978}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36960,7 +36960,7 @@ GameObject:
   - component: {fileID: 2891424319649303673}
   - component: {fileID: 7343361766486501586}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37054,7 +37054,7 @@ GameObject:
   - component: {fileID: 779712799746800700}
   - component: {fileID: 2013172086019873378}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37148,7 +37148,7 @@ GameObject:
   - component: {fileID: 8056374853544422668}
   - component: {fileID: 3778133671872285467}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37242,7 +37242,7 @@ GameObject:
   - component: {fileID: 5361816881169799844}
   - component: {fileID: 7805814516886945429}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37336,7 +37336,7 @@ GameObject:
   - component: {fileID: 5799830373924672296}
   - component: {fileID: 971266158483163785}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37616,7 +37616,7 @@ GameObject:
   - component: {fileID: 3241194849231266742}
   - component: {fileID: 7369408540855641110}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37804,7 +37804,7 @@ GameObject:
   - component: {fileID: 2740533073254605311}
   - component: {fileID: 6343515175743963315}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37992,7 +37992,7 @@ GameObject:
   - component: {fileID: 7101583772977835640}
   - component: {fileID: 1884311171354508886}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38437,7 +38437,7 @@ GameObject:
   - component: {fileID: 7388970420480915906}
   - component: {fileID: 2032967930639354057}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38531,7 +38531,7 @@ GameObject:
   - component: {fileID: 1020372620369484006}
   - component: {fileID: 1273620306990405590}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38718,7 +38718,7 @@ GameObject:
   - component: {fileID: 2928393393543014874}
   - component: {fileID: 3176969682163936865}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38812,7 +38812,7 @@ GameObject:
   - component: {fileID: 7673571593449074270}
   - component: {fileID: 117765066063976081}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39128,7 +39128,7 @@ GameObject:
   - component: {fileID: 1992798904139667416}
   - component: {fileID: 6328797503360107566}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39222,7 +39222,7 @@ GameObject:
   - component: {fileID: 7083847860308851582}
   - component: {fileID: 2139597266478050475}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39316,7 +39316,7 @@ GameObject:
   - component: {fileID: 8509056835037087534}
   - component: {fileID: 1354893068851648924}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39410,7 +39410,7 @@ GameObject:
   - component: {fileID: 1634025555314497010}
   - component: {fileID: 8830090216463072800}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39632,7 +39632,7 @@ GameObject:
   - component: {fileID: 4809518108534324250}
   - component: {fileID: 7453442429954966819}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40006,7 +40006,7 @@ GameObject:
   - component: {fileID: 7604161862722574248}
   - component: {fileID: 9085760212942183438}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40100,7 +40100,7 @@ GameObject:
   - component: {fileID: 1086524297718496427}
   - component: {fileID: 463893659475549857}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40194,7 +40194,7 @@ GameObject:
   - component: {fileID: 4538998620665766524}
   - component: {fileID: 2709863238142367444}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40381,7 +40381,7 @@ GameObject:
   - component: {fileID: 2284547006614674628}
   - component: {fileID: 5024151598470503102}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40475,7 +40475,7 @@ GameObject:
   - component: {fileID: 5472940401118914600}
   - component: {fileID: 4470315204018083611}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40662,7 +40662,7 @@ GameObject:
   - component: {fileID: 1971055688654877417}
   - component: {fileID: 5498118075361487625}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41164,7 +41164,7 @@ GameObject:
   - component: {fileID: 8246307618839283193}
   - component: {fileID: 3834132686927556980}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41446,7 +41446,7 @@ GameObject:
   - component: {fileID: 6533608185289952137}
   - component: {fileID: 6941581817638996362}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41797,7 +41797,7 @@ GameObject:
   - component: {fileID: 6678317312005621615}
   - component: {fileID: 3962360600281566803}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42491,7 +42491,7 @@ GameObject:
   - component: {fileID: 5933300873849906542}
   - component: {fileID: 6272976419166644596}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42771,7 +42771,7 @@ GameObject:
   - component: {fileID: 1448251015872846091}
   - component: {fileID: 2232341577615344638}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42865,7 +42865,7 @@ GameObject:
   - component: {fileID: 7432661378484019137}
   - component: {fileID: 5691369272977424874}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42959,7 +42959,7 @@ GameObject:
   - component: {fileID: 6482930071592562201}
   - component: {fileID: 1593371117356958706}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43147,7 +43147,7 @@ GameObject:
   - component: {fileID: 2030672511001460595}
   - component: {fileID: 3210499151348289221}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43427,7 +43427,7 @@ GameObject:
   - component: {fileID: 7710144778523385266}
   - component: {fileID: 3160339356988927729}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43556,7 +43556,7 @@ GameObject:
   - component: {fileID: 1775581548881789094}
   - component: {fileID: 1846167731494653993}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44210,7 +44210,7 @@ GameObject:
   - component: {fileID: 6302217736642933363}
   - component: {fileID: 5093516245016619074}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44492,7 +44492,7 @@ GameObject:
   - component: {fileID: 1142444054920320277}
   - component: {fileID: 6489761745885882721}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44774,7 +44774,7 @@ GameObject:
   - component: {fileID: 3889020158317948638}
   - component: {fileID: 2320067645403914730}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45558,7 +45558,7 @@ GameObject:
   - component: {fileID: 9083607957679656240}
   - component: {fileID: 6823894771769460813}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46489,7 +46489,7 @@ GameObject:
   - component: {fileID: 3308237002762386284}
   - component: {fileID: 1930852649997470648}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46677,7 +46677,7 @@ GameObject:
   - component: {fileID: 8730024943371495790}
   - component: {fileID: 4251204165701116636}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47052,7 +47052,7 @@ GameObject:
   - component: {fileID: 1328852231776749185}
   - component: {fileID: 2515100832890713298}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47332,7 +47332,7 @@ GameObject:
   - component: {fileID: 571079910962673276}
   - component: {fileID: 7892536259431593575}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47520,7 +47520,7 @@ GameObject:
   - component: {fileID: 1306079360840408837}
   - component: {fileID: 6045954983233678851}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47707,7 +47707,7 @@ GameObject:
   - component: {fileID: 1229160980865159390}
   - component: {fileID: 141381056462612223}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47801,7 +47801,7 @@ GameObject:
   - component: {fileID: 5533795387867499783}
   - component: {fileID: 292383673831787448}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47895,7 +47895,7 @@ GameObject:
   - component: {fileID: 9129059205079681120}
   - component: {fileID: 5095713061666946886}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48083,7 +48083,7 @@ GameObject:
   - component: {fileID: 4516918920115163828}
   - component: {fileID: 4693310803267555656}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48866,7 +48866,7 @@ GameObject:
   - component: {fileID: 7231528857922434478}
   - component: {fileID: 621044703891808072}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49183,7 +49183,7 @@ GameObject:
   - component: {fileID: 3939415445377572690}
   - component: {fileID: 1965342321634811697}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49525,7 +49525,7 @@ GameObject:
   - component: {fileID: 1684682085835985281}
   - component: {fileID: 5022178334961773893}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49993,7 +49993,7 @@ GameObject:
   - component: {fileID: 5447615863404866572}
   - component: {fileID: 6218895843698841370}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50557,7 +50557,7 @@ GameObject:
   - component: {fileID: 6228362448864240054}
   - component: {fileID: 3128309570313263582}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50744,7 +50744,7 @@ GameObject:
   - component: {fileID: 8677957387273562239}
   - component: {fileID: 8583148439875080931}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50838,7 +50838,7 @@ GameObject:
   - component: {fileID: 5457927103780820399}
   - component: {fileID: 2448246672044377299}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50932,7 +50932,7 @@ GameObject:
   - component: {fileID: 3889504781554307181}
   - component: {fileID: 2408228637979685423}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51308,7 +51308,7 @@ GameObject:
   - component: {fileID: 4968831253840670200}
   - component: {fileID: 591396268409669999}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51402,7 +51402,7 @@ GameObject:
   - component: {fileID: 8386703430455169417}
   - component: {fileID: 5127409175569299959}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51496,7 +51496,7 @@ GameObject:
   - component: {fileID: 1387456261708424282}
   - component: {fileID: 6374059300458852287}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52150,7 +52150,7 @@ GameObject:
   - component: {fileID: 3501923797491028901}
   - component: {fileID: 7630342380141767028}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52284,7 +52284,7 @@ GameObject:
   - component: {fileID: 8214663978502884236}
   - component: {fileID: 8835119140430986646}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52378,7 +52378,7 @@ GameObject:
   - component: {fileID: 1153879857758161993}
   - component: {fileID: 5044086987161896841}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52472,7 +52472,7 @@ GameObject:
   - component: {fileID: 660321093664464627}
   - component: {fileID: 4112948238291719584}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52566,7 +52566,7 @@ GameObject:
   - component: {fileID: 4188471283308665204}
   - component: {fileID: 3613019772130486364}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53407,7 +53407,7 @@ GameObject:
   - component: {fileID: 539822561447365947}
   - component: {fileID: 1438863163713251407}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53501,7 +53501,7 @@ GameObject:
   - component: {fileID: 3118651335781902348}
   - component: {fileID: 444670713906288086}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53595,7 +53595,7 @@ GameObject:
   - component: {fileID: 7991149761918562689}
   - component: {fileID: 6045308908974446037}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53689,7 +53689,7 @@ GameObject:
   - component: {fileID: 4113226864926481477}
   - component: {fileID: 3752573926409150914}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53969,7 +53969,7 @@ GameObject:
   - component: {fileID: 2955501680187289886}
   - component: {fileID: 7175224176491570642}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54157,7 +54157,7 @@ GameObject:
   - component: {fileID: 5332385937180296814}
   - component: {fileID: 4439376136949482207}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54251,7 +54251,7 @@ GameObject:
   - component: {fileID: 3433464338474320761}
   - component: {fileID: 4758531201107434480}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54627,7 +54627,7 @@ GameObject:
   - component: {fileID: 2574882874896784095}
   - component: {fileID: 2647352949778294407}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55037,7 +55037,7 @@ GameObject:
   - component: {fileID: 8721417601671748955}
   - component: {fileID: 7460635036908295693}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55131,7 +55131,7 @@ GameObject:
   - component: {fileID: 8248426573873186730}
   - component: {fileID: 8052110943166746028}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55411,7 +55411,7 @@ GameObject:
   - component: {fileID: 7735236662499656368}
   - component: {fileID: 2903405754531561823}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55880,7 +55880,7 @@ GameObject:
   - component: {fileID: 833597884159870697}
   - component: {fileID: 1891798727053635406}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55974,7 +55974,7 @@ GameObject:
   - component: {fileID: 3108923942799909368}
   - component: {fileID: 3900752372826275623}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56162,7 +56162,7 @@ GameObject:
   - component: {fileID: 2019880458973868725}
   - component: {fileID: 3319242485881980849}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56815,7 +56815,7 @@ GameObject:
   - component: {fileID: 8670066690254018132}
   - component: {fileID: 1878567160858036211}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57095,7 +57095,7 @@ GameObject:
   - component: {fileID: 5478219302753156583}
   - component: {fileID: 6864078172102275291}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57189,7 +57189,7 @@ GameObject:
   - component: {fileID: 2664136937971555870}
   - component: {fileID: 7786684703422482296}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57470,7 +57470,7 @@ GameObject:
   - component: {fileID: 524833361457783393}
   - component: {fileID: 1476864892033004694}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57937,7 +57937,7 @@ GameObject:
   - component: {fileID: 2686283100085364829}
   - component: {fileID: 3118088242932355746}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58217,7 +58217,7 @@ GameObject:
   - component: {fileID: 6318210530485193409}
   - component: {fileID: 126615174484088432}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58311,7 +58311,7 @@ GameObject:
   - component: {fileID: 593236963451054543}
   - component: {fileID: 4674450852021770545}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59341,7 +59341,7 @@ GameObject:
   - component: {fileID: 4133846027411211800}
   - component: {fileID: 8789920446039079480}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59435,7 +59435,7 @@ GameObject:
   - component: {fileID: 6987574139892339743}
   - component: {fileID: 2694010688592982802}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59529,7 +59529,7 @@ GameObject:
   - component: {fileID: 6649358971820449825}
   - component: {fileID: 7162509087751575818}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59623,7 +59623,7 @@ GameObject:
   - component: {fileID: 8539383049947882324}
   - component: {fileID: 291168647202577638}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59717,7 +59717,7 @@ GameObject:
   - component: {fileID: 8691301011213480974}
   - component: {fileID: 1881486702666763090}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60594,7 +60594,7 @@ GameObject:
   - component: {fileID: 4213713015156175587}
   - component: {fileID: 5872425129884663683}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61063,7 +61063,7 @@ GameObject:
   - component: {fileID: 1383749922673773309}
   - component: {fileID: 3714796872311914488}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61250,7 +61250,7 @@ GameObject:
   - component: {fileID: 4992320211017260525}
   - component: {fileID: 6814928442790886297}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61344,7 +61344,7 @@ GameObject:
   - component: {fileID: 4689491708937536260}
   - component: {fileID: 8215260196115727727}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61438,7 +61438,7 @@ GameObject:
   - component: {fileID: 8288426212429600508}
   - component: {fileID: 1409553829408944087}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61625,7 +61625,7 @@ GameObject:
   - component: {fileID: 5862685903840495766}
   - component: {fileID: 1159560025289160414}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61719,7 +61719,7 @@ GameObject:
   - component: {fileID: 5342979273101532213}
   - component: {fileID: 5781542644243470145}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61906,7 +61906,7 @@ GameObject:
   - component: {fileID: 2442546189133384884}
   - component: {fileID: 8461269486978597671}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62314,7 +62314,7 @@ GameObject:
   - component: {fileID: 5233503905599085984}
   - component: {fileID: 3269952994137477793}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62408,7 +62408,7 @@ GameObject:
   - component: {fileID: 8045731269622167036}
   - component: {fileID: 8674098645237732228}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62542,7 +62542,7 @@ GameObject:
   - component: {fileID: 324549170055510592}
   - component: {fileID: 8613907469274603207}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63066,7 +63066,7 @@ GameObject:
   - component: {fileID: 870289474401017071}
   - component: {fileID: 6653859250951531656}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63441,7 +63441,7 @@ GameObject:
   - component: {fileID: 2395319454142222955}
   - component: {fileID: 6998242366328642780}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63535,7 +63535,7 @@ GameObject:
   - component: {fileID: 633744309371700171}
   - component: {fileID: 2162952155703954082}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63817,7 +63817,7 @@ GameObject:
   - component: {fileID: 6889898777200930479}
   - component: {fileID: 1396180978412184722}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64565,7 +64565,7 @@ GameObject:
   - component: {fileID: 7129016081533635179}
   - component: {fileID: 3243220504913761340}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64881,7 +64881,7 @@ GameObject:
   - component: {fileID: 1940266122118152861}
   - component: {fileID: 6236989450564009237}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64975,7 +64975,7 @@ GameObject:
   - component: {fileID: 2308435803204536327}
   - component: {fileID: 6247797823643117577}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65069,7 +65069,7 @@ GameObject:
   - component: {fileID: 3124979610629958003}
   - component: {fileID: 5998395152731596799}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65256,7 +65256,7 @@ GameObject:
   - component: {fileID: 4005462794466028995}
   - component: {fileID: 2111247907912070771}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66044,7 +66044,7 @@ GameObject:
   - component: {fileID: 4412909537832362308}
   - component: {fileID: 8847905340641127165}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66453,7 +66453,7 @@ GameObject:
   - component: {fileID: 7339493497824474907}
   - component: {fileID: 1732247122404243757}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66547,7 +66547,7 @@ GameObject:
   - component: {fileID: 9209717219351747323}
   - component: {fileID: 6607205268182711551}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66641,7 +66641,7 @@ GameObject:
   - component: {fileID: 1604006057831814518}
   - component: {fileID: 7997994393298097674}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67109,7 +67109,7 @@ GameObject:
   - component: {fileID: 2186841698793951019}
   - component: {fileID: 7118378672612872738}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67390,7 +67390,7 @@ GameObject:
   - component: {fileID: 1191365139270196125}
   - component: {fileID: 7747596616585522708}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67484,7 +67484,7 @@ GameObject:
   - component: {fileID: 3075246657727385230}
   - component: {fileID: 7728298815437885149}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67707,7 +67707,7 @@ GameObject:
   - component: {fileID: 2046843084896541029}
   - component: {fileID: 8377454455051635878}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67987,7 +67987,7 @@ GameObject:
   - component: {fileID: 2207525795493551285}
   - component: {fileID: 5407951168893003198}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68268,7 +68268,7 @@ GameObject:
   - component: {fileID: 5729248174559318184}
   - component: {fileID: 8464324581281579089}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68362,7 +68362,7 @@ GameObject:
   - component: {fileID: 2032255415251305381}
   - component: {fileID: 6168765893240466466}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68863,7 +68863,7 @@ GameObject:
   - component: {fileID: 8284733857019398065}
   - component: {fileID: 323976108183063011}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69144,7 +69144,7 @@ GameObject:
   - component: {fileID: 6941844236864097651}
   - component: {fileID: 2797803698729044696}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69332,7 +69332,7 @@ GameObject:
   - component: {fileID: 1752035017282913242}
   - component: {fileID: 8948476155825190171}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70397,7 +70397,7 @@ GameObject:
   - component: {fileID: 8541384510128550498}
   - component: {fileID: 8775090916797391317}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70584,7 +70584,7 @@ GameObject:
   - component: {fileID: 2268997050647541597}
   - component: {fileID: 4159069142791763204}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70772,7 +70772,7 @@ GameObject:
   - component: {fileID: 1834767171979115416}
   - component: {fileID: 2567981744021919638}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71240,7 +71240,7 @@ GameObject:
   - component: {fileID: 4014119606196963415}
   - component: {fileID: 8481512521475456356}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71521,7 +71521,7 @@ GameObject:
   - component: {fileID: 4126314975972671195}
   - component: {fileID: 8898319069664943749}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71744,7 +71744,7 @@ GameObject:
   - component: {fileID: 3975134301381037923}
   - component: {fileID: 8957085148755042097}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71932,7 +71932,7 @@ GameObject:
   - component: {fileID: 5425265965107046446}
   - component: {fileID: 2821449678251156096}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72494,7 +72494,7 @@ GameObject:
   - component: {fileID: 7223795788577156910}
   - component: {fileID: 7880070113106223709}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72681,7 +72681,7 @@ GameObject:
   - component: {fileID: 1619677194949278038}
   - component: {fileID: 8121482683914442095}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72775,7 +72775,7 @@ GameObject:
   - component: {fileID: 4097008305019168535}
   - component: {fileID: 3980475429022328093}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73003,7 +73003,7 @@ GameObject:
   - component: {fileID: 5569349335396563063}
   - component: {fileID: 5652340007009150104}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73190,7 +73190,7 @@ GameObject:
   - component: {fileID: 2690394330622052577}
   - component: {fileID: 6592824435374016140}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73377,7 +73377,7 @@ GameObject:
   - component: {fileID: 2069220563553221483}
   - component: {fileID: 7371833824497591223}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73753,7 +73753,7 @@ GameObject:
   - component: {fileID: 7687483888455566819}
   - component: {fileID: 2852534209473928412}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74596,7 +74596,7 @@ GameObject:
   - component: {fileID: 5663199911190352417}
   - component: {fileID: 1306268237460104887}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74690,7 +74690,7 @@ GameObject:
   - component: {fileID: 9045191049096094770}
   - component: {fileID: 790518559737434091}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74784,7 +74784,7 @@ GameObject:
   - component: {fileID: 4012038742899285409}
   - component: {fileID: 987164750835277353}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74878,7 +74878,7 @@ GameObject:
   - component: {fileID: 1588345167185302183}
   - component: {fileID: 120073894554186792}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75439,7 +75439,7 @@ GameObject:
   - component: {fileID: 6175103737098237771}
   - component: {fileID: 4008829444787574010}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75756,7 +75756,7 @@ GameObject:
   - component: {fileID: 332211612590846772}
   - component: {fileID: 5259153734030133588}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76222,7 +76222,7 @@ GameObject:
   - component: {fileID: 1241795544213086045}
   - component: {fileID: 1968049065409987765}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76597,7 +76597,7 @@ GameObject:
   - component: {fileID: 7788923662601552235}
   - component: {fileID: 3795548586371974503}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77157,7 +77157,7 @@ GameObject:
   - component: {fileID: 4798132408456806473}
   - component: {fileID: 7453515954558115589}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77344,7 +77344,7 @@ GameObject:
   - component: {fileID: 4804223728603960005}
   - component: {fileID: 4762866172646327926}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77438,7 +77438,7 @@ GameObject:
   - component: {fileID: 7940198636602268385}
   - component: {fileID: 5324736572348008719}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77532,7 +77532,7 @@ GameObject:
   - component: {fileID: 1988286295672438031}
   - component: {fileID: 826940213707229595}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77731,7 +77731,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5663074742635470931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.0007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2636704810895200809}
@@ -78243,7 +78243,7 @@ GameObject:
   - component: {fileID: 2974824307897771675}
   - component: {fileID: 4074422441053889461}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78430,7 +78430,7 @@ GameObject:
   - component: {fileID: 7511598578629631870}
   - component: {fileID: 4392338758130749061}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78524,7 +78524,7 @@ GameObject:
   - component: {fileID: 5688127865658315936}
   - component: {fileID: 554351518960345118}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78712,7 +78712,7 @@ GameObject:
   - component: {fileID: 1777118613479953727}
   - component: {fileID: 3497175694010760943}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78899,7 +78899,7 @@ GameObject:
   - component: {fileID: 2006308181381871093}
   - component: {fileID: 4050180491391869577}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79087,7 +79087,7 @@ GameObject:
   - component: {fileID: 7612642745799258938}
   - component: {fileID: 5889633495065190062}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79533,7 +79533,7 @@ GameObject:
   - component: {fileID: 4707770798827872469}
   - component: {fileID: 2554317794423648029}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80187,7 +80187,7 @@ GameObject:
   - component: {fileID: 4440750793119053028}
   - component: {fileID: 8758976328030194957}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80281,7 +80281,7 @@ GameObject:
   - component: {fileID: 2499262068647837639}
   - component: {fileID: 7978263881228067906}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80468,7 +80468,7 @@ GameObject:
   - component: {fileID: 115124941883246691}
   - component: {fileID: 7121118806989933405}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80971,7 +80971,7 @@ GameObject:
   - component: {fileID: 3016671325242830071}
   - component: {fileID: 7270686210710399602}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81159,7 +81159,7 @@ GameObject:
   - component: {fileID: 4684142690500301193}
   - component: {fileID: 5608396533676315325}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81347,7 +81347,7 @@ GameObject:
   - component: {fileID: 7679618087632790880}
   - component: {fileID: 587185499423998201}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82190,7 +82190,7 @@ GameObject:
   - component: {fileID: 568081294692310264}
   - component: {fileID: 7128479478277754086}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82284,7 +82284,7 @@ GameObject:
   - component: {fileID: 8719237480301389319}
   - component: {fileID: 2243938637805257430}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82564,7 +82564,7 @@ GameObject:
   - component: {fileID: 8630613819624791153}
   - component: {fileID: 4111153619138578619}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82752,7 +82752,7 @@ GameObject:
   - component: {fileID: 3415163998207426978}
   - component: {fileID: 8640755678096169049}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82939,7 +82939,7 @@ GameObject:
   - component: {fileID: 4214927283525451360}
   - component: {fileID: 6237794463853103221}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84017,7 +84017,7 @@ GameObject:
   - component: {fileID: 713441651303735264}
   - component: {fileID: 2869969858858866118}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84111,7 +84111,7 @@ GameObject:
   - component: {fileID: 3886098019232401275}
   - component: {fileID: 7065884085147368541}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84205,7 +84205,7 @@ GameObject:
   - component: {fileID: 2107456292628019718}
   - component: {fileID: 8787573779229787438}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84427,7 +84427,7 @@ GameObject:
   - component: {fileID: 273664020609412068}
   - component: {fileID: 2551250363374816043}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84802,7 +84802,7 @@ GameObject:
   - component: {fileID: 2070632577247481056}
   - component: {fileID: 8839483218750941351}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84990,7 +84990,7 @@ GameObject:
   - component: {fileID: 4047696935719795714}
   - component: {fileID: 3617360475075745964}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85178,7 +85178,7 @@ GameObject:
   - component: {fileID: 6386899359598003151}
   - component: {fileID: 9223088946535333804}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85552,7 +85552,7 @@ GameObject:
   - component: {fileID: 1223365760999224609}
   - component: {fileID: 3327814494383915151}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85646,7 +85646,7 @@ GameObject:
   - component: {fileID: 7759545534187108557}
   - component: {fileID: 4355458107562674855}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86302,7 +86302,7 @@ GameObject:
   - component: {fileID: 6183323651639786487}
   - component: {fileID: 1529180049791221392}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86583,7 +86583,7 @@ GameObject:
   - component: {fileID: 6664433867166891363}
   - component: {fileID: 3840940025468006850}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86863,7 +86863,7 @@ GameObject:
   - component: {fileID: 1396541713061058178}
   - component: {fileID: 2854079522219926763}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86957,7 +86957,7 @@ GameObject:
   - component: {fileID: 3837430577596080862}
   - component: {fileID: 7471780664696833006}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87238,7 +87238,7 @@ GameObject:
   - component: {fileID: 3490206448420743278}
   - component: {fileID: 6151695159362852141}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87520,7 +87520,7 @@ GameObject:
   - component: {fileID: 1122923755370866738}
   - component: {fileID: 5359307749886737820}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87649,7 +87649,7 @@ GameObject:
   - component: {fileID: 8991860083253828073}
   - component: {fileID: 8344440170164393630}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88023,7 +88023,7 @@ GameObject:
   - component: {fileID: 4726304162018031663}
   - component: {fileID: 3347958571396420301}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88398,7 +88398,7 @@ GameObject:
   - component: {fileID: 7982282637768694825}
   - component: {fileID: 626786312268775770}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88586,7 +88586,7 @@ GameObject:
   - component: {fileID: 530931259764576367}
   - component: {fileID: 7738144718234156640}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88774,7 +88774,7 @@ GameObject:
   - component: {fileID: 4949340417799712962}
   - component: {fileID: 4472364201842184550}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88997,7 +88997,7 @@ GameObject:
   - component: {fileID: 7507636615754081793}
   - component: {fileID: 364687093803833620}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89558,7 +89558,7 @@ GameObject:
   - component: {fileID: 5212868419934508375}
   - component: {fileID: 9157737550171044886}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90153,7 +90153,7 @@ GameObject:
   - component: {fileID: 5040157044630826762}
   - component: {fileID: 1128564749199425668}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90527,7 +90527,7 @@ GameObject:
   - component: {fileID: 4326846338971546784}
   - component: {fileID: 8742518264794729090}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90714,7 +90714,7 @@ GameObject:
   - component: {fileID: 6232528939787951217}
   - component: {fileID: 6579400282061572821}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90808,7 +90808,7 @@ GameObject:
   - component: {fileID: 7526427670736802415}
   - component: {fileID: 189327340395971440}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90902,7 +90902,7 @@ GameObject:
   - component: {fileID: 7383978592819164040}
   - component: {fileID: 4984334376314997782}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90996,7 +90996,7 @@ GameObject:
   - component: {fileID: 7330446951918284105}
   - component: {fileID: 468766113868691629}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91184,7 +91184,7 @@ GameObject:
   - component: {fileID: 8441310986965232225}
   - component: {fileID: 2039142036567467363}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91651,7 +91651,7 @@ GameObject:
   - component: {fileID: 3065123764561603202}
   - component: {fileID: 5564250852126753012}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91838,7 +91838,7 @@ GameObject:
   - component: {fileID: 7200743734066665579}
   - component: {fileID: 7893087962402476833}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92212,7 +92212,7 @@ GameObject:
   - component: {fileID: 6082756172531433264}
   - component: {fileID: 790393863605428497}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92586,7 +92586,7 @@ GameObject:
   - component: {fileID: 3670413585088911784}
   - component: {fileID: 3401393087631533495}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92680,7 +92680,7 @@ GameObject:
   - component: {fileID: 3193498077830275323}
   - component: {fileID: 4029297268463341067}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93370,7 +93370,7 @@ GameObject:
   - component: {fileID: 1094861255239342692}
   - component: {fileID: 1119107455032162180}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93652,7 +93652,7 @@ GameObject:
   - component: {fileID: 2977583517500956348}
   - component: {fileID: 8861893872311451136}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94436,7 +94436,7 @@ GameObject:
   - component: {fileID: 1906697379025098877}
   - component: {fileID: 6797483598052908730}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94717,7 +94717,7 @@ GameObject:
   - component: {fileID: 2560665491051629263}
   - component: {fileID: 664634816474824628}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95278,7 +95278,7 @@ GameObject:
   - component: {fileID: 2142610142278758145}
   - component: {fileID: 972559517774723499}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95560,7 +95560,7 @@ GameObject:
   - component: {fileID: 1933395442179490531}
   - component: {fileID: 3564155129533697837}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95841,7 +95841,7 @@ GameObject:
   - component: {fileID: 4018690552966774824}
   - component: {fileID: 6469179029252980065}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95935,7 +95935,7 @@ GameObject:
   - component: {fileID: 2196818472130728650}
   - component: {fileID: 505508783775808369}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96029,7 +96029,7 @@ GameObject:
   - component: {fileID: 8129245581655788924}
   - component: {fileID: 7454719200045101823}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96123,7 +96123,7 @@ GameObject:
   - component: {fileID: 6335609526641504191}
   - component: {fileID: 6795055170241247038}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96217,7 +96217,7 @@ GameObject:
   - component: {fileID: 3980520368976918110}
   - component: {fileID: 516415767944884681}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96684,7 +96684,7 @@ GameObject:
   - component: {fileID: 7805802574671283168}
   - component: {fileID: 3492791748313959305}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97154,7 +97154,7 @@ GameObject:
   - component: {fileID: 2837273279988852941}
   - component: {fileID: 8336010045226137138}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97621,7 +97621,7 @@ GameObject:
   - component: {fileID: 7770012957421582316}
   - component: {fileID: 8179245162492491721}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97809,7 +97809,7 @@ GameObject:
   - component: {fileID: 4623315548410779464}
   - component: {fileID: 7597902046320898750}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97903,7 +97903,7 @@ GameObject:
   - component: {fileID: 6277167528162076572}
   - component: {fileID: 5922080357529649107}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97997,7 +97997,7 @@ GameObject:
   - component: {fileID: 556739117672862898}
   - component: {fileID: 5260226957576396178}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98559,7 +98559,7 @@ GameObject:
   - component: {fileID: 9155788054605823818}
   - component: {fileID: 7415226655923945827}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99379,7 +99379,7 @@ GameObject:
   - component: {fileID: 1410080883492443516}
   - component: {fileID: 275879995707362067}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99567,7 +99567,7 @@ GameObject:
   - component: {fileID: 1240329374751476277}
   - component: {fileID: 6531281446608922479}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99847,7 +99847,7 @@ GameObject:
   - component: {fileID: 2705628945850755170}
   - component: {fileID: 3270924696744897227}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100034,7 +100034,7 @@ GameObject:
   - component: {fileID: 7446977286773268497}
   - component: {fileID: 6361985482388730693}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100409,7 +100409,7 @@ GameObject:
   - component: {fileID: 3063680212809419414}
   - component: {fileID: 2633325430001866873}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100690,7 +100690,7 @@ GameObject:
   - component: {fileID: 1226464455422822494}
   - component: {fileID: 807312769978846937}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100784,7 +100784,7 @@ GameObject:
   - component: {fileID: 8114483934009391}
   - component: {fileID: 6391433875962151751}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100878,7 +100878,7 @@ GameObject:
   - component: {fileID: 674841842833706112}
   - component: {fileID: 5420585890511740923}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101159,7 +101159,7 @@ GameObject:
   - component: {fileID: 735258869849457975}
   - component: {fileID: 3159222251445201340}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101626,7 +101626,7 @@ GameObject:
   - component: {fileID: 5240591267754826980}
   - component: {fileID: 648110949437833455}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101813,7 +101813,7 @@ GameObject:
   - component: {fileID: 5077320321793284432}
   - component: {fileID: 8164941188783303824}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102001,7 +102001,7 @@ GameObject:
   - component: {fileID: 2962889296667231775}
   - component: {fileID: 9107159614065839200}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102656,7 +102656,7 @@ GameObject:
   - component: {fileID: 6098682163470651421}
   - component: {fileID: 5914077213803204223}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102750,7 +102750,7 @@ GameObject:
   - component: {fileID: 6308637108366034062}
   - component: {fileID: 712810585281011718}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103124,7 +103124,7 @@ GameObject:
   - component: {fileID: 6426570948258546810}
   - component: {fileID: 7656717448712023928}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103311,7 +103311,7 @@ GameObject:
   - component: {fileID: 8768575909513519699}
   - component: {fileID: 76665430809632795}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103405,7 +103405,7 @@ GameObject:
   - component: {fileID: 4342192915153418228}
   - component: {fileID: 6088844621783010851}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103779,7 +103779,7 @@ GameObject:
   - component: {fileID: 5928705951711615550}
   - component: {fileID: 4306298268695523819}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104528,7 +104528,7 @@ GameObject:
   - component: {fileID: 7302284877710996350}
   - component: {fileID: 4233641625615212262}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105092,7 +105092,7 @@ GameObject:
   - component: {fileID: 3086385703753495980}
   - component: {fileID: 8735648971630740569}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105373,7 +105373,7 @@ GameObject:
   - component: {fileID: 3597395087971086078}
   - component: {fileID: 5186875494624969308}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105841,7 +105841,7 @@ GameObject:
   - component: {fileID: 8587700755511485339}
   - component: {fileID: 7958732568799361294}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106029,7 +106029,7 @@ GameObject:
   - component: {fileID: 3000319733120216226}
   - component: {fileID: 2041591402548474388}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107002,7 +107002,7 @@ GameObject:
   - component: {fileID: 8558826712908438806}
   - component: {fileID: 5328669296815889790}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107096,7 +107096,7 @@ GameObject:
   - component: {fileID: 909687052895003442}
   - component: {fileID: 6812151638026215330}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107190,7 +107190,7 @@ GameObject:
   - component: {fileID: 3701437197183208091}
   - component: {fileID: 7268326147839924251}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107377,7 +107377,7 @@ GameObject:
   - component: {fileID: 6093066908272731759}
   - component: {fileID: 6499662288139332956}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107471,7 +107471,7 @@ GameObject:
   - component: {fileID: 6142109894789015407}
   - component: {fileID: 1153289386990869451}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107659,7 +107659,7 @@ GameObject:
   - component: {fileID: 7400242942488885723}
   - component: {fileID: 1993227751187932339}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107939,7 +107939,7 @@ GameObject:
   - component: {fileID: 1427528235418620493}
   - component: {fileID: 847021899563104283}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108033,7 +108033,7 @@ GameObject:
   - component: {fileID: 2995583594864737256}
   - component: {fileID: 8030727004667662426}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108220,7 +108220,7 @@ GameObject:
   - component: {fileID: 1997581360450889915}
   - component: {fileID: 1871667626520609185}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108314,7 +108314,7 @@ GameObject:
   - component: {fileID: 3750484229611292939}
   - component: {fileID: 9192821717559847504}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108782,7 +108782,7 @@ GameObject:
   - component: {fileID: 1008458143270602968}
   - component: {fileID: 6688707550339740223}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108876,7 +108876,7 @@ GameObject:
   - component: {fileID: 5104004305431365593}
   - component: {fileID: 4268493967655430540}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108970,7 +108970,7 @@ GameObject:
   - component: {fileID: 7306909350537559293}
   - component: {fileID: 6300699526593418310}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109345,7 +109345,7 @@ GameObject:
   - component: {fileID: 3362879498489628638}
   - component: {fileID: 411125705816904180}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109907,7 +109907,7 @@ GameObject:
   - component: {fileID: 5955584145398032304}
   - component: {fileID: 1055340302253645802}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110223,7 +110223,7 @@ GameObject:
   - component: {fileID: 2355042783653614192}
   - component: {fileID: 7153511900685386625}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110691,7 +110691,7 @@ GameObject:
   - component: {fileID: 7989524174538406717}
   - component: {fileID: 5405468994249781379}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111345,7 +111345,7 @@ GameObject:
   - component: {fileID: 1783269059260744038}
   - component: {fileID: 4917730100960828510}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112255,7 +112255,7 @@ GameObject:
   - component: {fileID: 2305976141418077230}
   - component: {fileID: 6428086533353810916}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112443,7 +112443,7 @@ GameObject:
   - component: {fileID: 8409081529642738014}
   - component: {fileID: 6133511722843194865}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112537,7 +112537,7 @@ GameObject:
   - component: {fileID: 5868786493330186171}
   - component: {fileID: 2111187571884850675}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112631,7 +112631,7 @@ GameObject:
   - component: {fileID: 8619115664719174658}
   - component: {fileID: 7893341998035060165}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112725,7 +112725,7 @@ GameObject:
   - component: {fileID: 1014569575183761278}
   - component: {fileID: 8019128361313185004}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112819,7 +112819,7 @@ GameObject:
   - component: {fileID: 2736976395266433712}
   - component: {fileID: 8830809180101657420}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112913,7 +112913,7 @@ GameObject:
   - component: {fileID: 8253691174683094916}
   - component: {fileID: 3447000455657866964}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113195,7 +113195,7 @@ GameObject:
   - component: {fileID: 6472698701530728897}
   - component: {fileID: 1788088481033268402}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113382,7 +113382,7 @@ GameObject:
   - component: {fileID: 3828806780864935364}
   - component: {fileID: 3285597082940903777}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113663,7 +113663,7 @@ GameObject:
   - component: {fileID: 8103602207704507873}
   - component: {fileID: 196267345907595759}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114131,7 +114131,7 @@ GameObject:
   - component: {fileID: 8745242735436186971}
   - component: {fileID: 1306814792064385066}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114353,7 +114353,7 @@ GameObject:
   - component: {fileID: 1159772372300667497}
   - component: {fileID: 7881696853994672095}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114447,7 +114447,7 @@ GameObject:
   - component: {fileID: 4851685347884087131}
   - component: {fileID: 9205925508119232850}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114822,7 +114822,7 @@ GameObject:
   - component: {fileID: 2425743739433744852}
   - component: {fileID: 1117751898715214864}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115291,7 +115291,7 @@ GameObject:
   - component: {fileID: 833881768190087658}
   - component: {fileID: 202273021044487115}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115666,7 +115666,7 @@ GameObject:
   - component: {fileID: 799025936868995064}
   - component: {fileID: 7212213524669323593}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115948,7 +115948,7 @@ GameObject:
   - component: {fileID: 8433144011018530107}
   - component: {fileID: 8068627632363852064}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116136,7 +116136,7 @@ GameObject:
   - component: {fileID: 7617879178889530428}
   - component: {fileID: 7951973747713123129}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116699,7 +116699,7 @@ GameObject:
   - component: {fileID: 6728988089028980340}
   - component: {fileID: 3625963323230969987}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116793,7 +116793,7 @@ GameObject:
   - component: {fileID: 126442198636995154}
   - component: {fileID: 7426509930799965641}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116887,7 +116887,7 @@ GameObject:
   - component: {fileID: 7629595136615946346}
   - component: {fileID: 1911970933776281790}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116981,7 +116981,7 @@ GameObject:
   - component: {fileID: 5768087749854721057}
   - component: {fileID: 3081613967418647471}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117075,7 +117075,7 @@ GameObject:
   - component: {fileID: 6824920079160968672}
   - component: {fileID: 820506544314644876}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117263,7 +117263,7 @@ GameObject:
   - component: {fileID: 581471182502136950}
   - component: {fileID: 5831331458554776781}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117357,7 +117357,7 @@ GameObject:
   - component: {fileID: 6146873513354909406}
   - component: {fileID: 8996500580164336257}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117919,7 +117919,7 @@ GameObject:
   - component: {fileID: 7105841178039905435}
   - component: {fileID: 2082781078420299281}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118423,7 +118423,7 @@ GameObject:
   - component: {fileID: 5843411217411998594}
   - component: {fileID: 1665526956666988709}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118611,7 +118611,7 @@ GameObject:
   - component: {fileID: 9010883060762273638}
   - component: {fileID: 8264692821716002383}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118984,7 +118984,7 @@ GameObject:
   - component: {fileID: 7773145937159914854}
   - component: {fileID: 8517041258415660574}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119301,7 +119301,7 @@ GameObject:
   - component: {fileID: 3306436352321542941}
   - component: {fileID: 101489715582170255}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120143,7 +120143,7 @@ GameObject:
   - component: {fileID: 6847936006341631533}
   - component: {fileID: 624926858981271383}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120705,7 +120705,7 @@ GameObject:
   - component: {fileID: 2831327435210625713}
   - component: {fileID: 5458003364168272521}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120799,7 +120799,7 @@ GameObject:
   - component: {fileID: 2875475354369007260}
   - component: {fileID: 5477279272302365683}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120986,7 +120986,7 @@ GameObject:
   - component: {fileID: 4854806080003902267}
   - component: {fileID: 2289584714491523431}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121267,7 +121267,7 @@ GameObject:
   - component: {fileID: 7251467405462979692}
   - component: {fileID: 4169921288138332684}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121548,7 +121548,7 @@ GameObject:
   - component: {fileID: 8395824738091634850}
   - component: {fileID: 2343532199055220191}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121736,7 +121736,7 @@ GameObject:
   - component: {fileID: 296028111217080266}
   - component: {fileID: 6196423300657189677}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122110,7 +122110,7 @@ GameObject:
   - component: {fileID: 2640232261115783132}
   - component: {fileID: 5978653302108403193}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122204,7 +122204,7 @@ GameObject:
   - component: {fileID: 688938322993458556}
   - component: {fileID: 4844143262344634310}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122485,7 +122485,7 @@ GameObject:
   - component: {fileID: 478367156565822201}
   - component: {fileID: 8738338539776630000}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123048,7 +123048,7 @@ GameObject:
   - component: {fileID: 9144325717462649299}
   - component: {fileID: 3246996667278698832}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123235,7 +123235,7 @@ GameObject:
   - component: {fileID: 119375826321181060}
   - component: {fileID: 3033845047864484040}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123423,7 +123423,7 @@ GameObject:
   - component: {fileID: 488393241283951815}
   - component: {fileID: 9164881138852652670}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123611,7 +123611,7 @@ GameObject:
   - component: {fileID: 4484929289881677421}
   - component: {fileID: 6869373656264749743}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123705,7 +123705,7 @@ GameObject:
   - component: {fileID: 403539024122960927}
   - component: {fileID: 167534908805195333}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123893,7 +123893,7 @@ GameObject:
   - component: {fileID: 5620328377167758827}
   - component: {fileID: 742551554831263513}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124360,7 +124360,7 @@ GameObject:
   - component: {fileID: 9161936455304229544}
   - component: {fileID: 3878703618694828000}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124710,7 +124710,7 @@ GameObject:
   - component: {fileID: 5285991956893292306}
   - component: {fileID: 8223036195305837830}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

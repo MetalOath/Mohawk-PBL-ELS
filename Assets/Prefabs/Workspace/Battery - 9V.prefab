@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 1548353114717727022}
   - component: {fileID: 498698427465848772}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,8 +217,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7447506701262160960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.004001546, y: 0.8249802, z: 0.3765783}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_LocalPosition: {x: -0.0040015, y: 0.8249802, z: 0.37658}
+  m_LocalScale: {x: 0.005556, y: 0.005556, z: 0.005556}
   m_Children: []
   m_Father: {fileID: 267865300141348691}
   m_RootOrder: 1
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 4245766473279089974}
   - component: {fileID: 977988220103602469}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,7 +324,7 @@ Transform:
   m_GameObject: {fileID: 8972280202497491635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0045187, y: 0.8249586, z: 0.37663}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_LocalScale: {x: 0.0036467998, y: 0.0036467998, z: 0.0036467998}
   m_Children: []
   m_Father: {fileID: 267865300141348691}
   m_RootOrder: 0

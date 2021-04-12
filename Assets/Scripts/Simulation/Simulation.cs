@@ -70,10 +70,6 @@ public abstract class Simulation : MonoBehaviour
         GameObject previousSegment = null;
         Quaternion pointTwoInvertedRotation = new Quaternion(pointTwo.rotation.x, pointTwo.rotation.y, pointTwo.rotation.z + 180f, pointTwo.rotation.w);
 
-        //GameObject wirePathFinder = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        //wirePathFinder.transform.position = pointOne.position + new Vector3(0, -wireLength, 0) + (pointTwo.position - pointOne.position)/2f;
-        //wirePathFinder.transform.localScale = wirePathFinder.transform.localScale * Mathf.Abs(Vector3.Magnitude(pointTwo.position - pointOne.position));
-
         for (int i = 0; i <= numberOfSegments; i++)
         {
             yFunction = Mathf.Sqrt(Mathf.Pow(distanceBetweenPoints / 2f, 2f) - Mathf.Pow((i * distanceBetweenPoints/numberOfSegments - distanceBetweenPoints / 2f), 2f));

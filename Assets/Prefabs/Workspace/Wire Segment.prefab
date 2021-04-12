@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 797252641564672641}
   - component: {fileID: 3444532922153822418}
   m_Layer: 0
-  m_Name: Wire
+  m_Name: Wire Segment
   m_TagString: Wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9502b59764b76ff45b8df127caa08f50, type: 2}
+  - {fileID: 2100000, guid: c90099efd42d9f04480a8ccbcd52f3b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
