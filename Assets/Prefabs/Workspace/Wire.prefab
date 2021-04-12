@@ -90,9 +90,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8666573704662837703}
   serializedVersion: 2
-  m_Mass: 0.0001
-  m_Drag: 20
-  m_AngularDrag: 20
+  m_Mass: 0.01
+  m_Drag: 5
+  m_AngularDrag: 10
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 2
@@ -107,11 +107,11 @@ ConfigurableJoint:
   m_GameObject: {fileID: 8666573704662837703}
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.8, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
+  m_Axis: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0.8, z: 0}
   serializedVersion: 2
-  m_SecondaryAxis: {x: 1, y: 0, z: 0}
+  m_SecondaryAxis: {x: 0, y: 0, z: 0}
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0

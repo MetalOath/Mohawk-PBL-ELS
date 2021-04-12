@@ -8,12 +8,14 @@ public abstract class Simulation : MonoBehaviour
     public Transform connectionPointOne, connectionPointTwo;
 
     public GameObject wirePrefab;
-    private GameObject wirePrefabMeasurementInstance;
-    private GameObject wireContainer;
+    public GameObject wireSegmentPrefab;
+    private GameObject wirePrefabSegmentMeasurementInstance;
+    private Transform wireContainerTransform;
     private float wirePrefabLength;
     private float wireSegmentLength;
     private float wireLength;
     private float distanceBetweenPoints;
+    private float yFunction;
     private int numberOfSegments;
 
     public bool simulationActiveState = false;
@@ -21,11 +23,13 @@ public abstract class Simulation : MonoBehaviour
 
     public void Start()
     {
-        wirePrefabMeasurementInstance = Instantiate(wirePrefab, Vector3.zero, Quaternion.identity);
-        wirePrefabLength = wirePrefabMeasurementInstance.GetComponent<Collider>().bounds.size.y;
-        Destroy(wirePrefabMeasurementInstance);
+        wirePrefabSegmentMeasurementInstance = Instantiate(wireSegmentPrefab, Vector3.zero, Quaternion.identity);
+        wirePrefabLength = wirePrefabSegmentMeasurementInstance.GetComponent<Collider>().bounds.size.y;
+        Destroy(wirePrefabSegmentMeasurementInstance);
 
-        wireSegmentLength = wirePrefabLength * 0.8f;
+        wireContainerTransform = GameObject.Find("Wires").transform;
+
+        wireSegmentLength = Mathf.Abs(wirePrefabLength * 0.8f);
     }
     public void WireSpawnPhaseInitiator()
     {
@@ -59,27 +63,30 @@ public abstract class Simulation : MonoBehaviour
         wireLength = Mathf.PI * distanceBetweenPoints / 2f; // use pi*d/2
         numberOfSegments = (int)(wireLength/wireSegmentLength) + 1;
 
-        wireContainer = new GameObject("Wire Container");
-        GameObject wireContainerInstance = Instantiate(wireContainer, pointOne.position + (pointTwo.position - pointOne.position)/2, Quaternion.identity);
-        Destroy(wireContainer);
+        wirePrefab = new GameObject("Wire " + (int)Time.time);
+        GameObject wireContainerInstance = Instantiate(wirePrefab, pointOne.position + (pointTwo.position - pointOne.position)/2, Quaternion.identity);
+        wireContainerInstance.transform.parent = wireContainerTransform;
+        Destroy(wirePrefab);
 
         GameObject previousSegment = null;
+        Vector3 previousTangent = Vector3.up;
         Quaternion pointTwoInvertedRotation = new Quaternion(pointTwo.rotation.x, pointTwo.rotation.y, pointTwo.rotation.z + 180f, pointTwo.rotation.w);
-        //Quaternion pointTwoInvertedRotation = Quaternion.Inverse(pointTwo.rotation);
 
-        GameObject wirePathFinder = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        wirePathFinder.transform.position = pointOne.position + new Vector3(0, -wireLength, 0) + (pointTwo.position - pointOne.position)/2f;
-        wirePathFinder.transform.localScale = wirePathFinder.transform.localScale * Mathf.Abs(Vector3.Magnitude(pointTwo.position - pointOne.position));
+        //GameObject wirePathFinder = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        //wirePathFinder.transform.position = pointOne.position + new Vector3(0, -wireLength, 0) + (pointTwo.position - pointOne.position)/2f;
+        //wirePathFinder.transform.localScale = wirePathFinder.transform.localScale * Mathf.Abs(Vector3.Magnitude(pointTwo.position - pointOne.position));
 
         for (int i = 0; i <= numberOfSegments; i++)
         {
-            //Vector3 createPos = new Vector3(pointOne.position.x, pointOne.position.y+(i*wireSegmentLength), pointOne.position.z);
+            yFunction = Mathf.Sqrt(Mathf.Pow(distanceBetweenPoints / 2f, 2f) - Mathf.Pow((i * distanceBetweenPoints/numberOfSegments - distanceBetweenPoints / 2f), 2f));//-1f * distanceBetweenPoints / 2f * Mathf.Pow(1f - ((numberOfSegments - i) / numberOfSegments), 2f) + distanceBetweenPoints * (1f - ((numberOfSegments - i) / numberOfSegments));
+            Vector3 parabolicY = new Vector3(0f, yFunction, 0f);
+            Vector3 pathToPointTwo = (pointTwo.position - pointOne.position) / numberOfSegments * i;
+            Vector3 midPoint = pointOne.position + (pointTwo.position - pointOne.position) / 2f;
 
-            Vector3 createPosition = pointOne.position + new Vector3(0, (distanceBetweenPoints / 2f) - (distanceBetweenPoints / 2f) * Mathf.Abs((numberOfSegments / 2f - i) / (numberOfSegments / 2f)), 0) + (pointTwo.position - pointOne.position) / numberOfSegments * i;
-            //Vector3 createPosition = pointOne.position + new Vector3(0, , 0) + (pointTwo.position - pointOne.position) / numberOfSegments * i;
-            Quaternion createRotation = Quaternion.FromToRotation(Vector3.up, pointTwo.position - pointOne.position);
-            GameObject currentSegment = Instantiate(wirePrefab, createPosition, createRotation);
-            //currentSegment.transform.rotation = Quaternion.FromToRotation(currentSegment.transform.up, (pointOne.position + (pointTwo.position - pointOne.position) / 2f));
+            Vector3 createPosition = pointOne.position + parabolicY + pathToPointTwo;
+            Quaternion createRotation = Quaternion.FromToRotation(pointTwo.position - pointOne.position, midPoint - createPosition);
+
+            GameObject currentSegment = Instantiate(wireSegmentPrefab, createPosition, createRotation);
 
             currentSegment.transform.parent = wireContainerInstance.transform;
             
@@ -104,8 +111,5 @@ public abstract class Simulation : MonoBehaviour
                 currentSegment.transform.rotation = pointTwoInvertedRotation;
             }
         }
-        
-        //spherePathFinder.transform.position = pointOne.position + new Vector3(0, -wireLength*0.15f, 0) + (pointTwo.position - pointOne.position) / 2f;
-        //Destroy(spherePathFinder);
     }
 }
