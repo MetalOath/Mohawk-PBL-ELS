@@ -4,11 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Resistor
   - LED_Light
   - Wire
-  - Power_Source_Positive
-  - Power_Source_Negative
+  - 9VBatteryPositive
+  - 9VBatteryNegative
+  - TextTMP
+  - multiBlackCable
+  - multiRedCable
+  - ResistorWire
+  - ResistorBody
+  - ResistorBand1
+  - ResistorBand2
+  - ResistorBand3
+  - ResistorBand4
+  - LedWire
   - Interactive
   - UI_Canvas
   - Connection_Points
