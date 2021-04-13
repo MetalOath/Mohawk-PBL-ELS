@@ -114,7 +114,7 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
             {
-                simulation.WireSpawnPhaseInitiator();
+                wireInstantiator.WireSpawnPhaseInitiator();
             }
         }
     }

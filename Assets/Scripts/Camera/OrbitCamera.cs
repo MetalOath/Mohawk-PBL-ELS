@@ -36,6 +36,7 @@ public abstract class OrbitCamera : MonoBehaviour
     public GameObject workspace;
 
     public SimulationMethods simulation;
+    public WireInstantiator wireInstantiator;
     #endregion
 
 
@@ -50,6 +51,7 @@ public abstract class OrbitCamera : MonoBehaviour
     public void Start()
     {
         simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
+        wireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
 
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
