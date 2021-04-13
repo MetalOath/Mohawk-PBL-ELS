@@ -35,7 +35,7 @@ public class Multimeter : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         // instance of GameObject that is being collided with 
-        GameObject otherObject = other.gameObject;
+        GameObject otherObject = other.gameObject.transform.parent.gameObject;
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
 
         if (otherObjectConduction)
