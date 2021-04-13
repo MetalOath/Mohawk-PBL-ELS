@@ -36,6 +36,7 @@ public abstract class OrbitCamera : MonoBehaviour
     public GameObject workspace;
 
     public SimulationMethods simulation;
+    public WireInstantiator wireInstantiator;
     #endregion
 
 
@@ -50,10 +51,12 @@ public abstract class OrbitCamera : MonoBehaviour
     public void Start()
     {
         simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
+        wireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
 
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
         SetIntendedDistance = (transform.position - GetCentre).magnitude;
+
         workspace = GameObject.Find("Workspace");
         simulation.ActivateViewMode();
         currentSimulationMode = simulation.currentSimulationMode;
@@ -190,5 +193,12 @@ public abstract class OrbitCamera : MonoBehaviour
         Centre = workspace.transform;
         GetObjectInSight();
     }
-
+    public void ShowConnectionPoints()
+    {
+        gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
+    }
+    public void HideConnectionPoints()
+    {
+        gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
+    }
 }
