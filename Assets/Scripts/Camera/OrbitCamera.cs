@@ -193,5 +193,12 @@ public abstract class OrbitCamera : MonoBehaviour
         Centre = workspace.transform;
         GetObjectInSight();
     }
-
+    public void ShowConnectionPoints()
+    {
+        gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
+    }
+    public void HideConnectionPoints()
+    {
+        gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
+    }
 }
