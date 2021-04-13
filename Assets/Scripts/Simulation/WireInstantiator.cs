@@ -5,6 +5,7 @@ using UnityEngine;
 public class WireInstantiator : MonoBehaviour
 {
     [SerializeField] private GameObject wirePrefab, wireSegmentPrefab;
+    [SerializeField] private Material redCPMat, greenCPMat, blueCPMat;
 
     private Transform connectionPointOne, connectionPointTwo, wireContainerTransform;
     private GameObject wirePrefabSegmentMeasurementInstance;
@@ -27,7 +28,8 @@ public class WireInstantiator : MonoBehaviour
     }
     public void WireSpawnPhaseInitiator()
     {
-        Ray raycast = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray raycast = simulation.SingleRayCastByPlatform();
+
         RaycastHit[] raycastHits = Physics.RaycastAll(raycast, 100f);
         RaycastHit raycastHit;
         for (int i = 0; i < raycastHits.Length; i++)
@@ -35,18 +37,24 @@ public class WireInstantiator : MonoBehaviour
             if (raycastHits[i].transform.gameObject.CompareTag("Connection_Points"))
             {
                 raycastHit = raycastHits[i];
-                if (simulation.inWireSpawnPhase == false)
+                if (raycastHit.transform.gameObject.GetComponent<MeshRenderer>().material.color == redCPMat.color)
                 {
-                    connectionPointOne = raycastHit.transform;
-                    simulation.inWireSpawnPhase = true;
+                    if (simulation.inWireSpawnPhase == false)
+                    {
+                        raycastHit.transform.gameObject.GetComponent<MeshRenderer>().material = greenCPMat;
+                        connectionPointOne = raycastHit.transform;
+                        simulation.inWireSpawnPhase = true;
+                    }
+                    else if (simulation.inWireSpawnPhase == true && raycastHit.transform != connectionPointOne)
+                    {
+                        connectionPointTwo = raycastHit.transform;
+                        SpawnWire(connectionPointOne, connectionPointTwo);
+                        simulation.inWireSpawnPhase = false;
+                        connectionPointOne.gameObject.GetComponent<MeshRenderer>().material = blueCPMat;
+                        connectionPointTwo.gameObject.GetComponent<MeshRenderer>().material = blueCPMat;
+                    }
+                    break;
                 }
-                else if (simulation.inWireSpawnPhase == true && raycastHit.transform != connectionPointOne)
-                {
-                    connectionPointTwo = raycastHit.transform;
-                    SpawnWire(connectionPointOne, connectionPointTwo);
-                    simulation.inWireSpawnPhase = false;
-                }
-                break;
             }
         }
     }

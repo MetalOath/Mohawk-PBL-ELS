@@ -28,7 +28,7 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ViewMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    ViewModeZoomToComponentMobile();
+                    ViewModeZoomToComponent();
                 }
 
                 if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
@@ -38,8 +38,7 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-
-                }
+                    wireInstantiator.WireSpawnPhaseInitiator();                }
             }
 
             switch (Input.touchCount)
@@ -102,9 +101,9 @@ public class OrbitCameraEventMethods : OrbitCamera
                 PerformZoom(Input.GetAxis("Mouse ScrollWheel"));
             }
 
-            if (currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
+            if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
             {
-                ViewModeZoomToComponentDesktop();
+                ViewModeZoomToComponent();
             }
 
             if (currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
@@ -138,31 +137,15 @@ public class OrbitCameraEventMethods : OrbitCamera
             Vector2.Angle(Input.GetTouch(0).deltaPosition, Input.GetTouch(1).deltaPosition) < 90;
     }
 
-    private void ViewModeZoomToComponentMobile()
+    private void ViewModeZoomToComponent()
     {
-        Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        Ray raycast = simulation.SingleRayCastByPlatform();
         RaycastHit raycastHit;
         if (Physics.Raycast(raycast, out raycastHit))
         {
             if (raycastHit.collider.CompareTag("Interactive"))
             {
                 ViewModeZoomToComponent(raycastHit.collider.transform);
-            }
-        }
-    }
-
-    private void ViewModeZoomToComponentDesktop()
-    {
-        if (Input.GetMouseButtonUp(0))
-        {
-            Ray raycast = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit raycastHit;
-            if (Physics.Raycast(raycast, out raycastHit))
-            {
-                if (raycastHit.collider.CompareTag("Interactive"))
-                {
-                    ViewModeZoomToComponent(raycastHit.collider.transform);
-                }
             }
         }
     }

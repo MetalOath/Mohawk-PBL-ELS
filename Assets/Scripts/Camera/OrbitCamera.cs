@@ -56,6 +56,7 @@ public abstract class OrbitCamera : MonoBehaviour
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
         SetIntendedDistance = (transform.position - GetCentre).magnitude;
+
         workspace = GameObject.Find("Workspace");
         simulation.ActivateViewMode();
         currentSimulationMode = simulation.currentSimulationMode;
