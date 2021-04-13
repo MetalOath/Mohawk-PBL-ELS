@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class WireInstantiator : MonoBehaviour
 {
-    public GameObject wirePrefab;
-    public GameObject wireSegmentPrefab;
+    [SerializeField] private GameObject wirePrefab, wireSegmentPrefab;
 
-    private Transform connectionPointOne, connectionPointTwo;
-    private Transform wireContainerTransform;
+    private Transform connectionPointOne, connectionPointTwo, wireContainerTransform;
     private GameObject wirePrefabSegmentMeasurementInstance;
-    private float wirePrefabLength;
-    private float wireSegmentLength;
-    private float wireLength;
-    private float distanceBetweenPoints;
-    private float yFunction;
+    private float wirePrefabLength, wireSegmentLength, wireLength, distanceBetweenPoints, yFunction;
     private int numberOfSegments;
 
     private SimulationMethods simulation;
@@ -55,6 +49,11 @@ public class WireInstantiator : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void SetWireColor([SerializeField] Material wireMaterial)
+    {
+        wireSegmentPrefab.GetComponent<MeshRenderer>().material = wireMaterial;
     }
 
     private void SpawnWire(Transform pointOne, Transform pointTwo)
