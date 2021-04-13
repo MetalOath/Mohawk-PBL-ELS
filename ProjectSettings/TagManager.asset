@@ -11,6 +11,7 @@ TagManager:
   - Power_Source_Negative
   - Interactive
   - UI_Canvas
+  - Connection_Points
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - CP
   - 
   - 
   - 
