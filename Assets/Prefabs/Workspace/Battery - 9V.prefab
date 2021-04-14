@@ -61,7 +61,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.00852135
   m_Center: {x: -0.00970098, y: 0.031409744, z: 0.00001688139}
---- !u!114 &6497881659829711298
+--- !u!114 &5462055153486224252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,9 +70,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4148002926323833699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 590f0108c853383429b12ff358656837, type: 3}
+  m_Script: {fileID: 11500000, guid: d0166f1a3f5c5a64e902c0566867ef54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerSourceCurrent: 0
+  powerSourceVoltage: 0
 --- !u!54 &6497881660135928061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -102,7 +104,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.0053749173
   m_Center: {x: 0.011940573, y: 0.03135493, z: 0.0001372807}
---- !u!114 &6497881660135928063
+--- !u!114 &116731150777108391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,9 +113,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5402964869062200417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 590f0108c853383429b12ff358656837, type: 3}
+  m_Script: {fileID: 11500000, guid: d0166f1a3f5c5a64e902c0566867ef54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerSourceCurrent: 0
+  powerSourceVoltage: 0
 --- !u!1 &6497881659179778231
 GameObject:
   m_ObjectHideFlags: 0
