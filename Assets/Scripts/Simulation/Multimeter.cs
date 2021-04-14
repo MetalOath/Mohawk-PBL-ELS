@@ -21,7 +21,11 @@ public class Multimeter : MonoBehaviour
 
     public void calcAmpBetweenTwoPoints()
     {
+        
         displayedAmp = redAmp + blackAmp;
+        // 0.0021...
+        // 0.0042...
+        // 1.0021
     }
 
     public void calcVoltBetweenTwoPoints()
@@ -42,11 +46,13 @@ public class Multimeter : MonoBehaviour
         {
             if (otherObject.tag == "multiBlackCable")
             {
+                Debug.Log("BLACK WIRE: " +otherObject.tag.ToString());
                 blackVolt = otherObjectConduction.voltage;
                 blackAmp = otherObjectConduction.current;
             }
             if (otherObject.tag == "multiRedCable")
             {
+                Debug.Log("RED WIRE: " + otherObject.tag.ToString());
                 redVolt = otherObjectConduction.voltage;
                 redAmp = otherObjectConduction.current;
             }

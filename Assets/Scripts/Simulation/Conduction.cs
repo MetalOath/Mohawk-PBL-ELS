@@ -60,10 +60,12 @@ public class Conduction : MonoBehaviour
         // Red wire must touch positive side of power source
         if (otherObject.tag == "ResistorBody")
         {
+            // Debug.Log("REACHED RESISTOR BODY TAG");
             positivePassThrough = true;
             positiveNumberInSeries += 1;
 
             resistance = otherObject.GetComponent<Resistor>().getResistorOhms();
+            //Debug.Log("Resistance: " + resistance);
             CurrentCalculator();
         }
         // if(otherObject.tag == "LedWire"){
@@ -131,6 +133,9 @@ public class Conduction : MonoBehaviour
     */
     private void CurrentCalculator()
     {       
+        // Debug.Log("CURRENT: " + current);
+        // Debug.Log("VOLTAGE: " + voltage);
+
         // To Do: Current isn't being seen by the multimeter.
         current = voltage / resistance;
     }
