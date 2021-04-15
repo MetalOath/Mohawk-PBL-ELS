@@ -12,11 +12,11 @@ public class WireInstantiator : MonoBehaviour
     private float wirePrefabLength, wireSegmentLength, wireLength, distanceBetweenPoints, yFunction;
     private int numberOfSegments;
 
-    private SimulationMethods simulation;
+    private SimulationMethods Simulation;
 
     public void Start()
     {
-        simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
+        Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
 
         wirePrefabSegmentMeasurementInstance = Instantiate(wireSegmentPrefab, Vector3.zero, Quaternion.identity);
         wirePrefabLength = wirePrefabSegmentMeasurementInstance.GetComponent<Collider>().bounds.size.y;
@@ -28,7 +28,7 @@ public class WireInstantiator : MonoBehaviour
     }
     public void WireSpawnPhaseInitiator()
     {
-        Ray raycast = simulation.SingleRayCastByPlatform();
+        Ray raycast = Simulation.SingleRayCastByPlatform();
 
         RaycastHit[] raycastHits = Physics.RaycastAll(raycast, 100f);
         RaycastHit raycastHit;
@@ -39,17 +39,17 @@ public class WireInstantiator : MonoBehaviour
                 raycastHit = raycastHits[i];
                 if (raycastHit.transform.gameObject.GetComponent<MeshRenderer>().material.color == redCPMat.color)
                 {
-                    if (simulation.inWireSpawnPhase == false)
+                    if (Simulation.inWireSpawnPhase == false)
                     {
                         raycastHit.transform.gameObject.GetComponent<MeshRenderer>().material = greenCPMat;
                         connectionPointOne = raycastHit.transform;
-                        simulation.inWireSpawnPhase = true;
+                        Simulation.inWireSpawnPhase = true;
                     }
-                    else if (simulation.inWireSpawnPhase == true && raycastHit.transform != connectionPointOne)
+                    else if (Simulation.inWireSpawnPhase == true && raycastHit.transform != connectionPointOne)
                     {
                         connectionPointTwo = raycastHit.transform;
                         SpawnWire(connectionPointOne, connectionPointTwo);
-                        simulation.inWireSpawnPhase = false;
+                        Simulation.inWireSpawnPhase = false;
                         connectionPointOne.gameObject.GetComponent<MeshRenderer>().material = blueCPMat;
                         connectionPointTwo.gameObject.GetComponent<MeshRenderer>().material = blueCPMat;
                     }
@@ -98,11 +98,11 @@ public class WireInstantiator : MonoBehaviour
                 currentSegment.transform.position = pointOne.position;
                 currentSegment.transform.rotation = pointOne.rotation;
 
-                CapsuleCollider cc = wireInstance.AddComponent<CapsuleCollider>();
-                cc.isTrigger = true;
-                cc.center = currentSegment.transform.localPosition;
-                cc.radius = currentSegment.GetComponent<Collider>().bounds.size.x;
-                cc.height = currentSegment.GetComponent<Collider>().bounds.size.y;
+                CapsuleCollider wireStartCollider = wireInstance.AddComponent<CapsuleCollider>();
+                wireStartCollider.isTrigger = true;
+                wireStartCollider.center = currentSegment.transform.localPosition;
+                wireStartCollider.radius = currentSegment.GetComponent<Collider>().bounds.size.x;
+                wireStartCollider.height = currentSegment.GetComponent<Collider>().bounds.size.y;
             }
 
             if (i != 0)
@@ -117,11 +117,11 @@ public class WireInstantiator : MonoBehaviour
                 currentSegment.transform.position = pointTwo.position;
                 currentSegment.transform.rotation = pointTwoInvertedRotation;
 
-                CapsuleCollider cc = wireInstance.AddComponent<CapsuleCollider>();
-                cc.isTrigger = true;
-                cc.center = currentSegment.transform.localPosition;
-                cc.radius = currentSegment.GetComponent<Collider>().bounds.size.x;
-                cc.height = currentSegment.GetComponent<Collider>().bounds.size.y;
+                CapsuleCollider wireEndCollider = wireInstance.AddComponent<CapsuleCollider>();
+                wireEndCollider.isTrigger = true;
+                wireEndCollider.center = currentSegment.transform.localPosition;
+                wireEndCollider.radius = currentSegment.GetComponent<Collider>().bounds.size.x;
+                wireEndCollider.height = currentSegment.GetComponent<Collider>().bounds.size.y;
             }
         }
     }

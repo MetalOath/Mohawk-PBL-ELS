@@ -4,14 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Resistor
   - LED_Light
   - Wire
-  - Power_Source_Positive
-  - Power_Source_Negative
+  - TextTMP
   - Interactive
   - UI_Canvas
   - Connection_Points
+  - Power_Source_Negative
+  - Power_Source_Positive
   layers:
   - Default
   - TransparentFX
