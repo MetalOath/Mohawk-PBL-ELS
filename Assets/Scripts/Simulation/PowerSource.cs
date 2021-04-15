@@ -3,30 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
-* Typical 9 volt battery has 1 amps
+* Typical 9 volt battery has a 1 amps limit
 */
 public class PowerSource : MonoBehaviour
 {    
-    [SerializeField] private float powerSourceCurrent;
-    [SerializeField] private float powerSourceVoltage;
-    void Start(){
-        PowerSource ps = gameObject.GetComponent<PowerSource>();
-        string gt = ps.tag;
-        Debug.Log(gt);
-        if(gt == "9VBatteryPositive" || gt == "9VBatteryNegative")
+    [SerializeField] private float powerSourceVoltage, powerSourceMaxCurrent;
+
+    private string terminal;
+
+    void Start()
+    {
+        terminal = gameObject.tag;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        Conduction otherObjectConduction = other.GetComponent<Conduction>();
+        if (otherObjectConduction)
         {
-        powerSourceCurrent = 1f;
-        powerSourceVoltage = 9f;
-        }
-        else if(gt == "PotatoBattery"){
-            // do something
-        }else if(gt == "DCPowerSupplyPositive" || gt == "DCPowerSupplyNegative"){
-            // do something
+            if (terminal == "Power_Source_Positive" && otherObjectConduction.loopIsClosed)
+            {
+
+            }
+            else if (terminal == "Power_Source_Negative" && otherObjectConduction.loopIsClosed)
+            {
+
+            }
         }
     }
+
     public float getPowerSourceCurrent()
     {
-        return powerSourceCurrent;
+        return powerSourceMaxCurrent;
     }
     
     public float getPowerSourceVoltage()

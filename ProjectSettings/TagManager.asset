@@ -6,21 +6,12 @@ TagManager:
   tags:
   - LED_Light
   - Wire
-  - 9VBatteryPositive
-  - 9VBatteryNegative
   - TextTMP
-  - multiBlackCable
-  - multiRedCable
-  - ResistorWire
-  - ResistorBody
-  - ResistorBand1
-  - ResistorBand2
-  - ResistorBand3
-  - ResistorBand4
-  - LedWire
   - Interactive
   - UI_Canvas
   - Connection_Points
+  - Power_Source_Negative
+  - Power_Source_Positive
   layers:
   - Default
   - TransparentFX

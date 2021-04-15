@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5207577762746246382}
   - component: {fileID: 2627199758153463497}
   m_Layer: 0
-  m_Name: CP
+  m_Name: CP - milliAmps
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 727710512166188481}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3548474928288475998
 MeshFilter:
@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 8358090203931769018}
   - component: {fileID: 1133118793911687398}
   m_Layer: 0
-  m_Name: CP
+  m_Name: CP - Common
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -684,7 +684,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 727710512166188481}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &301089608992336162
 MeshFilter:
@@ -915,8 +915,10 @@ GameObject:
   - component: {fileID: 6967884965293715172}
   - component: {fileID: 1798250853165529014}
   - component: {fileID: 1099368972893071530}
+  - component: {fileID: 4892105532605285512}
+  - component: {fileID: 7906430652226330630}
   m_Layer: 0
-  m_Name: F/CSlot
+  m_Name: milliAmps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,7 +936,7 @@ Transform:
   m_LocalScale: {x: 1.277, y: 1.277, z: 1.277}
   m_Children: []
   m_Father: {fileID: 1443642155694495279}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1798250853165529014
 MeshFilter:
@@ -983,6 +985,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &4892105532605285512
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163083965384439544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.007620002
+  m_Center: {x: 0.000000014657638, y: -0.00000016432824, z: 0.0040857005}
+--- !u!114 &7906430652226330630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163083965384439544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e485a49e8b701744b1fd3a7f9bc436d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voltageReading: 0
+  currentReading: 0
 --- !u!1 &3454174733889662808
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,8 +1023,10 @@ GameObject:
   - component: {fileID: 4578514865652851983}
   - component: {fileID: 951622445540128060}
   - component: {fileID: 729981124571530528}
+  - component: {fileID: 4661799657867430442}
+  - component: {fileID: 8607258377403954396}
   m_Layer: 0
-  m_Name: HzSlot
+  m_Name: Volts/Ohms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,6 +1093,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &4661799657867430442
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3454174733889662808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.007620002
+  m_Center: {x: -2.4352304e-10, y: -0.00000014942708, z: 0.0040856856}
+--- !u!114 &8607258377403954396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3454174733889662808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e485a49e8b701744b1fd3a7f9bc436d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voltageReading: 0
+  currentReading: 0
 --- !u!1 &3730804466912735421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,8 +1131,10 @@ GameObject:
   - component: {fileID: 5075909530227942587}
   - component: {fileID: 2059794713525298983}
   - component: {fileID: 1293167330557220628}
+  - component: {fileID: 8641020629481220904}
+  - component: {fileID: 1861385024639489829}
   m_Layer: 0
-  m_Name: 10ASlot
+  m_Name: Amps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1141,6 +1201,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &8641020629481220904
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3730804466912735421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.007620003
+  m_Center: {x: 0.000000029924085, y: -0.000000119503, z: 0.0040857}
+--- !u!114 &1861385024639489829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3730804466912735421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e485a49e8b701744b1fd3a7f9bc436d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voltageReading: 0
+  currentReading: 0
 --- !u!1 &4603329449262393664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,8 +1335,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2724130080979509409}
-  - {fileID: 2793382289174245114}
   - {fileID: 1475755624500870762}
+  - {fileID: 2793382289174245114}
   - {fileID: 1037717512689370479}
   m_Father: {fileID: 7147250962146585287}
   m_RootOrder: 2
@@ -1360,7 +1447,7 @@ GameObject:
   - component: {fileID: 5565087065719107677}
   - component: {fileID: 6171108038632109021}
   m_Layer: 0
-  m_Name: CP
+  m_Name: CP - Amps
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1453,7 +1540,7 @@ GameObject:
   - component: {fileID: 2678652632922944407}
   - component: {fileID: 8332858599731346314}
   m_Layer: 0
-  m_Name: CP
+  m_Name: CP - Volts/Ohms
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1860,12 +1947,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0db0c251d5856469b76860a8604ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redVolt: 0
-  redAmp: 0
-  blackVolt: 0
-  blackAmp: 0
-  displayedVoltage: 0
-  displayedAmp: 0
+  voltageReading: 0
+  currentReading: 0
+  ampsPort: {fileID: 3730804466912735421}
+  milliAmpsPort: {fileID: 3163083965384439544}
+  commonPort: {fileID: 8756223812639006229}
+  voltsOhmsPort: {fileID: 3454174733889662808}
+  screenTMP: {fileID: 8258814981224277891}
 --- !u!1 &7321808166001450562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,7 +2201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1443642155694495279}
   m_Layer: 0
-  m_Name: SLOTS
+  m_Name: Ports
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2131,8 +2219,8 @@ Transform:
   m_LocalScale: {x: 0.39370102, y: 0.39370102, z: 0.39370102}
   m_Children:
   - {fileID: 5075909530227942587}
-  - {fileID: 211900315092286814}
   - {fileID: 6967884965293715172}
+  - {fileID: 211900315092286814}
   - {fileID: 4578514865652851983}
   m_Father: {fileID: 8437367503412955162}
   m_RootOrder: 6
@@ -2300,7 +2388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: It Works!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2327,8 +2415,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
-  m_fontSizeBase: 0.5
+  m_fontSize: 0.25
+  m_fontSizeBase: 0.25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2384,7 +2472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8258814981379711624
 Transform:
   m_ObjectHideFlags: 0
@@ -2411,8 +2499,10 @@ GameObject:
   - component: {fileID: 211900315092286814}
   - component: {fileID: 1895546229525999611}
   - component: {fileID: 2314499421301329851}
+  - component: {fileID: 7425507237740206946}
+  - component: {fileID: 9034763797854415416}
   m_Layer: 0
-  m_Name: COMSlot
+  m_Name: Common
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2430,7 +2520,7 @@ Transform:
   m_LocalScale: {x: 1.277, y: 1.277, z: 1.277}
   m_Children: []
   m_Father: {fileID: 1443642155694495279}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1895546229525999611
 MeshFilter:
@@ -2479,6 +2569,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &7425507237740206946
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756223812639006229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.007620002
+  m_Center: {x: 0.0000000295588, y: -0.0000001792294, z: 0.004085641}
+--- !u!114 &9034763797854415416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756223812639006229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e485a49e8b701744b1fd3a7f9bc436d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voltageReading: 0
+  currentReading: 0
 --- !u!1 &9105255514365416096
 GameObject:
   m_ObjectHideFlags: 0
