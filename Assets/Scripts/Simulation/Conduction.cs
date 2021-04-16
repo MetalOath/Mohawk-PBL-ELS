@@ -5,7 +5,7 @@ using UnityEngine;
 public class Conduction : MonoBehaviour
 {
     public bool positivePassThrough = false, negativePassThrough = false, simulationActiveState = false, loopIsClosed = false;
-    public float voltage, current, resistance;
+    public float voltage, current, resistance = 1f;
     private SimulationMethods Simulation;
     /*
     * To know when a parallel circuit is created. 
@@ -91,20 +91,20 @@ public class Conduction : MonoBehaviour
         {
             // To Do: Check for the this conduction script to be less than the other conduction script in the series.
             // To Do: positivenumberinseries is increasing alot.
-            // if(positiveNumberInSeries < otherObjectConduction.positiveNumberInSeries){
-                if(voltage != 0 && otherObjectConduction.voltage == 0)
+            if(positiveNumberInSeries > otherObjectConduction.positiveNumberInSeries){
+                if(otherObjectConduction.voltage != 0 && voltage == 0)
                 {
-                    otherObjectConduction.voltage = voltage;
+                     voltage = otherObjectConduction.current*resistance;
                 }
-                if(current != 0 && otherObjectConduction.current == 0)
+                if(otherObjectConduction.current != 0 && current == 0)
                 {
-                    otherObjectConduction.current = current;
+                    current = voltage/resistance;
                 }
-                if(resistance != 0 && otherObjectConduction.resistance == 0)
-                {
-                    otherObjectConduction.resistance = resistance;
-                }
-            //}
+                //if(otherObjectConduction.resistance != 0 && resistance == 0)
+                //{
+                //    resistance = otherObjectConduction.resistance;
+                //}
+            }
             bool multimeterCheck = otherObject.tag == "multiBlackCable" || otherObject.tag == "multiRedCable";
             //Negative Check
             if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false && !multimeterCheck)
