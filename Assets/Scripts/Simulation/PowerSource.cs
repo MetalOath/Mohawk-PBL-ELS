@@ -7,7 +7,7 @@ using UnityEngine;
 */
 public class PowerSource : MonoBehaviour
 {    
-    [SerializeField] private float powerSourceVoltage, powerSourceMaxCurrent;
+    [SerializeField] private float powerSourceVoltage, calculatedCurrent, circuitResistanceTotal, powerSourceMaxCurrent;
 
     private string terminal;
 
@@ -25,16 +25,21 @@ public class PowerSource : MonoBehaviour
             {
 
             }
-            else if (terminal == "Power_Source_Negative" && otherObjectConduction.loopIsClosed)
+            if (terminal == "Power_Source_Negative" && otherObjectConduction.loopIsClosed && circuitResistanceTotal == 0f)
             {
-
+                circuitResistanceTotal = otherObjectConduction.resistance;
+                //Debug.Log("Battery Negative activated");
             }
         }
     }
 
-    public float getPowerSourceCurrent()
+    public float getCurrent()
     {
-        return powerSourceMaxCurrent;
+        if (circuitResistanceTotal != 0f)
+        {
+            calculatedCurrent = powerSourceVoltage / circuitResistanceTotal;
+        }
+        return calculatedCurrent;
     }
     
     public float getPowerSourceVoltage()
