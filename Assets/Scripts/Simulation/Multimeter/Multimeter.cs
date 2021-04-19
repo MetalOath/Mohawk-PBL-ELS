@@ -26,12 +26,12 @@ public class Multimeter : MonoBehaviour
 
     private void CalculateCurrentBetweenTwoPoints()
     {
-        currentReading = commonPortScript.currentReading + ampsPortScript.currentReading + milliAmpsPortScript.currentReading;
+        currentReading = commonPortScript.currentReading;// + ampsPortScript.currentReading + milliAmpsPortScript.currentReading;
     }
 
     private void CalculateVoltageBetweenTwoPoints()
     {
-        voltageReading = commonPortScript.voltageReading + voltsOhmsPortScript.voltageReading;
+        voltageReading = commonPortScript.voltageReading;// + voltsOhmsPortScript.voltageReading;
     }
 
     private void DisplayReadings()
