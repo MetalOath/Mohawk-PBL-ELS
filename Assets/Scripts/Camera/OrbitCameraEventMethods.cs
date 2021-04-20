@@ -28,7 +28,7 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ViewMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    ViewModeZoomToComponent();
+                    ZoomToComponent();
                 }
 
                 if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
@@ -38,7 +38,7 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    wireInstantiator.WireSpawnPhaseInitiator();                }
+                    WireInstantiator.WireSpawnPhaseInitiator();                }
             }
 
             switch (Input.touchCount)
@@ -103,17 +103,18 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
             {
-                ViewModeZoomToComponent();
+                ZoomToComponent();
             }
 
-            if (currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
+            if (Input.GetMouseButtonUp(0) && currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
             {
-
+                ZoomToComponent();
+                InvokeElementEvent();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
             {
-                wireInstantiator.WireSpawnPhaseInitiator();
+                WireInstantiator.WireSpawnPhaseInitiator();
             }
         }
     }
@@ -137,15 +138,36 @@ public class OrbitCameraEventMethods : OrbitCamera
             Vector2.Angle(Input.GetTouch(0).deltaPosition, Input.GetTouch(1).deltaPosition) < 90;
     }
 
-    private void ViewModeZoomToComponent()
+    private void ZoomToComponent()
     {
-        Ray raycast = simulation.SingleRayCastByPlatform();
+        Ray raycast = Simulation.SingleRayCastByPlatform();
         RaycastHit raycastHit;
         if (Physics.Raycast(raycast, out raycastHit))
         {
             if (raycastHit.collider.CompareTag("Interactive"))
             {
-                ViewModeZoomToComponent(raycastHit.collider.transform);
+                ZoomToComponent(raycastHit.collider.transform);
+            }
+        }
+    }
+
+    private void InvokeElementEvent()
+    {
+        Ray raycast = Simulation.SingleRayCastByPlatform();
+
+        RaycastHit[] raycastHits = Physics.RaycastAll(raycast, 100f);
+        RaycastHit raycastHit;
+        for (int i = 0; i < raycastHits.Length; i++)
+        {
+            if (raycastHits[i].transform.gameObject.CompareTag("Connection_Points"))
+            {
+                raycastHit = raycastHits[i];
+                ElementEventPublisher raycastHitSelectionPoint = raycastHit.transform.gameObject.GetComponent<ElementEventPublisher>();
+                if (raycastHitSelectionPoint)
+                {
+                    raycastHitSelectionPoint.InvokeElementMethods();
+                    break;
+                }
             }
         }
     }

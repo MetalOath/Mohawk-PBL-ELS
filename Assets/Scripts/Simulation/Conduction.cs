@@ -76,26 +76,10 @@ public class Conduction : MonoBehaviour
             current = otherObject.GetComponent<PowerSource>().getCurrent();
             //Debug.Log("getting battery current");
         }
-        // Red wire must touch positive side of power source
-        //if (otherObject.tag == "ResistorBody")
-        //{
-        //    // Debug.Log("REACHED RESISTOR BODY TAG");
-        //    positivePassThrough = true;
-        //    positiveNumberInSeries += 1;
-
-        //    resistance = otherObject.GetComponent<Resistor>().getResistorOhms();
-        //    //Debug.Log("Resistance: " + resistance);
-        //    CurrentCalculator();
-        //}
-        // if(otherObject.tag == "LedWire"){
-        // }
-
         // instance of conduction property of "other" object
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
         if (otherObjectConduction)
         {
-            // To Do: Check for the this conduction script to be less than the other conduction script in the series.
-            // To Do: positivenumberinseries is increasing alot.
             if(positiveNumberInSeries > otherObjectConduction.positiveNumberInSeries)
             {
                 if(otherObjectConduction.voltage != 0 && voltage == 0)
@@ -105,12 +89,12 @@ public class Conduction : MonoBehaviour
                 if (otherObjectConduction.resistance != 0 && resistance == 0)
                 {
                     resistance = otherObjectConduction.resistance + localResistance;
-                    Debug.Log("getting resistance from resistor");
+                    //Debug.Log("getting resistance from resistor");
                 }
                 if (otherObjectConduction.resistance == 0 && resistance == 0 && localResistance != 0)
                 {
                     resistance = localResistance;
-                    Debug.Log("Setting local resistance");
+                    //Debug.Log("Setting local resistance");
                 }
             }
 
@@ -122,7 +106,6 @@ public class Conduction : MonoBehaviour
                 }
             }
 
-            //bool multimeterCheck = otherObject.tag == "multiBlackCable" || otherObject.tag == "multiRedCable";
             //Negative Check
             if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false)
             {
@@ -142,7 +125,6 @@ public class Conduction : MonoBehaviour
                     positiveNumberInSeries = otherObjectConduction.positiveNumberInSeries + 1;
                 }
             }
-
         }
     }
 
@@ -160,15 +142,4 @@ public class Conduction : MonoBehaviour
         resistance = 0;
         loopIsClosed = false;
     }
-    /*
-    * Gets altered by resistor 
-    */
-    //private void CurrentCalculator()
-    //{       
-    //    // Debug.Log("CURRENT: " + current);
-    //    // Debug.Log("VOLTAGE: " + voltage);
-
-    //    // To Do: Current isn't being seen by the multimeter.
-    //    current = voltage / resistance;
-    //}
 }
