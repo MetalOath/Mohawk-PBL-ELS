@@ -5,7 +5,7 @@ using UnityEngine;
 public class Conduction : MonoBehaviour
 {
     public bool positivePassThrough = false, negativePassThrough = false, simulationActiveState = false, loopIsClosed = false;
-    public float voltage, current, resistance;
+    public float voltage, current, resistance, localResistance;
     private SimulationMethods Simulation;
     /*
     * To know when a parallel circuit is created. 
@@ -61,7 +61,6 @@ public class Conduction : MonoBehaviour
             positivePassThrough = true;
             positiveNumberInSeries += 1;
 
-            current = otherObject.GetComponent<PowerSource>().getPowerSourceCurrent();
             voltage = otherObject.GetComponent<PowerSource>().getPowerSourceVoltage();
 
         }
@@ -71,43 +70,44 @@ public class Conduction : MonoBehaviour
             negativePassThrough = true;
             negativeNumberInSeries += 1;
         }
-        // Red wire must touch positive side of power source
-        if (otherObject.tag == "ResistorBody")
+
+        if (otherObject.tag == "Power_Source_Negative" && current == 0)
         {
-            // Debug.Log("REACHED RESISTOR BODY TAG");
-            positivePassThrough = true;
-            positiveNumberInSeries += 1;
-
-            resistance = otherObject.GetComponent<Resistor>().getResistorOhms();
-            //Debug.Log("Resistance: " + resistance);
-            CurrentCalculator();
+            current = otherObject.GetComponent<PowerSource>().getCurrent();
+            //Debug.Log("getting battery current");
         }
-        // if(otherObject.tag == "LedWire"){
-        // }
-
         // instance of conduction property of "other" object
         Conduction otherObjectConduction = otherObject.GetComponent<Conduction>();
         if (otherObjectConduction)
         {
-            // To Do: Check for the this conduction script to be less than the other conduction script in the series.
-            // To Do: positivenumberinseries is increasing alot.
-            // if(positiveNumberInSeries < otherObjectConduction.positiveNumberInSeries){
-                if(voltage != 0 && otherObjectConduction.voltage == 0)
+            if(positiveNumberInSeries > otherObjectConduction.positiveNumberInSeries)
+            {
+                if(otherObjectConduction.voltage != 0 && voltage == 0)
                 {
-                    otherObjectConduction.voltage = voltage;
+                    voltage = otherObjectConduction.voltage;
                 }
-                if(current != 0 && otherObjectConduction.current == 0)
+                if (otherObjectConduction.resistance != 0 && resistance == 0)
                 {
-                    otherObjectConduction.current = current;
+                    resistance = otherObjectConduction.resistance + localResistance;
+                    //Debug.Log("getting resistance from resistor");
                 }
-                if(resistance != 0 && otherObjectConduction.resistance == 0)
+                if (otherObjectConduction.resistance == 0 && resistance == 0 && localResistance != 0)
                 {
-                    otherObjectConduction.resistance = resistance;
+                    resistance = localResistance;
+                    //Debug.Log("Setting local resistance");
                 }
-            //}
-            bool multimeterCheck = otherObject.tag == "multiBlackCable" || otherObject.tag == "multiRedCable";
+            }
+
+            if(negativeNumberInSeries > otherObjectConduction.negativeNumberInSeries)
+            {
+                if (otherObjectConduction.current != 0 && current == 0)
+                {
+                    current = otherObjectConduction.current;
+                }
+            }
+
             //Negative Check
-            if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false && !multimeterCheck)
+            if (otherObjectConduction.negativePassThrough == true && negativePassThrough == false)
             {
                 negativePassThrough = true;
                 if (negativeNumberInSeries == 0 && otherObjectConduction.negativeNumberInSeries != 0)
@@ -117,7 +117,7 @@ public class Conduction : MonoBehaviour
             }
 
             //Positive Check
-            if (otherObjectConduction.positivePassThrough == true && positivePassThrough == false && !multimeterCheck)
+            if (otherObjectConduction.positivePassThrough == true && positivePassThrough == false)
             {
                 positivePassThrough = true;
                 if (positiveNumberInSeries == 0 && otherObjectConduction.positiveNumberInSeries != 0)
@@ -125,7 +125,6 @@ public class Conduction : MonoBehaviour
                     positiveNumberInSeries = otherObjectConduction.positiveNumberInSeries + 1;
                 }
             }
-
         }
     }
 
@@ -142,16 +141,5 @@ public class Conduction : MonoBehaviour
         current = 0;
         resistance = 0;
         loopIsClosed = false;
-    }
-    /*
-    * Gets altered by resistor 
-    */
-    private void CurrentCalculator()
-    {       
-        // Debug.Log("CURRENT: " + current);
-        // Debug.Log("VOLTAGE: " + voltage);
-
-        // To Do: Current isn't being seen by the multimeter.
-        current = voltage / resistance;
     }
 }

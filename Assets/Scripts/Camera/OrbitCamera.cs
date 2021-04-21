@@ -35,8 +35,9 @@ public abstract class OrbitCamera : MonoBehaviour
     public string currentSimulationMode;
     public GameObject workspace;
 
-    public SimulationMethods simulation;
-    public WireInstantiator wireInstantiator;
+    public SimulationMethods Simulation;
+    public WireInstantiator WireInstantiator;
+    public OrbitCameraEventPublisher CameraEvents;
     #endregion
 
 
@@ -50,16 +51,17 @@ public abstract class OrbitCamera : MonoBehaviour
 
     public void Start()
     {
-        simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
-        wireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
+        Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
+        WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
+        CameraEvents = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
 
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
         SetIntendedDistance = (transform.position - GetCentre).magnitude;
 
         workspace = GameObject.Find("Workspace");
-        simulation.ActivateViewMode();
-        currentSimulationMode = simulation.currentSimulationMode;
+        Simulation.ActivateViewMode();
+        currentSimulationMode = Simulation.currentSimulationMode;
         ZoomToWorkspace();
     }
 
@@ -182,11 +184,18 @@ public abstract class OrbitCamera : MonoBehaviour
         offset = bound.center - centre.position;
     }
 
-    public void ViewModeZoomToComponent(Transform HitTarget)
+    public void ZoomToComponent(Transform HitTarget)
     {
         Centre = HitTarget;
         GetObjectInSight();
-        GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>().ViewModeZoomedCamera();
+        if (currentSimulationMode == "ViewMode")
+        {
+            CameraEvents.ViewModeZoomedCamera();
+        }
+        if (currentSimulationMode == "EditMode")
+        {
+            CameraEvents.EditModeZoomedCamera();
+        }
     }
     public void ZoomToWorkspace()
     {
@@ -200,5 +209,13 @@ public abstract class OrbitCamera : MonoBehaviour
     public void HideConnectionPoints()
     {
         gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
+    }
+    public void ShowSelectionPoints()
+    {
+        gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
+    }
+    public void HideSelectionPoints()
+    {
+        gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
     }
 }

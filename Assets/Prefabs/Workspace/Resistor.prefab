@@ -120,9 +120,11 @@ MonoBehaviour:
   positivePassThrough: 0
   negativePassThrough: 0
   simulationActiveState: 0
+  loopIsClosed: 0
   voltage: 0
   current: 0
   resistance: 0
+  localResistance: 4200
   positiveNumberInSeries: 0
   negativeNumberInSeries: 0
 --- !u!1001 &71053309450228520
