@@ -33,7 +33,8 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-
+                    ZoomToComponent();
+                    InvokeElementEvent();
                 }
 
                 if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
