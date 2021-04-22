@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public abstract class Simulation : MonoBehaviour
 {
@@ -25,20 +26,35 @@ public abstract class Simulation : MonoBehaviour
 
     public Ray SingleRayCastByPlatform()
     {
+        Ray nullRay = Camera.main.ScreenPointToRay(Vector3.zero);
+
         if (platform == "mobile")
         {
             Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            return raycast;
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                return raycast;
+            }
+            else
+            {
+                return nullRay;
+            }
         }
         else if (platform == "desktop")
         {
             Ray raycast = Camera.main.ScreenPointToRay(Input.mousePosition);
-            return raycast;
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                return raycast;
+            }
+            else
+            {
+                return nullRay;
+            }
         }
         else
         {
-            Ray raycast = Camera.main.ScreenPointToRay(Vector3.zero);
-            return raycast;
+            return nullRay;
         }
     }
 }
