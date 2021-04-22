@@ -64,6 +64,15 @@ public class WireInstantiator : MonoBehaviour
         wireSegmentPrefab.GetComponent<MeshRenderer>().material = wireMaterial;
     }
 
+    public void BreakWireSpawnPhase()
+    {
+        if(Simulation.inWireSpawnPhase == true)
+        {
+            connectionPointOne.gameObject.GetComponent<MeshRenderer>().material = redCPMat;
+            Simulation.inWireSpawnPhase = false;
+        }
+    }
+
     private void SpawnWire(Transform pointOne, Transform pointTwo)
     {
         distanceBetweenPoints = Vector3.Magnitude(pointTwo.position - pointOne.position);
