@@ -27,11 +27,11 @@ public abstract class Simulation : MonoBehaviour
     public Ray SingleRayCastByPlatform()
     {
         Ray nullRay = Camera.main.ScreenPointToRay(Vector3.zero);
-
+        // TODO: FIX MOBILE UI RAYCAST BLOCKING
         if (platform == "mobile")
         {
             Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            if (!EventSystem.current.IsPointerOverGameObject())
+            if (!IsPointerOverGameObject())
             {
                 return raycast;
             }
@@ -56,5 +56,32 @@ public abstract class Simulation : MonoBehaviour
         {
             return nullRay;
         }
+    }
+
+    //testing mobile UI raycast block.
+    private bool IsPointerOverUIObject()
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
+    }
+
+    /// <returns>true if mouse or first touch is over any event system object ( usually gui elements )</returns>
+    public static bool IsPointerOverGameObject()
+    {
+        //check mouse
+        if (EventSystem.current.IsPointerOverGameObject())
+            return true;
+
+        //check touch
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            if (EventSystem.current.IsPointerOverGameObject(Input.touches[0].fingerId))
+                return true;
+        }
+
+        return false;
     }
 }

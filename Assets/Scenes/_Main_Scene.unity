@@ -2206,6 +2206,7 @@ MonoBehaviour:
     type: 3}
   wireSegmentPrefab: {fileID: 8666573704662837703, guid: a9fc666ccc364b64197632d58bd21b91,
     type: 3}
+  wireContainer: {fileID: 1180036478}
   redCPMat: {fileID: 2100000, guid: 9502b59764b76ff45b8df127caa08f50, type: 2}
   greenCPMat: {fileID: 2100000, guid: c6e50d63213fdbd4b91559454a169147, type: 2}
   blueCPMat: {fileID: 2100000, guid: bde81cc1a9112484988488285e941733, type: 2}

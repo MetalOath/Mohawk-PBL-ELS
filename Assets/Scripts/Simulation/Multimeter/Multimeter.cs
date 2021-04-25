@@ -5,7 +5,7 @@ using TMPro;
 
 public class Multimeter : MonoBehaviour
 {
-    [SerializeField] private float voltageReading, currentReading;
+    [SerializeField] private float voltageReading, currentReading, resistanceReading;
     [SerializeField] private GameObject ampsPort, milliAmpsPort, commonPort, voltsOhmsPort, dial, screenTMP;
     private MultimeterPort ampsPortScript, milliAmpsPortScript, commonPortScript, voltsOhmsPortScript;
     private string multimeterMode = "OFF1";
@@ -25,31 +25,84 @@ public class Multimeter : MonoBehaviour
         DisplayReadings();
     }
 
-    private void GetCurrentReading()
+    private void GetReadings()
     {
-        currentReading = commonPortScript.currentReading;// + ampsPortScript.currentReading + milliAmpsPortScript.currentReading;
-    }
-
-    private void GetVoltageReading()
-    {
-        voltageReading = commonPortScript.voltageReading;// + voltsOhmsPortScript.voltageReading;
+        if (commonPortScript.isConnected && voltsOhmsPortScript.isConnected)
+        {
+            switch (multimeterMode)
+            {
+                case "AC Voltage":
+                    if (commonPortScript.voltageReading >= voltsOhmsPortScript.voltageReading)
+                        voltageReading = commonPortScript.voltageReading;
+                    else
+                        voltageReading = voltsOhmsPortScript.voltageReading;
+                    break;
+                case "DC Voltage":
+                    if (commonPortScript.voltageReading >= voltsOhmsPortScript.voltageReading)
+                        voltageReading = commonPortScript.voltageReading;
+                    else
+                        voltageReading = voltsOhmsPortScript.voltageReading;
+                    break;
+                case "Resistance/Continuiy/Diode/Capacitance":
+                    if (commonPortScript.resistanceReading >= voltsOhmsPortScript.resistanceReading)
+                        resistanceReading = commonPortScript.resistanceReading;
+                    else
+                        resistanceReading = voltsOhmsPortScript.resistanceReading;
+                    break;
+            }
+        }
+        else if (commonPortScript.isConnected && milliAmpsPortScript.isConnected)
+        {
+            switch (multimeterMode)
+            {
+                case "MicroAmps":
+                    currentReading = commonPortScript.currentReading;
+                    break;
+                case "MilliAmps":
+                    currentReading = commonPortScript.currentReading;
+                    break; 
+            }
+        }
+        else if (commonPortScript.isConnected && ampsPortScript.isConnected)
+        {
+            currentReading = commonPortScript.currentReading;
+        }
+        else
+        {
+            voltageReading = 0f;
+            currentReading = 0f;
+            resistanceReading = 0f;
+        }
     }
 
     private void DisplayReadings()
     {
-        GetCurrentReading();
-        GetVoltageReading();
-        if (multimeterMode == "OFF1" || multimeterMode == "OFF2")
+        GetReadings();
+
+        switch (multimeterMode)
         {
-            screenTMP.GetComponent<TextMeshProUGUI>().text = "";
-        }
-        if (multimeterMode == "Amps" || multimeterMode == "MilliAmps" || multimeterMode == "MicroAmps")
-        {
-            screenTMP.GetComponent<TextMeshProUGUI>().text = "Current: " + currentReading + " Amps";
-        }
-        if (multimeterMode == "AC Voltage" || multimeterMode == "DC Voltage")
-        {
-            screenTMP.GetComponent<TextMeshProUGUI>().text = "Voltage: " + voltageReading + " Volts";
+            case "AC Voltage":
+                screenTMP.GetComponent<TextMeshProUGUI>().text = "Voltage: " + voltageReading + " Volts";
+                break;
+            case "DC Voltage":
+                screenTMP.GetComponent<TextMeshProUGUI>().text = "Voltage: " + voltageReading + " Volts";
+                break;
+            case "Resistance/Continuiy/Diode/Capacitance":
+                screenTMP.GetComponent<TextMeshProUGUI>().text = "Resistance: " + resistanceReading + " Ohms";
+                break;
+            case "MicroAmps":
+                screenTMP.GetComponent<TextMeshProUGUI>().text = "Current: " + currentReading + " Amps";
+                break;
+            case "MilliAmps":
+                screenTMP.GetComponent<TextMeshProUGUI>().text = "Current: " + currentReading + " Amps";
+                break;
+            case "Amps":
+                screenTMP.GetComponent<TextMeshProUGUI>().text = "Current: " + currentReading + " Amps";
+                break;
+            case "OFF1":
+            case "OFF2":
+                screenTMP.GetComponent<TextMeshProUGUI>().text = "";
+                break;
         }
     }
 
