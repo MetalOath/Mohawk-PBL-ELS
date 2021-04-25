@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MultimeterPort : MonoBehaviour
 {
-    public float voltageReading, currentReading;
+    public float voltageReading, currentReading, resistanceReading;
+    public bool isConnected = false;
     // Start is called before the first frame update
     //void Start()
     //{
@@ -24,6 +25,8 @@ public class MultimeterPort : MonoBehaviour
         {
             voltageReading = otherObjectConduction.voltage;
             currentReading = otherObjectConduction.current;
+            resistanceReading = otherObjectConduction.resistance;
+            isConnected = true;
         }
     }
 }

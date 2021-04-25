@@ -73,8 +73,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0166f1a3f5c5a64e902c0566867ef54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerSourceCurrent: 0
-  powerSourceVoltage: 0
+  powerSourceVoltage: 9
+  calculatedCurrent: 0
+  circuitResistanceTotal: 0
+  powerSourceMaxCurrent: 1
 --- !u!54 &6497881660135928061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -116,8 +118,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0166f1a3f5c5a64e902c0566867ef54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerSourceCurrent: 0
-  powerSourceVoltage: 0
+  powerSourceVoltage: 9
+  calculatedCurrent: 0
+  circuitResistanceTotal: 0
+  powerSourceMaxCurrent: 1
 --- !u!1 &6497881659179778231
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +177,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6497881660074907368}
-  m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.7071079}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 4.797, y: -7.963, z: 0.083}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
@@ -206,7 +210,7 @@ GameObject:
   - component: {fileID: 8131105279026452469}
   - component: {fileID: 1548353114717727022}
   - component: {fileID: 498698427465848772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
@@ -312,7 +316,7 @@ GameObject:
   - component: {fileID: 124269211601720110}
   - component: {fileID: 4245766473279089974}
   - component: {fileID: 977988220103602469}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}

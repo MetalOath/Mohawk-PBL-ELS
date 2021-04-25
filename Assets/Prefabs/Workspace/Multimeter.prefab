@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3548474928288475998}
   - component: {fileID: 5207577762746246382}
   - component: {fileID: 2627199758153463497}
-  m_Layer: 0
-  m_Name: CP - milliAmps
+  m_Layer: 8
+  m_Name: CP - F/CSlot
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1099,8 +1099,8 @@ GameObject:
   - component: {fileID: 301089608992336162}
   - component: {fileID: 8358090203931769018}
   - component: {fileID: 1133118793911687398}
-  m_Layer: 0
-  m_Name: CP - Common
+  m_Layer: 8
+  m_Name: CP - COMSlot
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1983,11 +1983,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4888002170841602127}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24917676, y: 0.4766806, z: 0.12536329}
-  m_Center: {x: -0.0001844439, y: 0.009739988, z: 0.06268165}
+  m_Size: {x: 0.24917674, y: 0.4766806, z: 0.12613341}
+  m_Center: {x: -0.00018444173, y: 0.009739989, z: 0.06306666}
 --- !u!1 &5517248126740523421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,8 +2000,8 @@ GameObject:
   - component: {fileID: 7167154679079470791}
   - component: {fileID: 5565087065719107677}
   - component: {fileID: 6171108038632109021}
-  m_Layer: 0
-  m_Name: CP - Amps
+  m_Layer: 8
+  m_Name: CP - 10ASlot
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2213,8 +2213,8 @@ GameObject:
   - component: {fileID: 6778336579124833082}
   - component: {fileID: 2678652632922944407}
   - component: {fileID: 8332858599731346314}
-  m_Layer: 0
-  m_Name: CP - Volts/Ohms
+  m_Layer: 8
+  m_Name: CP - HzSlot
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2901,7 +2901,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7147250962146585288}
-  m_LocalRotation: {x: -0, y: 0.13111363, z: -0, w: 0.99136734}
+  m_LocalRotation: {x: 0, y: 0.13111447, z: 0, w: 0.9913673}
   m_LocalPosition: {x: -2.549, y: 2.008, z: -0.573}
   m_LocalScale: {x: 7.5, y: 7.5, z: 7.5}
   m_Children:
@@ -3381,7 +3381,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8258814980005619575}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 

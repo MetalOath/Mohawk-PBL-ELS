@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WireInstantiator : MonoBehaviour
 {
-    [SerializeField] private GameObject wirePrefab, wireSegmentPrefab;
+    [SerializeField] private GameObject wirePrefab, wireSegmentPrefab, wireContainer;
     [SerializeField] private Material redCPMat, greenCPMat, blueCPMat;
 
     private Transform connectionPointOne, connectionPointTwo, wireContainerTransform;
@@ -22,7 +22,7 @@ public class WireInstantiator : MonoBehaviour
         wirePrefabLength = wirePrefabSegmentMeasurementInstance.GetComponent<Collider>().bounds.size.y;
         Destroy(wirePrefabSegmentMeasurementInstance);
 
-        wireContainerTransform = GameObject.Find("Wires").transform;
+        wireContainerTransform = wireContainer.transform;
 
         wireSegmentLength = Mathf.Abs(wirePrefabLength * 0.8f);
     }
@@ -62,6 +62,15 @@ public class WireInstantiator : MonoBehaviour
     public void SetWireColor([SerializeField] Material wireMaterial)
     {
         wireSegmentPrefab.GetComponent<MeshRenderer>().material = wireMaterial;
+    }
+
+    public void BreakWireSpawnPhase()
+    {
+        if(Simulation.inWireSpawnPhase == true)
+        {
+            connectionPointOne.gameObject.GetComponent<MeshRenderer>().material = redCPMat;
+            Simulation.inWireSpawnPhase = false;
+        }
     }
 
     private void SpawnWire(Transform pointOne, Transform pointTwo)
