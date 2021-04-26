@@ -28,12 +28,12 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ViewMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    ZoomToComponent();
+                    ZoomToElement();
                 }
 
                 if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    ZoomToComponent();
+                    ZoomToElement();
                     InvokeElementEvent();
                 }
 
@@ -104,17 +104,20 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
             {
-                ZoomToComponent();
+                ZoomToElement();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
             {
-                ZoomToComponent();
+                ZoomToElement();
+                if(zoomedToElement == true)
                 InvokeElementEvent();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
             {
+                ZoomToElement();
+                if(zoomedToElement == true)
                 WireInstantiator.WireSpawnPhaseInitiator();
             }
         }
@@ -139,7 +142,7 @@ public class OrbitCameraEventMethods : OrbitCamera
             Vector2.Angle(Input.GetTouch(0).deltaPosition, Input.GetTouch(1).deltaPosition) < 90;
     }
 
-    private void ZoomToComponent()
+    private void ZoomToElement()
     {
         Ray raycast = Simulation.SingleRayCastByPlatform();
         RaycastHit raycastHit;
@@ -147,7 +150,7 @@ public class OrbitCameraEventMethods : OrbitCamera
         {
             if (raycastHit.collider.CompareTag("Interactive"))
             {
-                ZoomToComponent(raycastHit.collider.transform);
+                ZoomToElement(raycastHit.collider.transform);
             }
         }
     }
@@ -160,7 +163,7 @@ public class OrbitCameraEventMethods : OrbitCamera
         RaycastHit raycastHit;
         for (int i = 0; i < raycastHits.Length; i++)
         {
-            if (raycastHits[i].transform.gameObject.CompareTag("Connection_Points"))
+            if (raycastHits[i].transform.gameObject.CompareTag("Selection_Points"))
             {
                 raycastHit = raycastHits[i];
                 ElementEventPublisher raycastHitSelectionPoint = raycastHit.transform.gameObject.GetComponent<ElementEventPublisher>();

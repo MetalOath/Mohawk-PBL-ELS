@@ -10,6 +10,7 @@ public class OrbitCameraEventPublisher : MonoBehaviour
     public UnityEvent activateEditModeCamera;
     public UnityEvent activateEditModeZoomedCamera;
     public UnityEvent activateConnectModeCamera;
+    public UnityEvent activateConnectModeZoomedCamera;
 
     public void ViewModeCamera()
     {
@@ -30,5 +31,9 @@ public class OrbitCameraEventPublisher : MonoBehaviour
     public void ConnectModeCamera()
     {
         activateConnectModeCamera?.Invoke();
+    }
+    public void ConnectModeZoomedCamera()
+    {
+        activateConnectModeZoomedCamera?.Invoke();
     }
 }

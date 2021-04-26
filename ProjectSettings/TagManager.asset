@@ -13,6 +13,7 @@ TagManager:
   - Power_Source_Negative
   - Power_Source_Positive
   - Resistor
+  - Selection_Points
   layers:
   - Default
   - TransparentFX

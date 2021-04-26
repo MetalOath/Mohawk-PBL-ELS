@@ -33,6 +33,7 @@ public abstract class OrbitCamera : MonoBehaviour
     public float SetIntendedDistance { set { intendedDistance = Mathf.Clamp(value, minDistance, maxDistance); } }
 
     public string currentSimulationMode;
+    public bool zoomedToElement = false;
     public GameObject workspace;
 
     public SimulationMethods Simulation;
@@ -184,23 +185,42 @@ public abstract class OrbitCamera : MonoBehaviour
         offset = bound.center - centre.position;
     }
 
-    public void ZoomToComponent(Transform HitTarget)
+    public void ZoomToElement(Transform HitTarget)
     {
-        Centre = HitTarget;
-        GetObjectInSight();
         if (currentSimulationMode == "ViewMode")
         {
             CameraEvents.ViewModeZoomedCamera();
+            Centre = HitTarget;
         }
-        if (currentSimulationMode == "EditMode")
+        else if (currentSimulationMode == "EditMode")
         {
             CameraEvents.EditModeZoomedCamera();
+            ShowSelectionPoints();
+            if (HitTarget.Find("EditZone"))
+                Centre = HitTarget.Find("EditZone");
+            else
+                Centre = HitTarget;
         }
+        else if (currentSimulationMode == "ConnectMode")
+        {
+            CameraEvents.ConnectModeZoomedCamera();
+            ShowConnectionPoints();
+            if (HitTarget.Find("ConnectZone"))
+                Centre = HitTarget.Find("ConnectZone");
+            else
+                Centre = HitTarget;
+        }
+
+        GetObjectInSight();
+        zoomedToElement = true;
     }
     public void ZoomToWorkspace()
     {
         Centre = workspace.transform;
         GetObjectInSight();
+        zoomedToElement = false;
+        HideConnectionPoints();
+        HideSelectionPoints();
     }
     public void ShowConnectionPoints()
     {
