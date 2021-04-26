@@ -33,12 +33,13 @@ public abstract class OrbitCamera : MonoBehaviour
     public float SetIntendedDistance { set { intendedDistance = Mathf.Clamp(value, minDistance, maxDistance); } }
 
     public string currentSimulationMode;
-    public bool zoomedToElement = false;
+    public bool zoomedToElement = false, breadboardCamera = false;
     public GameObject workspace;
 
     public SimulationMethods Simulation;
     public WireInstantiator WireInstantiator;
     public OrbitCameraEventPublisher CameraEvents;
+    public UIEventMethods FindObjects;
     #endregion
 
 
@@ -55,6 +56,7 @@ public abstract class OrbitCamera : MonoBehaviour
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
         WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
         CameraEvents = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
+        FindObjects = GameObject.Find("UI Event Handler").GetComponent<UIEventMethods>();
 
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
@@ -84,7 +86,10 @@ public abstract class OrbitCamera : MonoBehaviour
 
         //Actions
         transform.position = Vector3.Slerp(transform.position, calculatedPosition, Time.deltaTime/smoothness);
-        transform.forward = Vector3.Lerp(transform.forward, calculatedCentre - transform.position, Time.deltaTime / smoothness);
+        if (breadboardCamera)
+            transform.forward = Vector3.down;
+        else
+            transform.forward = Vector3.Lerp(transform.forward, calculatedCentre - transform.position, Time.deltaTime / smoothness);
         
     }
     
@@ -182,7 +187,8 @@ public abstract class OrbitCamera : MonoBehaviour
         SetIntendedDistance = radius / (Mathf.Sin(fov * Mathf.Deg2Rad / 2f));
 
         // Ensures the real object centre is looked at
-        offset = bound.center - centre.position;
+        if(!breadboardCamera)
+            offset = bound.center - centre.position;
     }
 
     public void ZoomToElement(Transform HitTarget)
@@ -205,7 +211,9 @@ public abstract class OrbitCamera : MonoBehaviour
         {
             CameraEvents.ConnectModeZoomedCamera();
             ShowConnectionPoints();
-            if (HitTarget.Find("ConnectZone"))
+            if (HitTarget.parent.CompareTag("Breadboard"))
+                ActivateBreadboardCamera(HitTarget);
+            else if (HitTarget.Find("ConnectZone"))
                 Centre = HitTarget.Find("ConnectZone");
             else
                 Centre = HitTarget;
@@ -225,17 +233,57 @@ public abstract class OrbitCamera : MonoBehaviour
     public void ShowConnectionPoints()
     {
         gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
+        
+        foreach (GameObject CP in FindObjects.connectionPoints)
+        {
+            StartCoroutine(ActivationWaiter(CP, 0.5f));
+        }
     }
     public void HideConnectionPoints()
     {
         gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
+
+        foreach (GameObject CP in FindObjects.connectionPoints)
+        {
+            CP.SetActive(false);
+        }
     }
     public void ShowSelectionPoints()
     {
         gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
+
+        foreach (GameObject SP in FindObjects.selectionPoints)
+        {
+            StartCoroutine(ActivationWaiter(SP, 0.5f));
+        }
     }
     public void HideSelectionPoints()
     {
         gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
+
+        foreach (GameObject SP in FindObjects.selectionPoints)
+        {
+            SP.SetActive(false);
+        }
+    }
+    public void ActivateBreadboardCamera(Transform breadboard)
+    {
+        breadboardCamera = true;
+        Centre = breadboard;
+        GetObjectInSight();
+        zoomedToElement = true;
+        ShowConnectionPoints();
+    }
+    IEnumerator ActivationWaiter(GameObject go, float waitTime)
+    {
+        //Do something before waiting.
+
+
+        //yield on a new YieldInstruction that waits for X seconds.
+        yield return new WaitForSeconds(waitTime);
+
+        //Do something after waiting.
+        if (zoomedToElement)
+        go.SetActive(true);
     }
 }

@@ -39,7 +39,8 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    WireInstantiator.WireSpawnPhaseInitiator();                }
+                    WireInstantiator.WireSpawnPhaseInitiator();
+                }
             }
 
             switch (Input.touchCount)
@@ -48,21 +49,19 @@ public class OrbitCameraEventMethods : OrbitCamera
                     if (!receives1FingerInput)
                         break;
 
-                    PerformRotate(Input.GetTouch(0).deltaPosition.x * 0.02f, Input.GetTouch(0).deltaPosition.y * 0.02f);
+                    if (breadboardCamera)
+                    {
+                        PerformPan(Input.GetTouch(0).deltaPosition.x * 0.01f, Input.GetTouch(0).deltaPosition.y * 0.02f);
+                    }
+                    else
+                    {
+                        PerformRotate(Input.GetTouch(0).deltaPosition.x * 0.02f, Input.GetTouch(0).deltaPosition.y * 0.02f);
+                    }
                     break;
                 case 2:
                     if (!receives2FingerInput)
                         break;
-                    // Pan disabled for now.
-                    // If the delta vectors are similar enough then is it a group pan otherwise it is a scale movement
-                    //if (GroupedFingers())
-                    //{
-                    //    PerformPan(Input.GetTouch(0).deltaPosition.x * 0.01f, Input.GetTouch(0).deltaPosition.y * 0.02f);
-                    //}
-                    //else
-                    //{
-                    //    PerformZoom(FingerToFingerDelta() * 0.002f);
-                    //}
+
                     PerformZoom(FingerToFingerDelta() * 0.002f);
                     break;
                 case 3:
@@ -84,7 +83,14 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             if (allowLeftMouse && Input.GetMouseButton(0))
             {
-                PerformRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+                if (breadboardCamera)
+                {
+                    PerformPan(Input.GetAxis("Mouse X") * -0.02f, Input.GetAxis("Mouse Y") * -0.02f);
+                }
+                else
+                {
+                    PerformRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+                }
             }
 
             if (allowRightMouse && Input.GetMouseButton(1))

@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 11402628}
   - component: {fileID: 11402627}
   - component: {fileID: 11402626}
+  - component: {fileID: 11402629}
   m_Layer: 0
-  m_Name: Connect Mode Camera
+  m_Name: Breadboard Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,6 +239,39 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &11402629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11402624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7573fb38f2a31434a8bdfc9f872e3e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centre: {fileID: 0}
+  ScrollSpeed: 10
+  OrbitSpeed: 5
+  smoothness: 0.5
+  minDistance: 1
+  maxDistance: 20
+  currentSimulationMode: 
+  zoomedToElement: 0
+  breadboardCamera: 0
+  workspace: {fileID: 0}
+  Simulation: {fileID: 0}
+  WireInstantiator: {fileID: 0}
+  CameraEvents: {fileID: 0}
+  FindObjects: {fileID: 0}
+  receives1FingerInput: 1
+  receives2FingerInput: 1
+  receives3FingerInput: 0
+  allowMiddleMouse: 0
+  allowLeftMouse: 1
+  allowRightMouse: 0
+  allowScroll: 1
 --- !u!1 &70200173
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +620,7 @@ GameObject:
   - component: {fileID: 279445192}
   - component: {fileID: 279445191}
   m_Layer: 5
-  m_Name: Button - Back
+  m_Name: Button - Edit Mode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -695,7 +729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8f1b75fefb6ae48429ccf9357e2058b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61d2ea0eb1d711b4bb546ae702060ac6, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4202,7 +4236,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 100
+  far clip plane: 200
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -4286,14 +4320,16 @@ MonoBehaviour:
   maxDistance: 10
   currentSimulationMode: 
   zoomedToElement: 0
+  breadboardCamera: 0
   workspace: {fileID: 0}
   Simulation: {fileID: 0}
   WireInstantiator: {fileID: 0}
   CameraEvents: {fileID: 0}
+  FindObjects: {fileID: 0}
   receives1FingerInput: 1
   receives2FingerInput: 1
   receives3FingerInput: 0
-  allowMiddleMouse: 1
+  allowMiddleMouse: 0
   allowLeftMouse: 1
   allowRightMouse: 0
   allowScroll: 1
@@ -4865,7 +4901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1dcf3157c1917d4bbe0a9ca843e65f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UICanvases: []
+  connectionPoints: []
+  selectionPoints: []
 --- !u!114 &1174431704
 MonoBehaviour:
   m_ObjectHideFlags: 0
