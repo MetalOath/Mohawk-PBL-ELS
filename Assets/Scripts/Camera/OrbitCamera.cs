@@ -64,6 +64,7 @@ public abstract class OrbitCamera : MonoBehaviour
 
         workspace = GameObject.Find("Workspace");
         Simulation.ActivateViewMode();
+        WireInstantiator.SetWireColor(WireInstantiator.redWireMat);
         currentSimulationMode = Simulation.currentSimulationMode;
         ZoomToWorkspace();
     }
@@ -82,12 +83,15 @@ public abstract class OrbitCamera : MonoBehaviour
     {
         // Calculations
         calculatedCentre = Vector3.Lerp(calculatedCentre, GetCentre, Time.deltaTime / smoothness);
+        if (breadboardCamera)
+        calculatedPosition = GetCentre + Vector3.up * intendedDistance;
+        else
         calculatedPosition = GetCentre + calculatedDirection.normalized * intendedDistance;
 
         //Actions
         transform.position = Vector3.Slerp(transform.position, calculatedPosition, Time.deltaTime/smoothness);
         if (breadboardCamera)
-            transform.forward = Vector3.down;
+            transform.forward = Vector3.Lerp(transform.forward, -Centre.forward, Time.deltaTime / smoothness);
         else
             transform.forward = Vector3.Lerp(transform.forward, calculatedCentre - transform.position, Time.deltaTime / smoothness);
         
@@ -187,7 +191,9 @@ public abstract class OrbitCamera : MonoBehaviour
         SetIntendedDistance = radius / (Mathf.Sin(fov * Mathf.Deg2Rad / 2f));
 
         // Ensures the real object centre is looked at
-        if(!breadboardCamera)
+        if (breadboardCamera)
+            offset = Vector3.zero;
+        else
             offset = bound.center - centre.position;
     }
 
@@ -232,16 +238,16 @@ public abstract class OrbitCamera : MonoBehaviour
     }
     public void ShowConnectionPoints()
     {
-        gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
+        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
         
         foreach (GameObject CP in FindObjects.connectionPoints)
         {
-            StartCoroutine(ActivationWaiter(CP, 0.5f));
+            StartCoroutine(WaitBeforeActivation(CP, 0.5f));
         }
     }
     public void HideConnectionPoints()
     {
-        gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
+        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
 
         foreach (GameObject CP in FindObjects.connectionPoints)
         {
@@ -250,16 +256,16 @@ public abstract class OrbitCamera : MonoBehaviour
     }
     public void ShowSelectionPoints()
     {
-        gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
+        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
 
         foreach (GameObject SP in FindObjects.selectionPoints)
         {
-            StartCoroutine(ActivationWaiter(SP, 0.5f));
+            StartCoroutine(WaitBeforeActivation(SP, 0.5f));
         }
     }
     public void HideSelectionPoints()
     {
-        gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
+        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
 
         foreach (GameObject SP in FindObjects.selectionPoints)
         {
@@ -274,7 +280,14 @@ public abstract class OrbitCamera : MonoBehaviour
         zoomedToElement = true;
         ShowConnectionPoints();
     }
-    IEnumerator ActivationWaiter(GameObject go, float waitTime)
+    public void DisableBreadboardCamera()
+    {
+        HideConnectionPoints();
+        breadboardCamera = false;
+        zoomedToElement = false;
+        ZoomToWorkspace();
+    }
+    IEnumerator WaitBeforeActivation(GameObject go, float waitTime)
     {
         //Do something before waiting.
 

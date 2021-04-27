@@ -28,18 +28,24 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ViewMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    ZoomToElement();
+                    if (zoomedToElement == false)
+                        ZoomToElement();
                 }
 
                 if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    ZoomToElement();
-                    InvokeElementEvent();
+                    if (zoomedToElement == false)
+                        ZoomToElement();
+                    if (zoomedToElement == true)
+                        InvokeElementEvent();
                 }
 
                 if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    WireInstantiator.WireSpawnPhaseInitiator();
+                    if (zoomedToElement == false)
+                        ZoomToElement();
+                    if (zoomedToElement == true)
+                        WireInstantiator.WireSpawnPhaseInitiator();
                 }
             }
 
@@ -50,13 +56,9 @@ public class OrbitCameraEventMethods : OrbitCamera
                         break;
 
                     if (breadboardCamera)
-                    {
                         PerformPan(Input.GetTouch(0).deltaPosition.x * 0.01f, Input.GetTouch(0).deltaPosition.y * 0.02f);
-                    }
                     else
-                    {
                         PerformRotate(Input.GetTouch(0).deltaPosition.x * 0.02f, Input.GetTouch(0).deltaPosition.y * 0.02f);
-                    }
                     break;
                 case 2:
                     if (!receives2FingerInput)
@@ -84,13 +86,9 @@ public class OrbitCameraEventMethods : OrbitCamera
             if (allowLeftMouse && Input.GetMouseButton(0))
             {
                 if (breadboardCamera)
-                {
                     PerformPan(Input.GetAxis("Mouse X") * -0.02f, Input.GetAxis("Mouse Y") * -0.02f);
-                }
                 else
-                {
                     PerformRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-                }
             }
 
             if (allowRightMouse && Input.GetMouseButton(1))
@@ -110,21 +108,24 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
             {
-                ZoomToElement();
+                if (zoomedToElement == false)
+                    ZoomToElement();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
             {
-                ZoomToElement();
-                if(zoomedToElement == true)
-                InvokeElementEvent();
+                if (zoomedToElement == false)
+                    ZoomToElement();
+                if (zoomedToElement == true)
+                    InvokeElementEvent();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
             {
-                ZoomToElement();
-                if(zoomedToElement == true)
-                WireInstantiator.WireSpawnPhaseInitiator();
+                if (zoomedToElement == false)
+                    ZoomToElement();
+                if (zoomedToElement == true)
+                    WireInstantiator.WireSpawnPhaseInitiator();
             }
         }
     }

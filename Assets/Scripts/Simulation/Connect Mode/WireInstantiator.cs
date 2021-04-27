@@ -5,7 +5,7 @@ using UnityEngine;
 public class WireInstantiator : MonoBehaviour
 {
     [SerializeField] private GameObject wirePrefab, wireSegmentPrefab, wireContainer;
-    [SerializeField] private Material redCPMat, greenCPMat, blueCPMat;
+    [SerializeField] public Material redCPMat, greenCPMat, blueCPMat, redWireMat;
 
     private Transform connectionPointOne, connectionPointTwo, wireContainerTransform;
     private GameObject wirePrefabSegmentMeasurementInstance;
