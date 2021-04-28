@@ -28,18 +28,25 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ViewMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    ZoomToComponent();
+                    if (!zoomedToElement)
+                        ZoomToElement();
                 }
 
                 if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    ZoomToComponent();
-                    InvokeElementEvent();
+                    if (!zoomedToElement)
+                        ZoomToElement();
+                    if (zoomedToElement)
+                        InvokeElementEvent();
                 }
 
                 if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    WireInstantiator.WireSpawnPhaseInitiator();                }
+                    if (!zoomedToElement)
+                        ZoomToElement();
+                    if (zoomedToElement)
+                        WireInstantiator.WireSpawnPhaseInitiator();
+                }
             }
 
             switch (Input.touchCount)
@@ -48,21 +55,15 @@ public class OrbitCameraEventMethods : OrbitCamera
                     if (!receives1FingerInput)
                         break;
 
-                    PerformRotate(Input.GetTouch(0).deltaPosition.x * 0.02f, Input.GetTouch(0).deltaPosition.y * 0.02f);
+                    if (breadboardCamera)
+                        PerformPan(Input.GetTouch(0).deltaPosition.x * -0.001f, Input.GetTouch(0).deltaPosition.y * -0.001f);
+                    else
+                        PerformRotate(Input.GetTouch(0).deltaPosition.x * 0.02f, Input.GetTouch(0).deltaPosition.y * 0.02f);
                     break;
                 case 2:
                     if (!receives2FingerInput)
                         break;
-                    // Pan disabled for now.
-                    // If the delta vectors are similar enough then is it a group pan otherwise it is a scale movement
-                    //if (GroupedFingers())
-                    //{
-                    //    PerformPan(Input.GetTouch(0).deltaPosition.x * 0.01f, Input.GetTouch(0).deltaPosition.y * 0.02f);
-                    //}
-                    //else
-                    //{
-                    //    PerformZoom(FingerToFingerDelta() * 0.002f);
-                    //}
+
                     PerformZoom(FingerToFingerDelta() * 0.002f);
                     break;
                 case 3:
@@ -84,7 +85,10 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             if (allowLeftMouse && Input.GetMouseButton(0))
             {
-                PerformRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+                if (breadboardCamera)
+                    PerformPan(Input.GetAxis("Mouse X") * -0.02f, Input.GetAxis("Mouse Y") * -0.02f);
+                else
+                    PerformRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
             }
 
             if (allowRightMouse && Input.GetMouseButton(1))
@@ -104,18 +108,24 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
             {
-                ZoomToComponent();
+                if (!zoomedToElement)
+                    ZoomToElement();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
             {
-                ZoomToComponent();
-                InvokeElementEvent();
+                if (!zoomedToElement)
+                    ZoomToElement();
+                if (zoomedToElement)
+                    InvokeElementEvent();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
             {
-                WireInstantiator.WireSpawnPhaseInitiator();
+                if (!zoomedToElement)
+                    ZoomToElement();
+                if (zoomedToElement)
+                    WireInstantiator.WireSpawnPhaseInitiator();
             }
         }
     }
@@ -139,7 +149,7 @@ public class OrbitCameraEventMethods : OrbitCamera
             Vector2.Angle(Input.GetTouch(0).deltaPosition, Input.GetTouch(1).deltaPosition) < 90;
     }
 
-    private void ZoomToComponent()
+    private void ZoomToElement()
     {
         Ray raycast = Simulation.SingleRayCastByPlatform();
         RaycastHit raycastHit;
@@ -147,7 +157,7 @@ public class OrbitCameraEventMethods : OrbitCamera
         {
             if (raycastHit.collider.CompareTag("Interactive"))
             {
-                ZoomToComponent(raycastHit.collider.transform);
+                ZoomToElement(raycastHit.collider.transform);
             }
         }
     }
@@ -160,7 +170,7 @@ public class OrbitCameraEventMethods : OrbitCamera
         RaycastHit raycastHit;
         for (int i = 0; i < raycastHits.Length; i++)
         {
-            if (raycastHits[i].transform.gameObject.CompareTag("Connection_Points"))
+            if (raycastHits[i].transform.gameObject.CompareTag("Selection_Points"))
             {
                 raycastHit = raycastHits[i];
                 ElementEventPublisher raycastHitSelectionPoint = raycastHit.transform.gameObject.GetComponent<ElementEventPublisher>();

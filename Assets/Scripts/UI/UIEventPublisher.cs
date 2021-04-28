@@ -10,6 +10,7 @@ public class UIEventPublisher : MonoBehaviour
     public UnityEvent activateEditModeUI;
     public UnityEvent activateEditModeZoomedUI;
     public UnityEvent activateConnectModeUI;
+    public UnityEvent activateConnectModeZoomedUI;
 
     public void ViewModeUI()
     {
@@ -30,5 +31,9 @@ public class UIEventPublisher : MonoBehaviour
     public void ConnectModeUI()
     {
         activateConnectModeUI?.Invoke();
+    }
+    public void ConnectModeZoomedUI()
+    {
+        activateConnectModeZoomedUI?.Invoke();
     }
 }

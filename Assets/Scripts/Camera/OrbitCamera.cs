@@ -33,11 +33,13 @@ public abstract class OrbitCamera : MonoBehaviour
     public float SetIntendedDistance { set { intendedDistance = Mathf.Clamp(value, minDistance, maxDistance); } }
 
     public string currentSimulationMode;
+    public bool zoomedToElement = false, breadboardCamera = false;
     public GameObject workspace;
 
     public SimulationMethods Simulation;
     public WireInstantiator WireInstantiator;
     public OrbitCameraEventPublisher CameraEvents;
+    public UIEventMethods FindObjects;
     #endregion
 
 
@@ -51,9 +53,13 @@ public abstract class OrbitCamera : MonoBehaviour
 
     public void Start()
     {
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            minDistance = 0.25f;
+
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
         WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
         CameraEvents = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
+        FindObjects = GameObject.Find("UI Event Handler").GetComponent<UIEventMethods>();
 
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
@@ -61,6 +67,7 @@ public abstract class OrbitCamera : MonoBehaviour
 
         workspace = GameObject.Find("Workspace");
         Simulation.ActivateViewMode();
+        WireInstantiator.SetWireColor(WireInstantiator.redWireMat);
         currentSimulationMode = Simulation.currentSimulationMode;
         ZoomToWorkspace();
     }
@@ -79,11 +86,17 @@ public abstract class OrbitCamera : MonoBehaviour
     {
         // Calculations
         calculatedCentre = Vector3.Lerp(calculatedCentre, GetCentre, Time.deltaTime / smoothness);
+        if (breadboardCamera)
+        calculatedPosition = GetCentre + Vector3.up * intendedDistance;
+        else
         calculatedPosition = GetCentre + calculatedDirection.normalized * intendedDistance;
 
         //Actions
         transform.position = Vector3.Slerp(transform.position, calculatedPosition, Time.deltaTime/smoothness);
-        transform.forward = Vector3.Lerp(transform.forward, calculatedCentre - transform.position, Time.deltaTime / smoothness);
+        if (breadboardCamera)
+            transform.forward = Vector3.Lerp(transform.forward, -Centre.forward, Time.deltaTime / smoothness);
+        else
+            transform.forward = Vector3.Lerp(transform.forward, calculatedCentre - transform.position, Time.deltaTime / smoothness);
         
     }
     
@@ -181,41 +194,112 @@ public abstract class OrbitCamera : MonoBehaviour
         SetIntendedDistance = radius / (Mathf.Sin(fov * Mathf.Deg2Rad / 2f));
 
         // Ensures the real object centre is looked at
-        offset = bound.center - centre.position;
+        if (breadboardCamera)
+            offset = Vector3.zero;
+        else
+            offset = bound.center - centre.position;
     }
 
-    public void ZoomToComponent(Transform HitTarget)
+    public void ZoomToElement(Transform HitTarget)
     {
-        Centre = HitTarget;
-        GetObjectInSight();
         if (currentSimulationMode == "ViewMode")
         {
             CameraEvents.ViewModeZoomedCamera();
+            Centre = HitTarget;
         }
-        if (currentSimulationMode == "EditMode")
+        else if (currentSimulationMode == "EditMode")
         {
             CameraEvents.EditModeZoomedCamera();
+            ShowSelectionPoints();
+            if (HitTarget.Find("EditZone"))
+                Centre = HitTarget.Find("EditZone");
+            else
+                Centre = HitTarget;
         }
+        else if (currentSimulationMode == "ConnectMode")
+        {
+            CameraEvents.ConnectModeZoomedCamera();
+            ShowConnectionPoints();
+            if (HitTarget.parent.CompareTag("Breadboard"))
+                ActivateBreadboardCamera(HitTarget);
+            else if (HitTarget.Find("ConnectZone"))
+                Centre = HitTarget.Find("ConnectZone");
+            else
+                Centre = HitTarget;
+        }
+
+        GetObjectInSight();
+        zoomedToElement = true;
     }
     public void ZoomToWorkspace()
     {
         Centre = workspace.transform;
         GetObjectInSight();
+        zoomedToElement = false;
+        HideConnectionPoints();
+        HideSelectionPoints();
     }
     public void ShowConnectionPoints()
     {
-        gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
+        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
+        
+        foreach (GameObject CP in FindObjects.connectionPoints)
+        {
+            StartCoroutine(WaitBeforeActivation(CP, 0.5f));
+        }
     }
     public void HideConnectionPoints()
     {
-        gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
+        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
+
+        foreach (GameObject CP in FindObjects.connectionPoints)
+        {
+            CP.SetActive(false);
+        }
     }
     public void ShowSelectionPoints()
     {
-        gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
+        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
+
+        foreach (GameObject SP in FindObjects.selectionPoints)
+        {
+            StartCoroutine(WaitBeforeActivation(SP, 0.5f));
+        }
     }
     public void HideSelectionPoints()
     {
-        gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
+        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
+
+        foreach (GameObject SP in FindObjects.selectionPoints)
+        {
+            SP.SetActive(false);
+        }
+    }
+    public void ActivateBreadboardCamera(Transform breadboard)
+    {
+        breadboardCamera = true;
+        Centre = breadboard;
+        GetObjectInSight();
+        zoomedToElement = true;
+        ShowConnectionPoints();
+    }
+    public void DisableBreadboardCamera()
+    {
+        HideConnectionPoints();
+        breadboardCamera = false;
+        zoomedToElement = false;
+        ZoomToWorkspace();
+    }
+    IEnumerator WaitBeforeActivation(GameObject go, float waitTime)
+    {
+        //Do something before waiting.
+
+
+        //yield on a new YieldInstruction that waits for X seconds.
+        yield return new WaitForSeconds(waitTime);
+
+        //Do something after waiting.
+        if (zoomedToElement)
+        go.SetActive(true);
     }
 }
