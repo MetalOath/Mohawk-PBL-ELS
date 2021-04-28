@@ -53,6 +53,9 @@ public abstract class OrbitCamera : MonoBehaviour
 
     public void Start()
     {
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            minDistance = 0.25f;
+
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
         WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
         CameraEvents = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();

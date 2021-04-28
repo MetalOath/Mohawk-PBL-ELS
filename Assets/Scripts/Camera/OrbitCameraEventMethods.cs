@@ -28,23 +28,23 @@ public class OrbitCameraEventMethods : OrbitCamera
 
                 if (currentSimulationMode == "ViewMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    if (zoomedToElement == false)
+                    if (!zoomedToElement)
                         ZoomToElement();
                 }
 
                 if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    if (zoomedToElement == false)
+                    if (!zoomedToElement)
                         ZoomToElement();
-                    if (zoomedToElement == true)
+                    if (zoomedToElement)
                         InvokeElementEvent();
                 }
 
                 if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                 {
-                    if (zoomedToElement == false)
+                    if (!zoomedToElement)
                         ZoomToElement();
-                    if (zoomedToElement == true)
+                    if (zoomedToElement)
                         WireInstantiator.WireSpawnPhaseInitiator();
                 }
             }
@@ -56,7 +56,7 @@ public class OrbitCameraEventMethods : OrbitCamera
                         break;
 
                     if (breadboardCamera)
-                        PerformPan(Input.GetTouch(0).deltaPosition.x * 0.01f, Input.GetTouch(0).deltaPosition.y * 0.02f);
+                        PerformPan(Input.GetTouch(0).deltaPosition.x * -0.001f, Input.GetTouch(0).deltaPosition.y * -0.001f);
                     else
                         PerformRotate(Input.GetTouch(0).deltaPosition.x * 0.02f, Input.GetTouch(0).deltaPosition.y * 0.02f);
                     break;
@@ -108,23 +108,23 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
             {
-                if (zoomedToElement == false)
+                if (!zoomedToElement)
                     ZoomToElement();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
             {
-                if (zoomedToElement == false)
+                if (!zoomedToElement)
                     ZoomToElement();
-                if (zoomedToElement == true)
+                if (zoomedToElement)
                     InvokeElementEvent();
             }
 
             if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
             {
-                if (zoomedToElement == false)
+                if (!zoomedToElement)
                     ZoomToElement();
-                if (zoomedToElement == true)
+                if (zoomedToElement)
                     WireInstantiator.WireSpawnPhaseInitiator();
             }
         }

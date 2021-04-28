@@ -9,13 +9,31 @@ public class UIEventMethods : MonoBehaviour
     public List<GameObject> selectionPoints = new List<GameObject>();
     GameObject[] allGameObjects;
 
+    SimulationMethods Simulation;
+
+    [SerializeField] private GameObject wirePrompt;
+
     private void Start()
     {
+        Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
         allGameObjects = Resources.FindObjectsOfTypeAll<GameObject>();
         PopulateUICanvasList();
         PopulateCPList();
         PopulateSPList();
     }
+
+    private void Update()
+    {
+        if (Simulation.currentSimulationMode == "ConnectMode" && !wirePrompt.activeInHierarchy)
+        {
+            wirePrompt.SetActive(true);
+        }
+        else if (Simulation.currentSimulationMode != "ConnectMode" && wirePrompt.activeInHierarchy)
+        {
+            wirePrompt.SetActive(false);
+        }
+    }
+
     private void PopulateUICanvasList()
     {
         foreach (GameObject UIElement in allGameObjects)

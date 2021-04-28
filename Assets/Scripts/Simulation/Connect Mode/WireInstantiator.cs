@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WireInstantiator : MonoBehaviour
 {
-    [SerializeField] private GameObject wirePrefab, wireSegmentPrefab, wireContainer;
+    [SerializeField] private GameObject wirePrefab, wireSegmentPrefab, wireContainer, wirePromptTMP;
     [SerializeField] public Material redCPMat, greenCPMat, blueCPMat, redWireMat;
 
     private Transform connectionPointOne, connectionPointTwo, wireContainerTransform;
@@ -44,6 +45,8 @@ public class WireInstantiator : MonoBehaviour
                         raycastHit.transform.gameObject.GetComponent<MeshRenderer>().material = greenCPMat;
                         connectionPointOne = raycastHit.transform;
                         Simulation.inWireSpawnPhase = true;
+                        wirePromptTMP.GetComponent<TextMeshProUGUI>().text = "Select 2nd Connection Point";
+                        wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.red;
                     }
                     else if (Simulation.inWireSpawnPhase == true && raycastHit.transform != connectionPointOne)
                     {
@@ -52,6 +55,8 @@ public class WireInstantiator : MonoBehaviour
                         Simulation.inWireSpawnPhase = false;
                         connectionPointOne.gameObject.GetComponent<MeshRenderer>().material = blueCPMat;
                         connectionPointTwo.gameObject.GetComponent<MeshRenderer>().material = blueCPMat;
+                        wirePromptTMP.GetComponent<TextMeshProUGUI>().text = "Select 1st Connection Point";
+                        wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.white;
                     }
                     break;
                 }
