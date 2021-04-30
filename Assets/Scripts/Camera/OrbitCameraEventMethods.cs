@@ -28,29 +28,40 @@ public class OrbitCameraEventMethods : OrbitCamera
                     return;
                 }
 
-                if (currentSimulationMode == "ViewMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
+                if (Simulation.inElementSpawnPhase)
                 {
-                    if (!zoomedToElement)
-                        ZoomToElement();
+                    if (touch.phase == TouchPhase.Ended && (Time.time - touchTime) > 1f)
+                    {
+                        ElementInstantiator.PlaceElement();
+                    }
                 }
-
-                if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
+                else
                 {
-                    if (!zoomedToElement)
-                        ZoomToElement();
-                    if (zoomedToElement)
-                        InvokeElementEvent();
-                }
+                    if (currentSimulationMode == "ViewMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
+                    {
+                        if (!zoomedToElement)
+                            ZoomToElement();
+                    }
 
-                if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
-                {
-                    if (!zoomedToElement)
-                        ZoomToElement();
-                    if (zoomedToElement)
-                        WireInstantiator.WireSpawnPhaseInitiator();
+                    if (currentSimulationMode == "EditMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
+                    {
+                        if (!zoomedToElement)
+                            ZoomToElement();
+                        if (zoomedToElement)
+                            InvokeElementEvent();
+                    }
+
+                    if (currentSimulationMode == "ConnectMode" && touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
+                    {
+                        if (!zoomedToElement)
+                            ZoomToElement();
+                        if (zoomedToElement)
+                            WireInstantiator.WireSpawnPhaseInitiator();
+                    }
                 }
             }
 
+            if (!Simulation.inElementSpawnPhase)
             switch (Input.touchCount)
             {
                 case 1:

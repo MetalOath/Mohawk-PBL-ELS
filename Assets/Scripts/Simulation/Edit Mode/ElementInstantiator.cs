@@ -38,34 +38,61 @@ public class ElementInstantiator : MonoBehaviour
     {
         string elementName = element.name;
 
+        int numberOfInstances = CheckElementsInWorkspace(elementName);
+
         switch (elementName)
         {
             case ("Breadboard"):
-                if (workspace.Find("Breadboard(Clone)") == null)
+                if (numberOfInstances < 2)
                 {
                     newElement = element;
                     
                     SpawnElement();
                 }
+                else
+                {
+                    CancelSpawn();
+                    Simulation.DisplayErrorMessage("ONLY 2 BREADBOARDS ALLOWED");
+                }
                 break;
             case ("Multimeter"):
-                if (workspace.Find("Multimeter(Clone)") == null)
+                if (numberOfInstances < 1)
                 {
                     newElement = element;
 
                     SpawnElement();
+                }
+                else
+                {
+                    CancelSpawn();
+                    Simulation.DisplayErrorMessage("ONLY 1 MULTIMETER ALLOWED");
                 }
                 break;
             case ("Battery - 9V"):
-                if (workspace.Find("Battery - 9V(Clone)") == null)
+                if (numberOfInstances < 3)
                 {
                     newElement = element;
 
                     SpawnElement();
                 }
+                else
+                {
+                    CancelSpawn();
+                    Simulation.DisplayErrorMessage("ONLY 3 9V BATTERIES ALLOWED");
+                }
                 break;
             case ("Battery - 1.5V"):
+                if (numberOfInstances < 3)
+                {
+                    newElement = element;
 
+                    SpawnElement();
+                }
+                else
+                {
+                    CancelSpawn();
+                    Simulation.DisplayErrorMessage("ONLY 3 1.5V BATTERIES ALLOWED");
+                }
                 break;
             case ("Resistor - 330 Ohm"):
 
@@ -90,6 +117,7 @@ public class ElementInstantiator : MonoBehaviour
 
     private void SpawnElement()
     {
+        UIEventMethods.ClearUI();
         if (newElementInstance == null)
         {
             if (!elementSpawnZone.activeInHierarchy)
@@ -134,8 +162,36 @@ public class ElementInstantiator : MonoBehaviour
         UIEventPublisher.EditModeUI();
     }
 
-    private void CheckElementsInWorkspace()
+    public void CancelSpawn()
     {
+        if(newElementInstance)
+        Destroy(newElementInstance);
+        Simulation.inElementSpawnPhase = false;
+        if (elementSpawnZone.activeInHierarchy)
+            elementSpawnZone.SetActive(false);
+        newElementInstance = null;
+        UIEventMethods.UpdateGameObjectList();
+        UIEventPublisher.EditModeUI();
+    }
 
+    private int CheckElementsInWorkspace(string elementName)
+    {
+        List<GameObject> listOfElements = new List<GameObject>();
+        int numberOfInstances = 0;
+
+        for (int i = 0; i < workspace.childCount; i++)
+        {
+            listOfElements.Add(workspace.GetChild(i).gameObject);
+        }
+
+        foreach (GameObject workspaceElement in listOfElements)
+        {
+            if (workspaceElement.name == elementName+"(Clone)")
+            {
+                numberOfInstances++;
+            }
+        }
+
+        return numberOfInstances;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public abstract class Simulation : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public abstract class Simulation : MonoBehaviour
     public bool inWireSpawnPhase = false;
 
     public string platform;
+
+    [SerializeField] private GameObject errorMessageCanvas, errorMessageTMP;
 
     public void Start()
     {
@@ -59,15 +62,22 @@ public abstract class Simulation : MonoBehaviour
         }
     }
 
-    //testing mobile UI raycast block.
-    private bool IsPointerOverUIObject()
+    public void DisplayErrorMessage(string errorMessage)
     {
-        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
-        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
-        return results.Count > 0;
+        errorMessageTMP.GetComponent<TextMeshProUGUI>().text = errorMessage;
+
+        StartCoroutine(ErrorMessageTimer(3f));
     }
+
+    //testing mobile UI raycast block.
+    //private bool IsPointerOverUIObject()
+    //{
+    //    PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+    //    eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+    //    List<RaycastResult> results = new List<RaycastResult>();
+    //    EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+    //    return results.Count > 0;
+    //}
 
     /// <returns>true if mouse or first touch is over any event system object ( usually gui elements )</returns>
     public static bool IsPointerOverGameObject()
@@ -84,5 +94,17 @@ public abstract class Simulation : MonoBehaviour
         }
 
         return false;
+    }
+
+    IEnumerator ErrorMessageTimer(float waitTime)
+    {
+        //Do something before waiting.
+        errorMessageCanvas.SetActive(true);
+
+        //yield on a new YieldInstruction that waits for X seconds.
+        yield return new WaitForSeconds(waitTime);
+
+        //Do something after waiting.
+        errorMessageCanvas.SetActive(false);
     }
 }
