@@ -10,6 +10,8 @@ public class OrbitCameraEventMethods : OrbitCamera
     public override void UserInput()
     {
         currentSimulationMode = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>().currentSimulationMode;
+        
+        // MOBILE INPUT
 
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
@@ -75,57 +77,69 @@ public class OrbitCameraEventMethods : OrbitCamera
 
             }
         }
-        
+
+        // DESKTOP INPUT
+
         if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Simulation.inElementSpawnPhase)
             {
-                touchTime = Time.time;
+                if (Input.GetMouseButtonDown(0))
+                {
+                    ElementInstantiator.PlaceElement();
+                }
             }
-
-            if (allowLeftMouse && Input.GetMouseButton(0))
+            else
             {
-                if (breadboardCamera)
-                    PerformPan(Input.GetAxis("Mouse X") * -0.02f, Input.GetAxis("Mouse Y") * -0.02f);
-                else
-                    PerformRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-            }
+                if (Input.GetMouseButtonDown(0))
+                {
+                    touchTime = Time.time;
+                }
 
-            if (allowRightMouse && Input.GetMouseButton(1))
-            {
-                PerformPan(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-            }
+                if (allowLeftMouse && Input.GetMouseButton(0))
+                {
+                    if (breadboardCamera)
+                        PerformPan(Input.GetAxis("Mouse X") * -0.02f, Input.GetAxis("Mouse Y") * -0.02f);
+                    else
+                        PerformRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+                }
 
-            if (allowMiddleMouse && Input.GetMouseButton(2))
-            {
-                PerformRotate(Input.GetAxis("Mouse X"), 0);
-            }
+                if (allowRightMouse && Input.GetMouseButton(1))
+                {
+                    PerformPan(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+                }
 
-            if (allowScroll && Input.GetAxis("Mouse ScrollWheel") != 0)
-            {
-                PerformZoom(Input.GetAxis("Mouse ScrollWheel"));
-            }
+                if (allowMiddleMouse && Input.GetMouseButton(2))
+                {
+                    PerformRotate(Input.GetAxis("Mouse X"), 0);
+                }
 
-            if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
-            {
-                if (!zoomedToElement)
-                    ZoomToElement();
-            }
+                if (allowScroll && Input.GetAxis("Mouse ScrollWheel") != 0)
+                {
+                    PerformZoom(Input.GetAxis("Mouse ScrollWheel"));
+                }
 
-            if (Input.GetMouseButtonUp(0) && currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
-            {
-                if (!zoomedToElement)
-                    ZoomToElement();
-                if (zoomedToElement)
-                    InvokeElementEvent();
-            }
+                if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ViewMode" && (Time.time - touchTime) < 0.2f)
+                {
+                    if (!zoomedToElement)
+                        ZoomToElement();
+                }
 
-            if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
-            {
-                if (!zoomedToElement)
-                    ZoomToElement();
-                if (zoomedToElement)
-                    WireInstantiator.WireSpawnPhaseInitiator();
+                if (Input.GetMouseButtonUp(0) && currentSimulationMode == "EditMode" && (Time.time - touchTime) < 0.2f)
+                {
+                    if (!zoomedToElement)
+                        ZoomToElement();
+                    if (zoomedToElement)
+                        InvokeElementEvent();
+                }
+
+                if (Input.GetMouseButtonUp(0) && currentSimulationMode == "ConnectMode" && (Time.time - touchTime) < 0.2f)
+                {
+                    if (!zoomedToElement)
+                        ZoomToElement();
+                    if (zoomedToElement)
+                        WireInstantiator.WireSpawnPhaseInitiator();
+                }
             }
         }
     }

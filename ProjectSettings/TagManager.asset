@@ -15,6 +15,7 @@ TagManager:
   - Resistor
   - Selection_Points
   - Breadboard
+  - Element Spawn Point
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - SpawnZone
   - 
   - 
   - 

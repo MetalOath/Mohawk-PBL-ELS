@@ -64,6 +64,12 @@ public class UIEventMethods : MonoBehaviour
             }
         }
     }
+    public void UpdateGameObjectList()
+    {
+        allGameObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        PopulateCPList();
+        PopulateSPList();
+    }
     public void ClearUI()
     {
         foreach (GameObject UICanvas in UICanvases)

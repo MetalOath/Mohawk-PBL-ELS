@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3452369855977905183}
   - component: {fileID: 2885162827728516002}
   - component: {fileID: 6640326170275722823}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3473768642838181443
 Transform:
   m_ObjectHideFlags: 0
@@ -106,13 +106,13 @@ GameObject:
   - component: {fileID: 999350822738660475}
   - component: {fileID: 7348359967861168957}
   - component: {fileID: 6985668960870464089}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2113994715838066879
 Transform:
   m_ObjectHideFlags: 0
@@ -200,13 +200,13 @@ GameObject:
   - component: {fileID: 3613433449420862333}
   - component: {fileID: 6464886611044725449}
   - component: {fileID: 6176647529660364963}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6957394218148714545
 Transform:
   m_ObjectHideFlags: 0
@@ -294,13 +294,13 @@ GameObject:
   - component: {fileID: 4914862398937694493}
   - component: {fileID: 4793479269725512988}
   - component: {fileID: 6531255151627914324}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6893221837278910212
 Transform:
   m_ObjectHideFlags: 0
@@ -388,13 +388,13 @@ GameObject:
   - component: {fileID: 3390504230897042559}
   - component: {fileID: 7018913846106810361}
   - component: {fileID: 5647790454338158321}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8506875350517967916
 Transform:
   m_ObjectHideFlags: 0
@@ -482,13 +482,13 @@ GameObject:
   - component: {fileID: 7222476337597008617}
   - component: {fileID: 4849112079671856955}
   - component: {fileID: 1692910367181379590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8379038269729155903
 Transform:
   m_ObjectHideFlags: 0
@@ -576,13 +576,13 @@ GameObject:
   - component: {fileID: 4816158960428556041}
   - component: {fileID: 7348516639460488621}
   - component: {fileID: 6938154345736133961}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3858548172552676525
 Transform:
   m_ObjectHideFlags: 0
@@ -670,13 +670,13 @@ GameObject:
   - component: {fileID: 8922050096729071384}
   - component: {fileID: 3037450787372345377}
   - component: {fileID: 1496359216895836440}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4664085774377237098
 Transform:
   m_ObjectHideFlags: 0
@@ -764,13 +764,13 @@ GameObject:
   - component: {fileID: 1582817832498862601}
   - component: {fileID: 8157649628015299290}
   - component: {fileID: 4091714284439046836}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1620072472384409502
 Transform:
   m_ObjectHideFlags: 0
@@ -858,13 +858,13 @@ GameObject:
   - component: {fileID: 4149303766532708222}
   - component: {fileID: 2598181167372175498}
   - component: {fileID: 1485302442734095353}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8957293341906720103
 Transform:
   m_ObjectHideFlags: 0
@@ -952,13 +952,13 @@ GameObject:
   - component: {fileID: 4137550296724171922}
   - component: {fileID: 2632835419930722818}
   - component: {fileID: 1209145759151340511}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2690805187852931644
 Transform:
   m_ObjectHideFlags: 0
@@ -1046,13 +1046,13 @@ GameObject:
   - component: {fileID: 6707207204867783319}
   - component: {fileID: 5953724173042851265}
   - component: {fileID: 2541384988675868627}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9187799627483691655
 Transform:
   m_ObjectHideFlags: 0
@@ -1140,13 +1140,13 @@ GameObject:
   - component: {fileID: 5622487075608746748}
   - component: {fileID: 1691139762672569967}
   - component: {fileID: 388154652849049459}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6978623916662468902
 Transform:
   m_ObjectHideFlags: 0
@@ -1234,13 +1234,13 @@ GameObject:
   - component: {fileID: 7961900475357884261}
   - component: {fileID: 8222271136530677751}
   - component: {fileID: 2299978189470547493}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3456486926183794909
 Transform:
   m_ObjectHideFlags: 0
@@ -1328,13 +1328,13 @@ GameObject:
   - component: {fileID: 6247389991642939277}
   - component: {fileID: 150170963227384266}
   - component: {fileID: 5315332731185024279}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3195570513343562766
 Transform:
   m_ObjectHideFlags: 0
@@ -1422,13 +1422,13 @@ GameObject:
   - component: {fileID: 286437381994425874}
   - component: {fileID: 6458003169876903983}
   - component: {fileID: 928026147867027053}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3849733900699743378
 Transform:
   m_ObjectHideFlags: 0
@@ -1516,13 +1516,13 @@ GameObject:
   - component: {fileID: 9117090575962676518}
   - component: {fileID: 3951501766883765681}
   - component: {fileID: 425677979701856872}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &600805359414585633
 Transform:
   m_ObjectHideFlags: 0
@@ -1610,13 +1610,13 @@ GameObject:
   - component: {fileID: 1700811087101372515}
   - component: {fileID: 2327226827586741334}
   - component: {fileID: 8555242415037712162}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2189684753174440119
 Transform:
   m_ObjectHideFlags: 0
@@ -1704,13 +1704,13 @@ GameObject:
   - component: {fileID: 5629338325159458104}
   - component: {fileID: 4981254509956263841}
   - component: {fileID: 8394822532512398272}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2341399482525203194
 Transform:
   m_ObjectHideFlags: 0
@@ -1798,13 +1798,13 @@ GameObject:
   - component: {fileID: 4075507638004050425}
   - component: {fileID: 2665250887347484012}
   - component: {fileID: 6453518691131124583}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5215117053442044791
 Transform:
   m_ObjectHideFlags: 0
@@ -1892,13 +1892,13 @@ GameObject:
   - component: {fileID: 883164964728210103}
   - component: {fileID: 3962780652956886967}
   - component: {fileID: 1695345621273156641}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7420813766341748460
 Transform:
   m_ObjectHideFlags: 0
@@ -1986,13 +1986,13 @@ GameObject:
   - component: {fileID: 6143675736352847958}
   - component: {fileID: 6769013722889343456}
   - component: {fileID: 4635945104551989782}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8698614345316626809
 Transform:
   m_ObjectHideFlags: 0
@@ -2080,13 +2080,13 @@ GameObject:
   - component: {fileID: 7123926012268352839}
   - component: {fileID: 6582808991227300059}
   - component: {fileID: 8262919574168644397}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4162660010390009074
 Transform:
   m_ObjectHideFlags: 0
@@ -2174,13 +2174,13 @@ GameObject:
   - component: {fileID: 298591818026943908}
   - component: {fileID: 7451526210558785944}
   - component: {fileID: 7792808770611924684}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5440434815388051510
 Transform:
   m_ObjectHideFlags: 0
@@ -2268,13 +2268,13 @@ GameObject:
   - component: {fileID: 3460277162672181519}
   - component: {fileID: 3042906561557595269}
   - component: {fileID: 6105423514138673511}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2105111694721653795
 Transform:
   m_ObjectHideFlags: 0
@@ -2362,13 +2362,13 @@ GameObject:
   - component: {fileID: 1197201200383211404}
   - component: {fileID: 5583202986762402322}
   - component: {fileID: 8374733297062670803}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5819104411295295925
 Transform:
   m_ObjectHideFlags: 0
@@ -2456,13 +2456,13 @@ GameObject:
   - component: {fileID: 5029658999187049283}
   - component: {fileID: 6092930140622053877}
   - component: {fileID: 4891859872382899598}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4861245939109096425
 Transform:
   m_ObjectHideFlags: 0
@@ -2550,13 +2550,13 @@ GameObject:
   - component: {fileID: 1740158214674789422}
   - component: {fileID: 3290684559318679583}
   - component: {fileID: 2901659372536563889}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9151226175279233479
 Transform:
   m_ObjectHideFlags: 0
@@ -2644,13 +2644,13 @@ GameObject:
   - component: {fileID: 7114870286705679123}
   - component: {fileID: 3828877036927372891}
   - component: {fileID: 8125921311433655593}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2592107858521370233
 Transform:
   m_ObjectHideFlags: 0
@@ -3168,13 +3168,13 @@ GameObject:
   - component: {fileID: 2766574038853728055}
   - component: {fileID: 6650612361128988403}
   - component: {fileID: 4273166489099847193}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2871812598177268709
 Transform:
   m_ObjectHideFlags: 0
@@ -3262,13 +3262,13 @@ GameObject:
   - component: {fileID: 8319239356375565990}
   - component: {fileID: 7704440807577043300}
   - component: {fileID: 6104670521789258617}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6514399599181698639
 Transform:
   m_ObjectHideFlags: 0
@@ -3356,13 +3356,13 @@ GameObject:
   - component: {fileID: 5761577899354143168}
   - component: {fileID: 523330701453441513}
   - component: {fileID: 8522929053219832160}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5706502690431787890
 Transform:
   m_ObjectHideFlags: 0
@@ -3450,13 +3450,13 @@ GameObject:
   - component: {fileID: 2536966704109447559}
   - component: {fileID: 11672104107419882}
   - component: {fileID: 633404881791855917}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4876494549784581943
 Transform:
   m_ObjectHideFlags: 0
@@ -3544,13 +3544,13 @@ GameObject:
   - component: {fileID: 7362206872591381410}
   - component: {fileID: 262737583843730369}
   - component: {fileID: 8805699804738924310}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4909922094570671898
 Transform:
   m_ObjectHideFlags: 0
@@ -3638,13 +3638,13 @@ GameObject:
   - component: {fileID: 7321125130674932875}
   - component: {fileID: 8713351002169792317}
   - component: {fileID: 2074277849925940080}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3478843955142856284
 Transform:
   m_ObjectHideFlags: 0
@@ -3732,13 +3732,13 @@ GameObject:
   - component: {fileID: 4104761919811673861}
   - component: {fileID: 6363692406927307263}
   - component: {fileID: 2192883186106191772}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3122345480398699646
 Transform:
   m_ObjectHideFlags: 0
@@ -3826,13 +3826,13 @@ GameObject:
   - component: {fileID: 8270181654419871242}
   - component: {fileID: 8153430008056862085}
   - component: {fileID: 2095727681848526551}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2160291981993115498
 Transform:
   m_ObjectHideFlags: 0
@@ -3920,13 +3920,13 @@ GameObject:
   - component: {fileID: 2163771605122212194}
   - component: {fileID: 3393027562052986147}
   - component: {fileID: 1293105380469408467}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6088363036411778889
 Transform:
   m_ObjectHideFlags: 0
@@ -4014,13 +4014,13 @@ GameObject:
   - component: {fileID: 6181135191735842275}
   - component: {fileID: 4816589712326114278}
   - component: {fileID: 341826936245616400}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7886762559318302782
 Transform:
   m_ObjectHideFlags: 0
@@ -4108,13 +4108,13 @@ GameObject:
   - component: {fileID: 8125453201844149549}
   - component: {fileID: 235112287403058971}
   - component: {fileID: 6886249429124031476}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8678902213264166901
 Transform:
   m_ObjectHideFlags: 0
@@ -4202,13 +4202,13 @@ GameObject:
   - component: {fileID: 389293904079893755}
   - component: {fileID: 4136634925621902358}
   - component: {fileID: 8508719378053375716}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5667441249411486779
 Transform:
   m_ObjectHideFlags: 0
@@ -4296,13 +4296,13 @@ GameObject:
   - component: {fileID: 2364969875246217032}
   - component: {fileID: 2548662094679177666}
   - component: {fileID: 5027378879448440627}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5342925368984481175
 Transform:
   m_ObjectHideFlags: 0
@@ -4390,13 +4390,13 @@ GameObject:
   - component: {fileID: 5153191985705244635}
   - component: {fileID: 5004703464194572227}
   - component: {fileID: 335308174870030658}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &312115599300835074
 Transform:
   m_ObjectHideFlags: 0
@@ -4484,13 +4484,13 @@ GameObject:
   - component: {fileID: 7257218901145893571}
   - component: {fileID: 5677921202243365045}
   - component: {fileID: 8118302478698342115}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5097382946888917413
 Transform:
   m_ObjectHideFlags: 0
@@ -4578,13 +4578,13 @@ GameObject:
   - component: {fileID: 1241688537729911791}
   - component: {fileID: 7932552869564208853}
   - component: {fileID: 4285456010539439290}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4803976092787072109
 Transform:
   m_ObjectHideFlags: 0
@@ -4672,13 +4672,13 @@ GameObject:
   - component: {fileID: 8726813118378228242}
   - component: {fileID: 3161894910834175768}
   - component: {fileID: 7362410096984639876}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6130246880203984146
 Transform:
   m_ObjectHideFlags: 0
@@ -4766,13 +4766,13 @@ GameObject:
   - component: {fileID: 3395181397736961606}
   - component: {fileID: 8290819554219980529}
   - component: {fileID: 7295513778350020551}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8414384474254201606
 Transform:
   m_ObjectHideFlags: 0
@@ -4860,13 +4860,13 @@ GameObject:
   - component: {fileID: 6475916204194024430}
   - component: {fileID: 2286508863348257103}
   - component: {fileID: 9097901278697318431}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7542586578171984299
 Transform:
   m_ObjectHideFlags: 0
@@ -4954,13 +4954,13 @@ GameObject:
   - component: {fileID: 7702819216776238480}
   - component: {fileID: 5563177743975583028}
   - component: {fileID: 2408430987717462545}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8417530230425905091
 Transform:
   m_ObjectHideFlags: 0
@@ -5048,13 +5048,13 @@ GameObject:
   - component: {fileID: 5120643803322467613}
   - component: {fileID: 8607690362131073162}
   - component: {fileID: 2685633980176703480}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &534471620865197645
 Transform:
   m_ObjectHideFlags: 0
@@ -5142,13 +5142,13 @@ GameObject:
   - component: {fileID: 4054382832112879770}
   - component: {fileID: 429045097927067672}
   - component: {fileID: 6210841918489204373}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1184392046264609081
 Transform:
   m_ObjectHideFlags: 0
@@ -5236,13 +5236,13 @@ GameObject:
   - component: {fileID: 665243167573163050}
   - component: {fileID: 4752713280873358765}
   - component: {fileID: 1949202960350978020}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7744462562935708452
 Transform:
   m_ObjectHideFlags: 0
@@ -5330,13 +5330,13 @@ GameObject:
   - component: {fileID: 4778858925824730953}
   - component: {fileID: 6762570664179977126}
   - component: {fileID: 3685863928776502836}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4024353321291002897
 Transform:
   m_ObjectHideFlags: 0
@@ -5424,13 +5424,13 @@ GameObject:
   - component: {fileID: 6850123385960212678}
   - component: {fileID: 3725387412113502729}
   - component: {fileID: 6791564293390335915}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3751810717338253635
 Transform:
   m_ObjectHideFlags: 0
@@ -5518,13 +5518,13 @@ GameObject:
   - component: {fileID: 4003208436506812996}
   - component: {fileID: 7176776143587559117}
   - component: {fileID: 1893188943514366878}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1127008188737523902
 Transform:
   m_ObjectHideFlags: 0
@@ -5612,13 +5612,13 @@ GameObject:
   - component: {fileID: 7736163251820002261}
   - component: {fileID: 3838722455538348665}
   - component: {fileID: 2919360080982480784}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3777003655219550548
 Transform:
   m_ObjectHideFlags: 0
@@ -5706,13 +5706,13 @@ GameObject:
   - component: {fileID: 4102046468668109596}
   - component: {fileID: 2086598338082928937}
   - component: {fileID: 5280724243415248862}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3136156532715242832
 Transform:
   m_ObjectHideFlags: 0
@@ -5800,13 +5800,13 @@ GameObject:
   - component: {fileID: 4719842590936637926}
   - component: {fileID: 770611421430905998}
   - component: {fileID: 180589848521773733}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5482086147658313889
 Transform:
   m_ObjectHideFlags: 0
@@ -5894,13 +5894,13 @@ GameObject:
   - component: {fileID: 4188607702340873799}
   - component: {fileID: 3976922053721539192}
   - component: {fileID: 4216744605277814753}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4766374908762189027
 Transform:
   m_ObjectHideFlags: 0
@@ -5988,13 +5988,13 @@ GameObject:
   - component: {fileID: 6695970866577020457}
   - component: {fileID: 8817580017889430673}
   - component: {fileID: 3658962927207474762}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2428404456007606365
 Transform:
   m_ObjectHideFlags: 0
@@ -6082,13 +6082,13 @@ GameObject:
   - component: {fileID: 2622038988237623963}
   - component: {fileID: 7040163156680537756}
   - component: {fileID: 879632977621330591}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1550563167658129828
 Transform:
   m_ObjectHideFlags: 0
@@ -6176,13 +6176,13 @@ GameObject:
   - component: {fileID: 1225250081874966840}
   - component: {fileID: 1113546563443799955}
   - component: {fileID: 885337643330077805}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7393591076058464121
 Transform:
   m_ObjectHideFlags: 0
@@ -6270,13 +6270,13 @@ GameObject:
   - component: {fileID: 4820948112052841954}
   - component: {fileID: 3235849219025180624}
   - component: {fileID: 1707006843561995847}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4290972242139511678
 Transform:
   m_ObjectHideFlags: 0
@@ -6364,13 +6364,13 @@ GameObject:
   - component: {fileID: 7161459051942548951}
   - component: {fileID: 5324315405034200507}
   - component: {fileID: 3659616771614805427}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2191259685997431610
 Transform:
   m_ObjectHideFlags: 0
@@ -6458,13 +6458,13 @@ GameObject:
   - component: {fileID: 2627895967837894858}
   - component: {fileID: 4412166399336067631}
   - component: {fileID: 5692995854773717587}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7007379498903748361
 Transform:
   m_ObjectHideFlags: 0
@@ -12425,7 +12425,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1951883427751521914}
-  - component: {fileID: 1951883427751521913}
   m_Layer: 0
   m_Name: Breadboard
   m_TagString: Untagged
@@ -12451,18 +12450,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1951883427751521913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951883427751521915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de8d1b213c2bbe34aae251af2735b1c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1951883427763121108
 GameObject:
   m_ObjectHideFlags: 0
@@ -15360,13 +15347,13 @@ GameObject:
   - component: {fileID: 3153058004341236180}
   - component: {fileID: 6535027344745446995}
   - component: {fileID: 6750092608661637014}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3196109778617784204
 Transform:
   m_ObjectHideFlags: 0
@@ -15454,13 +15441,13 @@ GameObject:
   - component: {fileID: 1998261095609035509}
   - component: {fileID: 8645352043521984036}
   - component: {fileID: 3086418166017424021}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1129733746106014624
 Transform:
   m_ObjectHideFlags: 0
@@ -15548,13 +15535,13 @@ GameObject:
   - component: {fileID: 6521068924668001698}
   - component: {fileID: 1255219724065115894}
   - component: {fileID: 7405309556683309337}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3001173374274943426
 Transform:
   m_ObjectHideFlags: 0
@@ -15642,13 +15629,13 @@ GameObject:
   - component: {fileID: 7368700746721450832}
   - component: {fileID: 5614617476962473956}
   - component: {fileID: 8767853195074293304}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &365074690911255644
 Transform:
   m_ObjectHideFlags: 0
@@ -15736,13 +15723,13 @@ GameObject:
   - component: {fileID: 5828226593817261976}
   - component: {fileID: 4532399597202157985}
   - component: {fileID: 4850595956944220695}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7871223500222725985
 Transform:
   m_ObjectHideFlags: 0
@@ -15830,13 +15817,13 @@ GameObject:
   - component: {fileID: 7291028306963439079}
   - component: {fileID: 4106424193208581237}
   - component: {fileID: 1658495949583138533}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9163582163527816555
 Transform:
   m_ObjectHideFlags: 0
@@ -15924,13 +15911,13 @@ GameObject:
   - component: {fileID: 4821897734958609051}
   - component: {fileID: 2069562002596935926}
   - component: {fileID: 3567589159518159089}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4034395949995289110
 Transform:
   m_ObjectHideFlags: 0
@@ -16018,13 +16005,13 @@ GameObject:
   - component: {fileID: 399398446759595659}
   - component: {fileID: 7682050701676376890}
   - component: {fileID: 2394572890403323745}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4424542221119119022
 Transform:
   m_ObjectHideFlags: 0
@@ -16112,13 +16099,13 @@ GameObject:
   - component: {fileID: 5752268965225603458}
   - component: {fileID: 596523989474229175}
   - component: {fileID: 177805339216628350}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &942438891660212869
 Transform:
   m_ObjectHideFlags: 0
@@ -16206,13 +16193,13 @@ GameObject:
   - component: {fileID: 4420775059452325028}
   - component: {fileID: 3650857043243208643}
   - component: {fileID: 3813540038473632384}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2396825145284456621
 Transform:
   m_ObjectHideFlags: 0
@@ -16300,13 +16287,13 @@ GameObject:
   - component: {fileID: 52889926742970873}
   - component: {fileID: 7128609106098409742}
   - component: {fileID: 6395390580522096353}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7963598081362886980
 Transform:
   m_ObjectHideFlags: 0
@@ -16489,13 +16476,13 @@ GameObject:
   - component: {fileID: 240570899966698958}
   - component: {fileID: 1076781240596263219}
   - component: {fileID: 7206963999896989449}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6265764911857969168
 Transform:
   m_ObjectHideFlags: 0
@@ -16583,13 +16570,13 @@ GameObject:
   - component: {fileID: 3234895721869071990}
   - component: {fileID: 2400718356494851403}
   - component: {fileID: 2705459250967746171}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7785546125951883046
 Transform:
   m_ObjectHideFlags: 0
@@ -16677,13 +16664,13 @@ GameObject:
   - component: {fileID: 4126637612624639062}
   - component: {fileID: 3223995980768400809}
   - component: {fileID: 5313993462501783235}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6683690392679668969
 Transform:
   m_ObjectHideFlags: 0
@@ -16771,13 +16758,13 @@ GameObject:
   - component: {fileID: 3017953904642888434}
   - component: {fileID: 1983872622495736676}
   - component: {fileID: 4167207070307670154}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5714725148205086400
 Transform:
   m_ObjectHideFlags: 0
@@ -16865,13 +16852,13 @@ GameObject:
   - component: {fileID: 6576874595098109948}
   - component: {fileID: 6377695138412561298}
   - component: {fileID: 8062931357482590622}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5176136684813072100
 Transform:
   m_ObjectHideFlags: 0
@@ -16959,13 +16946,13 @@ GameObject:
   - component: {fileID: 1725751867991243332}
   - component: {fileID: 3728099367862674642}
   - component: {fileID: 7205021687201476781}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8259309622784456549
 Transform:
   m_ObjectHideFlags: 0
@@ -17053,13 +17040,13 @@ GameObject:
   - component: {fileID: 6058975198264366814}
   - component: {fileID: 6363125806231339783}
   - component: {fileID: 7461143058505884125}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6487757323009060015
 Transform:
   m_ObjectHideFlags: 0
@@ -17147,13 +17134,13 @@ GameObject:
   - component: {fileID: 5152737779717175286}
   - component: {fileID: 5444101880183404132}
   - component: {fileID: 4005862128762066466}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3221899275988611910
 Transform:
   m_ObjectHideFlags: 0
@@ -17241,13 +17228,13 @@ GameObject:
   - component: {fileID: 2543203325344830230}
   - component: {fileID: 933916446134277736}
   - component: {fileID: 4370505880383168144}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1041911468042137864
 Transform:
   m_ObjectHideFlags: 0
@@ -17335,13 +17322,13 @@ GameObject:
   - component: {fileID: 975803218396503051}
   - component: {fileID: 2565138961071478760}
   - component: {fileID: 432925633033232350}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7594247813129766205
 Transform:
   m_ObjectHideFlags: 0
@@ -17429,13 +17416,13 @@ GameObject:
   - component: {fileID: 6014634530787097810}
   - component: {fileID: 9080222802128008251}
   - component: {fileID: 2010016037862233901}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4617160404395055027
 Transform:
   m_ObjectHideFlags: 0
@@ -17523,13 +17510,13 @@ GameObject:
   - component: {fileID: 7293632895573267803}
   - component: {fileID: 7299165904485214965}
   - component: {fileID: 676873494191662561}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7855903195632610861
 Transform:
   m_ObjectHideFlags: 0
@@ -17617,13 +17604,13 @@ GameObject:
   - component: {fileID: 4331754397164614737}
   - component: {fileID: 6125517695182404058}
   - component: {fileID: 8728178093058231794}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7910900980018745345
 Transform:
   m_ObjectHideFlags: 0
@@ -17711,13 +17698,13 @@ GameObject:
   - component: {fileID: 3754626540765802430}
   - component: {fileID: 2313316426639779550}
   - component: {fileID: 8818264116295999507}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5168362206219555638
 Transform:
   m_ObjectHideFlags: 0
@@ -17805,13 +17792,13 @@ GameObject:
   - component: {fileID: 7244212295472418318}
   - component: {fileID: 2339471397549966592}
   - component: {fileID: 7884225233644535886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4189450390608919565
 Transform:
   m_ObjectHideFlags: 0
@@ -17899,13 +17886,13 @@ GameObject:
   - component: {fileID: 2179492280428570069}
   - component: {fileID: 5887125494889278876}
   - component: {fileID: 6465441448962118225}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6039325747951823394
 Transform:
   m_ObjectHideFlags: 0
@@ -17993,13 +17980,13 @@ GameObject:
   - component: {fileID: 5246607598990157611}
   - component: {fileID: 6511922606770251281}
   - component: {fileID: 4653353507924453978}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3352434559689884626
 Transform:
   m_ObjectHideFlags: 0
@@ -18087,13 +18074,13 @@ GameObject:
   - component: {fileID: 8781708046495790564}
   - component: {fileID: 2891424319649303673}
   - component: {fileID: 7343361766486501586}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1809650883674858166
 Transform:
   m_ObjectHideFlags: 0
@@ -18181,13 +18168,13 @@ GameObject:
   - component: {fileID: 1585648331421549375}
   - component: {fileID: 779712799746800700}
   - component: {fileID: 2013172086019873378}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8641289944530723230
 Transform:
   m_ObjectHideFlags: 0
@@ -18275,13 +18262,13 @@ GameObject:
   - component: {fileID: 5920412517107178861}
   - component: {fileID: 8056374853544422668}
   - component: {fileID: 3778133671872285467}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1400098675956670842
 Transform:
   m_ObjectHideFlags: 0
@@ -18369,13 +18356,13 @@ GameObject:
   - component: {fileID: 2115888500403693988}
   - component: {fileID: 5361816881169799844}
   - component: {fileID: 7805814516886945429}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8262226939715400075
 Transform:
   m_ObjectHideFlags: 0
@@ -18463,13 +18450,13 @@ GameObject:
   - component: {fileID: 2442352527522071742}
   - component: {fileID: 5799830373924672296}
   - component: {fileID: 971266158483163785}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4597501309714632840
 Transform:
   m_ObjectHideFlags: 0
@@ -18557,13 +18544,13 @@ GameObject:
   - component: {fileID: 8070377098497911202}
   - component: {fileID: 3241194849231266742}
   - component: {fileID: 7369408540855641110}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1165422728535829822
 Transform:
   m_ObjectHideFlags: 0
@@ -18651,13 +18638,13 @@ GameObject:
   - component: {fileID: 7155003996366543768}
   - component: {fileID: 2740533073254605311}
   - component: {fileID: 6343515175743963315}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1076131258228557204
 Transform:
   m_ObjectHideFlags: 0
@@ -18745,13 +18732,13 @@ GameObject:
   - component: {fileID: 5945715966426400450}
   - component: {fileID: 7101583772977835640}
   - component: {fileID: 1884311171354508886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2076616083019751190
 Transform:
   m_ObjectHideFlags: 0
@@ -18839,13 +18826,13 @@ GameObject:
   - component: {fileID: 588997981768726584}
   - component: {fileID: 7388970420480915906}
   - component: {fileID: 2032967930639354057}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5998852845804848799
 Transform:
   m_ObjectHideFlags: 0
@@ -18933,13 +18920,13 @@ GameObject:
   - component: {fileID: 8480975266257626565}
   - component: {fileID: 1020372620369484006}
   - component: {fileID: 1273620306990405590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3194611860205434472
 Transform:
   m_ObjectHideFlags: 0
@@ -19027,13 +19014,13 @@ GameObject:
   - component: {fileID: 7381219233290144462}
   - component: {fileID: 2928393393543014874}
   - component: {fileID: 3176969682163936865}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1397907833098506826
 Transform:
   m_ObjectHideFlags: 0
@@ -19121,13 +19108,13 @@ GameObject:
   - component: {fileID: 7384687015151363910}
   - component: {fileID: 7673571593449074270}
   - component: {fileID: 117765066063976081}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3897579665731248758
 Transform:
   m_ObjectHideFlags: 0
@@ -19215,13 +19202,13 @@ GameObject:
   - component: {fileID: 7126503825521039753}
   - component: {fileID: 1992798904139667416}
   - component: {fileID: 6328797503360107566}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2774751095552112153
 Transform:
   m_ObjectHideFlags: 0
@@ -19309,13 +19296,13 @@ GameObject:
   - component: {fileID: 4386424826499385194}
   - component: {fileID: 7083847860308851582}
   - component: {fileID: 2139597266478050475}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5026814886990220164
 Transform:
   m_ObjectHideFlags: 0
@@ -19403,13 +19390,13 @@ GameObject:
   - component: {fileID: 1457453492642957131}
   - component: {fileID: 8509056835037087534}
   - component: {fileID: 1354893068851648924}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2815615150261864647
 Transform:
   m_ObjectHideFlags: 0
@@ -19497,13 +19484,13 @@ GameObject:
   - component: {fileID: 4076048668854634780}
   - component: {fileID: 1634025555314497010}
   - component: {fileID: 8830090216463072800}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4953411918817749443
 Transform:
   m_ObjectHideFlags: 0
@@ -19591,13 +19578,13 @@ GameObject:
   - component: {fileID: 344400018600378022}
   - component: {fileID: 4809518108534324250}
   - component: {fileID: 7453442429954966819}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3462815613135773662
 Transform:
   m_ObjectHideFlags: 0
@@ -19685,13 +19672,13 @@ GameObject:
   - component: {fileID: 5930060676880446855}
   - component: {fileID: 7604161862722574248}
   - component: {fileID: 9085760212942183438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3378077245745490172
 Transform:
   m_ObjectHideFlags: 0
@@ -19779,13 +19766,13 @@ GameObject:
   - component: {fileID: 3658099495520462474}
   - component: {fileID: 1086524297718496427}
   - component: {fileID: 463893659475549857}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4604081868195403894
 Transform:
   m_ObjectHideFlags: 0
@@ -19873,13 +19860,13 @@ GameObject:
   - component: {fileID: 9108529193258523754}
   - component: {fileID: 4538998620665766524}
   - component: {fileID: 2709863238142367444}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3079134686577196229
 Transform:
   m_ObjectHideFlags: 0
@@ -19967,13 +19954,13 @@ GameObject:
   - component: {fileID: 8044947864238669341}
   - component: {fileID: 2284547006614674628}
   - component: {fileID: 5024151598470503102}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1512638987839678933
 Transform:
   m_ObjectHideFlags: 0
@@ -20061,13 +20048,13 @@ GameObject:
   - component: {fileID: 8507772601756770147}
   - component: {fileID: 5472940401118914600}
   - component: {fileID: 4470315204018083611}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2621190371023453471
 Transform:
   m_ObjectHideFlags: 0
@@ -20155,13 +20142,13 @@ GameObject:
   - component: {fileID: 7034878024354857536}
   - component: {fileID: 1971055688654877417}
   - component: {fileID: 5498118075361487625}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7278430980455084909
 Transform:
   m_ObjectHideFlags: 0
@@ -20249,13 +20236,13 @@ GameObject:
   - component: {fileID: 3505350809864149286}
   - component: {fileID: 8246307618839283193}
   - component: {fileID: 3834132686927556980}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7141399330671070871
 Transform:
   m_ObjectHideFlags: 0
@@ -20343,13 +20330,13 @@ GameObject:
   - component: {fileID: 1174071408053603916}
   - component: {fileID: 6533608185289952137}
   - component: {fileID: 6941581817638996362}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5946217198953033620
 Transform:
   m_ObjectHideFlags: 0
@@ -20437,13 +20424,13 @@ GameObject:
   - component: {fileID: 1210401738355566716}
   - component: {fileID: 6678317312005621615}
   - component: {fileID: 3962360600281566803}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1017838024301068396
 Transform:
   m_ObjectHideFlags: 0
@@ -20531,13 +20518,13 @@ GameObject:
   - component: {fileID: 2589817813831132256}
   - component: {fileID: 5933300873849906542}
   - component: {fileID: 6272976419166644596}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6062277825322727135
 Transform:
   m_ObjectHideFlags: 0
@@ -20625,13 +20612,13 @@ GameObject:
   - component: {fileID: 757972733614498955}
   - component: {fileID: 1448251015872846091}
   - component: {fileID: 2232341577615344638}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7760257763555706647
 Transform:
   m_ObjectHideFlags: 0
@@ -20719,13 +20706,13 @@ GameObject:
   - component: {fileID: 5182297487817100936}
   - component: {fileID: 7432661378484019137}
   - component: {fileID: 5691369272977424874}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3917008052196821715
 Transform:
   m_ObjectHideFlags: 0
@@ -20813,13 +20800,13 @@ GameObject:
   - component: {fileID: 8387611364415134094}
   - component: {fileID: 6482930071592562201}
   - component: {fileID: 1593371117356958706}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8746606668618367411
 Transform:
   m_ObjectHideFlags: 0
@@ -20907,13 +20894,13 @@ GameObject:
   - component: {fileID: 7728697828336315575}
   - component: {fileID: 2030672511001460595}
   - component: {fileID: 3210499151348289221}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6640355139317075459
 Transform:
   m_ObjectHideFlags: 0
@@ -21001,13 +20988,13 @@ GameObject:
   - component: {fileID: 1263548238944387461}
   - component: {fileID: 7710144778523385266}
   - component: {fileID: 3160339356988927729}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6093247379822034958
 Transform:
   m_ObjectHideFlags: 0
@@ -21095,13 +21082,13 @@ GameObject:
   - component: {fileID: 8048636433468957468}
   - component: {fileID: 1775581548881789094}
   - component: {fileID: 1846167731494653993}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &16307631312744905
 Transform:
   m_ObjectHideFlags: 0
@@ -21189,13 +21176,13 @@ GameObject:
   - component: {fileID: 1272480753230812069}
   - component: {fileID: 6302217736642933363}
   - component: {fileID: 5093516245016619074}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2125882354672590367
 Transform:
   m_ObjectHideFlags: 0
@@ -21283,13 +21270,13 @@ GameObject:
   - component: {fileID: 1967102673146965298}
   - component: {fileID: 1142444054920320277}
   - component: {fileID: 6489761745885882721}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2775780982470216340
 Transform:
   m_ObjectHideFlags: 0
@@ -21377,13 +21364,13 @@ GameObject:
   - component: {fileID: 6177314042106697783}
   - component: {fileID: 3889020158317948638}
   - component: {fileID: 2320067645403914730}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7193925949666786710
 Transform:
   m_ObjectHideFlags: 0
@@ -21471,13 +21458,13 @@ GameObject:
   - component: {fileID: 3648491283502782423}
   - component: {fileID: 9083607957679656240}
   - component: {fileID: 6823894771769460813}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6523598832896713340
 Transform:
   m_ObjectHideFlags: 0
@@ -21565,13 +21552,13 @@ GameObject:
   - component: {fileID: 217847173758267737}
   - component: {fileID: 3308237002762386284}
   - component: {fileID: 1930852649997470648}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1730306819701799063
 Transform:
   m_ObjectHideFlags: 0
@@ -21659,13 +21646,13 @@ GameObject:
   - component: {fileID: 6767026316578192756}
   - component: {fileID: 8730024943371495790}
   - component: {fileID: 4251204165701116636}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6181371346283167555
 Transform:
   m_ObjectHideFlags: 0
@@ -21753,13 +21740,13 @@ GameObject:
   - component: {fileID: 773300518712559711}
   - component: {fileID: 1328852231776749185}
   - component: {fileID: 2515100832890713298}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &951286246267460763
 Transform:
   m_ObjectHideFlags: 0
@@ -21847,13 +21834,13 @@ GameObject:
   - component: {fileID: 7383243915783300547}
   - component: {fileID: 571079910962673276}
   - component: {fileID: 7892536259431593575}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1303757727919094524
 Transform:
   m_ObjectHideFlags: 0
@@ -21941,13 +21928,13 @@ GameObject:
   - component: {fileID: 1733493518621163199}
   - component: {fileID: 1306079360840408837}
   - component: {fileID: 6045954983233678851}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4718862093748966639
 Transform:
   m_ObjectHideFlags: 0
@@ -22035,13 +22022,13 @@ GameObject:
   - component: {fileID: 8571613730639314135}
   - component: {fileID: 1229160980865159390}
   - component: {fileID: 141381056462612223}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5249766461325414182
 Transform:
   m_ObjectHideFlags: 0
@@ -22129,13 +22116,13 @@ GameObject:
   - component: {fileID: 3780277786444902073}
   - component: {fileID: 5533795387867499783}
   - component: {fileID: 292383673831787448}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1053541848321918590
 Transform:
   m_ObjectHideFlags: 0
@@ -22223,13 +22210,13 @@ GameObject:
   - component: {fileID: 5292992030077519470}
   - component: {fileID: 9129059205079681120}
   - component: {fileID: 5095713061666946886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2489779529115007823
 Transform:
   m_ObjectHideFlags: 0
@@ -22317,13 +22304,13 @@ GameObject:
   - component: {fileID: 1263853185519018450}
   - component: {fileID: 4516918920115163828}
   - component: {fileID: 4693310803267555656}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &324879739597355475
 Transform:
   m_ObjectHideFlags: 0
@@ -22411,13 +22398,13 @@ GameObject:
   - component: {fileID: 8628063384974703111}
   - component: {fileID: 7231528857922434478}
   - component: {fileID: 621044703891808072}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1784144136960905124
 Transform:
   m_ObjectHideFlags: 0
@@ -22505,13 +22492,13 @@ GameObject:
   - component: {fileID: 8553787918950317843}
   - component: {fileID: 3939415445377572690}
   - component: {fileID: 1965342321634811697}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4222892356934778761
 Transform:
   m_ObjectHideFlags: 0
@@ -22599,13 +22586,13 @@ GameObject:
   - component: {fileID: 2936642200563861298}
   - component: {fileID: 1684682085835985281}
   - component: {fileID: 5022178334961773893}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1974306518112304853
 Transform:
   m_ObjectHideFlags: 0
@@ -22693,13 +22680,13 @@ GameObject:
   - component: {fileID: 4568431482242491067}
   - component: {fileID: 5447615863404866572}
   - component: {fileID: 6218895843698841370}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4544535919827897030
 Transform:
   m_ObjectHideFlags: 0
@@ -22787,13 +22774,13 @@ GameObject:
   - component: {fileID: 2805078590031357260}
   - component: {fileID: 6228362448864240054}
   - component: {fileID: 3128309570313263582}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7342507631047500565
 Transform:
   m_ObjectHideFlags: 0
@@ -22881,13 +22868,13 @@ GameObject:
   - component: {fileID: 6622295259697991727}
   - component: {fileID: 8677957387273562239}
   - component: {fileID: 8583148439875080931}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2729944694954097509
 Transform:
   m_ObjectHideFlags: 0
@@ -22975,13 +22962,13 @@ GameObject:
   - component: {fileID: 1163309564824450602}
   - component: {fileID: 5457927103780820399}
   - component: {fileID: 2448246672044377299}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6594937211127103833
 Transform:
   m_ObjectHideFlags: 0
@@ -23069,13 +23056,13 @@ GameObject:
   - component: {fileID: 687949702102056965}
   - component: {fileID: 3889504781554307181}
   - component: {fileID: 2408228637979685423}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4561999184931964959
 Transform:
   m_ObjectHideFlags: 0
@@ -23163,13 +23150,13 @@ GameObject:
   - component: {fileID: 5068973870626980382}
   - component: {fileID: 4968831253840670200}
   - component: {fileID: 591396268409669999}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4405068378258205191
 Transform:
   m_ObjectHideFlags: 0
@@ -23257,13 +23244,13 @@ GameObject:
   - component: {fileID: 887884464594039996}
   - component: {fileID: 8386703430455169417}
   - component: {fileID: 5127409175569299959}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5834614700805835466
 Transform:
   m_ObjectHideFlags: 0
@@ -23351,13 +23338,13 @@ GameObject:
   - component: {fileID: 163751506491498102}
   - component: {fileID: 1387456261708424282}
   - component: {fileID: 6374059300458852287}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &997335988884443413
 Transform:
   m_ObjectHideFlags: 0
@@ -23445,13 +23432,13 @@ GameObject:
   - component: {fileID: 5678352463858093410}
   - component: {fileID: 3501923797491028901}
   - component: {fileID: 7630342380141767028}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7582536691760527959
 Transform:
   m_ObjectHideFlags: 0
@@ -23539,13 +23526,13 @@ GameObject:
   - component: {fileID: 3051888584304254886}
   - component: {fileID: 8214663978502884236}
   - component: {fileID: 8835119140430986646}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6551398005275288048
 Transform:
   m_ObjectHideFlags: 0
@@ -23633,13 +23620,13 @@ GameObject:
   - component: {fileID: 506465521499640568}
   - component: {fileID: 1153879857758161993}
   - component: {fileID: 5044086987161896841}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6648138047591966370
 Transform:
   m_ObjectHideFlags: 0
@@ -23727,13 +23714,13 @@ GameObject:
   - component: {fileID: 5397092922879410108}
   - component: {fileID: 660321093664464627}
   - component: {fileID: 4112948238291719584}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8335127855582720286
 Transform:
   m_ObjectHideFlags: 0
@@ -23821,13 +23808,13 @@ GameObject:
   - component: {fileID: 5175906291259670137}
   - component: {fileID: 4188471283308665204}
   - component: {fileID: 3613019772130486364}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8494019553157041388
 Transform:
   m_ObjectHideFlags: 0
@@ -23915,13 +23902,13 @@ GameObject:
   - component: {fileID: 4281522506408187009}
   - component: {fileID: 539822561447365947}
   - component: {fileID: 1438863163713251407}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1039949564828685659
 Transform:
   m_ObjectHideFlags: 0
@@ -24009,13 +23996,13 @@ GameObject:
   - component: {fileID: 1943710076320970469}
   - component: {fileID: 3118651335781902348}
   - component: {fileID: 444670713906288086}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5812954099081214272
 Transform:
   m_ObjectHideFlags: 0
@@ -24103,13 +24090,13 @@ GameObject:
   - component: {fileID: 8329201054739046413}
   - component: {fileID: 7991149761918562689}
   - component: {fileID: 6045308908974446037}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4702795727037642915
 Transform:
   m_ObjectHideFlags: 0
@@ -24197,13 +24184,13 @@ GameObject:
   - component: {fileID: 3967383839582293423}
   - component: {fileID: 4113226864926481477}
   - component: {fileID: 3752573926409150914}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3404000212060097641
 Transform:
   m_ObjectHideFlags: 0
@@ -24291,13 +24278,13 @@ GameObject:
   - component: {fileID: 4452727039030976878}
   - component: {fileID: 2955501680187289886}
   - component: {fileID: 7175224176491570642}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4427880055902544402
 Transform:
   m_ObjectHideFlags: 0
@@ -24385,13 +24372,13 @@ GameObject:
   - component: {fileID: 110697005073169682}
   - component: {fileID: 5332385937180296814}
   - component: {fileID: 4439376136949482207}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2145082643988971735
 Transform:
   m_ObjectHideFlags: 0
@@ -24479,13 +24466,13 @@ GameObject:
   - component: {fileID: 4099170778366100440}
   - component: {fileID: 3433464338474320761}
   - component: {fileID: 4758531201107434480}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1841441904001141272
 Transform:
   m_ObjectHideFlags: 0
@@ -24573,13 +24560,13 @@ GameObject:
   - component: {fileID: 4490181801567003201}
   - component: {fileID: 2574882874896784095}
   - component: {fileID: 2647352949778294407}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3931035139596851524
 Transform:
   m_ObjectHideFlags: 0
@@ -24667,13 +24654,13 @@ GameObject:
   - component: {fileID: 6412938850721603956}
   - component: {fileID: 8721417601671748955}
   - component: {fileID: 7460635036908295693}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1308017196726605405
 Transform:
   m_ObjectHideFlags: 0
@@ -24761,13 +24748,13 @@ GameObject:
   - component: {fileID: 1456076278044579833}
   - component: {fileID: 8248426573873186730}
   - component: {fileID: 8052110943166746028}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2344835838597545639
 Transform:
   m_ObjectHideFlags: 0
@@ -24855,13 +24842,13 @@ GameObject:
   - component: {fileID: 4828784334345510430}
   - component: {fileID: 7735236662499656368}
   - component: {fileID: 2903405754531561823}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3607127971689606735
 Transform:
   m_ObjectHideFlags: 0
@@ -24949,13 +24936,13 @@ GameObject:
   - component: {fileID: 8031013157983146503}
   - component: {fileID: 833597884159870697}
   - component: {fileID: 1891798727053635406}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2286156049612071474
 Transform:
   m_ObjectHideFlags: 0
@@ -25043,13 +25030,13 @@ GameObject:
   - component: {fileID: 4054461128990397939}
   - component: {fileID: 3108923942799909368}
   - component: {fileID: 3900752372826275623}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2493739966088999046
 Transform:
   m_ObjectHideFlags: 0
@@ -25137,13 +25124,13 @@ GameObject:
   - component: {fileID: 7458665036519574053}
   - component: {fileID: 2019880458973868725}
   - component: {fileID: 3319242485881980849}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6732925983600788978
 Transform:
   m_ObjectHideFlags: 0
@@ -25231,13 +25218,13 @@ GameObject:
   - component: {fileID: 4446326970263391107}
   - component: {fileID: 8670066690254018132}
   - component: {fileID: 1878567160858036211}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &626605100528605852
 Transform:
   m_ObjectHideFlags: 0
@@ -25325,13 +25312,13 @@ GameObject:
   - component: {fileID: 783745326776033640}
   - component: {fileID: 5478219302753156583}
   - component: {fileID: 6864078172102275291}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5867965320271886704
 Transform:
   m_ObjectHideFlags: 0
@@ -25419,13 +25406,13 @@ GameObject:
   - component: {fileID: 7895292397104715709}
   - component: {fileID: 2664136937971555870}
   - component: {fileID: 7786684703422482296}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8128573110699836037
 Transform:
   m_ObjectHideFlags: 0
@@ -25513,13 +25500,13 @@ GameObject:
   - component: {fileID: 682532681514220951}
   - component: {fileID: 524833361457783393}
   - component: {fileID: 1476864892033004694}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7286239385127808101
 Transform:
   m_ObjectHideFlags: 0
@@ -25607,13 +25594,13 @@ GameObject:
   - component: {fileID: 7502766463308915183}
   - component: {fileID: 2686283100085364829}
   - component: {fileID: 3118088242932355746}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2817707993788431631
 Transform:
   m_ObjectHideFlags: 0
@@ -25701,13 +25688,13 @@ GameObject:
   - component: {fileID: 7929816765843284743}
   - component: {fileID: 6318210530485193409}
   - component: {fileID: 126615174484088432}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4680988111145012472
 Transform:
   m_ObjectHideFlags: 0
@@ -25795,13 +25782,13 @@ GameObject:
   - component: {fileID: 700434686223179356}
   - component: {fileID: 593236963451054543}
   - component: {fileID: 4674450852021770545}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &57284148373762449
 Transform:
   m_ObjectHideFlags: 0
@@ -25889,13 +25876,13 @@ GameObject:
   - component: {fileID: 892880980513138210}
   - component: {fileID: 4133846027411211800}
   - component: {fileID: 8789920446039079480}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6507908373081930880
 Transform:
   m_ObjectHideFlags: 0
@@ -25983,13 +25970,13 @@ GameObject:
   - component: {fileID: 8766732157234050851}
   - component: {fileID: 6987574139892339743}
   - component: {fileID: 2694010688592982802}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5722085803150855437
 Transform:
   m_ObjectHideFlags: 0
@@ -26077,13 +26064,13 @@ GameObject:
   - component: {fileID: 5227576394103180124}
   - component: {fileID: 6649358971820449825}
   - component: {fileID: 7162509087751575818}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9139665007780543805
 Transform:
   m_ObjectHideFlags: 0
@@ -26171,13 +26158,13 @@ GameObject:
   - component: {fileID: 3402697292360609269}
   - component: {fileID: 8539383049947882324}
   - component: {fileID: 291168647202577638}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8626527858485503561
 Transform:
   m_ObjectHideFlags: 0
@@ -26265,13 +26252,13 @@ GameObject:
   - component: {fileID: 7163822308744119309}
   - component: {fileID: 8691301011213480974}
   - component: {fileID: 1881486702666763090}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2728887732573854961
 Transform:
   m_ObjectHideFlags: 0
@@ -26359,13 +26346,13 @@ GameObject:
   - component: {fileID: 5637477199021409824}
   - component: {fileID: 4213713015156175587}
   - component: {fileID: 5872425129884663683}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4806947418125043602
 Transform:
   m_ObjectHideFlags: 0
@@ -26453,13 +26440,13 @@ GameObject:
   - component: {fileID: 2175637787784752048}
   - component: {fileID: 1383749922673773309}
   - component: {fileID: 3714796872311914488}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4712398734308696347
 Transform:
   m_ObjectHideFlags: 0
@@ -26547,13 +26534,13 @@ GameObject:
   - component: {fileID: 8936721911843316511}
   - component: {fileID: 4992320211017260525}
   - component: {fileID: 6814928442790886297}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7550811627203975613
 Transform:
   m_ObjectHideFlags: 0
@@ -26641,13 +26628,13 @@ GameObject:
   - component: {fileID: 499504044229627936}
   - component: {fileID: 4689491708937536260}
   - component: {fileID: 8215260196115727727}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6279952883224242562
 Transform:
   m_ObjectHideFlags: 0
@@ -26735,13 +26722,13 @@ GameObject:
   - component: {fileID: 1922042784652203884}
   - component: {fileID: 8288426212429600508}
   - component: {fileID: 1409553829408944087}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9008327826952488882
 Transform:
   m_ObjectHideFlags: 0
@@ -26829,13 +26816,13 @@ GameObject:
   - component: {fileID: 7898928364540016536}
   - component: {fileID: 5862685903840495766}
   - component: {fileID: 1159560025289160414}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6645336862828856533
 Transform:
   m_ObjectHideFlags: 0
@@ -26923,13 +26910,13 @@ GameObject:
   - component: {fileID: 8201562827473663910}
   - component: {fileID: 5342979273101532213}
   - component: {fileID: 5781542644243470145}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1921024810146338894
 Transform:
   m_ObjectHideFlags: 0
@@ -27017,13 +27004,13 @@ GameObject:
   - component: {fileID: 2163611116881118675}
   - component: {fileID: 2442546189133384884}
   - component: {fileID: 8461269486978597671}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7653825726707420966
 Transform:
   m_ObjectHideFlags: 0
@@ -27111,13 +27098,13 @@ GameObject:
   - component: {fileID: 5336796567318133379}
   - component: {fileID: 5233503905599085984}
   - component: {fileID: 3269952994137477793}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2339401581737587714
 Transform:
   m_ObjectHideFlags: 0
@@ -27205,13 +27192,13 @@ GameObject:
   - component: {fileID: 7536658503168970239}
   - component: {fileID: 8045731269622167036}
   - component: {fileID: 8674098645237732228}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6142360578568061653
 Transform:
   m_ObjectHideFlags: 0
@@ -27299,13 +27286,13 @@ GameObject:
   - component: {fileID: 975700053550158416}
   - component: {fileID: 324549170055510592}
   - component: {fileID: 8613907469274603207}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &580678473989678991
 Transform:
   m_ObjectHideFlags: 0
@@ -27393,13 +27380,13 @@ GameObject:
   - component: {fileID: 433721833114307092}
   - component: {fileID: 870289474401017071}
   - component: {fileID: 6653859250951531656}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3460403438235702068
 Transform:
   m_ObjectHideFlags: 0
@@ -27487,13 +27474,13 @@ GameObject:
   - component: {fileID: 2368977904652905736}
   - component: {fileID: 2395319454142222955}
   - component: {fileID: 6998242366328642780}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6828868237827762631
 Transform:
   m_ObjectHideFlags: 0
@@ -27581,13 +27568,13 @@ GameObject:
   - component: {fileID: 1287790500296976018}
   - component: {fileID: 633744309371700171}
   - component: {fileID: 2162952155703954082}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5632513340051065591
 Transform:
   m_ObjectHideFlags: 0
@@ -27675,13 +27662,13 @@ GameObject:
   - component: {fileID: 149202217507954885}
   - component: {fileID: 6889898777200930479}
   - component: {fileID: 1396180978412184722}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5064829709273884006
 Transform:
   m_ObjectHideFlags: 0
@@ -27769,13 +27756,13 @@ GameObject:
   - component: {fileID: 1579407989523712794}
   - component: {fileID: 7129016081533635179}
   - component: {fileID: 3243220504913761340}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4705485806982458496
 Transform:
   m_ObjectHideFlags: 0
@@ -27863,13 +27850,13 @@ GameObject:
   - component: {fileID: 4643375277218330142}
   - component: {fileID: 1940266122118152861}
   - component: {fileID: 6236989450564009237}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7691765798656184848
 Transform:
   m_ObjectHideFlags: 0
@@ -27957,13 +27944,13 @@ GameObject:
   - component: {fileID: 3378690550664222078}
   - component: {fileID: 2308435803204536327}
   - component: {fileID: 6247797823643117577}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6466316525117311820
 Transform:
   m_ObjectHideFlags: 0
@@ -28051,13 +28038,13 @@ GameObject:
   - component: {fileID: 5753135271100398897}
   - component: {fileID: 3124979610629958003}
   - component: {fileID: 5998395152731596799}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5978917046130791173
 Transform:
   m_ObjectHideFlags: 0
@@ -28145,13 +28132,13 @@ GameObject:
   - component: {fileID: 5730970212819755362}
   - component: {fileID: 4005462794466028995}
   - component: {fileID: 2111247907912070771}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4448554141781979193
 Transform:
   m_ObjectHideFlags: 0
@@ -28239,13 +28226,13 @@ GameObject:
   - component: {fileID: 188477136457103348}
   - component: {fileID: 4412909537832362308}
   - component: {fileID: 8847905340641127165}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2241549479724552570
 Transform:
   m_ObjectHideFlags: 0
@@ -28333,13 +28320,13 @@ GameObject:
   - component: {fileID: 7577327051180101519}
   - component: {fileID: 7339493497824474907}
   - component: {fileID: 1732247122404243757}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1238071664586737460
 Transform:
   m_ObjectHideFlags: 0
@@ -28427,13 +28414,13 @@ GameObject:
   - component: {fileID: 6467728168859038127}
   - component: {fileID: 9209717219351747323}
   - component: {fileID: 6607205268182711551}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1296153492117081921
 Transform:
   m_ObjectHideFlags: 0
@@ -28521,13 +28508,13 @@ GameObject:
   - component: {fileID: 8780091357302435740}
   - component: {fileID: 1604006057831814518}
   - component: {fileID: 7997994393298097674}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6303293363508995537
 Transform:
   m_ObjectHideFlags: 0
@@ -28615,13 +28602,13 @@ GameObject:
   - component: {fileID: 2337868217381648802}
   - component: {fileID: 2186841698793951019}
   - component: {fileID: 7118378672612872738}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3679217940815935263
 Transform:
   m_ObjectHideFlags: 0
@@ -28709,13 +28696,13 @@ GameObject:
   - component: {fileID: 6719560815453297118}
   - component: {fileID: 1191365139270196125}
   - component: {fileID: 7747596616585522708}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3278852673687438665
 Transform:
   m_ObjectHideFlags: 0
@@ -28803,13 +28790,13 @@ GameObject:
   - component: {fileID: 4534139298730356179}
   - component: {fileID: 3075246657727385230}
   - component: {fileID: 7728298815437885149}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6675461094859826767
 Transform:
   m_ObjectHideFlags: 0
@@ -28897,13 +28884,13 @@ GameObject:
   - component: {fileID: 5816921744268150822}
   - component: {fileID: 2046843084896541029}
   - component: {fileID: 8377454455051635878}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3179468885812048499
 Transform:
   m_ObjectHideFlags: 0
@@ -28991,13 +28978,13 @@ GameObject:
   - component: {fileID: 2375193466807042987}
   - component: {fileID: 2207525795493551285}
   - component: {fileID: 5407951168893003198}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6160016355782943067
 Transform:
   m_ObjectHideFlags: 0
@@ -29085,13 +29072,13 @@ GameObject:
   - component: {fileID: 5832442091052048786}
   - component: {fileID: 5729248174559318184}
   - component: {fileID: 8464324581281579089}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9025780533710895083
 Transform:
   m_ObjectHideFlags: 0
@@ -29179,13 +29166,13 @@ GameObject:
   - component: {fileID: 7889118018392243866}
   - component: {fileID: 2032255415251305381}
   - component: {fileID: 6168765893240466466}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3243871414350379019
 Transform:
   m_ObjectHideFlags: 0
@@ -29273,13 +29260,13 @@ GameObject:
   - component: {fileID: 4649222652547576144}
   - component: {fileID: 8284733857019398065}
   - component: {fileID: 323976108183063011}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3498606974585179788
 Transform:
   m_ObjectHideFlags: 0
@@ -29367,13 +29354,13 @@ GameObject:
   - component: {fileID: 3443901062411080363}
   - component: {fileID: 6941844236864097651}
   - component: {fileID: 2797803698729044696}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2781403653501283729
 Transform:
   m_ObjectHideFlags: 0
@@ -29461,13 +29448,13 @@ GameObject:
   - component: {fileID: 7938352981903648857}
   - component: {fileID: 1752035017282913242}
   - component: {fileID: 8948476155825190171}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8108611875767215108
 Transform:
   m_ObjectHideFlags: 0
@@ -29555,13 +29542,13 @@ GameObject:
   - component: {fileID: 4634551960183909021}
   - component: {fileID: 8541384510128550498}
   - component: {fileID: 8775090916797391317}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5825725500054923486
 Transform:
   m_ObjectHideFlags: 0
@@ -29649,13 +29636,13 @@ GameObject:
   - component: {fileID: 4942598437848012636}
   - component: {fileID: 2268997050647541597}
   - component: {fileID: 4159069142791763204}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &873999096721719286
 Transform:
   m_ObjectHideFlags: 0
@@ -29743,13 +29730,13 @@ GameObject:
   - component: {fileID: 3571700692748358129}
   - component: {fileID: 1834767171979115416}
   - component: {fileID: 2567981744021919638}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &861644590075086612
 Transform:
   m_ObjectHideFlags: 0
@@ -29837,13 +29824,13 @@ GameObject:
   - component: {fileID: 5662362447106441787}
   - component: {fileID: 4014119606196963415}
   - component: {fileID: 8481512521475456356}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &986985904936949994
 Transform:
   m_ObjectHideFlags: 0
@@ -29931,13 +29918,13 @@ GameObject:
   - component: {fileID: 772079134293332692}
   - component: {fileID: 4126314975972671195}
   - component: {fileID: 8898319069664943749}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5050423746524604873
 Transform:
   m_ObjectHideFlags: 0
@@ -30025,13 +30012,13 @@ GameObject:
   - component: {fileID: 2156136344182300170}
   - component: {fileID: 3975134301381037923}
   - component: {fileID: 8957085148755042097}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3502309394725617374
 Transform:
   m_ObjectHideFlags: 0
@@ -30119,13 +30106,13 @@ GameObject:
   - component: {fileID: 2586296877424297988}
   - component: {fileID: 5425265965107046446}
   - component: {fileID: 2821449678251156096}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5847803661777677413
 Transform:
   m_ObjectHideFlags: 0
@@ -30213,13 +30200,13 @@ GameObject:
   - component: {fileID: 6846816819169011119}
   - component: {fileID: 7223795788577156910}
   - component: {fileID: 7880070113106223709}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1207268764832006851
 Transform:
   m_ObjectHideFlags: 0
@@ -30307,13 +30294,13 @@ GameObject:
   - component: {fileID: 1348177114988752862}
   - component: {fileID: 1619677194949278038}
   - component: {fileID: 8121482683914442095}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3551875690408087469
 Transform:
   m_ObjectHideFlags: 0
@@ -30401,13 +30388,13 @@ GameObject:
   - component: {fileID: 1455434563832088325}
   - component: {fileID: 4097008305019168535}
   - component: {fileID: 3980475429022328093}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7071267609056539680
 Transform:
   m_ObjectHideFlags: 0
@@ -30495,13 +30482,13 @@ GameObject:
   - component: {fileID: 3958890540202890881}
   - component: {fileID: 5569349335396563063}
   - component: {fileID: 5652340007009150104}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2884708952887415587
 Transform:
   m_ObjectHideFlags: 0
@@ -30589,13 +30576,13 @@ GameObject:
   - component: {fileID: 8214828524727374118}
   - component: {fileID: 2690394330622052577}
   - component: {fileID: 6592824435374016140}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8090655286892792297
 Transform:
   m_ObjectHideFlags: 0
@@ -30683,13 +30670,13 @@ GameObject:
   - component: {fileID: 8297641355796151251}
   - component: {fileID: 2069220563553221483}
   - component: {fileID: 7371833824497591223}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2653377378941262701
 Transform:
   m_ObjectHideFlags: 0
@@ -30777,13 +30764,13 @@ GameObject:
   - component: {fileID: 6608442228827235301}
   - component: {fileID: 7687483888455566819}
   - component: {fileID: 2852534209473928412}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8563165364745534886
 Transform:
   m_ObjectHideFlags: 0
@@ -30871,13 +30858,13 @@ GameObject:
   - component: {fileID: 8688457608957025887}
   - component: {fileID: 5663199911190352417}
   - component: {fileID: 1306268237460104887}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1955930437904662779
 Transform:
   m_ObjectHideFlags: 0
@@ -30965,13 +30952,13 @@ GameObject:
   - component: {fileID: 3218134116772562304}
   - component: {fileID: 9045191049096094770}
   - component: {fileID: 790518559737434091}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6718448415875972538
 Transform:
   m_ObjectHideFlags: 0
@@ -31059,13 +31046,13 @@ GameObject:
   - component: {fileID: 7604168993207726841}
   - component: {fileID: 4012038742899285409}
   - component: {fileID: 987164750835277353}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3842917102583094434
 Transform:
   m_ObjectHideFlags: 0
@@ -31153,13 +31140,13 @@ GameObject:
   - component: {fileID: 3127348927063854354}
   - component: {fileID: 1588345167185302183}
   - component: {fileID: 120073894554186792}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1923702242597923841
 Transform:
   m_ObjectHideFlags: 0
@@ -31247,13 +31234,13 @@ GameObject:
   - component: {fileID: 5884900593034986462}
   - component: {fileID: 6175103737098237771}
   - component: {fileID: 4008829444787574010}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &177792750365512567
 Transform:
   m_ObjectHideFlags: 0
@@ -31371,13 +31358,13 @@ GameObject:
   - component: {fileID: 8270187180904210862}
   - component: {fileID: 332211612590846772}
   - component: {fileID: 5259153734030133588}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6081240948853500245
 Transform:
   m_ObjectHideFlags: 0
@@ -31465,13 +31452,13 @@ GameObject:
   - component: {fileID: 4034821993537663086}
   - component: {fileID: 1241795544213086045}
   - component: {fileID: 1968049065409987765}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8666090088408470247
 Transform:
   m_ObjectHideFlags: 0
@@ -31559,13 +31546,13 @@ GameObject:
   - component: {fileID: 8236904988584732352}
   - component: {fileID: 7788923662601552235}
   - component: {fileID: 3795548586371974503}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8206969093687538607
 Transform:
   m_ObjectHideFlags: 0
@@ -31653,13 +31640,13 @@ GameObject:
   - component: {fileID: 6591134046838327940}
   - component: {fileID: 4798132408456806473}
   - component: {fileID: 7453515954558115589}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3481101599753151623
 Transform:
   m_ObjectHideFlags: 0
@@ -31747,13 +31734,13 @@ GameObject:
   - component: {fileID: 2955182231627802151}
   - component: {fileID: 4804223728603960005}
   - component: {fileID: 4762866172646327926}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9080621442980960759
 Transform:
   m_ObjectHideFlags: 0
@@ -31841,13 +31828,13 @@ GameObject:
   - component: {fileID: 5970330880905772871}
   - component: {fileID: 7940198636602268385}
   - component: {fileID: 5324736572348008719}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6151098963308940508
 Transform:
   m_ObjectHideFlags: 0
@@ -31935,13 +31922,13 @@ GameObject:
   - component: {fileID: 7390979846468936232}
   - component: {fileID: 1988286295672438031}
   - component: {fileID: 826940213707229595}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &351207581417164257
 Transform:
   m_ObjectHideFlags: 0
@@ -32029,13 +32016,13 @@ GameObject:
   - component: {fileID: 7512492196239916287}
   - component: {fileID: 2974824307897771675}
   - component: {fileID: 4074422441053889461}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1934771087928306828
 Transform:
   m_ObjectHideFlags: 0
@@ -32123,13 +32110,13 @@ GameObject:
   - component: {fileID: 3346043317908218565}
   - component: {fileID: 7511598578629631870}
   - component: {fileID: 4392338758130749061}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9146252760570179979
 Transform:
   m_ObjectHideFlags: 0
@@ -32217,13 +32204,13 @@ GameObject:
   - component: {fileID: 1443070214044856757}
   - component: {fileID: 5688127865658315936}
   - component: {fileID: 554351518960345118}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7263624858614860938
 Transform:
   m_ObjectHideFlags: 0
@@ -32311,13 +32298,13 @@ GameObject:
   - component: {fileID: 5978628149690733729}
   - component: {fileID: 1777118613479953727}
   - component: {fileID: 3497175694010760943}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1979401952983739769
 Transform:
   m_ObjectHideFlags: 0
@@ -32405,13 +32392,13 @@ GameObject:
   - component: {fileID: 7051663651288670652}
   - component: {fileID: 2006308181381871093}
   - component: {fileID: 4050180491391869577}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4007571996011305166
 Transform:
   m_ObjectHideFlags: 0
@@ -32499,13 +32486,13 @@ GameObject:
   - component: {fileID: 6556191165262520171}
   - component: {fileID: 7612642745799258938}
   - component: {fileID: 5889633495065190062}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6474979560020721904
 Transform:
   m_ObjectHideFlags: 0
@@ -32593,13 +32580,13 @@ GameObject:
   - component: {fileID: 9152176734201350243}
   - component: {fileID: 4707770798827872469}
   - component: {fileID: 2554317794423648029}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4500365026524732373
 Transform:
   m_ObjectHideFlags: 0
@@ -32687,13 +32674,13 @@ GameObject:
   - component: {fileID: 8957190672264730644}
   - component: {fileID: 4440750793119053028}
   - component: {fileID: 8758976328030194957}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6155495566820498314
 Transform:
   m_ObjectHideFlags: 0
@@ -32781,13 +32768,13 @@ GameObject:
   - component: {fileID: 5411040758391694053}
   - component: {fileID: 2499262068647837639}
   - component: {fileID: 7978263881228067906}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8865476647852302679
 Transform:
   m_ObjectHideFlags: 0
@@ -32875,13 +32862,13 @@ GameObject:
   - component: {fileID: 6610453105802282265}
   - component: {fileID: 115124941883246691}
   - component: {fileID: 7121118806989933405}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5311991588348044715
 Transform:
   m_ObjectHideFlags: 0
@@ -32969,13 +32956,13 @@ GameObject:
   - component: {fileID: 7762739718148080049}
   - component: {fileID: 3016671325242830071}
   - component: {fileID: 7270686210710399602}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2423509299975736884
 Transform:
   m_ObjectHideFlags: 0
@@ -33063,13 +33050,13 @@ GameObject:
   - component: {fileID: 2863805237173778414}
   - component: {fileID: 4684142690500301193}
   - component: {fileID: 5608396533676315325}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1314785185725335604
 Transform:
   m_ObjectHideFlags: 0
@@ -33157,13 +33144,13 @@ GameObject:
   - component: {fileID: 6530741707727884026}
   - component: {fileID: 7679618087632790880}
   - component: {fileID: 587185499423998201}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8536737466486756070
 Transform:
   m_ObjectHideFlags: 0
@@ -33251,13 +33238,13 @@ GameObject:
   - component: {fileID: 8983676727471412892}
   - component: {fileID: 568081294692310264}
   - component: {fileID: 7128479478277754086}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8873567545402852154
 Transform:
   m_ObjectHideFlags: 0
@@ -33345,13 +33332,13 @@ GameObject:
   - component: {fileID: 4637949160156185635}
   - component: {fileID: 8719237480301389319}
   - component: {fileID: 2243938637805257430}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7864604727750857614
 Transform:
   m_ObjectHideFlags: 0
@@ -33439,13 +33426,13 @@ GameObject:
   - component: {fileID: 5163307105793669010}
   - component: {fileID: 8630613819624791153}
   - component: {fileID: 4111153619138578619}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3342026032280527401
 Transform:
   m_ObjectHideFlags: 0
@@ -33533,13 +33520,13 @@ GameObject:
   - component: {fileID: 4550113521645728111}
   - component: {fileID: 3415163998207426978}
   - component: {fileID: 8640755678096169049}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &295910071072736895
 Transform:
   m_ObjectHideFlags: 0
@@ -33627,13 +33614,13 @@ GameObject:
   - component: {fileID: 4553463138679842715}
   - component: {fileID: 4214927283525451360}
   - component: {fileID: 6237794463853103221}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5243181992699207990
 Transform:
   m_ObjectHideFlags: 0
@@ -33752,13 +33739,13 @@ GameObject:
   - component: {fileID: 1543154322725020060}
   - component: {fileID: 713441651303735264}
   - component: {fileID: 2869969858858866118}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8082231202208156208
 Transform:
   m_ObjectHideFlags: 0
@@ -33846,13 +33833,13 @@ GameObject:
   - component: {fileID: 1309929133113483630}
   - component: {fileID: 3886098019232401275}
   - component: {fileID: 7065884085147368541}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4798703837773657934
 Transform:
   m_ObjectHideFlags: 0
@@ -33940,13 +33927,13 @@ GameObject:
   - component: {fileID: 6068351084725115035}
   - component: {fileID: 2107456292628019718}
   - component: {fileID: 8787573779229787438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7940217689900754699
 Transform:
   m_ObjectHideFlags: 0
@@ -34034,13 +34021,13 @@ GameObject:
   - component: {fileID: 3832804939198691072}
   - component: {fileID: 273664020609412068}
   - component: {fileID: 2551250363374816043}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1363994862888276358
 Transform:
   m_ObjectHideFlags: 0
@@ -34128,13 +34115,13 @@ GameObject:
   - component: {fileID: 9140021635017498717}
   - component: {fileID: 2070632577247481056}
   - component: {fileID: 8839483218750941351}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5769335498894070101
 Transform:
   m_ObjectHideFlags: 0
@@ -34222,13 +34209,13 @@ GameObject:
   - component: {fileID: 7278234702597520888}
   - component: {fileID: 4047696935719795714}
   - component: {fileID: 3617360475075745964}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5575938456212469251
 Transform:
   m_ObjectHideFlags: 0
@@ -34316,13 +34303,13 @@ GameObject:
   - component: {fileID: 6106419935514400940}
   - component: {fileID: 6386899359598003151}
   - component: {fileID: 9223088946535333804}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8617017460638851793
 Transform:
   m_ObjectHideFlags: 0
@@ -34410,13 +34397,13 @@ GameObject:
   - component: {fileID: 1844000041520449274}
   - component: {fileID: 1223365760999224609}
   - component: {fileID: 3327814494383915151}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4325579387546928239
 Transform:
   m_ObjectHideFlags: 0
@@ -34504,13 +34491,13 @@ GameObject:
   - component: {fileID: 7655905736339127104}
   - component: {fileID: 7759545534187108557}
   - component: {fileID: 4355458107562674855}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4620248489926893434
 Transform:
   m_ObjectHideFlags: 0
@@ -34598,13 +34585,13 @@ GameObject:
   - component: {fileID: 8303421642268567110}
   - component: {fileID: 6183323651639786487}
   - component: {fileID: 1529180049791221392}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7942252993067601425
 Transform:
   m_ObjectHideFlags: 0
@@ -34692,13 +34679,13 @@ GameObject:
   - component: {fileID: 1412127116168862120}
   - component: {fileID: 6664433867166891363}
   - component: {fileID: 3840940025468006850}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6182650137772663954
 Transform:
   m_ObjectHideFlags: 0
@@ -34786,13 +34773,13 @@ GameObject:
   - component: {fileID: 3323404652314687114}
   - component: {fileID: 1396541713061058178}
   - component: {fileID: 2854079522219926763}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8270438261601313206
 Transform:
   m_ObjectHideFlags: 0
@@ -34880,13 +34867,13 @@ GameObject:
   - component: {fileID: 8055376381228797105}
   - component: {fileID: 3837430577596080862}
   - component: {fileID: 7471780664696833006}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6096411499557857062
 Transform:
   m_ObjectHideFlags: 0
@@ -34974,13 +34961,13 @@ GameObject:
   - component: {fileID: 2040971076101494726}
   - component: {fileID: 3490206448420743278}
   - component: {fileID: 6151695159362852141}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6469233375664434696
 Transform:
   m_ObjectHideFlags: 0
@@ -35068,13 +35055,13 @@ GameObject:
   - component: {fileID: 7783141410182706902}
   - component: {fileID: 1122923755370866738}
   - component: {fileID: 5359307749886737820}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &28209383525312764
 Transform:
   m_ObjectHideFlags: 0
@@ -35162,13 +35149,13 @@ GameObject:
   - component: {fileID: 1307911855995267280}
   - component: {fileID: 8991860083253828073}
   - component: {fileID: 8344440170164393630}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7335207953845343495
 Transform:
   m_ObjectHideFlags: 0
@@ -35256,13 +35243,13 @@ GameObject:
   - component: {fileID: 5803873095758693643}
   - component: {fileID: 4726304162018031663}
   - component: {fileID: 3347958571396420301}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &178493980915429178
 Transform:
   m_ObjectHideFlags: 0
@@ -35350,13 +35337,13 @@ GameObject:
   - component: {fileID: 6730252074348189495}
   - component: {fileID: 7982282637768694825}
   - component: {fileID: 626786312268775770}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3050355015889111751
 Transform:
   m_ObjectHideFlags: 0
@@ -35444,13 +35431,13 @@ GameObject:
   - component: {fileID: 2334886383788995990}
   - component: {fileID: 530931259764576367}
   - component: {fileID: 7738144718234156640}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6663184857414952769
 Transform:
   m_ObjectHideFlags: 0
@@ -35538,13 +35525,13 @@ GameObject:
   - component: {fileID: 640267836468525103}
   - component: {fileID: 4949340417799712962}
   - component: {fileID: 4472364201842184550}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6457189714879099245
 Transform:
   m_ObjectHideFlags: 0
@@ -35632,13 +35619,13 @@ GameObject:
   - component: {fileID: 86274962042094508}
   - component: {fileID: 7507636615754081793}
   - component: {fileID: 364687093803833620}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8119181359665259722
 Transform:
   m_ObjectHideFlags: 0
@@ -35726,13 +35713,13 @@ GameObject:
   - component: {fileID: 851577733474496620}
   - component: {fileID: 5212868419934508375}
   - component: {fileID: 9157737550171044886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6222300510319055900
 Transform:
   m_ObjectHideFlags: 0
@@ -35820,13 +35807,13 @@ GameObject:
   - component: {fileID: 5693168253125720352}
   - component: {fileID: 5040157044630826762}
   - component: {fileID: 1128564749199425668}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3077149802980797070
 Transform:
   m_ObjectHideFlags: 0
@@ -35914,13 +35901,13 @@ GameObject:
   - component: {fileID: 2296781520591945276}
   - component: {fileID: 4326846338971546784}
   - component: {fileID: 8742518264794729090}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4911079000941451770
 Transform:
   m_ObjectHideFlags: 0
@@ -36008,13 +35995,13 @@ GameObject:
   - component: {fileID: 499661138212354246}
   - component: {fileID: 6232528939787951217}
   - component: {fileID: 6579400282061572821}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &24668955958493483
 Transform:
   m_ObjectHideFlags: 0
@@ -36102,13 +36089,13 @@ GameObject:
   - component: {fileID: 4537423789354151239}
   - component: {fileID: 7526427670736802415}
   - component: {fileID: 189327340395971440}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8763679236157876176
 Transform:
   m_ObjectHideFlags: 0
@@ -36196,13 +36183,13 @@ GameObject:
   - component: {fileID: 825881294850669333}
   - component: {fileID: 7383978592819164040}
   - component: {fileID: 4984334376314997782}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1495340178428144859
 Transform:
   m_ObjectHideFlags: 0
@@ -36290,13 +36277,13 @@ GameObject:
   - component: {fileID: 9065119388775117467}
   - component: {fileID: 7330446951918284105}
   - component: {fileID: 468766113868691629}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6464145197294988970
 Transform:
   m_ObjectHideFlags: 0
@@ -36384,13 +36371,13 @@ GameObject:
   - component: {fileID: 4582518536694470987}
   - component: {fileID: 8441310986965232225}
   - component: {fileID: 2039142036567467363}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7358034283456721402
 Transform:
   m_ObjectHideFlags: 0
@@ -36478,13 +36465,13 @@ GameObject:
   - component: {fileID: 4607523570447493200}
   - component: {fileID: 3065123764561603202}
   - component: {fileID: 5564250852126753012}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8204070384162454378
 Transform:
   m_ObjectHideFlags: 0
@@ -36572,13 +36559,13 @@ GameObject:
   - component: {fileID: 1455581507924523327}
   - component: {fileID: 7200743734066665579}
   - component: {fileID: 7893087962402476833}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6727243247265568237
 Transform:
   m_ObjectHideFlags: 0
@@ -36666,13 +36653,13 @@ GameObject:
   - component: {fileID: 6093712374536974534}
   - component: {fileID: 6082756172531433264}
   - component: {fileID: 790393863605428497}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1992027218950382325
 Transform:
   m_ObjectHideFlags: 0
@@ -36760,13 +36747,13 @@ GameObject:
   - component: {fileID: 399380319448476141}
   - component: {fileID: 3670413585088911784}
   - component: {fileID: 3401393087631533495}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4052015283294555372
 Transform:
   m_ObjectHideFlags: 0
@@ -36854,13 +36841,13 @@ GameObject:
   - component: {fileID: 6828516768919131551}
   - component: {fileID: 3193498077830275323}
   - component: {fileID: 4029297268463341067}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1942887737314430312
 Transform:
   m_ObjectHideFlags: 0
@@ -36948,13 +36935,13 @@ GameObject:
   - component: {fileID: 5846606646542152741}
   - component: {fileID: 1094861255239342692}
   - component: {fileID: 1119107455032162180}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3144101546221791930
 Transform:
   m_ObjectHideFlags: 0
@@ -37042,13 +37029,13 @@ GameObject:
   - component: {fileID: 4140309792224534577}
   - component: {fileID: 2977583517500956348}
   - component: {fileID: 8861893872311451136}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &44477619578698258
 Transform:
   m_ObjectHideFlags: 0
@@ -37136,13 +37123,13 @@ GameObject:
   - component: {fileID: 8792380064567496140}
   - component: {fileID: 1906697379025098877}
   - component: {fileID: 6797483598052908730}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4845564588023855337
 Transform:
   m_ObjectHideFlags: 0
@@ -37230,13 +37217,13 @@ GameObject:
   - component: {fileID: 2214706931465579615}
   - component: {fileID: 2560665491051629263}
   - component: {fileID: 664634816474824628}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3020279683893737194
 Transform:
   m_ObjectHideFlags: 0
@@ -37324,13 +37311,13 @@ GameObject:
   - component: {fileID: 7038385906781223853}
   - component: {fileID: 2142610142278758145}
   - component: {fileID: 972559517774723499}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3226981329603365655
 Transform:
   m_ObjectHideFlags: 0
@@ -37418,13 +37405,13 @@ GameObject:
   - component: {fileID: 6227155422002512079}
   - component: {fileID: 1933395442179490531}
   - component: {fileID: 3564155129533697837}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1607980251047940425
 Transform:
   m_ObjectHideFlags: 0
@@ -37512,13 +37499,13 @@ GameObject:
   - component: {fileID: 7409848821650481172}
   - component: {fileID: 4018690552966774824}
   - component: {fileID: 6469179029252980065}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2378574596255459179
 Transform:
   m_ObjectHideFlags: 0
@@ -37606,13 +37593,13 @@ GameObject:
   - component: {fileID: 3741925642942379560}
   - component: {fileID: 2196818472130728650}
   - component: {fileID: 505508783775808369}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6703065747398448203
 Transform:
   m_ObjectHideFlags: 0
@@ -37700,13 +37687,13 @@ GameObject:
   - component: {fileID: 9035655308983284856}
   - component: {fileID: 8129245581655788924}
   - component: {fileID: 7454719200045101823}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8497499118075891982
 Transform:
   m_ObjectHideFlags: 0
@@ -37794,13 +37781,13 @@ GameObject:
   - component: {fileID: 4232368417379462813}
   - component: {fileID: 6335609526641504191}
   - component: {fileID: 6795055170241247038}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2085429934482005648
 Transform:
   m_ObjectHideFlags: 0
@@ -37888,13 +37875,13 @@ GameObject:
   - component: {fileID: 1198011491920178893}
   - component: {fileID: 3980520368976918110}
   - component: {fileID: 516415767944884681}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8620059388066996687
 Transform:
   m_ObjectHideFlags: 0
@@ -37982,13 +37969,13 @@ GameObject:
   - component: {fileID: 2243840062068755893}
   - component: {fileID: 7805802574671283168}
   - component: {fileID: 3492791748313959305}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9133090886818502568
 Transform:
   m_ObjectHideFlags: 0
@@ -38076,13 +38063,13 @@ GameObject:
   - component: {fileID: 8980707118906216240}
   - component: {fileID: 2837273279988852941}
   - component: {fileID: 8336010045226137138}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6228759125238321018
 Transform:
   m_ObjectHideFlags: 0
@@ -38170,13 +38157,13 @@ GameObject:
   - component: {fileID: 1584979804583992767}
   - component: {fileID: 7770012957421582316}
   - component: {fileID: 8179245162492491721}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4289846723683306596
 Transform:
   m_ObjectHideFlags: 0
@@ -38264,13 +38251,13 @@ GameObject:
   - component: {fileID: 3545874168446190301}
   - component: {fileID: 4623315548410779464}
   - component: {fileID: 7597902046320898750}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8964698204413453798
 Transform:
   m_ObjectHideFlags: 0
@@ -38358,13 +38345,13 @@ GameObject:
   - component: {fileID: 8212466467008451193}
   - component: {fileID: 6277167528162076572}
   - component: {fileID: 5922080357529649107}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2895844875360406696
 Transform:
   m_ObjectHideFlags: 0
@@ -38452,13 +38439,13 @@ GameObject:
   - component: {fileID: 4142673611638897581}
   - component: {fileID: 556739117672862898}
   - component: {fileID: 5260226957576396178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8922123861994167470
 Transform:
   m_ObjectHideFlags: 0
@@ -38546,13 +38533,13 @@ GameObject:
   - component: {fileID: 3365379708338083682}
   - component: {fileID: 9155788054605823818}
   - component: {fileID: 7415226655923945827}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3984905120166065668
 Transform:
   m_ObjectHideFlags: 0
@@ -38640,13 +38627,13 @@ GameObject:
   - component: {fileID: 2172173870541466976}
   - component: {fileID: 1410080883492443516}
   - component: {fileID: 275879995707362067}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7188595352393445190
 Transform:
   m_ObjectHideFlags: 0
@@ -38734,13 +38721,13 @@ GameObject:
   - component: {fileID: 905094855084855444}
   - component: {fileID: 1240329374751476277}
   - component: {fileID: 6531281446608922479}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1640790597989539371
 Transform:
   m_ObjectHideFlags: 0
@@ -38828,13 +38815,13 @@ GameObject:
   - component: {fileID: 3746351352015401571}
   - component: {fileID: 2705628945850755170}
   - component: {fileID: 3270924696744897227}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4546338264152487796
 Transform:
   m_ObjectHideFlags: 0
@@ -38922,13 +38909,13 @@ GameObject:
   - component: {fileID: 7244353750213819871}
   - component: {fileID: 7446977286773268497}
   - component: {fileID: 6361985482388730693}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6234881611960703168
 Transform:
   m_ObjectHideFlags: 0
@@ -39016,13 +39003,13 @@ GameObject:
   - component: {fileID: 6495142724120617516}
   - component: {fileID: 3063680212809419414}
   - component: {fileID: 2633325430001866873}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2964202554688187007
 Transform:
   m_ObjectHideFlags: 0
@@ -39110,13 +39097,13 @@ GameObject:
   - component: {fileID: 4450874593943101986}
   - component: {fileID: 1226464455422822494}
   - component: {fileID: 807312769978846937}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4410569512805547287
 Transform:
   m_ObjectHideFlags: 0
@@ -39204,13 +39191,13 @@ GameObject:
   - component: {fileID: 3579699767013745818}
   - component: {fileID: 8114483934009391}
   - component: {fileID: 6391433875962151751}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1736672725611587728
 Transform:
   m_ObjectHideFlags: 0
@@ -39298,13 +39285,13 @@ GameObject:
   - component: {fileID: 5355911894920698619}
   - component: {fileID: 674841842833706112}
   - component: {fileID: 5420585890511740923}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7423885254358786350
 Transform:
   m_ObjectHideFlags: 0
@@ -39392,13 +39379,13 @@ GameObject:
   - component: {fileID: 4318782365797345014}
   - component: {fileID: 735258869849457975}
   - component: {fileID: 3159222251445201340}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2924146674319625940
 Transform:
   m_ObjectHideFlags: 0
@@ -39486,13 +39473,13 @@ GameObject:
   - component: {fileID: 85222739627728431}
   - component: {fileID: 5240591267754826980}
   - component: {fileID: 648110949437833455}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6365915544983436061
 Transform:
   m_ObjectHideFlags: 0
@@ -39580,13 +39567,13 @@ GameObject:
   - component: {fileID: 5572772897246760340}
   - component: {fileID: 5077320321793284432}
   - component: {fileID: 8164941188783303824}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3912879131434416513
 Transform:
   m_ObjectHideFlags: 0
@@ -39674,13 +39661,13 @@ GameObject:
   - component: {fileID: 6702735815317227273}
   - component: {fileID: 2962889296667231775}
   - component: {fileID: 9107159614065839200}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &992891275969438902
 Transform:
   m_ObjectHideFlags: 0
@@ -39768,13 +39755,13 @@ GameObject:
   - component: {fileID: 1016264491782135423}
   - component: {fileID: 6098682163470651421}
   - component: {fileID: 5914077213803204223}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1630191363949259221
 Transform:
   m_ObjectHideFlags: 0
@@ -39862,13 +39849,13 @@ GameObject:
   - component: {fileID: 6921360316709544691}
   - component: {fileID: 6308637108366034062}
   - component: {fileID: 712810585281011718}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &735297023541172640
 Transform:
   m_ObjectHideFlags: 0
@@ -39956,13 +39943,13 @@ GameObject:
   - component: {fileID: 1194726301368402633}
   - component: {fileID: 6426570948258546810}
   - component: {fileID: 7656717448712023928}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &989968200133738637
 Transform:
   m_ObjectHideFlags: 0
@@ -40050,13 +40037,13 @@ GameObject:
   - component: {fileID: 2479902673770674999}
   - component: {fileID: 8768575909513519699}
   - component: {fileID: 76665430809632795}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3922220829255297233
 Transform:
   m_ObjectHideFlags: 0
@@ -40144,13 +40131,13 @@ GameObject:
   - component: {fileID: 9199962033679414557}
   - component: {fileID: 4342192915153418228}
   - component: {fileID: 6088844621783010851}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7824600659867545010
 Transform:
   m_ObjectHideFlags: 0
@@ -40238,13 +40225,13 @@ GameObject:
   - component: {fileID: 5370145687300097696}
   - component: {fileID: 5928705951711615550}
   - component: {fileID: 4306298268695523819}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3855236555097705532
 Transform:
   m_ObjectHideFlags: 0
@@ -40332,13 +40319,13 @@ GameObject:
   - component: {fileID: 1176098642939892268}
   - component: {fileID: 7302284877710996350}
   - component: {fileID: 4233641625615212262}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1179807487867650638
 Transform:
   m_ObjectHideFlags: 0
@@ -40426,13 +40413,13 @@ GameObject:
   - component: {fileID: 4695020318669853123}
   - component: {fileID: 3086385703753495980}
   - component: {fileID: 8735648971630740569}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6266733265514686121
 Transform:
   m_ObjectHideFlags: 0
@@ -40520,13 +40507,13 @@ GameObject:
   - component: {fileID: 5677015404224263746}
   - component: {fileID: 3597395087971086078}
   - component: {fileID: 5186875494624969308}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6903710325310968111
 Transform:
   m_ObjectHideFlags: 0
@@ -40614,13 +40601,13 @@ GameObject:
   - component: {fileID: 5952279231815810893}
   - component: {fileID: 8587700755511485339}
   - component: {fileID: 7958732568799361294}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &398086536539856783
 Transform:
   m_ObjectHideFlags: 0
@@ -40708,13 +40695,13 @@ GameObject:
   - component: {fileID: 7213422230828958199}
   - component: {fileID: 3000319733120216226}
   - component: {fileID: 2041591402548474388}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6066867568180364573
 Transform:
   m_ObjectHideFlags: 0
@@ -40802,13 +40789,13 @@ GameObject:
   - component: {fileID: 127966834906252643}
   - component: {fileID: 8558826712908438806}
   - component: {fileID: 5328669296815889790}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2633327744355932170
 Transform:
   m_ObjectHideFlags: 0
@@ -40896,13 +40883,13 @@ GameObject:
   - component: {fileID: 2981226825928279428}
   - component: {fileID: 909687052895003442}
   - component: {fileID: 6812151638026215330}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1579475963787938381
 Transform:
   m_ObjectHideFlags: 0
@@ -40990,13 +40977,13 @@ GameObject:
   - component: {fileID: 7139040742517858702}
   - component: {fileID: 3701437197183208091}
   - component: {fileID: 7268326147839924251}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7281760443972395508
 Transform:
   m_ObjectHideFlags: 0
@@ -41084,13 +41071,13 @@ GameObject:
   - component: {fileID: 2232107481344708423}
   - component: {fileID: 6093066908272731759}
   - component: {fileID: 6499662288139332956}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6048939728285435578
 Transform:
   m_ObjectHideFlags: 0
@@ -41178,13 +41165,13 @@ GameObject:
   - component: {fileID: 3328612796603977104}
   - component: {fileID: 6142109894789015407}
   - component: {fileID: 1153289386990869451}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3968039515356922016
 Transform:
   m_ObjectHideFlags: 0
@@ -41272,13 +41259,13 @@ GameObject:
   - component: {fileID: 516885481413249034}
   - component: {fileID: 7400242942488885723}
   - component: {fileID: 1993227751187932339}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4732794823077857912
 Transform:
   m_ObjectHideFlags: 0
@@ -41366,13 +41353,13 @@ GameObject:
   - component: {fileID: 1395904869689861608}
   - component: {fileID: 1427528235418620493}
   - component: {fileID: 847021899563104283}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5440983659640031401
 Transform:
   m_ObjectHideFlags: 0
@@ -41460,13 +41447,13 @@ GameObject:
   - component: {fileID: 8328225881208167625}
   - component: {fileID: 2995583594864737256}
   - component: {fileID: 8030727004667662426}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1615283078292099680
 Transform:
   m_ObjectHideFlags: 0
@@ -41554,13 +41541,13 @@ GameObject:
   - component: {fileID: 7949426271740873013}
   - component: {fileID: 1997581360450889915}
   - component: {fileID: 1871667626520609185}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5857394320711481218
 Transform:
   m_ObjectHideFlags: 0
@@ -41648,13 +41635,13 @@ GameObject:
   - component: {fileID: 2173561935084906464}
   - component: {fileID: 3750484229611292939}
   - component: {fileID: 9192821717559847504}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3660024398603101407
 Transform:
   m_ObjectHideFlags: 0
@@ -41742,13 +41729,13 @@ GameObject:
   - component: {fileID: 2863280706897893334}
   - component: {fileID: 1008458143270602968}
   - component: {fileID: 6688707550339740223}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4429381733039615854
 Transform:
   m_ObjectHideFlags: 0
@@ -41836,13 +41823,13 @@ GameObject:
   - component: {fileID: 4732131560295971087}
   - component: {fileID: 5104004305431365593}
   - component: {fileID: 4268493967655430540}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2807064835044392
 Transform:
   m_ObjectHideFlags: 0
@@ -41930,13 +41917,13 @@ GameObject:
   - component: {fileID: 8129666428137238654}
   - component: {fileID: 7306909350537559293}
   - component: {fileID: 6300699526593418310}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6085167784347904222
 Transform:
   m_ObjectHideFlags: 0
@@ -42024,13 +42011,13 @@ GameObject:
   - component: {fileID: 6421761059451676370}
   - component: {fileID: 3362879498489628638}
   - component: {fileID: 411125705816904180}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1107763826002166929
 Transform:
   m_ObjectHideFlags: 0
@@ -42118,13 +42105,13 @@ GameObject:
   - component: {fileID: 6922268863462247491}
   - component: {fileID: 5955584145398032304}
   - component: {fileID: 1055340302253645802}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2350475346618110117
 Transform:
   m_ObjectHideFlags: 0
@@ -42212,13 +42199,13 @@ GameObject:
   - component: {fileID: 4561963066558311063}
   - component: {fileID: 2355042783653614192}
   - component: {fileID: 7153511900685386625}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3850922328995166635
 Transform:
   m_ObjectHideFlags: 0
@@ -42306,13 +42293,13 @@ GameObject:
   - component: {fileID: 6833045607481977010}
   - component: {fileID: 7989524174538406717}
   - component: {fileID: 5405468994249781379}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7123717647488708438
 Transform:
   m_ObjectHideFlags: 0
@@ -42400,13 +42387,13 @@ GameObject:
   - component: {fileID: 5854311703300229946}
   - component: {fileID: 1783269059260744038}
   - component: {fileID: 4917730100960828510}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2636704810895200809
 Transform:
   m_ObjectHideFlags: 0
@@ -42494,13 +42481,13 @@ GameObject:
   - component: {fileID: 3248994654380130957}
   - component: {fileID: 2305976141418077230}
   - component: {fileID: 6428086533353810916}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8149627863262431339
 Transform:
   m_ObjectHideFlags: 0
@@ -42588,13 +42575,13 @@ GameObject:
   - component: {fileID: 2976094880579732010}
   - component: {fileID: 8409081529642738014}
   - component: {fileID: 6133511722843194865}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5707371062688163156
 Transform:
   m_ObjectHideFlags: 0
@@ -42682,13 +42669,13 @@ GameObject:
   - component: {fileID: 6250955262488924347}
   - component: {fileID: 5868786493330186171}
   - component: {fileID: 2111187571884850675}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8909165344044856174
 Transform:
   m_ObjectHideFlags: 0
@@ -42776,13 +42763,13 @@ GameObject:
   - component: {fileID: 8384888328157131228}
   - component: {fileID: 8619115664719174658}
   - component: {fileID: 7893341998035060165}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7862827934140845816
 Transform:
   m_ObjectHideFlags: 0
@@ -42870,13 +42857,13 @@ GameObject:
   - component: {fileID: 4106697487964549332}
   - component: {fileID: 1014569575183761278}
   - component: {fileID: 8019128361313185004}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8025803322454430401
 Transform:
   m_ObjectHideFlags: 0
@@ -42964,13 +42951,13 @@ GameObject:
   - component: {fileID: 614347136689721613}
   - component: {fileID: 2736976395266433712}
   - component: {fileID: 8830809180101657420}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6667392544923139051
 Transform:
   m_ObjectHideFlags: 0
@@ -43058,13 +43045,13 @@ GameObject:
   - component: {fileID: 3384224997017322074}
   - component: {fileID: 8253691174683094916}
   - component: {fileID: 3447000455657866964}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4500219510038082322
 Transform:
   m_ObjectHideFlags: 0
@@ -43152,13 +43139,13 @@ GameObject:
   - component: {fileID: 7076315183861449126}
   - component: {fileID: 6472698701530728897}
   - component: {fileID: 1788088481033268402}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3946120662431092991
 Transform:
   m_ObjectHideFlags: 0
@@ -43246,13 +43233,13 @@ GameObject:
   - component: {fileID: 3312115439792862162}
   - component: {fileID: 3828806780864935364}
   - component: {fileID: 3285597082940903777}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &333370283588467488
 Transform:
   m_ObjectHideFlags: 0
@@ -43340,13 +43327,13 @@ GameObject:
   - component: {fileID: 566689103578984403}
   - component: {fileID: 8103602207704507873}
   - component: {fileID: 196267345907595759}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6801075787021879968
 Transform:
   m_ObjectHideFlags: 0
@@ -43434,13 +43421,13 @@ GameObject:
   - component: {fileID: 2279302485194666645}
   - component: {fileID: 8745242735436186971}
   - component: {fileID: 1306814792064385066}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2304272216058612747
 Transform:
   m_ObjectHideFlags: 0
@@ -43528,13 +43515,13 @@ GameObject:
   - component: {fileID: 8421395681597379616}
   - component: {fileID: 1159772372300667497}
   - component: {fileID: 7881696853994672095}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2279286187283593819
 Transform:
   m_ObjectHideFlags: 0
@@ -43622,13 +43609,13 @@ GameObject:
   - component: {fileID: 9082492401175987247}
   - component: {fileID: 4851685347884087131}
   - component: {fileID: 9205925508119232850}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2772883127112781298
 Transform:
   m_ObjectHideFlags: 0
@@ -43716,13 +43703,13 @@ GameObject:
   - component: {fileID: 6434795339423963567}
   - component: {fileID: 2425743739433744852}
   - component: {fileID: 1117751898715214864}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8006486496302917195
 Transform:
   m_ObjectHideFlags: 0
@@ -43810,13 +43797,13 @@ GameObject:
   - component: {fileID: 7013896609982481953}
   - component: {fileID: 833881768190087658}
   - component: {fileID: 202273021044487115}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4499518788518966898
 Transform:
   m_ObjectHideFlags: 0
@@ -43904,13 +43891,13 @@ GameObject:
   - component: {fileID: 2705966935737371356}
   - component: {fileID: 799025936868995064}
   - component: {fileID: 7212213524669323593}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &462453709657927116
 Transform:
   m_ObjectHideFlags: 0
@@ -43998,13 +43985,13 @@ GameObject:
   - component: {fileID: 5577640775191420271}
   - component: {fileID: 8433144011018530107}
   - component: {fileID: 8068627632363852064}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3284044518022727975
 Transform:
   m_ObjectHideFlags: 0
@@ -44092,13 +44079,13 @@ GameObject:
   - component: {fileID: 1140469410718076242}
   - component: {fileID: 7617879178889530428}
   - component: {fileID: 7951973747713123129}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2542191479213684174
 Transform:
   m_ObjectHideFlags: 0
@@ -44186,13 +44173,13 @@ GameObject:
   - component: {fileID: 678461648785595164}
   - component: {fileID: 6728988089028980340}
   - component: {fileID: 3625963323230969987}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3738538652120183290
 Transform:
   m_ObjectHideFlags: 0
@@ -44280,13 +44267,13 @@ GameObject:
   - component: {fileID: 3194943256564470205}
   - component: {fileID: 126442198636995154}
   - component: {fileID: 7426509930799965641}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &984642562173127218
 Transform:
   m_ObjectHideFlags: 0
@@ -44374,13 +44361,13 @@ GameObject:
   - component: {fileID: 8444999300362929645}
   - component: {fileID: 7629595136615946346}
   - component: {fileID: 1911970933776281790}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5867985234606264629
 Transform:
   m_ObjectHideFlags: 0
@@ -44468,13 +44455,13 @@ GameObject:
   - component: {fileID: 1241057767579410211}
   - component: {fileID: 5768087749854721057}
   - component: {fileID: 3081613967418647471}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5668094079514059740
 Transform:
   m_ObjectHideFlags: 0
@@ -44562,13 +44549,13 @@ GameObject:
   - component: {fileID: 7791717935447888552}
   - component: {fileID: 6824920079160968672}
   - component: {fileID: 820506544314644876}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &997804305107235506
 Transform:
   m_ObjectHideFlags: 0
@@ -44656,13 +44643,13 @@ GameObject:
   - component: {fileID: 7593395337667986395}
   - component: {fileID: 581471182502136950}
   - component: {fileID: 5831331458554776781}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5690117311970794051
 Transform:
   m_ObjectHideFlags: 0
@@ -44750,13 +44737,13 @@ GameObject:
   - component: {fileID: 6068416683231635799}
   - component: {fileID: 6146873513354909406}
   - component: {fileID: 8996500580164336257}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5073399812547884932
 Transform:
   m_ObjectHideFlags: 0
@@ -44844,13 +44831,13 @@ GameObject:
   - component: {fileID: 5111210090078333191}
   - component: {fileID: 7105841178039905435}
   - component: {fileID: 2082781078420299281}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7674956321603607906
 Transform:
   m_ObjectHideFlags: 0
@@ -44938,13 +44925,13 @@ GameObject:
   - component: {fileID: 1363724869523242266}
   - component: {fileID: 5843411217411998594}
   - component: {fileID: 1665526956666988709}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7535462663129971216
 Transform:
   m_ObjectHideFlags: 0
@@ -45032,13 +45019,13 @@ GameObject:
   - component: {fileID: 8772123709624806560}
   - component: {fileID: 9010883060762273638}
   - component: {fileID: 8264692821716002383}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5424137770334988947
 Transform:
   m_ObjectHideFlags: 0
@@ -45126,13 +45113,13 @@ GameObject:
   - component: {fileID: 6448461180285235454}
   - component: {fileID: 7773145937159914854}
   - component: {fileID: 8517041258415660574}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8635159756721605770
 Transform:
   m_ObjectHideFlags: 0
@@ -45220,13 +45207,13 @@ GameObject:
   - component: {fileID: 7948401962805440904}
   - component: {fileID: 3306436352321542941}
   - component: {fileID: 101489715582170255}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &73509848154533798
 Transform:
   m_ObjectHideFlags: 0
@@ -45314,13 +45301,13 @@ GameObject:
   - component: {fileID: 5434080410602455272}
   - component: {fileID: 6847936006341631533}
   - component: {fileID: 624926858981271383}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3178194438440772684
 Transform:
   m_ObjectHideFlags: 0
@@ -45408,13 +45395,13 @@ GameObject:
   - component: {fileID: 4249836949389001966}
   - component: {fileID: 2831327435210625713}
   - component: {fileID: 5458003364168272521}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6621627503633369269
 Transform:
   m_ObjectHideFlags: 0
@@ -45502,13 +45489,13 @@ GameObject:
   - component: {fileID: 8202621446787496304}
   - component: {fileID: 2875475354369007260}
   - component: {fileID: 5477279272302365683}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1249073147066408977
 Transform:
   m_ObjectHideFlags: 0
@@ -45596,13 +45583,13 @@ GameObject:
   - component: {fileID: 3322430107058009627}
   - component: {fileID: 4854806080003902267}
   - component: {fileID: 2289584714491523431}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1328684986086534653
 Transform:
   m_ObjectHideFlags: 0
@@ -45690,13 +45677,13 @@ GameObject:
   - component: {fileID: 2295296238820655318}
   - component: {fileID: 7251467405462979692}
   - component: {fileID: 4169921288138332684}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9044929494857561769
 Transform:
   m_ObjectHideFlags: 0
@@ -45784,13 +45771,13 @@ GameObject:
   - component: {fileID: 7129372062923544319}
   - component: {fileID: 8395824738091634850}
   - component: {fileID: 2343532199055220191}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7785407767656960533
 Transform:
   m_ObjectHideFlags: 0
@@ -45878,13 +45865,13 @@ GameObject:
   - component: {fileID: 3295091575936536006}
   - component: {fileID: 296028111217080266}
   - component: {fileID: 6196423300657189677}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1121857659430557854
 Transform:
   m_ObjectHideFlags: 0
@@ -45972,13 +45959,13 @@ GameObject:
   - component: {fileID: 2339137490631988258}
   - component: {fileID: 2640232261115783132}
   - component: {fileID: 5978653302108403193}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6165160993144237252
 Transform:
   m_ObjectHideFlags: 0
@@ -46066,13 +46053,13 @@ GameObject:
   - component: {fileID: 5000424483948540409}
   - component: {fileID: 688938322993458556}
   - component: {fileID: 4844143262344634310}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5773432373630746796
 Transform:
   m_ObjectHideFlags: 0
@@ -46160,13 +46147,13 @@ GameObject:
   - component: {fileID: 1721271257531651503}
   - component: {fileID: 478367156565822201}
   - component: {fileID: 8738338539776630000}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4945288303118862592
 Transform:
   m_ObjectHideFlags: 0
@@ -46254,13 +46241,13 @@ GameObject:
   - component: {fileID: 4044453135082541792}
   - component: {fileID: 9144325717462649299}
   - component: {fileID: 3246996667278698832}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7599685089487995830
 Transform:
   m_ObjectHideFlags: 0
@@ -46348,13 +46335,13 @@ GameObject:
   - component: {fileID: 5594519286725749607}
   - component: {fileID: 119375826321181060}
   - component: {fileID: 3033845047864484040}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2389939427097716074
 Transform:
   m_ObjectHideFlags: 0
@@ -46442,13 +46429,13 @@ GameObject:
   - component: {fileID: 9211877733580326966}
   - component: {fileID: 488393241283951815}
   - component: {fileID: 9164881138852652670}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7494793771821413866
 Transform:
   m_ObjectHideFlags: 0
@@ -46536,13 +46523,13 @@ GameObject:
   - component: {fileID: 1693577985947792649}
   - component: {fileID: 4484929289881677421}
   - component: {fileID: 6869373656264749743}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &438653530722716524
 Transform:
   m_ObjectHideFlags: 0
@@ -46630,13 +46617,13 @@ GameObject:
   - component: {fileID: 4346233626848748217}
   - component: {fileID: 403539024122960927}
   - component: {fileID: 167534908805195333}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4706672739428858540
 Transform:
   m_ObjectHideFlags: 0
@@ -46724,13 +46711,13 @@ GameObject:
   - component: {fileID: 406093213531026640}
   - component: {fileID: 5620328377167758827}
   - component: {fileID: 742551554831263513}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &576999439935565706
 Transform:
   m_ObjectHideFlags: 0
@@ -46818,13 +46805,13 @@ GameObject:
   - component: {fileID: 2257840299886599611}
   - component: {fileID: 9161936455304229544}
   - component: {fileID: 3878703618694828000}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2572362350522189344
 Transform:
   m_ObjectHideFlags: 0
@@ -46912,13 +46899,13 @@ GameObject:
   - component: {fileID: 3570773866724568825}
   - component: {fileID: 5285991956893292306}
   - component: {fileID: 8223036195305837830}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CP
   m_TagString: Connection_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8048962705390999515
 Transform:
   m_ObjectHideFlags: 0

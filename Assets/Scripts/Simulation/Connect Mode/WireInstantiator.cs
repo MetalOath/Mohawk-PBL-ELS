@@ -94,11 +94,11 @@ public class WireInstantiator : MonoBehaviour
         for (int i = 0; i <= numberOfSegments; i++)
         {
             yFunction = Mathf.Sqrt(Mathf.Pow(distanceBetweenPoints / 2f, 2f) - Mathf.Pow((i * distanceBetweenPoints / numberOfSegments - distanceBetweenPoints / 2f), 2f));
-            Vector3 parabolicY = new Vector3(0f, yFunction, 0f);
+            Vector3 circularY = new Vector3(0f, yFunction, 0f);
             Vector3 pathToPointTwo = (pointTwo.position - pointOne.position) / numberOfSegments * i;
             Vector3 midPoint = pointOne.position + (pointTwo.position - pointOne.position) / 2f;
 
-            Vector3 createPosition = pointOne.position + parabolicY + pathToPointTwo;
+            Vector3 createPosition = pointOne.position + circularY + pathToPointTwo;
             Quaternion createRotation = Quaternion.FromToRotation(pointTwo.position - pointOne.position, midPoint - createPosition);
 
             GameObject currentSegment = Instantiate(wireSegmentPrefab, createPosition, createRotation);

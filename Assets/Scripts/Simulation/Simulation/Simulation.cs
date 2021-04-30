@@ -8,6 +8,7 @@ public abstract class Simulation : MonoBehaviour
     public bool simulationActiveState = false;
     public string currentSimulationMode;
 
+    public bool inElementSpawnPhase = false;
     public bool inWireSpawnPhase = false;
 
     public string platform;

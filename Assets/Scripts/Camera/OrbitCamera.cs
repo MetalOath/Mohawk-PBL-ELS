@@ -40,6 +40,7 @@ public abstract class OrbitCamera : MonoBehaviour
     public WireInstantiator WireInstantiator;
     public OrbitCameraEventPublisher CameraEvents;
     public UIEventMethods FindObjects;
+    public ElementInstantiator ElementInstantiator;
     #endregion
 
 
@@ -60,6 +61,7 @@ public abstract class OrbitCamera : MonoBehaviour
         WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
         CameraEvents = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
         FindObjects = GameObject.Find("UI Event Handler").GetComponent<UIEventMethods>();
+        ElementInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<ElementInstantiator>();
 
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
@@ -200,7 +202,7 @@ public abstract class OrbitCamera : MonoBehaviour
             offset = bound.center - centre.position;
     }
 
-    public void ZoomToElement(Transform HitTarget)
+    public void ZoomToElement([SerializeField] Transform HitTarget)
     {
         if (currentSimulationMode == "ViewMode")
         {
@@ -239,10 +241,15 @@ public abstract class OrbitCamera : MonoBehaviour
         HideConnectionPoints();
         HideSelectionPoints();
     }
+    public void ZoomToElementSpawnZone(Transform transform)
+    {
+        Centre = transform;
+        GetObjectInSight();
+    }
     public void ShowConnectionPoints()
     {
         //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
-        
+        if(FindObjects.connectionPoints.Count > 0)
         foreach (GameObject CP in FindObjects.connectionPoints)
         {
             StartCoroutine(WaitBeforeActivation(CP, 0.5f));
@@ -251,7 +258,7 @@ public abstract class OrbitCamera : MonoBehaviour
     public void HideConnectionPoints()
     {
         //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
-
+        if(FindObjects.connectionPoints.Count > 0)
         foreach (GameObject CP in FindObjects.connectionPoints)
         {
             CP.SetActive(false);
@@ -260,7 +267,7 @@ public abstract class OrbitCamera : MonoBehaviour
     public void ShowSelectionPoints()
     {
         //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
-
+        if(FindObjects.selectionPoints.Count > 0)
         foreach (GameObject SP in FindObjects.selectionPoints)
         {
             StartCoroutine(WaitBeforeActivation(SP, 0.5f));
@@ -269,7 +276,7 @@ public abstract class OrbitCamera : MonoBehaviour
     public void HideSelectionPoints()
     {
         //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
-
+        if(FindObjects.selectionPoints.Count > 0)
         foreach (GameObject SP in FindObjects.selectionPoints)
         {
             SP.SetActive(false);
