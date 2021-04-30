@@ -9,11 +9,11 @@ public class OrbitCameraEventMethods : OrbitCamera
 
     public override void UserInput()
     {
-        currentSimulationMode = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>().currentSimulationMode;
+        currentSimulationMode = Simulation.currentSimulationMode;
         
         // MOBILE INPUT
 
-        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+        if (Simulation.platform == "mobile")// && !Simulation.IsPointerOverGameObject())
         {
             if (Input.touchCount == 0)
             {
@@ -91,8 +91,13 @@ public class OrbitCameraEventMethods : OrbitCamera
 
         // DESKTOP INPUT
 
-        if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
+        if (Simulation.platform == "desktop" && !Simulation.IsPointerOverGameObject())
         {
+            if (Input.GetMouseButtonDown(0))
+            {
+                touchTime = Time.time;
+            }
+
             if (Simulation.inElementSpawnPhase)
             {
                 if (Input.GetMouseButtonDown(0))
@@ -102,11 +107,6 @@ public class OrbitCameraEventMethods : OrbitCamera
             }
             else
             {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    touchTime = Time.time;
-                }
-
                 if (allowLeftMouse && Input.GetMouseButton(0))
                 {
                     if (breadboardCamera)
@@ -160,7 +160,7 @@ public class OrbitCameraEventMethods : OrbitCamera
         Vector3 previousPosA = Input.GetTouch(0).position - Input.GetTouch(0).deltaPosition;
         Vector3 previousPosB = Input.GetTouch(1).position - Input.GetTouch(1).deltaPosition;
 
-        float previousDelta = Vector3.Distance( previousPosA, previousPosB);
+        float previousDelta = Vector3.Distance(previousPosA, previousPosB);
         float currentDelta = Vector3.Distance(Input.GetTouch(0).position, Input.GetTouch(1).position);
 
         return currentDelta - previousDelta;

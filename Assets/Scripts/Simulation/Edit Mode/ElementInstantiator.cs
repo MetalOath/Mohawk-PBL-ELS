@@ -10,7 +10,7 @@ public class ElementInstantiator : MonoBehaviour
     UIEventPublisher UIEventPublisher;
     UIEventMethods UIEventMethods;
 
-    [SerializeField] public GameObject elementSpawnZone;
+    [SerializeField] public GameObject elementSpawnZone, elementSpawnCanvas;
     
     private GameObject newElement, newElementInstance = null;
     [SerializeField] private Transform workspace;
@@ -30,7 +30,7 @@ public class ElementInstantiator : MonoBehaviour
     {
         if (Simulation.inElementSpawnPhase)
         {
-            ElementSpawnPosition();
+            ElementSpawnPositionUpdater();
         }
     }
 
@@ -47,7 +47,7 @@ public class ElementInstantiator : MonoBehaviour
                 {
                     newElement = element;
                     
-                    SpawnElement();
+                    ElementSpawnPhaseInitiator();
                 }
                 else
                 {
@@ -60,7 +60,7 @@ public class ElementInstantiator : MonoBehaviour
                 {
                     newElement = element;
 
-                    SpawnElement();
+                    ElementSpawnPhaseInitiator();
                 }
                 else
                 {
@@ -73,7 +73,7 @@ public class ElementInstantiator : MonoBehaviour
                 {
                     newElement = element;
 
-                    SpawnElement();
+                    ElementSpawnPhaseInitiator();
                 }
                 else
                 {
@@ -86,7 +86,7 @@ public class ElementInstantiator : MonoBehaviour
                 {
                     newElement = element;
 
-                    SpawnElement();
+                    ElementSpawnPhaseInitiator();
                 }
                 else
                 {
@@ -115,13 +115,15 @@ public class ElementInstantiator : MonoBehaviour
         }
     }
 
-    private void SpawnElement()
+    private void ElementSpawnPhaseInitiator()
     {
         UIEventMethods.ClearUI();
         if (newElementInstance == null)
         {
             if (!elementSpawnZone.activeInHierarchy)
                 elementSpawnZone.SetActive(true);
+            if (!elementSpawnCanvas.activeInHierarchy)
+                elementSpawnCanvas.SetActive(true);
 
             Simulation.inElementSpawnPhase = true;
 
@@ -132,7 +134,7 @@ public class ElementInstantiator : MonoBehaviour
         }
     }
 
-    private void ElementSpawnPosition()
+    private void ElementSpawnPositionUpdater()
     {
         Ray raycast = Simulation.SingleRayCastByPlatform();
 
@@ -154,23 +156,24 @@ public class ElementInstantiator : MonoBehaviour
     public void PlaceElement()
     {
         //if (newElementInstance.transform.Find("SpawnCollider"))
-        Simulation.inElementSpawnPhase = false;
-        if (elementSpawnZone.activeInHierarchy)
-            elementSpawnZone.SetActive(false);
-        newElementInstance = null;
-        UIEventMethods.UpdateGameObjectList();
-        UIEventPublisher.EditModeUI();
+
+        RevertSpawnPhase();
     }
 
     public void CancelSpawn()
     {
-        if(newElementInstance)
-        Destroy(newElementInstance);
+        if (newElementInstance)
+            Destroy(newElementInstance);
+
+        RevertSpawnPhase();
+    }
+
+    public void RevertSpawnPhase()
+    {
         Simulation.inElementSpawnPhase = false;
         if (elementSpawnZone.activeInHierarchy)
             elementSpawnZone.SetActive(false);
         newElementInstance = null;
-        UIEventMethods.UpdateGameObjectList();
         UIEventPublisher.EditModeUI();
     }
 

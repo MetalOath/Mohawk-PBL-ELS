@@ -38,8 +38,8 @@ public abstract class OrbitCamera : MonoBehaviour
 
     public SimulationMethods Simulation;
     public WireInstantiator WireInstantiator;
-    public OrbitCameraEventPublisher CameraEvents;
-    public UIEventMethods FindObjects;
+    public OrbitCameraEventPublisher CameraEventPublisher;
+    public UIEventMethods UIEventMethods;
     public ElementInstantiator ElementInstantiator;
     #endregion
 
@@ -59,8 +59,8 @@ public abstract class OrbitCamera : MonoBehaviour
 
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
         WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
-        CameraEvents = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
-        FindObjects = GameObject.Find("UI Event Handler").GetComponent<UIEventMethods>();
+        CameraEventPublisher = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
+        UIEventMethods = GameObject.Find("UI Event Handler").GetComponent<UIEventMethods>();
         ElementInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<ElementInstantiator>();
 
         calculatedCentre = GetCentre;
@@ -206,12 +206,12 @@ public abstract class OrbitCamera : MonoBehaviour
     {
         if (currentSimulationMode == "ViewMode")
         {
-            CameraEvents.ViewModeZoomedCamera();
+            CameraEventPublisher.ViewModeZoomedCamera();
             Centre = HitTarget;
         }
         else if (currentSimulationMode == "EditMode")
         {
-            CameraEvents.EditModeZoomedCamera();
+            CameraEventPublisher.EditModeZoomedCamera();
             ShowSelectionPoints();
             if (HitTarget.Find("EditZone"))
                 Centre = HitTarget.Find("EditZone");
@@ -220,7 +220,7 @@ public abstract class OrbitCamera : MonoBehaviour
         }
         else if (currentSimulationMode == "ConnectMode")
         {
-            CameraEvents.ConnectModeZoomedCamera();
+            CameraEventPublisher.ConnectModeZoomedCamera();
             ShowConnectionPoints();
             if (HitTarget.parent.CompareTag("Breadboard"))
                 ActivateBreadboardCamera(HitTarget);
@@ -249,8 +249,9 @@ public abstract class OrbitCamera : MonoBehaviour
     public void ShowConnectionPoints()
     {
         //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
-        if(FindObjects.connectionPoints.Count > 0)
-        foreach (GameObject CP in FindObjects.connectionPoints)
+        UIEventMethods.UpdateGameObjectList();
+        if (UIEventMethods.connectionPoints.Count > 0)
+        foreach (GameObject CP in UIEventMethods.connectionPoints)
         {
             StartCoroutine(WaitBeforeActivation(CP, 0.5f));
         }
@@ -258,8 +259,9 @@ public abstract class OrbitCamera : MonoBehaviour
     public void HideConnectionPoints()
     {
         //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
-        if(FindObjects.connectionPoints.Count > 0)
-        foreach (GameObject CP in FindObjects.connectionPoints)
+        UIEventMethods.UpdateGameObjectList();
+        if (UIEventMethods.connectionPoints.Count > 0)
+        foreach (GameObject CP in UIEventMethods.connectionPoints)
         {
             CP.SetActive(false);
         }
@@ -267,8 +269,9 @@ public abstract class OrbitCamera : MonoBehaviour
     public void ShowSelectionPoints()
     {
         //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
-        if(FindObjects.selectionPoints.Count > 0)
-        foreach (GameObject SP in FindObjects.selectionPoints)
+        UIEventMethods.UpdateGameObjectList();
+        if (UIEventMethods.selectionPoints.Count > 0)
+        foreach (GameObject SP in UIEventMethods.selectionPoints)
         {
             StartCoroutine(WaitBeforeActivation(SP, 0.5f));
         }
@@ -276,8 +279,9 @@ public abstract class OrbitCamera : MonoBehaviour
     public void HideSelectionPoints()
     {
         //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
-        if(FindObjects.selectionPoints.Count > 0)
-        foreach (GameObject SP in FindObjects.selectionPoints)
+        UIEventMethods.UpdateGameObjectList();
+        if (UIEventMethods.selectionPoints.Count > 0)
+        foreach (GameObject SP in UIEventMethods.selectionPoints)
         {
             SP.SetActive(false);
         }

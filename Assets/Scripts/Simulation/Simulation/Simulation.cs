@@ -47,7 +47,7 @@ public abstract class Simulation : MonoBehaviour
         else if (platform == "desktop")
         {
             Ray raycast = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (!EventSystem.current.IsPointerOverGameObject())
+            if (!IsPointerOverGameObject())
             {
                 return raycast;
             }
@@ -80,7 +80,7 @@ public abstract class Simulation : MonoBehaviour
     //}
 
     /// <returns>true if mouse or first touch is over any event system object ( usually gui elements )</returns>
-    public static bool IsPointerOverGameObject()
+    public bool IsPointerOverGameObject()
     {
         //check mouse
         if (EventSystem.current.IsPointerOverGameObject())

@@ -66,6 +66,8 @@ public class UIEventMethods : MonoBehaviour
     }
     public void UpdateGameObjectList()
     {
+        connectionPoints.Clear();
+        selectionPoints.Clear();
         allGameObjects = Resources.FindObjectsOfTypeAll<GameObject>();
         PopulateCPList();
         PopulateSPList();
