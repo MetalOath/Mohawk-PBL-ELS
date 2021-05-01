@@ -286,6 +286,24 @@ public abstract class OrbitCamera : MonoBehaviour
             SP.SetActive(false);
         }
     }
+    public void ShowSpawnColliders()
+    {
+        UIEventMethods.UpdateGameObjectList();
+        if (UIEventMethods.spawnColliders.Count > 0)
+            foreach (GameObject SC in UIEventMethods.spawnColliders)
+            {
+                SC.SetActive(true);
+            }
+    }
+    public void HideSpawnColliders()
+    {
+        UIEventMethods.UpdateGameObjectList();
+        if (UIEventMethods.spawnColliders.Count > 0)
+            foreach (GameObject SC in UIEventMethods.spawnColliders)
+            {
+                SC.SetActive(false);
+            }
+    }
     public void ActivateBreadboardCamera(Transform breadboard)
     {
         breadboardCamera = true;

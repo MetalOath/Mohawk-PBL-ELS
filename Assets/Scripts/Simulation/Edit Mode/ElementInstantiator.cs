@@ -126,8 +126,10 @@ public class ElementInstantiator : MonoBehaviour
                 elementSpawnCanvas.SetActive(true);
 
             Simulation.inElementSpawnPhase = true;
+            Simulation.currentSimulationMode = "";
 
             CameraEventMethods.ZoomToElementSpawnZone(elementSpawnZone.transform);
+            CameraEventMethods.ShowSpawnColliders();
 
             newElementInstance = Instantiate(newElement, workspace.position, Quaternion.identity);
             newElementInstance.transform.parent = workspace.transform;
@@ -139,25 +141,26 @@ public class ElementInstantiator : MonoBehaviour
         Ray raycast = Simulation.SingleRayCastByPlatform();
 
         RaycastHit[] raycastHits = Physics.RaycastAll(raycast, 100f, -8);
-        RaycastHit raycastHit;
+        //RaycastHit raycastHit;
 
-        for (int i = 0; i < raycastHits.Length; i++)
-        {
-            if (raycastHits[i].transform.gameObject.CompareTag("Element Spawn Point"))
+        //for (int i = 0; i < raycastHits.Length; i++)
+        //{
+            if (raycastHits.Length > 0 && raycastHits[0].transform.gameObject.CompareTag("Element Spawn Point"))
             {
-                raycastHit = raycastHits[i];
+                //raycastHit = raycastHits[0];
 
-                newElementInstance.transform.position = raycastHit.point;
+                newElementInstance.transform.position = raycastHits[0].point;
             }
-            break;
-        }
+            //break;
+        //}
     }
 
     public void PlaceElement()
     {
-        //if (newElementInstance.transform.Find("SpawnCollider"))
-
-        RevertSpawnPhase();
+        if (newElementInstance.transform.Find("SpawnCollider").GetComponent<SpawnCollider>().isIntersecting)
+            Simulation.DisplayErrorMessage("CANNOT PLACE OBJECTS ON TOP OF EACHOTHER");
+        else
+            EndSpawnPhase();
     }
 
     public void CancelSpawn()
@@ -165,16 +168,17 @@ public class ElementInstantiator : MonoBehaviour
         if (newElementInstance)
             Destroy(newElementInstance);
 
-        RevertSpawnPhase();
+        EndSpawnPhase();
     }
 
-    public void RevertSpawnPhase()
+    public void EndSpawnPhase()
     {
         Simulation.inElementSpawnPhase = false;
         if (elementSpawnZone.activeInHierarchy)
             elementSpawnZone.SetActive(false);
         newElementInstance = null;
-        UIEventPublisher.EditModeUI();
+        CameraEventMethods.HideSpawnColliders();
+        StartCoroutine(PostSpawnTimer(0.25f));
     }
 
     private int CheckElementsInWorkspace(string elementName)
@@ -196,5 +200,16 @@ public class ElementInstantiator : MonoBehaviour
         }
 
         return numberOfInstances;
+    }
+
+    IEnumerator PostSpawnTimer(float waitTime)
+    {
+        //Do something before waiting.
+
+        //yield on a new YieldInstruction that waits for X seconds.
+        yield return new WaitForSeconds(waitTime);
+
+        //Do something after waiting.
+        UIEventPublisher.EditModeUI();
     }
 }
