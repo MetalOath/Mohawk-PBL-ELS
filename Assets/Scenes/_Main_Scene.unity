@@ -524,7 +524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 227792901}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 584400389}
+        m_MethodName: InstantiateElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 71053309861614916, guid: 3d21b283145ca8446a1050a9fe6d8939,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &227792901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2631,7 +2643,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 405314207}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 584400389}
+        m_MethodName: InstantiateElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 71053309861614916, guid: d28d6acdad47e164ab6453d4943807cb,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &405314207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4442,6 +4466,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wirePrefab: {fileID: 1758985709902295144, guid: c2ab50a619580ff4e9d0174bfb0bb119,
+    type: 3}
+  leadSegmentPrefab: {fileID: 8666573704662837703, guid: efcae88e463de4048932eb9832a928e8,
     type: 3}
   wireSegmentPrefab: {fileID: 8666573704662837703, guid: a9fc666ccc364b64197632d58bd21b91,
     type: 3}
@@ -6761,7 +6787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 952715622}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 584400389}
+        m_MethodName: InstantiateElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 71053309861614916, guid: 7407c0323fbfdf347987265ad324151d,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &952715622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8188,7 +8226,6 @@ MonoBehaviour:
   selectionPoints: []
   spawnColliders: []
   wirePrompt: {fileID: 854658721}
-  workspace: {fileID: 134711644}
 --- !u!114 &1174431704
 MonoBehaviour:
   m_ObjectHideFlags: 0

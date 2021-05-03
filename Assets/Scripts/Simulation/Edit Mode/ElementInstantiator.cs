@@ -5,7 +5,7 @@ using UnityEngine;
 public class ElementInstantiator : MonoBehaviour
 {
     OrbitCameraEventMethods CameraEventMethods;
-    WireInstantiator WireMethods;
+    WireInstantiator WireInstantiator;
     SimulationMethods Simulation;
     UIEventPublisher UIEventPublisher;
     UIEventMethods UIEventMethods;
@@ -18,7 +18,7 @@ public class ElementInstantiator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        WireMethods = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
+        WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
         CameraEventMethods = GameObject.Find("Main Camera").GetComponent<OrbitCameraEventMethods>();
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
         UIEventPublisher = GameObject.Find("UI Event Handler").GetComponent<UIEventPublisher>();
@@ -95,22 +95,25 @@ public class ElementInstantiator : MonoBehaviour
                 }
                 break;
             case ("Resistor - 330 Ohm"):
-
+                WireInstantiator.LeadSpawnPhaseInitiator(element, 330f);
+                UIEventPublisher.ConnectModeUI();
                 break;
             case ("Resistor - 470 Ohm"):
-
+                WireInstantiator.LeadSpawnPhaseInitiator(element, 470f);
+                UIEventPublisher.ConnectModeUI();
                 break;
             case ("Resistor - 560 Ohm"):
-
+                WireInstantiator.LeadSpawnPhaseInitiator(element, 560f);
+                UIEventPublisher.ConnectModeUI();
                 break;
             case ("LED Light - Red"):
-
+                WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
                 break;
             case ("LED Light - Green"):
-
+                WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
                 break;
             case ("LED Light - Blue"):
-
+                WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
                 break;
         }
     }
