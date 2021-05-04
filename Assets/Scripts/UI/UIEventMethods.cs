@@ -7,6 +7,7 @@ public class UIEventMethods : MonoBehaviour
     List<GameObject> UICanvases = new List<GameObject>();
     public List<GameObject> connectionPoints = new List<GameObject>();
     public List<GameObject> selectionPoints = new List<GameObject>();
+    public List<GameObject> spawnColliders = new List<GameObject>();
     GameObject[] allGameObjects;
 
     SimulationMethods Simulation;
@@ -63,6 +64,26 @@ public class UIEventMethods : MonoBehaviour
                 selectionPoints.Add(SP);
             }
         }
+    }
+    private void PopulateSCList()
+    {
+        foreach (GameObject SC in allGameObjects)
+        {
+            if (SC.CompareTag("SpawnCollider"))
+            {
+                spawnColliders.Add(SC);
+            }
+        }
+    }
+    public void UpdateGameObjectList()
+    {
+        connectionPoints.Clear();
+        selectionPoints.Clear();
+        spawnColliders.Clear();
+        allGameObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        PopulateCPList();
+        PopulateSPList();
+        PopulateSCList();
     }
     public void ClearUI()
     {
