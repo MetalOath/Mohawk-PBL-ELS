@@ -108,12 +108,15 @@ public class ElementInstantiator : MonoBehaviour
                 break;
             case ("LED Light - Red"):
                 WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
+                UIEventPublisher.ConnectModeUI();
                 break;
             case ("LED Light - Green"):
                 WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
+                UIEventPublisher.ConnectModeUI();
                 break;
             case ("LED Light - Blue"):
                 WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
+                UIEventPublisher.ConnectModeUI();
                 break;
         }
     }

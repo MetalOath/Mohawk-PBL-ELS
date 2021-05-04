@@ -12,7 +12,7 @@ public class WireInstantiator : MonoBehaviour
     private GameObject elementPrefab;
     private float wirePrefabLength, elementPrefabLength, wireSegmentLength, wireLength, distanceBetweenPoints, yFunction, resistance;
     private int numberOfSegments;
-    private bool leadSpawnPhase = false;
+    public bool leadSpawnPhase = false;
 
     private SimulationMethods Simulation;
 
@@ -125,7 +125,11 @@ public class WireInstantiator : MonoBehaviour
 
         numberOfSegments = (int)(wireLength / wireSegmentLength) + 1;
 
-        GameObject wireInstance = Instantiate(wirePrefab, pointOne.position + (pointTwo.position - pointOne.position) / 2, Quaternion.identity);
+        if(leadSpawnPhase)
+            if (numberOfSegments < 10 && elementPrefab.name == "Resistor - 330 Ohm" || elementPrefab.name == "Resistor - 470 Ohm" || elementPrefab.name == "Resistor - 560 Ohm")
+                numberOfSegments = 10;
+
+            GameObject wireInstance = Instantiate(wirePrefab, pointOne.position + (pointTwo.position - pointOne.position) / 2, Quaternion.identity);
 
         if (leadSpawnPhase)
         {
@@ -190,7 +194,11 @@ public class WireInstantiator : MonoBehaviour
                 else if (leadSpawnPhase && i == numberOfSegments / 2 + 1)
                 {
                     currentSegment.GetComponent<ConfigurableJoint>().connectedBody = previousSegment.GetComponentInChildren<Rigidbody>();
-                    currentSegment.GetComponent<ConfigurableJoint>().connectedAnchor = new Vector3(0, 0, elementPrefabLength*0.95f - elementPrefab.transform.Find("Model").localPosition.y);
+                    if (elementPrefab.name == "Resistor - 330 Ohm" || elementPrefab.name == "Resistor - 470 Ohm" || elementPrefab.name == "Resistor - 560 Ohm")
+                        currentSegment.GetComponent<ConfigurableJoint>().connectedAnchor = new Vector3(0, 0, elementPrefabLength * 0.95f - elementPrefab.transform.Find("Model").localPosition.y);
+                    if (elementPrefab.name == "LED Light - Red" || elementPrefab.name == "LED Light - Green" || elementPrefab.name == "LED Light - Blue")
+                        currentSegment.GetComponent<ConfigurableJoint>().connectedAnchor = new Vector3(-0.00026f, -0.00589f, -0.0021f);
+                    //currentSegment.GetComponent<ConfigurableJoint>().connectedAnchor = previousSegment.transform.Find("ConnectedAnchor").localPosition;
                 }
                 else
                     currentSegment.GetComponent<ConfigurableJoint>().connectedBody = previousSegment.GetComponent<Rigidbody>();

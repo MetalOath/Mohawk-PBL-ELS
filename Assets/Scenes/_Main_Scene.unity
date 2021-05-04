@@ -1685,7 +1685,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 326543741}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 584400389}
+        m_MethodName: InstantiateElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3181643452005682674, guid: 36854c573687bfe45a2846fc1601c628,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &326543741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4477,6 +4489,7 @@ MonoBehaviour:
   greenCPMat: {fileID: 2100000, guid: c6e50d63213fdbd4b91559454a169147, type: 2}
   blueCPMat: {fileID: 2100000, guid: bde81cc1a9112484988488285e941733, type: 2}
   redWireMat: {fileID: 2100000, guid: f977ad14c6704c64a8c0e422a84f4772, type: 2}
+  leadSpawnPhase: 0
 --- !u!114 &584400389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8011,7 +8024,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1133467082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 584400389}
+        m_MethodName: InstantiateElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8324312286917038558, guid: d6a1bb3f3ab8c9a4e8c12f71ab3b697d,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1133467082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10099,7 +10124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1361401796}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 584400389}
+        m_MethodName: InstantiateElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8324312286917038558, guid: a3f5ccab6c4fc784ca679f9964ebc8fb,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1361401796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10972,7 +11009,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1600333672}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 584400389}
+        m_MethodName: InstantiateElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8324312286917038558, guid: 7b30ed7c38884ee45951b6bdc466cf93,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1600333672
 MonoBehaviour:
   m_ObjectHideFlags: 0
