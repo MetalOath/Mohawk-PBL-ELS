@@ -5,7 +5,7 @@ using UnityEngine;
 public class LEDLight : MonoBehaviour
 {
     private bool n, p;
-    public GameObject ledLight;
+    [SerializeField] private GameObject ledLight;
 
     /*
     * Updates every frame. 
@@ -13,8 +13,8 @@ public class LEDLight : MonoBehaviour
     */
     private void Update()
     {
-        n = gameObject.GetComponent<Conduction>().negativePassThrough;
-        p = gameObject.GetComponent<Conduction>().positivePassThrough;
+        n = gameObject.transform.parent.GetComponent<Conduction>().negativePassThrough;
+        p = gameObject.transform.parent.GetComponent<Conduction>().positivePassThrough;
         //Checks to see if the condition is true 
         if (n && p)
         {
