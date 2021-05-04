@@ -15,10 +15,12 @@ public class WireInstantiator : MonoBehaviour
     public bool leadSpawnPhase = false;
 
     private SimulationMethods Simulation;
+    private UIEventPublisher UIEventPublisher;
 
     public void Start()
     {
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
+        UIEventPublisher = GameObject.Find("UI Event Handler").GetComponent<UIEventPublisher>();
 
         wireContainerTransform = wireContainer.transform;
     }
@@ -54,7 +56,12 @@ public class WireInstantiator : MonoBehaviour
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.white;
 
                         if (leadSpawnPhase)
+                        {
                             leadSpawnPhase = false;
+                            UIEventPublisher.ConnectModeUI();
+                            UIEventPublisher.EditModeUI();
+                            //StartCoroutine(PostSpawnTimer(0.25f));
+                        }
                     }
                     break;
                 }
@@ -84,7 +91,12 @@ public class WireInstantiator : MonoBehaviour
             wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.white;
 
             if (leadSpawnPhase)
+            {
                 leadSpawnPhase = false;
+                UIEventPublisher.ConnectModeUI();
+                UIEventPublisher.EditModeUI();
+                //StartCoroutine(PostSpawnTimer(0.25f));
+            }
         }
     }
 
@@ -119,17 +131,13 @@ public class WireInstantiator : MonoBehaviour
         distanceBetweenPoints = Vector3.Magnitude(pointTwo.position - pointOne.position);
 
         if(leadSpawnPhase)
-            wireLength = Mathf.PI * distanceBetweenPoints / 3f; // use pi*d/2 + Element length
+            wireLength = Mathf.PI * distanceBetweenPoints / 3f + elementPrefabLength; // use pi*d/2 + Element length
         else
             wireLength = Mathf.PI * distanceBetweenPoints / 2f; // use pi*d/2
 
         numberOfSegments = (int)(wireLength / wireSegmentLength) + 1;
 
-        if(leadSpawnPhase)
-            if (numberOfSegments < 10 && elementPrefab.name == "Resistor - 330 Ohm" || elementPrefab.name == "Resistor - 470 Ohm" || elementPrefab.name == "Resistor - 560 Ohm")
-                numberOfSegments = 10;
-
-            GameObject wireInstance = Instantiate(wirePrefab, pointOne.position + (pointTwo.position - pointOne.position) / 2, Quaternion.identity);
+        GameObject wireInstance = Instantiate(wirePrefab, pointOne.position + (pointTwo.position - pointOne.position) / 2, Quaternion.identity);
 
         if (leadSpawnPhase)
         {
@@ -219,6 +227,16 @@ public class WireInstantiator : MonoBehaviour
                 wireEndCollider.height = currentSegment.GetComponent<Collider>().bounds.size.y;
             }
         }
+    }
+    IEnumerator PostSpawnTimer(float waitTime)
+    {
+        //Do something before waiting.
+
+        //yield on a new YieldInstruction that waits for X seconds.
+        yield return new WaitForSeconds(waitTime);
+
+        //Do something after waiting.
+        UIEventPublisher.EditModeUI();
     }
     //public void Resize(GameObject objectToResize, float newSize)
     //{
