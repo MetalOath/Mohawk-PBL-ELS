@@ -5,7 +5,7 @@ using TMPro;
 
 public class WireInstantiator : MonoBehaviour
 {
-    [SerializeField] private GameObject wirePrefab, leadSegmentPrefab, wireSegmentPrefab, wireContainer, wirePromptTMP;
+    [SerializeField] private GameObject wirePrefab, leadSegmentPrefab, wireSegmentPrefab, wireContainer, wirePromptTMP, cancelSpawn, cancalSpawnZoomed;
     [SerializeField] public Material redCPMat, greenCPMat, blueCPMat, redWireMat;
 
     private Transform connectionPointOne, connectionPointTwo, wireContainerTransform;
@@ -44,6 +44,8 @@ public class WireInstantiator : MonoBehaviour
                         Simulation.inWireSpawnPhase = true;
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().text = "Select 2nd Connection Point";
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.red;
+                        cancelSpawn.SetActive(true);
+                        cancalSpawnZoomed.SetActive(true);
                     }
                     else if (Simulation.inWireSpawnPhase == true && raycastHit.transform != connectionPointOne)
                     {
@@ -54,13 +56,14 @@ public class WireInstantiator : MonoBehaviour
                         connectionPointTwo.gameObject.GetComponent<MeshRenderer>().material = blueCPMat;
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().text = "Select 1st Connection Point";
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.white;
+                        cancelSpawn.SetActive(false);
+                        cancalSpawnZoomed.SetActive(false);
 
                         if (leadSpawnPhase)
                         {
                             leadSpawnPhase = false;
                             UIEventPublisher.ConnectModeUI();
                             UIEventPublisher.EditModeUI();
-                            //StartCoroutine(PostSpawnTimer(0.25f));
                         }
                     }
                     break;
@@ -89,13 +92,14 @@ public class WireInstantiator : MonoBehaviour
             Simulation.inWireSpawnPhase = false;
             wirePromptTMP.GetComponent<TextMeshProUGUI>().text = "Select 1st Connection Point";
             wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.white;
+            cancelSpawn.SetActive(false);
+            cancalSpawnZoomed.SetActive(false);
 
             if (leadSpawnPhase)
             {
                 leadSpawnPhase = false;
                 UIEventPublisher.ConnectModeUI();
                 UIEventPublisher.EditModeUI();
-                //StartCoroutine(PostSpawnTimer(0.25f));
             }
         }
     }
@@ -227,16 +231,6 @@ public class WireInstantiator : MonoBehaviour
                 wireEndCollider.height = currentSegment.GetComponent<Collider>().bounds.size.y;
             }
         }
-    }
-    IEnumerator PostSpawnTimer(float waitTime)
-    {
-        //Do something before waiting.
-
-        //yield on a new YieldInstruction that waits for X seconds.
-        yield return new WaitForSeconds(waitTime);
-
-        //Do something after waiting.
-        UIEventPublisher.EditModeUI();
     }
     //public void Resize(GameObject objectToResize, float newSize)
     //{
