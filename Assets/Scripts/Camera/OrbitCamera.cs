@@ -54,9 +54,11 @@ public abstract class OrbitCamera : MonoBehaviour
 
     public void Start()
     {
+        // Sets minimum camera proximity to objects to allow greater zoom when running on mobile.
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             minDistance = 0.25f;
 
+        // Providing access to methods in other scripts within the scene.
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
         WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
         CameraEventPublisher = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
@@ -202,6 +204,7 @@ public abstract class OrbitCamera : MonoBehaviour
             offset = bound.center - centre.position;
     }
 
+    // Zooms to the raycast target in different ways depending on the current mode and the target's contents.
     public void ZoomToElement([SerializeField] Transform HitTarget)
     {
         if (currentSimulationMode == "ViewMode")
@@ -233,6 +236,8 @@ public abstract class OrbitCamera : MonoBehaviour
         GetObjectInSight();
         zoomedToElement = true;
     }
+
+    // Zooms out the camera to fit all elements in the scene.
     public void ZoomToWorkspace()
     {
         Centre = workspace.transform;
@@ -241,6 +246,8 @@ public abstract class OrbitCamera : MonoBehaviour
         HideConnectionPoints();
         HideSelectionPoints();
     }
+
+    // Zooms out to show the area that elements are allowed to spawn.
     public void ZoomToElementSpawnZone(Transform transform)
     {
         Centre = transform;
@@ -248,7 +255,6 @@ public abstract class OrbitCamera : MonoBehaviour
     }
     public void ShowConnectionPoints()
     {
-        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
         UIEventMethods.UpdateGameObjectList();
         if (UIEventMethods.connectionPoints.Count > 0)
         foreach (GameObject CP in UIEventMethods.connectionPoints)
@@ -258,7 +264,6 @@ public abstract class OrbitCamera : MonoBehaviour
     }
     public void HideConnectionPoints()
     {
-        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
         UIEventMethods.UpdateGameObjectList();
         if (UIEventMethods.connectionPoints.Count > 0)
         foreach (GameObject CP in UIEventMethods.connectionPoints)
@@ -268,7 +273,6 @@ public abstract class OrbitCamera : MonoBehaviour
     }
     public void ShowSelectionPoints()
     {
-        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
         UIEventMethods.UpdateGameObjectList();
         if (UIEventMethods.selectionPoints.Count > 0)
         foreach (GameObject SP in UIEventMethods.selectionPoints)
@@ -278,7 +282,6 @@ public abstract class OrbitCamera : MonoBehaviour
     }
     public void HideSelectionPoints()
     {
-        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
         UIEventMethods.UpdateGameObjectList();
         if (UIEventMethods.selectionPoints.Count > 0)
         foreach (GameObject SP in UIEventMethods.selectionPoints)

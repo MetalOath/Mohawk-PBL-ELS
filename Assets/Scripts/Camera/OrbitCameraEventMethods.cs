@@ -58,6 +58,11 @@ public class OrbitCameraEventMethods : OrbitCamera
                         if (zoomedToElement)
                             WireInstantiator.WireSpawnPhaseInitiator();
                     }
+                    if (touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
+                    {
+                        if (Simulation.inDeletePhase)
+                            GetElementToDelete();
+                    }
                 }
             }
 
