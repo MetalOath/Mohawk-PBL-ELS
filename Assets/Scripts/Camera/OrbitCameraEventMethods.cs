@@ -151,6 +151,12 @@ public class OrbitCameraEventMethods : OrbitCamera
                     if (zoomedToElement)
                         WireInstantiator.WireSpawnPhaseInitiator();
                 }
+
+                if (Input.GetMouseButtonUp(0) && (Time.time - touchTime) < 0.2f)
+                {
+                    if (Simulation.inDeletePhase)
+                        GetElementToDelete();
+                }
             }
         }
     }
@@ -205,6 +211,16 @@ public class OrbitCameraEventMethods : OrbitCamera
                     break;
                 }
             }
+        }
+    }
+
+    private void GetElementToDelete()
+    {
+        Ray raycast = Simulation.SingleRayCastByPlatform();
+        RaycastHit raycastHit;
+        if (Physics.Raycast(raycast, out raycastHit))
+        {
+            ElementInstantiator.DeleteElementInitializer(raycastHit.collider.transform.gameObject);
         }
     }
 }

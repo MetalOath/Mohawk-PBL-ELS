@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ElementInstantiator : MonoBehaviour
 {
@@ -10,10 +11,10 @@ public class ElementInstantiator : MonoBehaviour
     UIEventPublisher UIEventPublisher;
     UIEventMethods UIEventMethods;
 
-    [SerializeField] public GameObject elementSpawnZone, elementSpawnCanvas;
+    [SerializeField] public GameObject elementSpawnZone, elementSpawnCanvas, deleteElementConfirmCanvas, deleteElementConfirmMessage;
     
-    private GameObject newElement, newElementInstance = null;
-    [SerializeField] private Transform workspace;
+    private GameObject newElement, newElementInstance = null, deleteTarget;
+    [SerializeField] private Transform workspace, wireContainer;
 
     // Start is called before the first frame update
     void Start()
@@ -185,6 +186,55 @@ public class ElementInstantiator : MonoBehaviour
         newElementInstance = null;
         CameraEventMethods.HideSpawnColliders();
         StartCoroutine(PostSpawnTimer(0.25f));
+    }
+
+    public void DeleteElementInitializer(GameObject workspaceElement)
+    {
+        if (workspaceElement.transform.IsChildOf(wireContainer))
+        {
+            if (workspaceElement.transform.parent.gameObject == wireContainer.gameObject)
+            {
+                deleteTarget = workspaceElement;
+                deleteElementConfirmMessage.GetComponent<TextMeshProUGUI>().text = "Are you sure you want to delete " + deleteTarget.name + "?";
+                deleteElementConfirmCanvas.SetActive(true);
+            }
+            else
+            {
+                while (workspaceElement.transform.parent.gameObject != wireContainer.gameObject)
+                {
+                    workspaceElement = workspaceElement.transform.parent.gameObject;
+                }
+
+                deleteTarget = workspaceElement;
+                deleteElementConfirmMessage.GetComponent<TextMeshProUGUI>().text = "Are you sure you want to delete " + deleteTarget.name + "?";
+                deleteElementConfirmCanvas.SetActive(true);
+            }
+        } else if (workspaceElement.transform.IsChildOf(workspace))
+        {
+            if (workspaceElement.transform.parent.gameObject == workspace.gameObject)
+            {
+                deleteTarget = workspaceElement;
+                deleteElementConfirmMessage.GetComponent<TextMeshProUGUI>().text = "Are you sure you want to delete " + deleteTarget.name + "?";
+                deleteElementConfirmCanvas.SetActive(true);
+            }
+            else
+            {
+                while (workspaceElement.transform.parent.gameObject != workspace.gameObject)
+                {
+                    workspaceElement = workspaceElement.transform.parent.gameObject;
+                }
+
+                deleteTarget = workspaceElement;
+                deleteElementConfirmMessage.GetComponent<TextMeshProUGUI>().text = "Are you sure you want to delete " + deleteTarget.name + "?";
+                deleteElementConfirmCanvas.SetActive(true);
+            }
+        }
+    }
+
+    public void DeleteElement()
+    {
+        Destroy(deleteTarget);
+        Simulation.SetDeletePhase(false);
     }
 
     private int CheckElementsInWorkspace(string elementName)

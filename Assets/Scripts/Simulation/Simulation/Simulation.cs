@@ -11,6 +11,7 @@ public abstract class Simulation : MonoBehaviour
 
     public bool inElementSpawnPhase = false;
     public bool inWireSpawnPhase = false;
+    public bool inDeletePhase = false;
 
     public string platform;
 
@@ -67,6 +68,11 @@ public abstract class Simulation : MonoBehaviour
         errorMessageTMP.GetComponent<TextMeshProUGUI>().text = errorMessage;
 
         StartCoroutine(ErrorMessageTimer(3f));
+    }
+
+    public void SetDeletePhase(bool isActive)
+    {
+        inDeletePhase = isActive;
     }
 
     //testing mobile UI raycast block.
