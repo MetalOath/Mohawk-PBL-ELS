@@ -5,7 +5,7 @@ using TMPro;
 
 public class WireInstantiator : MonoBehaviour
 {
-    [SerializeField] private GameObject wirePrefab, leadSegmentPrefab, wireSegmentPrefab, wireContainer, wirePromptTMP;
+    [SerializeField] private GameObject wirePrefab, leadSegmentPrefab, wireSegmentPrefab, wireContainer, wirePromptTMP, cancelSpawn, cancalSpawnZoomed;
     [SerializeField] public Material redCPMat, greenCPMat, blueCPMat, redWireMat;
 
     private Transform connectionPointOne, connectionPointTwo, wireContainerTransform;
@@ -15,10 +15,12 @@ public class WireInstantiator : MonoBehaviour
     public bool leadSpawnPhase = false;
 
     private SimulationMethods Simulation;
+    private UIEventPublisher UIEventPublisher;
 
     public void Start()
     {
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
+        UIEventPublisher = GameObject.Find("UI Event Handler").GetComponent<UIEventPublisher>();
 
         wireContainerTransform = wireContainer.transform;
     }
@@ -42,6 +44,8 @@ public class WireInstantiator : MonoBehaviour
                         Simulation.inWireSpawnPhase = true;
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().text = "Select 2nd Connection Point";
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.red;
+                        cancelSpawn.SetActive(true);
+                        cancalSpawnZoomed.SetActive(true);
                     }
                     else if (Simulation.inWireSpawnPhase == true && raycastHit.transform != connectionPointOne)
                     {
@@ -52,9 +56,15 @@ public class WireInstantiator : MonoBehaviour
                         connectionPointTwo.gameObject.GetComponent<MeshRenderer>().material = blueCPMat;
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().text = "Select 1st Connection Point";
                         wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.white;
+                        cancelSpawn.SetActive(false);
+                        cancalSpawnZoomed.SetActive(false);
 
                         if (leadSpawnPhase)
+                        {
                             leadSpawnPhase = false;
+                            UIEventPublisher.ConnectModeUI();
+                            UIEventPublisher.EditModeUI();
+                        }
                     }
                     break;
                 }
@@ -82,9 +92,15 @@ public class WireInstantiator : MonoBehaviour
             Simulation.inWireSpawnPhase = false;
             wirePromptTMP.GetComponent<TextMeshProUGUI>().text = "Select 1st Connection Point";
             wirePromptTMP.GetComponent<TextMeshProUGUI>().color = Color.white;
+            cancelSpawn.SetActive(false);
+            cancalSpawnZoomed.SetActive(false);
 
             if (leadSpawnPhase)
+            {
                 leadSpawnPhase = false;
+                UIEventPublisher.ConnectModeUI();
+                UIEventPublisher.EditModeUI();
+            }
         }
     }
 
@@ -119,17 +135,13 @@ public class WireInstantiator : MonoBehaviour
         distanceBetweenPoints = Vector3.Magnitude(pointTwo.position - pointOne.position);
 
         if(leadSpawnPhase)
-            wireLength = Mathf.PI * distanceBetweenPoints / 3f; // use pi*d/2 + Element length
+            wireLength = Mathf.PI * distanceBetweenPoints / 3f + elementPrefabLength; // use pi*d/2 + Element length
         else
             wireLength = Mathf.PI * distanceBetweenPoints / 2f; // use pi*d/2
 
         numberOfSegments = (int)(wireLength / wireSegmentLength) + 1;
 
-        if(leadSpawnPhase)
-            if (numberOfSegments < 10 && elementPrefab.name == "Resistor - 330 Ohm" || elementPrefab.name == "Resistor - 470 Ohm" || elementPrefab.name == "Resistor - 560 Ohm")
-                numberOfSegments = 10;
-
-            GameObject wireInstance = Instantiate(wirePrefab, pointOne.position + (pointTwo.position - pointOne.position) / 2, Quaternion.identity);
+        GameObject wireInstance = Instantiate(wirePrefab, pointOne.position + (pointTwo.position - pointOne.position) / 2, Quaternion.identity);
 
         if (leadSpawnPhase)
         {

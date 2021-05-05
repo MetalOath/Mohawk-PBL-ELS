@@ -6,7 +6,7 @@ using TMPro;
 public class Multimeter : MonoBehaviour
 {
     [SerializeField] private float voltageReading, currentReading, resistanceReading;
-    [SerializeField] private GameObject ampsPort, milliAmpsPort, commonPort, voltsOhmsPort, dial, screenTMP;
+    [SerializeField] private GameObject ampsPort, milliAmpsPort, commonPort, voltsOhmsPort, dial, screenTMP, ampsBridge, milliAmpsBridge;
     private MultimeterPort ampsPortScript, milliAmpsPortScript, commonPortScript, voltsOhmsPortScript;
     private string multimeterMode = "OFF1";
 
@@ -128,14 +128,20 @@ public class Multimeter : MonoBehaviour
                 break;
             case "MicroAmps":
                 dial.transform.localRotation = Quaternion.Euler(-90f, 0f, 103f);
+                milliAmpsBridge.SetActive(true);
+                ampsBridge.SetActive(false);
                 multimeterMode = "MicroAmps";
                 break;
             case "MilliAmps":
                 dial.transform.localRotation = Quaternion.Euler(-90f, 0f, 121f);
+                milliAmpsBridge.SetActive(true);
+                ampsBridge.SetActive(false);
                 multimeterMode = "MilliAmps";
                 break;
             case "Amps":
                 dial.transform.localRotation = Quaternion.Euler(-90f, 0f, 138f);
+                milliAmpsBridge.SetActive(false);
+                ampsBridge.SetActive(true);
                 multimeterMode = "Amps";
                 break;
             case "OFF2":

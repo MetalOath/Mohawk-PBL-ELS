@@ -11,12 +11,14 @@ public class UIEventMethods : MonoBehaviour
     GameObject[] allGameObjects;
 
     SimulationMethods Simulation;
+    WireInstantiator WireInstantiator;
 
-    [SerializeField] private GameObject wirePrompt;
+    [SerializeField] private GameObject wirePrompt, wireSelectUI, wireSelectUIZoomed;
 
     private void Start()
     {
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
+        WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
         allGameObjects = Resources.FindObjectsOfTypeAll<GameObject>();
         PopulateUICanvasList();
         PopulateCPList();
@@ -33,6 +35,16 @@ public class UIEventMethods : MonoBehaviour
         {
             wirePrompt.SetActive(false);
         }
+        if (Simulation.currentSimulationMode == "ConnectMode" && WireInstantiator.leadSpawnPhase && wireSelectUI.activeInHierarchy)
+        {
+            wireSelectUI.SetActive(false);
+            wireSelectUIZoomed.SetActive(false);
+        }else if (!wireSelectUI.activeInHierarchy && !WireInstantiator.leadSpawnPhase)
+        {
+            wireSelectUI.SetActive(true);
+            wireSelectUIZoomed.SetActive(true);
+        }
+
     }
 
     private void PopulateUICanvasList()

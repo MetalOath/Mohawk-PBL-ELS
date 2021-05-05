@@ -2045,7 +2045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6853776602980752894
 Transform:
   m_ObjectHideFlags: 0
@@ -2482,7 +2482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2541604748197491400
 Transform:
   m_ObjectHideFlags: 0
@@ -3620,6 +3620,8 @@ MonoBehaviour:
   voltsOhmsPort: {fileID: 3454174733889662808}
   dial: {fileID: 2927525755618065443}
   screenTMP: {fileID: 8258814981224277891}
+  ampsBridge: {fileID: 4578781226327244942}
+  milliAmpsBridge: {fileID: 5347755432736738751}
 --- !u!1 &7321808166001450562
 GameObject:
   m_ObjectHideFlags: 0

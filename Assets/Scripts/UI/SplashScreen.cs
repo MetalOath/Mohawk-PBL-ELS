@@ -18,6 +18,6 @@ public class SplashScreen : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         //Do something after waiting.
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("_Main_Menu");
     }
 }
