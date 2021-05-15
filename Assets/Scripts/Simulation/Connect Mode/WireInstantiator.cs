@@ -13,19 +13,18 @@ public class WireInstantiator : MonoBehaviour
     private float wirePrefabLength, elementPrefabLength, wireSegmentLength, wireLength, distanceBetweenPoints, yFunction, resistance;
     private int numberOfSegments;
     public bool leadSpawnPhase = false;
+    
+    SimulationMethods Simulation;
 
-    private SimulationMethods Simulation;
-    private UIEventPublisher UIEventPublisher;
-
-    public void Start()
+    private void Start()
     {
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
-        UIEventPublisher = GameObject.Find("UI Event Handler").GetComponent<UIEventPublisher>();
-
-        wireContainerTransform = wireContainer.transform;
     }
+    
     public void WireSpawnPhaseInitiator()
     {
+        wireContainerTransform = wireContainer.transform;
+
         Ray raycast = Simulation.SingleRayCastByPlatform();
 
         RaycastHit[] raycastHits = Physics.RaycastAll(raycast, 100f);
@@ -62,8 +61,8 @@ public class WireInstantiator : MonoBehaviour
                         if (leadSpawnPhase)
                         {
                             leadSpawnPhase = false;
-                            UIEventPublisher.ConnectModeUI();
-                            UIEventPublisher.EditModeUI();
+                            Simulation.UIEventPublisher.ConnectModeUI();
+                            Simulation.UIEventPublisher.EditModeUI();
                         }
                     }
                     break;
@@ -98,8 +97,8 @@ public class WireInstantiator : MonoBehaviour
             if (leadSpawnPhase)
             {
                 leadSpawnPhase = false;
-                UIEventPublisher.ConnectModeUI();
-                UIEventPublisher.EditModeUI();
+                Simulation.UIEventPublisher.ConnectModeUI();
+                Simulation.UIEventPublisher.EditModeUI();
             }
         }
     }

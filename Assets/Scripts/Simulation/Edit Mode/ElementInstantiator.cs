@@ -5,25 +5,17 @@ using TMPro;
 
 public class ElementInstantiator : MonoBehaviour
 {
-    OrbitCameraEventMethods CameraEventMethods;
-    WireInstantiator WireInstantiator;
-    SimulationMethods Simulation;
-    UIEventPublisher UIEventPublisher;
-    UIEventMethods UIEventMethods;
 
     [SerializeField] public GameObject elementSpawnZone, elementSpawnCanvas, deleteElementConfirmCanvas, deleteElementConfirmMessage;
     
     private GameObject newElement, newElementInstance = null, deleteTarget;
     [SerializeField] private Transform workspace, wireContainer;
 
-    // Start is called before the first frame update
-    void Start()
+    Simulation Simulation;
+
+    private void Start()
     {
-        WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
-        CameraEventMethods = GameObject.Find("Main Camera").GetComponent<OrbitCameraEventMethods>();
-        Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
-        UIEventPublisher = GameObject.Find("UI Event Handler").GetComponent<UIEventPublisher>();
-        UIEventMethods = GameObject.Find("UI Event Handler").GetComponent<UIEventMethods>();
+        Simulation = GameObject.Find("Simulation Event Handler").GetComponent<Simulation>();
     }
 
     // Update is called once per frame
@@ -96,35 +88,35 @@ public class ElementInstantiator : MonoBehaviour
                 }
                 break;
             case ("Resistor - 330 Ohm"):
-                WireInstantiator.LeadSpawnPhaseInitiator(element, 330f);
-                UIEventPublisher.ConnectModeUI();
+                Simulation.WireInstantiator.LeadSpawnPhaseInitiator(element, 330f);
+                Simulation.UIEventPublisher.ConnectModeUI();
                 break;
             case ("Resistor - 470 Ohm"):
-                WireInstantiator.LeadSpawnPhaseInitiator(element, 470f);
-                UIEventPublisher.ConnectModeUI();
+                Simulation.WireInstantiator.LeadSpawnPhaseInitiator(element, 470f);
+                Simulation.UIEventPublisher.ConnectModeUI();
                 break;
             case ("Resistor - 560 Ohm"):
-                WireInstantiator.LeadSpawnPhaseInitiator(element, 560f);
-                UIEventPublisher.ConnectModeUI();
+                Simulation.WireInstantiator.LeadSpawnPhaseInitiator(element, 560f);
+                Simulation.UIEventPublisher.ConnectModeUI();
                 break;
             case ("LED Light - Red"):
-                WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
-                UIEventPublisher.ConnectModeUI();
+                Simulation.WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
+                Simulation.UIEventPublisher.ConnectModeUI();
                 break;
             case ("LED Light - Green"):
-                WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
-                UIEventPublisher.ConnectModeUI();
+                Simulation.WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
+                Simulation.UIEventPublisher.ConnectModeUI();
                 break;
             case ("LED Light - Blue"):
-                WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
-                UIEventPublisher.ConnectModeUI();
+                Simulation.WireInstantiator.LeadSpawnPhaseInitiator(element, 0f);
+                Simulation.UIEventPublisher.ConnectModeUI();
                 break;
         }
     }
 
     private void ElementSpawnPhaseInitiator()
     {
-        UIEventMethods.ClearUI();
+        Simulation.UIEventMethods.ClearUI();
         if (newElementInstance == null)
         {
             if (!elementSpawnZone.activeInHierarchy)
@@ -135,8 +127,8 @@ public class ElementInstantiator : MonoBehaviour
             Simulation.inElementSpawnPhase = true;
             Simulation.currentSimulationMode = "";
 
-            CameraEventMethods.ZoomToElementSpawnZone(elementSpawnZone.transform);
-            CameraEventMethods.ShowSpawnColliders();
+            Simulation.CameraEventMethods.ZoomToElementSpawnZone(elementSpawnZone.transform);
+            Simulation.CameraEventMethods.ShowSpawnColliders();
 
             newElementInstance = Instantiate(newElement, workspace.position, Quaternion.identity);
             newElementInstance.transform.parent = workspace.transform;
@@ -184,7 +176,7 @@ public class ElementInstantiator : MonoBehaviour
         if (elementSpawnZone.activeInHierarchy)
             elementSpawnZone.SetActive(false);
         newElementInstance = null;
-        CameraEventMethods.HideSpawnColliders();
+        Simulation.CameraEventMethods.HideSpawnColliders();
         StartCoroutine(PostSpawnTimer(0.25f));
     }
 
@@ -266,6 +258,6 @@ public class ElementInstantiator : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         //Do something after waiting.
-        UIEventPublisher.EditModeUI();
+        Simulation.UIEventPublisher.EditModeUI();
     }
 }

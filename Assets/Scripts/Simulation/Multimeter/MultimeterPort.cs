@@ -6,17 +6,6 @@ public class MultimeterPort : MonoBehaviour
 {
     public float voltageReading, currentReading, resistanceReading;
     public bool isConnected = false;
-    // Start is called before the first frame update
-    //void Start()
-    //{
-
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //}
 
     private void OnTriggerStay(Collider other)
     {
