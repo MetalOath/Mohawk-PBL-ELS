@@ -1,7 +1,7 @@
 # Mohawk-PBL-ELS
 
 ## Getting Started
-There is multiple ways to retrieve the project:
+There are multiple ways to retrieve the project:
 1. In a terminal, or git bash you can use this command:
   `git  clone https://github.com/Mohawk-VRMP-21/Mohawk-PBL-ELS.git` OR
   `git clone git@github.com:Mohawk-VRMP-21/Mohawk-PBL-ELS.git`
