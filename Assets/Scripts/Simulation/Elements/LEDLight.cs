@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LEDLight : MonoBehaviour
 {
-    private bool n, p;
+    private bool negativePassThrough, positivePassThrough;
     [SerializeField] private GameObject ledLight;
 
     /*
@@ -13,10 +13,10 @@ public class LEDLight : MonoBehaviour
     */
     private void Update()
     {
-        n = gameObject.transform.parent.GetComponent<Conduction>().negativePassThrough;
-        p = gameObject.transform.parent.GetComponent<Conduction>().positivePassThrough;
+        negativePassThrough = gameObject.transform.parent.GetComponent<Conduction>().negativePassThrough;
+        positivePassThrough = gameObject.transform.parent.GetComponent<Conduction>().positivePassThrough;
         //Checks to see if the condition is true 
-        if (n && p)
+        if (negativePassThrough && positivePassThrough)
         {
             //Turn on the light
             ledLight.SetActive(true);

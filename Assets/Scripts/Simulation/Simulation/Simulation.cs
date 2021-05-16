@@ -6,6 +6,19 @@ using TMPro;
 
 public abstract class Simulation : MonoBehaviour
 {
+    public UIEventPublisher UIEventPublisher;
+    public UIEventMethods UIEventMethods;
+    public OrbitCameraEventPublisher CameraEventPublisher;
+    public OrbitCameraEventMethods CameraEventMethods;
+    public WireInstantiator WireInstantiator;
+    public ElementInstantiator ElementInstantiator;
+
+    public List<GameObject> UICanvases = new List<GameObject>();
+    public List<GameObject> connectionPoints = new List<GameObject>();
+    public List<GameObject> selectionPoints = new List<GameObject>();
+    public List<GameObject> spawnColliders = new List<GameObject>();
+    GameObject[] allGameObjects;
+
     public bool simulationActiveState = false;
     public string currentSimulationMode;
 
@@ -17,7 +30,7 @@ public abstract class Simulation : MonoBehaviour
 
     [SerializeField] private GameObject errorMessageCanvas, errorMessageTMP;
 
-    public void Start()
+    private void Awake()
     {
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
@@ -27,6 +40,23 @@ public abstract class Simulation : MonoBehaviour
         {
             platform = "desktop";
         }
+
+        UIEventPublisher = GameObject.Find("UI Event Handler").GetComponent<UIEventPublisher>();
+        UIEventMethods = GameObject.Find("UI Event Handler").GetComponent<UIEventMethods>();
+        CameraEventPublisher = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
+        CameraEventMethods = GameObject.Find("Main Camera").GetComponent<OrbitCameraEventMethods>();
+        WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
+        ElementInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<ElementInstantiator>();
+    }
+    public void Start()
+    {
+        if (platform == "mobile")
+            CameraEventMethods.minDistance = 0.25f;
+
+        allGameObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        PopulateUICanvasList();
+        PopulateCPList();
+        PopulateSPList();
     }
 
     public Ray SingleRayCastByPlatform()
@@ -73,6 +103,57 @@ public abstract class Simulation : MonoBehaviour
     public void SetDeletePhase(bool isActive)
     {
         inDeletePhase = isActive;
+    }
+
+    private void PopulateUICanvasList()
+    {
+        foreach (GameObject UIElement in allGameObjects)
+        {
+            if (UIElement.CompareTag("UI_Canvas"))
+            {
+                UICanvases.Add(UIElement);
+            }
+        }
+    }
+    private void PopulateCPList()
+    {
+        foreach (GameObject CP in allGameObjects)
+        {
+            if (CP.CompareTag("Connection_Points"))
+            {
+                connectionPoints.Add(CP);
+            }
+        }
+    }
+    private void PopulateSPList()
+    {
+        foreach (GameObject SP in allGameObjects)
+        {
+            if (SP.CompareTag("Selection_Points"))
+            {
+                selectionPoints.Add(SP);
+            }
+        }
+    }
+    private void PopulateSCList()
+    {
+        foreach (GameObject SC in allGameObjects)
+        {
+            if (SC.CompareTag("SpawnCollider"))
+            {
+                spawnColliders.Add(SC);
+            }
+        }
+    }
+    public void UpdateGameObjectList()
+    {
+        connectionPoints.Clear();
+        selectionPoints.Clear();
+        spawnColliders.Clear();
+        allGameObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        PopulateCPList();
+        PopulateSPList();
+        PopulateSCList();
     }
 
     //testing mobile UI raycast block.

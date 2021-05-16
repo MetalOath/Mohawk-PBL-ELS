@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
-* Typical 9 volt battery has a 1 amps limit
-*/
 public class PowerSource : MonoBehaviour
 {    
     [SerializeField] private float powerSourceVoltage, calculatedCurrent, circuitResistanceTotal, powerSourceMaxCurrent;
@@ -28,7 +25,6 @@ public class PowerSource : MonoBehaviour
             if (terminal == "Power_Source_Negative" && otherObjectConduction.loopIsClosed && circuitResistanceTotal == 0f)
             {
                 circuitResistanceTotal = otherObjectConduction.resistance;
-                //Debug.Log("Battery Negative activated");
             }
         }
     }

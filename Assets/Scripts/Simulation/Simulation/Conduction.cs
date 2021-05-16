@@ -6,7 +6,6 @@ public class Conduction : MonoBehaviour
 {
     public bool positivePassThrough = false, negativePassThrough = false, simulationActiveState = false, loopIsClosed = false;
     public float voltage, current, resistance, localResistance;
-    private SimulationMethods Simulation;
     /*
     * To know when a parallel circuit is created. 
     * This will show where in the circuit it was split 
@@ -14,15 +13,17 @@ public class Conduction : MonoBehaviour
     */
     public int positiveNumberInSeries, negativeNumberInSeries;
 
+    Simulation Simulation;
+    private void Start()
+    {
+        Simulation = GameObject.Find("Simulation Event Handler").GetComponent<Simulation>();
+    }
+
     public bool LoopIsClosed()
     {
         return loopIsClosed;
     }
 
-    private void Start()
-    {
-        Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
-    }
     /**
      * Starts the electrical circuit when the simulation state is active.
      * Electrical circuit will pass all the properties it needs to mimic current, 
@@ -33,6 +34,7 @@ public class Conduction : MonoBehaviour
         // TO DO: We used the battery cables for the multimeter and its now seeing the simulation 
         // as an Open loop and will not pass the values for the multimeter to read. 
         simulationActiveState = Simulation.simulationActiveState;
+
         if (simulationActiveState == true)
         {
             ClosedLoopRoutine(other);
