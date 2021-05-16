@@ -191,6 +191,7 @@ public abstract class OrbitCamera : MonoBehaviour
             offset = bound.center - centre.position;
     }
 
+    // Zooms to the raycast target in different ways depending on the current mode and the target's contents.
     public void ZoomToElement([SerializeField] Transform HitTarget)
     {
         if (currentSimulationMode == "ViewMode")
@@ -222,6 +223,8 @@ public abstract class OrbitCamera : MonoBehaviour
         GetObjectInSight();
         zoomedToElement = true;
     }
+
+    // Zooms out the camera to fit all elements in the scene.
     public void ZoomToWorkspace()
     {
         Centre = workspace.transform;
@@ -230,6 +233,8 @@ public abstract class OrbitCamera : MonoBehaviour
         HideConnectionPoints();
         HideSelectionPoints();
     }
+
+    // Zooms out to show the area that elements are allowed to spawn.
     public void ZoomToElementSpawnZone(Transform transform)
     {
         Centre = transform;
