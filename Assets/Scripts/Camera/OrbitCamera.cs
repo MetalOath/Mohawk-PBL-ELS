@@ -18,7 +18,7 @@ public abstract class OrbitCamera : MonoBehaviour
     private float smoothness = 0.5f;
 
     [SerializeField, Tooltip("The minimum distance possible from the object")]
-    private float minDistance = 1;
+    public float minDistance = 1;
 
     [SerializeField, Tooltip("The maximum distance possible from the object")]
     private float maxDistance = 20;
@@ -37,10 +37,6 @@ public abstract class OrbitCamera : MonoBehaviour
     public GameObject workspace;
 
     public SimulationMethods Simulation;
-    public WireInstantiator WireInstantiator;
-    public OrbitCameraEventPublisher CameraEventPublisher;
-    public UIEventMethods UIEventMethods;
-    public ElementInstantiator ElementInstantiator;
     #endregion
 
 
@@ -54,16 +50,7 @@ public abstract class OrbitCamera : MonoBehaviour
 
     public void Start()
     {
-        // Sets minimum camera proximity to objects to allow greater zoom when running on mobile.
-        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-            minDistance = 0.25f;
-
-        // Providing access to methods in other scripts within the scene.
         Simulation = GameObject.Find("Simulation Event Handler").GetComponent<SimulationMethods>();
-        WireInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<WireInstantiator>();
-        CameraEventPublisher = GameObject.Find("Camera Event Handler").GetComponent<OrbitCameraEventPublisher>();
-        UIEventMethods = GameObject.Find("UI Event Handler").GetComponent<UIEventMethods>();
-        ElementInstantiator = GameObject.Find("Simulation Event Handler").GetComponent<ElementInstantiator>();
 
         calculatedCentre = GetCentre;
         calculatedDirection = (transform.position - GetCentre);
@@ -71,7 +58,7 @@ public abstract class OrbitCamera : MonoBehaviour
 
         workspace = GameObject.Find("Workspace");
         Simulation.ActivateViewMode();
-        WireInstantiator.SetWireColor(WireInstantiator.redWireMat);
+        Simulation.WireInstantiator.SetWireColor(Simulation.WireInstantiator.redWireMat);
         currentSimulationMode = Simulation.currentSimulationMode;
         ZoomToWorkspace();
     }
@@ -209,12 +196,12 @@ public abstract class OrbitCamera : MonoBehaviour
     {
         if (currentSimulationMode == "ViewMode")
         {
-            CameraEventPublisher.ViewModeZoomedCamera();
+            Simulation.CameraEventPublisher.ViewModeZoomedCamera();
             Centre = HitTarget;
         }
         else if (currentSimulationMode == "EditMode")
         {
-            CameraEventPublisher.EditModeZoomedCamera();
+            Simulation.CameraEventPublisher.EditModeZoomedCamera();
             ShowSelectionPoints();
             if (HitTarget.Find("EditZone"))
                 Centre = HitTarget.Find("EditZone");
@@ -223,7 +210,7 @@ public abstract class OrbitCamera : MonoBehaviour
         }
         else if (currentSimulationMode == "ConnectMode")
         {
-            CameraEventPublisher.ConnectModeZoomedCamera();
+            Simulation.CameraEventPublisher.ConnectModeZoomedCamera();
             ShowConnectionPoints();
             if (HitTarget.parent.CompareTag("Breadboard"))
                 ActivateBreadboardCamera(HitTarget);
@@ -255,54 +242,58 @@ public abstract class OrbitCamera : MonoBehaviour
     }
     public void ShowConnectionPoints()
     {
-        UIEventMethods.UpdateGameObjectList();
-        if (UIEventMethods.connectionPoints.Count > 0)
-        foreach (GameObject CP in UIEventMethods.connectionPoints)
+        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
+        Simulation.UpdateGameObjectList();
+        if (Simulation.connectionPoints.Count > 0)
+        foreach (GameObject CP in Simulation.connectionPoints)
         {
             StartCoroutine(WaitBeforeActivation(CP, 0.5f));
         }
     }
     public void HideConnectionPoints()
     {
-        UIEventMethods.UpdateGameObjectList();
-        if (UIEventMethods.connectionPoints.Count > 0)
-        foreach (GameObject CP in UIEventMethods.connectionPoints)
+        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
+        Simulation.UpdateGameObjectList();
+        if (Simulation.connectionPoints.Count > 0)
+        foreach (GameObject CP in Simulation.connectionPoints)
         {
             CP.SetActive(false);
         }
     }
     public void ShowSelectionPoints()
     {
-        UIEventMethods.UpdateGameObjectList();
-        if (UIEventMethods.selectionPoints.Count > 0)
-        foreach (GameObject SP in UIEventMethods.selectionPoints)
+        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
+        Simulation.UpdateGameObjectList();
+        if (Simulation.selectionPoints.Count > 0)
+        foreach (GameObject SP in Simulation.selectionPoints)
         {
             StartCoroutine(WaitBeforeActivation(SP, 0.5f));
         }
     }
     public void HideSelectionPoints()
     {
-        UIEventMethods.UpdateGameObjectList();
-        if (UIEventMethods.selectionPoints.Count > 0)
-        foreach (GameObject SP in UIEventMethods.selectionPoints)
+        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
+        Simulation.UpdateGameObjectList();
+        if (Simulation.selectionPoints.Count > 0)
+        foreach (GameObject SP in Simulation.selectionPoints)
         {
             SP.SetActive(false);
         }
     }
     public void ShowSpawnColliders()
     {
-        UIEventMethods.UpdateGameObjectList();
-        if (UIEventMethods.spawnColliders.Count > 0)
-            foreach (GameObject SC in UIEventMethods.spawnColliders)
+        Simulation.UpdateGameObjectList();
+        if (Simulation.spawnColliders.Count > 0)
+            foreach (GameObject SC in Simulation.spawnColliders)
             {
                 SC.SetActive(true);
             }
     }
     public void HideSpawnColliders()
     {
-        UIEventMethods.UpdateGameObjectList();
-        if (UIEventMethods.spawnColliders.Count > 0)
-            foreach (GameObject SC in UIEventMethods.spawnColliders)
+        Simulation.UpdateGameObjectList();
+        if (Simulation.spawnColliders.Count > 0)
+            foreach (GameObject SC in Simulation.spawnColliders)
             {
                 SC.SetActive(false);
             }

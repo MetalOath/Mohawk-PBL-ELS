@@ -32,7 +32,7 @@ public class OrbitCameraEventMethods : OrbitCamera
                 {
                     if (touch.phase == TouchPhase.Ended && (Time.time - touchTime) > 1f)
                     {
-                        ElementInstantiator.PlaceElement();
+                        Simulation.ElementInstantiator.PlaceElement();
                     }
                 }
                 else
@@ -56,7 +56,7 @@ public class OrbitCameraEventMethods : OrbitCamera
                         if (!zoomedToElement)
                             ZoomToElement();
                         if (zoomedToElement)
-                            WireInstantiator.WireSpawnPhaseInitiator();
+                            Simulation.WireInstantiator.WireSpawnPhaseInitiator();
                     }
                     if (touch.phase == TouchPhase.Ended && (Time.time - touchTime) < 0.2f)
                     {
@@ -107,7 +107,7 @@ public class OrbitCameraEventMethods : OrbitCamera
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    ElementInstantiator.PlaceElement();
+                    Simulation.ElementInstantiator.PlaceElement();
                 }
             }
             else
@@ -154,7 +154,7 @@ public class OrbitCameraEventMethods : OrbitCamera
                     if (!zoomedToElement)
                         ZoomToElement();
                     if (zoomedToElement)
-                        WireInstantiator.WireSpawnPhaseInitiator();
+                        Simulation.WireInstantiator.WireSpawnPhaseInitiator();
                 }
 
                 if (Input.GetMouseButtonUp(0) && (Time.time - touchTime) < 0.2f)
@@ -225,7 +225,7 @@ public class OrbitCameraEventMethods : OrbitCamera
         RaycastHit raycastHit;
         if (Physics.Raycast(raycast, out raycastHit))
         {
-            ElementInstantiator.DeleteElementInitializer(raycastHit.collider.transform.gameObject);
+            Simulation.ElementInstantiator.DeleteElementInitializer(raycastHit.collider.transform.gameObject);
         }
     }
 }
