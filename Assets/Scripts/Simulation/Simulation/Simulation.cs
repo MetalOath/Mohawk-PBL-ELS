@@ -17,7 +17,7 @@ public abstract class Simulation : MonoBehaviour
     public List<GameObject> connectionPoints = new List<GameObject>();
     public List<GameObject> selectionPoints = new List<GameObject>();
     public List<GameObject> spawnColliders = new List<GameObject>();
-    GameObject[] allGameObjects;
+    public GameObject[] allGameObjects;
 
     public bool simulationActiveState = false;
     public string currentSimulationMode;
@@ -28,7 +28,7 @@ public abstract class Simulation : MonoBehaviour
 
     public string platform;
 
-    [SerializeField] private GameObject errorMessageCanvas, errorMessageTMP;
+    public GameObject cameraEventHandler, uIEventHandler, workspace, wireContainer, errorMessageCanvas, errorMessageTMP;
 
     private void Awake()
     {
