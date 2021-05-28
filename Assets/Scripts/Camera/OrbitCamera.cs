@@ -240,9 +240,10 @@ public abstract class OrbitCamera : MonoBehaviour
         Centre = transform;
         GetObjectInSight();
     }
+
+    // Enables all workspace objects' connection points.
     public void ShowConnectionPoints()
     {
-        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("CP");
         Simulation.UpdateGameObjectList();
         if (Simulation.connectionPoints.Count > 0)
         foreach (GameObject CP in Simulation.connectionPoints)
@@ -250,9 +251,10 @@ public abstract class OrbitCamera : MonoBehaviour
             StartCoroutine(WaitBeforeActivation(CP, 0.5f));
         }
     }
+
+    // Disables all workspace objects' connection points.
     public void HideConnectionPoints()
     {
-        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("CP"));
         Simulation.UpdateGameObjectList();
         if (Simulation.connectionPoints.Count > 0)
         foreach (GameObject CP in Simulation.connectionPoints)
@@ -260,9 +262,10 @@ public abstract class OrbitCamera : MonoBehaviour
             CP.SetActive(false);
         }
     }
+
+    // Enables all workspace objects' selection points.
     public void ShowSelectionPoints()
     {
-        //gameObject.GetComponent<Camera>().cullingMask |= 1 << LayerMask.NameToLayer("SP");
         Simulation.UpdateGameObjectList();
         if (Simulation.selectionPoints.Count > 0)
         foreach (GameObject SP in Simulation.selectionPoints)
@@ -270,9 +273,10 @@ public abstract class OrbitCamera : MonoBehaviour
             StartCoroutine(WaitBeforeActivation(SP, 0.5f));
         }
     }
+
+    // Disables all workspace objects' selection points.
     public void HideSelectionPoints()
     {
-        //gameObject.GetComponent<Camera>().cullingMask &= ~(1 << LayerMask.NameToLayer("SP"));
         Simulation.UpdateGameObjectList();
         if (Simulation.selectionPoints.Count > 0)
         foreach (GameObject SP in Simulation.selectionPoints)
@@ -280,6 +284,8 @@ public abstract class OrbitCamera : MonoBehaviour
             SP.SetActive(false);
         }
     }
+
+    // Enables all workspace objects' Spawn Colliders.
     public void ShowSpawnColliders()
     {
         Simulation.UpdateGameObjectList();
@@ -289,6 +295,8 @@ public abstract class OrbitCamera : MonoBehaviour
                 SC.SetActive(true);
             }
     }
+
+    // Disables all workspace objects' Spawn Colliders.
     public void HideSpawnColliders()
     {
         Simulation.UpdateGameObjectList();
@@ -298,6 +306,8 @@ public abstract class OrbitCamera : MonoBehaviour
                 SC.SetActive(false);
             }
     }
+
+    // Activates top-view camera for breadboard connection mode.
     public void ActivateBreadboardCamera(Transform breadboard)
     {
         breadboardCamera = true;
@@ -306,6 +316,8 @@ public abstract class OrbitCamera : MonoBehaviour
         zoomedToElement = true;
         ShowConnectionPoints();
     }
+
+    // De-activates top-view camera for breadboard connection mode.
     public void DisableBreadboardCamera()
     {
         HideConnectionPoints();
@@ -313,6 +325,8 @@ public abstract class OrbitCamera : MonoBehaviour
         zoomedToElement = false;
         ZoomToWorkspace();
     }
+
+    // Waits before activating various interactive points to avoid miss-clicks.
     IEnumerator WaitBeforeActivation(GameObject go, float waitTime)
     {
         //Do something before waiting.
