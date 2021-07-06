@@ -232,7 +232,7 @@ public class OrbitCameraEventMethods : OrbitCamera
             }
         }
     }
-    // 
+    // invokes selected element's button events.
     private void InvokeElementEvent()
     {
         Ray raycast = Simulation.SingleRayCastByPlatform();
@@ -254,6 +254,7 @@ public class OrbitCameraEventMethods : OrbitCamera
         }
     }
 
+    // casts a ray from a point on screen and returns the first deletable element the ray intersects with.
     private void GetElementToDelete()
     {
         Ray raycast = Simulation.SingleRayCastByPlatform();
